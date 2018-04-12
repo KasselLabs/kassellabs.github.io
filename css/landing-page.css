@@ -75,9 +75,14 @@ header.masthead h1 {
 .features-icons {
   padding-top: 4vh;
   padding-bottom: 4vh;
+  margin-bottom: 2vh;
 }
 
-.features-icons img {
+.features-icons .row div {
+  margin-bottom: 6vh;
+}
+
+.features-icons .row div img {
   margin-bottom: 2vh;
   width: 100%;
 }

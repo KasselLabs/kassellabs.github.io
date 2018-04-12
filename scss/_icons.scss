@@ -1,8 +1,14 @@
 .features-icons {
   padding-top: 4vh;
   padding-bottom: 4vh;
-  img {
-    margin-bottom: 2vh;
-    width: 100%;
+  margin-bottom: 2vh;
+  .row {
+    div {
+      margin-bottom: 6vh;
+      img {
+        margin-bottom: 2vh;
+        width: 100%;
+      }
+    }
   }
 }
