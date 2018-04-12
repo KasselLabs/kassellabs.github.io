@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat+Alternates");
 body {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
@@ -12,16 +13,27 @@ h6 {
   font-weight: 700;
 }
 
+.brand {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  background-color: #141414;
+  padding: 10px 0;
+}
+
+.brand span:nth-child(1) {
+  color: #00cfb4;
+}
+
+.brand span:nth-child(2) {
+  color: #00b8c8;
+}
+
 header.masthead {
   position: relative;
   background-color: #343a40;
-  background: url("../img/bg-masthead.jpg") no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+  padding-top: 9vh;
+  padding-bottom: 9vh;
 }
 
 header.masthead .overlay {
@@ -31,7 +43,6 @@ header.masthead .overlay {
   width: 100%;
   top: 0;
   left: 0;
-  opacity: 0.3;
 }
 
 header.masthead h1 {
@@ -40,87 +51,20 @@ header.masthead h1 {
 
 @media (min-width: 768px) {
   header.masthead {
-    padding-top: 12rem;
-    padding-bottom: 12rem;
+    padding-top: 18vh;
+    padding-bottom: 18vh;
   }
   header.masthead h1 {
     font-size: 3rem;
   }
 }
 
-.showcase .showcase-text {
-  padding: 3rem;
-}
-
-.showcase .showcase-img {
-  min-height: 30rem;
-  background-size: cover;
-}
-
-@media (min-width: 768px) {
-  .showcase .showcase-text {
-    padding: 7rem;
-  }
-}
-
 .features-icons {
-  padding-top: 7rem;
-  padding-bottom: 7rem;
+  padding-top: 4vh;
+  padding-bottom: 4vh;
 }
 
-.features-icons .features-icons-item {
-  max-width: 20rem;
-}
-
-.features-icons .features-icons-item .features-icons-icon {
-  height: 7rem;
-}
-
-.features-icons .features-icons-item .features-icons-icon i {
-  font-size: 4.5rem;
-}
-
-.features-icons .features-icons-item:hover .features-icons-icon i {
-  font-size: 5rem;
-}
-
-.testimonials {
-  padding-top: 7rem;
-  padding-bottom: 7rem;
-}
-
-.testimonials .testimonial-item {
-  max-width: 18rem;
-}
-
-.testimonials .testimonial-item img {
-  max-width: 12rem;
-  box-shadow: 0px 5px 5px 0px #adb5bd;
-}
-
-.call-to-action {
-  position: relative;
-  background-color: #343a40;
-  background: url("../img/bg-masthead.jpg") no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  padding-top: 7rem;
-  padding-bottom: 7rem;
-}
-
-.call-to-action .overlay {
-  position: absolute;
-  background-color: #212529;
-  height: 100%;
+.features-icons img {
+  margin-bottom: 2vh;
   width: 100%;
-  top: 0;
-  left: 0;
-  opacity: 0.3;
-}
-
-footer.footer {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
 }

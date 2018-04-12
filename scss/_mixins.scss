@@ -1,5 +1,7 @@
 // Mixins
 // Background Cover Mixin
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates');
+
 @mixin background-cover {
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -8,6 +10,10 @@
 }
 
 // Font Mixins
+@mixin brand-font {
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
 @mixin body-font {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }

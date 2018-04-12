@@ -1,0 +1,15 @@
+.brand {
+  @include brand-font;
+  font-size: 36px;
+  font-weight: 600;
+  background-color: #141414;
+  padding: 10px 0;
+
+  span:nth-child(1) {
+    color: $amazonite;
+  }
+
+  span:nth-child(2) {
+    color: $turquoise-surg;
+  }
+}
