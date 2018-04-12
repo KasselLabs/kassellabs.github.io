@@ -11,3 +11,18 @@ h6 {
   @include body-font;
   font-weight: 700;
 }
+
+.subHeader {
+  margin-top: 40px;
+  text-align: center;
+}
+
+a {
+  h3 {
+    color: #0064d0;
+
+    &:hover {
+      color: darken($color: #0064d0, $amount: 10)
+    }
+  }
+}

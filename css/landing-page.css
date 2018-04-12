@@ -13,6 +13,19 @@ h6 {
   font-weight: 700;
 }
 
+.subHeader {
+  margin-top: 40px;
+  text-align: center;
+}
+
+a h3 {
+  color: #0064d0;
+}
+
+a h3:hover {
+  color: #004b9d;
+}
+
 .brand {
   font-family: 'Montserrat Alternates', sans-serif;
   font-size: 36px;
@@ -51,8 +64,8 @@ header.masthead h1 {
 
 @media (min-width: 768px) {
   header.masthead {
-    padding-top: 18vh;
-    padding-bottom: 18vh;
+    padding-top: 13vh;
+    padding-bottom: 13vh;
   }
   header.masthead h1 {
     font-size: 3rem;
