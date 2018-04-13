@@ -15,6 +15,7 @@ h6 {
 .subHeader {
   margin-top: 40px;
   text-align: center;
+  max-width: 95%;
 }
 
 a {
@@ -24,5 +25,10 @@ a {
     &:hover {
       color: darken($color: #0064d0, $amount: 10)
     }
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
   }
 }
