@@ -7,3 +7,16 @@
 @import "navbar.scss";
 @import "masthead.scss";
 @import "icons.scss";
+
+.contact {
+  padding-top: 4vh;
+  padding-bottom: 4vh;
+
+  a {
+    color: $turquoise-surg;
+
+    &:hover {
+      color: $amazonite;
+    }
+  }
+}

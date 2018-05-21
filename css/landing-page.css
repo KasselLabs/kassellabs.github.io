@@ -93,3 +93,16 @@ header.masthead h1 {
   margin-bottom: 2vh;
   width: 100%;
 }
+
+.contact {
+  padding-top: 4vh;
+  padding-bottom: 4vh;
+}
+
+.contact a {
+  color: #00b8c8;
+}
+
+.contact a:hover {
+  color: #00cfb4;
+}
