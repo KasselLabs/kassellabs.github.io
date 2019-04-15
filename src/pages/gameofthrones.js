@@ -3,10 +3,12 @@ import { Link } from 'gatsby';
 import { Input } from 'semantic-ui-react';
 import YouTube from 'react-youtube';
 
+import SEO from '../components/seo';
 import '../styles/coming-soon/coming-soon.css';
 
 const GameOfThronesComingSoon = () => (
   <div className="coming-soon">
+    <SEO title="Game of Thrones Intro Creator" />
     <YouTube
       className="coming-soon__video"
       containerClassName="coming-soon__video-container"
