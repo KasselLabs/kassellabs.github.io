@@ -118,8 +118,16 @@ const IndexPage = () => {
           <h1 className="parallax__title">
             Our website is being developed, receive news from us when it is complete
           </h1>
-          <form>
+          <form
+            action="https://kassellabs.us18.list-manage.com/subscribe/post?u=955f23a083dc8aff26326536a&amp;id=3a0fe71a75"
+            method="post"
+            id="mc-embedded-subscribe-form"
+            name="mc-embedded-subscribe-form"
+            target="_blank"
+          >
             <Input
+              id="mce-EMAIL"
+              name="EMAIL"
               className="parallax__input"
               type="email"
               autocomplete="email"

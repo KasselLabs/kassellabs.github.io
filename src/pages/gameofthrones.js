@@ -50,13 +50,11 @@ const GameOfThronesComingSoon = () => (
                 using the form below! We promise not to send spam!
               </p>
               <form
-                action="https://github.us18.list-manage.com/subscribe/post?u=955f23a083dc8aff26326536a&amp;id=317ca42ec8"
+                action="https://kassellabs.us18.list-manage.com/subscribe/post?u=955f23a083dc8aff26326536a&amp;id=eb001c8fcc"
                 method="post"
                 id="mc-embedded-subscribe-form"
                 name="mc-embedded-subscribe-form"
-                className="validate"
                 target="_blank"
-                noValidate
               >
                 <div className="input-group input-group-newsletter coming-soon__input-container">
                   <Input
