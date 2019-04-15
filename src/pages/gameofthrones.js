@@ -75,6 +75,13 @@ const GameOfThronesComingSoon = () => (
               </form>
               <br />
               <p>
+                Want your intro now? Please contact us, we can work on your order
+                before the launch of this intro creator:
+                {' '}
+                <a href="mailto:support@kassellabs.io" className="coming-soon__link">support@kassellabs.io</a>
+              </p>
+              <br />
+              <p>
                 <Link to="/" className="coming-soon__link">Check out more intro creators we have here</Link>
               </p>
             </div>
