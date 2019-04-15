@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Game of Thrones';
+  font-display: swap;
+  src: url('./fonts/gameofthrones.ttf');
+}
+
 .coming-soon {
   height: 100%;
   min-height: 35rem;
@@ -34,6 +40,22 @@
   background: transparent;
 }
 
+.coming-soon__title {
+  font-family: 'Game of Thrones';
+  font-size: 2.0rem;
+  font-weight: 400;
+  line-height: 1.5em;
+  padding-top: 20px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .coming-soon__title {
+    font-size: 2.7rem;
+    line-height: 1.5em;
+  }
+}
+
 .ytplayer-container {
   position: absolute;
   top: 0;
@@ -61,13 +83,8 @@
   width: 100%;
   min-height: 100vh;
   height: 100%;
-  background-color: rgba(10, 47, 62, 0.8);
+  background-color: rgba(68, 46, 31, 0.7);
   transform-origin: bottom right;
-}
-
-.masthead .masthead-content h1 {
-  font-size: 2.5rem;
-  text-align: center;
 }
 
 .masthead .masthead-content h2 {
@@ -110,9 +127,6 @@
     padding-left: 3rem;
     padding-right: 10rem;
   }
-  .masthead .masthead-content h1 {
-    font-size: 3.5rem;
-  }
   .masthead .masthead-content h2 {
     font-size: 2.5rem;
   }
@@ -154,5 +168,10 @@
 
 .coming-soon__link {
   color: white;
+  text-decoration: underline;
+}
+
+.coming-soon__link:hover {
+  color: rgb(225, 225, 225);
   text-decoration: underline;
 }

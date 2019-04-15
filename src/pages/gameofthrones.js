@@ -35,14 +35,14 @@ const GameOfThronesComingSoon = () => (
         <div className="row h-100">
           <div className="col-12 my-auto">
             <div className="masthead-content text-white py-5 py-md-0">
-              <a className="logo-anchor" href="https://kassellabs.io/">
+              <Link className="logo-anchor" to="/">
                 <div className="logo">
                   <span>Kassel</span>
                   {' '}
                   <span>Labs</span>
                 </div>
-              </a>
-              <h1 className="mb-3 title">GAME OF THRONES INTRO CREATOR</h1>
+              </Link>
+              <h1 className="mb-3 coming-soon__title">GAME OF THRONES INTRO CREATOR</h1>
               <h2 className="mb-3">Coming Soon!</h2>
               <p className="mb-5">
                 {"We're working hard to finish the development of this new website."}
