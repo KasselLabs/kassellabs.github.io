@@ -2,7 +2,7 @@ module.exports = {
   pathPrefix: '/',
   siteMetadata: {
     title: 'Kassel Labs',
-    description: 'Create your own intro of movies and series',
+    description: 'Helping you to express your creativity and imagination with tools to create videos. Create your own opening of movies and series with our Intro Creators.',
     author: '@kassellabs',
     keywords: 'kassel labs, intro creator',
     url: 'https://kassellabs.io',
