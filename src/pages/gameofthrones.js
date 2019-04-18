@@ -5,6 +5,7 @@ import YouTube from 'react-youtube';
 
 import SEO from '../components/seo';
 import '../styles/coming-soon/coming-soon.css';
+import logo from '../images/KasselLabsLogo.svg';
 
 const GameOfThronesComingSoon = () => (
   <div className="coming-soon">
@@ -37,9 +38,7 @@ const GameOfThronesComingSoon = () => (
             <div className="masthead-content text-white py-5 py-md-0">
               <Link className="logo-anchor" to="/">
                 <div className="logo">
-                  <span>Kassel</span>
-                  {' '}
-                  <span>Labs</span>
+                  <img src={logo} alt="Kassel Labs logo" height="40px" />
                 </div>
               </Link>
               <h1 className="mb-3 coming-soon__title">GAME OF THRONES INTRO CREATOR</h1>
