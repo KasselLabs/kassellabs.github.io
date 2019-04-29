@@ -19,3 +19,6 @@ deploy:
     branch: master-pre-build
 notifications:
   webhooks: https://fathomless-fjord-24024.herokuapp.com/notify
+branches:
+  only:
+  - master-pre-build
