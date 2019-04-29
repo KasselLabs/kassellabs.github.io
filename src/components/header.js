@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import { Container } from 'semantic-ui-react';
 
-import logo from '../../static/logo.svg';
+import logo from '../../static/assets/logo.svg';
 
 import './header.styl';
 

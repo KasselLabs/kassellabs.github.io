@@ -5,7 +5,7 @@ import YouTube from 'react-youtube';
 
 import SEO from '../components/seo';
 import '../styles/coming-soon/coming-soon.css';
-import logo from '../../static/logo.svg';
+import logo from '../../static/assets/logo.svg';
 
 const GameOfThronesComingSoon = () => (
   <div className="coming-soon">
