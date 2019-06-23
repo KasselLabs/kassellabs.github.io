@@ -5,6 +5,7 @@ import Image from 'gatsby-image';
 import moment from 'moment';
 
 import Layout from '../components/layout';
+import SEO from '../components/seo';
 import BlockContent from '../components/block-content';
 import './post.styl';
 
@@ -12,7 +13,6 @@ export const query = graphql`
   query Post ($slug: String) {
     sanityPost(slug: {current: {eq: $slug}}) {
       title
-      publishedAt
       mainImage {
         asset {
           fluid {
@@ -20,6 +20,7 @@ export const query = graphql`
           }
         }
       }
+      publishedAt
       _rawBody
     }
   }
@@ -29,12 +30,16 @@ const Post = ({ data }) => {
   const {
     title,
     mainImage,
-    _rawBody,
     publishedAt,
+    _rawBody,
   } = data.sanityPost;
 
   return (
     <Layout>
+      <SEO
+        title={title}
+        meta={[{ property: 'og:type', content: 'article' }]}
+      />
       <article className="post">
         <h1 className="post__title">{title}</h1>
         {publishedAt && (
