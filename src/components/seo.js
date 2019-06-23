@@ -42,7 +42,7 @@ const SEO = ({
           { property: 'og:title', content: title || data.site.siteMetadata.title },
           { property: 'og:description', content: description || data.site.siteMetadata.description },
           { property: 'og:type', content: 'website' },
-          { property: 'og:url', content: 'https://help.kassellabs.io' },
+          { property: 'og:url', content: 'https://kassellabs.io' },
           { property: 'og:image:alt', content: description || data.site.siteMetadata.description },
           { property: 'og:image:type', content: 'image/jpg' },
           { property: 'og:image:width', content: '1280' },
