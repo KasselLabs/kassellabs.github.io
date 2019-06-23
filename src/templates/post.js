@@ -57,6 +57,7 @@ const Post = ({ data }) => {
         )}
       </article>
       <br />
+      <hr />
       <Link to="/">Back to Home</Link>
     </Layout>
   );
