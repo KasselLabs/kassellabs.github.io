@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 module.exports = {
   pathPrefix: '/',
   siteMetadata: {
@@ -39,6 +41,14 @@ module.exports = {
         trackingId: 'UA-116931857-3',
         head: false,
         anonymize: true,
+      },
+    },
+    {
+      resolve: 'gatsby-source-sanity',
+      options: {
+        projectId: 'w8pgxsnb',
+        dataset: 'production',
+        token: process.env.SANITY_TOKEN,
       },
     },
   ],

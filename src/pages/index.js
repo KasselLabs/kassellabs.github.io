@@ -1,6 +1,7 @@
 import React, { useCallback } from 'react';
-import { Link } from 'gatsby';
+import { Link, graphql } from 'gatsby';
 import { Card, Container, Input } from 'semantic-ui-react';
+import Image from 'gatsby-image';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
@@ -11,7 +12,31 @@ import goticGif from '../images/gotic.gif';
 
 import '../styles/index.styl';
 
-const IndexPage = () => {
+export const query = graphql`
+  query Posts {
+    allSanityPost(sort: {order: DESC, fields: [publishedAt]}) {
+      edges {
+        node {
+          id
+          publishedAt
+          title
+          slug {
+            current
+          }
+          mainImage {
+            asset {
+              fluid {
+                ...GatsbySanityImageFluid
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+`;
+
+const IndexPage = ({ data }) => {
   const canvas = useCallback((node) => {
     if (node === null) {
       return;
@@ -169,6 +194,19 @@ const IndexPage = () => {
           image={<img src={goticGif} alt="Game of Thrones Intro Creator" width="100%" />}
         />
       </Card.Group>
+      <br />
+      <h1>Stories</h1>
+      <div>
+        {data.allSanityPost.edges.map(({ node: post }) => (
+          <Card
+            key={post.slug.current}
+            as={Link}
+            to={`/blog/${post.slug.current}`}
+            header={post.title}
+            image={<Image fluid={post.mainImage.asset.fluid} alt={post.title} />}
+          />
+        ))}
+      </div>
       <br />
       <h1>Contact</h1>
       <p>
