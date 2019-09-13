@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{160:function(n,o,t){"use strict";t.r(o);var e=t(7),r=t.n(e),i=t(0),a=t.n(i),p=function(n){function o(){return n.apply(this,arguments)||this}r()(o,n);var t=o.prototype;return t.componentDidMount=function(){window.location.href="https://gameofthronesintrocreator.kassellabs.io/"+window.location.hash},t.render=function(){return a.a.createElement("div",null)},o}(i.Component);p.propTypes={},o.default=p}}]);
+//# sourceMappingURL=component---src-pages-gameofthrones-js-1f23e809f22490c44f4b.js.map
