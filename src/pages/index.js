@@ -188,8 +188,7 @@ const IndexPage = ({ data }) => {
           image={<img src={wicGif} alt="Westworld Intro Creator" width="100%" />}
         />
         <Card
-          as={Link}
-          to="/gameofthrones"
+          href="https://gameofthronesintrocreator.kassellabs.io"
           header="Game of Thrones Intro Creator"
           image={<img src={goticGif} alt="Game of Thrones Intro Creator" width="100%" />}
         />
