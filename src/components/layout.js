@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Container } from 'semantic-ui-react';
 
-import Header from './header';
-import './main.styl';
+import Header from './Header';
+import './Layout.styl';
 
 const Layout = ({ children, topRender }) => (
   <>

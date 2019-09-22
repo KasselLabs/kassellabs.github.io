@@ -4,8 +4,8 @@ import { Link, graphql } from 'gatsby';
 import { Card, Container, Input } from 'semantic-ui-react';
 import Image from 'gatsby-image';
 
-import Layout from '../components/layout';
-import SEO from '../components/seo';
+import Layout from '../components/Layout';
+import SEO from '../components/SEO';
 import swicGif from '../images/swic.gif';
 import sticGif from '../images/stic.gif';
 import wicGif from '../images/wic.gif';

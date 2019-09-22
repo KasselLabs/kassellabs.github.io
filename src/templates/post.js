@@ -6,7 +6,7 @@ import moment from 'moment';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import BlockContent from '../components/block-content';
+import BlockContent from '../components/BlockContent';
 import './post.styl';
 
 export const query = graphql`

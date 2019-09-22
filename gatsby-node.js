@@ -23,7 +23,7 @@ exports.createPages = async ({ actions, graphql }) => {
   posts.forEach((post) => {
     actions.createPage({
       path: `/blog/${post.slug.current}`,
-      component: require.resolve('./src/templates/post.js'),
+      component: require.resolve('./src/templates/Post.js'),
       context: {
         slug: post.slug.current,
       },

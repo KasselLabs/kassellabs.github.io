@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import BaseBlockContent from '@sanity/block-content-to-react';
 
-import './block-content.styl';
+import './BlockContent.styl';
 
 const serializers = {
   types: {
