@@ -4,7 +4,7 @@ import { Container } from 'semantic-ui-react';
 
 import logo from '../../static/assets/logo.svg';
 
-import './Header.styl';
+import './Navbar.styl';
 
 const Header = () => (
   <header className="navbar">

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Container } from 'semantic-ui-react';
 
-import Header from './Header';
+import Header from './Navbar';
 import './Layout.styl';
 
 const Layout = ({ children, topRender }) => (

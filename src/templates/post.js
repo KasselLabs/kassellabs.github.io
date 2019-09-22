@@ -4,10 +4,10 @@ import PropTypes from 'prop-types';
 import Image from 'gatsby-image';
 import moment from 'moment';
 
-import Layout from '../components/layout';
-import SEO from '../components/seo';
+import Layout from '../components/Layout';
+import SEO from '../components/SEO';
 import BlockContent from '../components/BlockContent';
-import './post.styl';
+import './Post.styl';
 
 export const query = graphql`
   query Post ($slug: String) {
