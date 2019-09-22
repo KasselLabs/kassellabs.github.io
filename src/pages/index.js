@@ -1,4 +1,5 @@
 import React, { useCallback } from 'react';
+import PropTypes from 'prop-types';
 import { Link, graphql } from 'gatsby';
 import { Card, Container, Input } from 'semantic-ui-react';
 import Image from 'gatsby-image';
@@ -220,6 +221,10 @@ const IndexPage = ({ data }) => {
       </p>
     </Layout>
   );
+};
+
+IndexPage.propTypes = {
+  data: PropTypes.object.isRequired,
 };
 
 export default IndexPage;

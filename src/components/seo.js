@@ -27,7 +27,7 @@ const SEO = ({
 }) => (
   <StaticQuery
     query={detailsQuery}
-    render={data => (
+    render={(data) => (
       <Helmet
         htmlAttributes={{ lang }}
         title={title || data.site.siteMetadata.title}

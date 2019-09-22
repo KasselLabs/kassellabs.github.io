@@ -38,6 +38,7 @@
     "develop": "gatsby develop -H 0.0.0.0",
     "start": "npm run develop",
     "serve": "gatsby serve",
+    "eslint": "eslint src/",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
   "repository": {
@@ -53,6 +54,7 @@
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^1.7.0",
     "gatsby-plugin-stylus": "^2.1.8"
   }
 }

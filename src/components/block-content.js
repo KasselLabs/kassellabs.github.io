@@ -7,8 +7,8 @@ import './block-content.styl';
 const serializers = {
   types: {
     // eslint-disable-next-line react/prop-types
-    block({ node, children }) {
-      switch (node.style) {
+    block({ children, style }) {
+      switch (style) {
         case 'h1':
           return <h1 className="block-content-h1">{children}</h1>;
 
@@ -37,6 +37,7 @@ const BlockContent = ({ blocks }) => (
 
 BlockContent.propTypes = {
   blocks: PropTypes.arrayOf(PropTypes.object).isRequired,
+
 };
 
 export default BlockContent;
