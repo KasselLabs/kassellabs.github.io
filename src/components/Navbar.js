@@ -1,40 +1,65 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'gatsby';
-import { Container } from 'semantic-ui-react';
+import { Container, Icon } from 'semantic-ui-react';
+import classNames from 'classnames';
 
 import logo from '../../static/assets/logo.svg';
 
 import './Navbar.styl';
 
-const Header = () => (
-  <header className="navbar">
-    <Container>
-      <nav className="navbar__content">
-        <div>
-          <Link to="/">
-            <img src={logo} alt="Kassel Labs logo" height="40px" />
-          </Link>
-        </div>
-        <ul className="navbar__right">
-          <li>
-            <Link to="/" className="navbar__right-item">Home</Link>
-          </li>
-          <li>
-            <Link to="/" className="navbar__right-item">Intro Creators</Link>
-          </li>
-          <li>
-            <Link to="/" className="navbar__right-item">Blog</Link>
-          </li>
-          <li>
-            <Link to="/" className="navbar__right-item">About</Link>
-          </li>
-          <li>
-            <Link to="/" className="navbar__right-item">Contact</Link>
-          </li>
-        </ul>
-      </nav>
-    </Container>
-  </header>
-);
+const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  return (
+    <header className="navbar">
+      <Container>
+        <nav className="navbar__content">
+          <div>
+            <Link to="/">
+              <img src={logo} alt="Kassel Labs logo" height="40px" />
+            </Link>
+          </div>
+          <div className="navbar__menu">
+            <button
+              className="navbar__menu-burger"
+              type="button"
+              onClick={() => setIsMenuOpen(true)}
+            >
+              <Icon name="bars" size="large" />
+            </button>
+          </div>
+          <ul className={classNames('navbar__right', {
+            'navbar__right--close': !isMenuOpen,
+            'navbar__right--open': isMenuOpen,
+          })}
+          >
+            <li className="navbar__right-li">
+              <Link to="/" className="navbar__right-item">Home</Link>
+            </li>
+            <li className="navbar__right-li">
+              <Link to="/" className="navbar__right-item">Intro Creators</Link>
+            </li>
+            <li className="navbar__right-li">
+              <Link to="/" className="navbar__right-item">Blog</Link>
+            </li>
+            <li className="navbar__right-li">
+              <Link to="/" className="navbar__right-item">About</Link>
+            </li>
+            <li className="navbar__right-li">
+              <Link to="/" className="navbar__right-item">Contact</Link>
+            </li>
+            <button
+              className="navbar__menu-close"
+              type="button"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              x
+            </button>
+          </ul>
+        </nav>
+      </Container>
+    </header>
+  );
+};
 
 export default Header;
