@@ -1,10 +1,31 @@
+colorPrimary = #00cfb4;
+colorSecondary = #00b8c8;
+colorDark = #00171f;
+colorActive = #003459;
+colorBackgroundDark = #141414;
+
 .navbar {
-  background-color: #141414;
+  background-color: colorBackgroundDark;
   padding: 16px;
 }
 
-.navbar__logo {
-  @media (max-width: 768px) {
-    text-align: center;
+.navbar__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar__right {
+  display: flex;
+  list-style: none;
+}
+
+.navbar__right-item {
+  padding: 20px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #fff;
+
+  &:hover {
+    color: #cbcbcb;
   }
 }

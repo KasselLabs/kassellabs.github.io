@@ -9,11 +9,30 @@ import './Header.styl';
 const Header = () => (
   <header className="navbar">
     <Container>
-      <Link to="/">
-        <div className="navbar__logo">
-          <img src={logo} alt="Kassel Labs logo" height="40px" />
+      <nav className="navbar__content">
+        <div>
+          <Link to="/">
+            <img src={logo} alt="Kassel Labs logo" height="40px" />
+          </Link>
         </div>
-      </Link>
+        <ul className="navbar__right">
+          <li>
+            <Link to="/" className="navbar__right-item">Home</Link>
+          </li>
+          <li>
+            <Link to="/" className="navbar__right-item">Intro Creators</Link>
+          </li>
+          <li>
+            <Link to="/" className="navbar__right-item">Blog</Link>
+          </li>
+          <li>
+            <Link to="/" className="navbar__right-item">About</Link>
+          </li>
+          <li>
+            <Link to="/" className="navbar__right-item">Contact</Link>
+          </li>
+        </ul>
+      </nav>
     </Container>
   </header>
 );
