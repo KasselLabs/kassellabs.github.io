@@ -4,7 +4,6 @@ import { Container, Icon } from 'semantic-ui-react';
 import classNames from 'classnames';
 
 import logo from '../../static/assets/logo.svg';
-
 import './Navbar.styl';
 
 const Header = () => {
@@ -44,6 +43,11 @@ const Header = () => {
             </li>
             <li className="navbar__right-li">
               <Link to="/" className="navbar__right-item">About</Link>
+            </li>
+            <li className="navbar__right-li">
+              <a className="navbar__right-item" href="https://help.kassellabs.io">
+                FAQ
+              </a>
             </li>
             <li className="navbar__right-li">
               <Link to="/" className="navbar__right-item">Contact</Link>
