@@ -196,15 +196,17 @@ const IndexPage = ({ data }) => {
       <br />
       <h1>Stories</h1>
       <div>
-        {data.allSanityPost.edges.map(({ node: post }) => (
-          <Card
-            key={post.slug.current}
-            as={Link}
-            to={`/blog/${post.slug.current}`}
-            header={post.title}
-            image={<Image fluid={post.mainImage.asset.fluid} alt={post.title} />}
-          />
-        ))}
+        <Card.Group itemsPerRow="2" stackable>
+          {data.allSanityPost.edges.map(({ node: post }) => (
+            <Card
+              key={post.slug.current}
+              as={Link}
+              to={`/blog/${post.slug.current}`}
+              header={post.title}
+              image={<Image fluid={post.mainImage.asset.fluid} alt={post.title} />}
+            />
+          ))}
+        </Card.Group>
       </div>
       <br />
       <h1>Contact</h1>
