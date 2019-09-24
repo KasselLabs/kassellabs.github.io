@@ -3,6 +3,7 @@ import { graphql, Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import Image from 'gatsby-image';
 import moment from 'moment';
+import { Container } from 'semantic-ui-react';
 
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
@@ -40,25 +41,27 @@ const Post = ({ data }) => {
         title={title}
         meta={[{ property: 'og:type', content: 'article' }]}
       />
-      <article className="post">
-        <h1 className="post__title">{title}</h1>
-        {publishedAt && (
-          <time dateTime={publishedAt} className="post__time">
-            {moment(publishedAt).format('LL')}
-          </time>
-        )}
-        {mainImage && (
-          <div className="post__main-image">
-            <Image fluid={mainImage.asset.fluid} alt={title} />
-          </div>
-        )}
-        {_rawBody && (
-          <BlockContent blocks={_rawBody} />
-        )}
-      </article>
-      <br />
-      <hr />
-      <Link to="/">Back to Home</Link>
+      <Container text>
+        <article className="post">
+          <h1 className="post__title">{title}</h1>
+          {publishedAt && (
+            <time dateTime={publishedAt} className="post__time">
+              {moment(publishedAt).format('LL')}
+            </time>
+          )}
+          {mainImage && (
+            <div className="post__main-image">
+              <Image fluid={mainImage.asset.fluid} alt={title} />
+            </div>
+          )}
+          {_rawBody && (
+            <BlockContent blocks={_rawBody} />
+          )}
+        </article>
+        <br />
+        <hr />
+        <Link to="/">Back to Home</Link>
+      </Container>
     </Layout>
   );
 };

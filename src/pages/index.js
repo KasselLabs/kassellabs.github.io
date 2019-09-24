@@ -6,6 +6,7 @@ import Image from 'gatsby-image';
 
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
+import Section from '../components/Section';
 import swicGif from '../images/swic.gif';
 import sticGif from '../images/stic.gif';
 import wicGif from '../images/wic.gif';
@@ -169,58 +170,93 @@ const IndexPage = ({ data }) => {
     )}
     >
       <SEO />
-      <h1>Our mission is to help people express their creativity and imagination.</h1>
-      <h2>Check out our websites:</h2>
       <br />
-      <Card.Group itemsPerRow="2" stackable>
-        <Card
-          href="http://starwarsintrocreator.kassellabs.io"
-          header="Star Wars Intro Creator"
-          image={<img src={swicGif} alt="Star Wars Intro Creator" width="100%" />}
-        />
-        <Card
-          href="https://strangerthingsintrocreator.kassellabs.io/"
-          header="Stranger Things Intro Creator"
-          image={<img src={sticGif} alt="Stranger Things Intro Creator" width="100%" />}
-        />
-        <Card
-          href="https://westworldintrocreator.kassellabs.io/"
-          header="Westworld Intro Creator"
-          image={<img src={wicGif} alt="Westworld Intro Creator" width="100%" />}
-        />
-        <Card
-          href="https://gameofthronesintrocreator.kassellabs.io"
-          header="Game of Thrones Intro Creator"
-          image={<img src={goticGif} alt="Game of Thrones Intro Creator" width="100%" />}
-        />
-      </Card.Group>
+      <Container>
+        <h1>Our mission is to help people express their creativity and imagination.</h1>
+        <h2>Check out our websites:</h2>
+      </Container>
       <br />
-      <h1>Stories</h1>
-      <div>
+      {/* <Section
+        title="Intro Creators"
+        description="Use your texts on intros of movies and series. You can share the intro, request a video for download or start an event or party as a opening"
+      >
         <Card.Group itemsPerRow="2" stackable>
-          {data.allSanityPost.edges.map(({ node: post }) => (
-            <Card
-              key={post.slug.current}
-              as={Link}
-              to={`/blog/${post.slug.current}`}
-              header={post.title}
-              image={<Image fluid={post.mainImage.asset.fluid} alt={post.title} />}
-            />
-          ))}
+          <Card
+            href="http://starwarsintrocreator.kassellabs.io"
+            header="Star Wars Intro Creator"
+            image={<img src={swicGif} alt="Star Wars Intro Creator" width="100%" />}
+          />
+          <Card
+            href="https://strangerthingsintrocreator.kassellabs.io/"
+            header="Stranger Things Intro Creator"
+            image={<img src={sticGif} alt="Stranger Things Intro Creator" width="100%" />}
+          />
+          <Card
+            href="https://westworldintrocreator.kassellabs.io/"
+            header="Westworld Intro Creator"
+            image={<img src={wicGif} alt="Westworld Intro Creator" width="100%" />}
+          />
+          <Card
+            href="https://gameofthronesintrocreator.kassellabs.io"
+            header="Game of Thrones Intro Creator"
+            image={<img src={goticGif} alt="Game of Thrones Intro Creator" width="100%" />}
+          />
         </Card.Group>
-      </div>
+      </Section>
+      <br /> */}
+      <Container>
+        <Card.Group itemsPerRow="2" stackable>
+          <Card
+            href="http://starwarsintrocreator.kassellabs.io"
+            header="Star Wars Intro Creator"
+            image={<img src={swicGif} alt="Star Wars Intro Creator" width="100%" />}
+          />
+          <Card
+            href="https://strangerthingsintrocreator.kassellabs.io/"
+            header="Stranger Things Intro Creator"
+            image={<img src={sticGif} alt="Stranger Things Intro Creator" width="100%" />}
+          />
+          <Card
+            href="https://westworldintrocreator.kassellabs.io/"
+            header="Westworld Intro Creator"
+            image={<img src={wicGif} alt="Westworld Intro Creator" width="100%" />}
+          />
+          <Card
+            href="https://gameofthronesintrocreator.kassellabs.io"
+            header="Game of Thrones Intro Creator"
+            image={<img src={goticGif} alt="Game of Thrones Intro Creator" width="100%" />}
+          />
+        </Card.Group>
+      </Container>
       <br />
-      <h1>Contact</h1>
-      <p>
-        Check out the FAQ, we might already have an answer for you:
-        {' '}
-        <a href="https://help.kassellabs.io">https://help.kassellabs.io</a>
-      </p>
-      <p>
-        Feel free to contact us via the email
-        {' '}
-        <a href="mailto:support@kassellabs.io">support@kassellabs.io</a>
-      </p>
+      <Container>
+        <h1>Stories</h1>
+        <div>
+          <Card.Group itemsPerRow="2" stackable>
+            {data.allSanityPost.edges.map(({ node: post }) => (
+              <Card
+                key={post.slug.current}
+                as={Link}
+                to={`/blog/${post.slug.current}`}
+                header={post.title}
+                image={<Image fluid={post.mainImage.asset.fluid} alt={post.title} />}
+              />
+            ))}
+          </Card.Group>
+        </div>
+        <br />
+        <h1>Contact</h1>
+        <p>
+          Check out the FAQ, we might already have an answer for you:
+          {' '}
+          <a href="https://help.kassellabs.io">https://help.kassellabs.io</a>
+        </p>
+        <p>
+          Feel free to contact us via the email
+          {' '}
+          <a href="mailto:support@kassellabs.io">support@kassellabs.io</a>
+        </p>
+      </Container>
     </Layout>
   );
 };
