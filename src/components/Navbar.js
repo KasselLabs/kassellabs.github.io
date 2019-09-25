@@ -50,7 +50,7 @@ const Header = () => {
               </a>
             </li>
             <li className="navbar__right-li">
-              <Link to="/" className="navbar__right-item">Contact</Link>
+              <Link to="/contact" className="navbar__right-item">Contact</Link>
             </li>
             <button
               className="navbar__menu-close"

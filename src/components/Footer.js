@@ -88,7 +88,7 @@ const Footer = () => (
           <a className="footer__link" href="https://help.kassellabs.io/privacy/">
             Privacy Policy
           </a>
-          <Link to="/" className="footer__link">Contact</Link>
+          <Link to="/contact" className="footer__link">Contact</Link>
         </div>
       </div>
     </Container>

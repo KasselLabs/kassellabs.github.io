@@ -1,7 +1,12 @@
 import React, { useCallback } from 'react';
 import PropTypes from 'prop-types';
 import { Link, graphql } from 'gatsby';
-import { Card, Container, Input } from 'semantic-ui-react';
+import {
+  Card,
+  Container,
+  Input,
+  Button,
+} from 'semantic-ui-react';
 import Image from 'gatsby-image';
 
 import Layout from '../components/Layout';
@@ -170,17 +175,17 @@ const IndexPage = ({ data }) => {
     )}
     >
       <SEO />
-      <br />
+      {/* <br />
       <Container>
         <h1>Our mission is to help people express their creativity and imagination.</h1>
         <h2>Check out our websites:</h2>
       </Container>
-      <br />
-      {/* <Section
+      <br /> */}
+      <Section
         title="Intro Creators"
-        description="Use your texts on intros of movies and series. You can share the intro, request a video for download or start an event or party as a opening"
+        description="Use your texts on intros of movies and series. You can share the intro, request a video for download or start an event or party as a opening."
       >
-        <Card.Group itemsPerRow="2" stackable>
+        <Card.Group itemsPerRow="4" stackable doubling>
           <Card
             href="http://starwarsintrocreator.kassellabs.io"
             header="Star Wars Intro Creator"
@@ -203,60 +208,41 @@ const IndexPage = ({ data }) => {
           />
         </Card.Group>
       </Section>
-      <br /> */}
-      <Container>
-        <Card.Group itemsPerRow="2" stackable>
-          <Card
-            href="http://starwarsintrocreator.kassellabs.io"
-            header="Star Wars Intro Creator"
-            image={<img src={swicGif} alt="Star Wars Intro Creator" width="100%" />}
-          />
-          <Card
-            href="https://strangerthingsintrocreator.kassellabs.io/"
-            header="Stranger Things Intro Creator"
-            image={<img src={sticGif} alt="Stranger Things Intro Creator" width="100%" />}
-          />
-          <Card
-            href="https://westworldintrocreator.kassellabs.io/"
-            header="Westworld Intro Creator"
-            image={<img src={wicGif} alt="Westworld Intro Creator" width="100%" />}
-          />
-          <Card
-            href="https://gameofthronesintrocreator.kassellabs.io"
-            header="Game of Thrones Intro Creator"
-            image={<img src={goticGif} alt="Game of Thrones Intro Creator" width="100%" />}
-          />
+      <Section
+        title="Custom Request"
+        description="Have a special request for us? We can work on other intro creators, customizations, or just something new that you have in mind."
+        isDark
+        isRight
+      >
+        <Button primary>Contact us with your request</Button>
+      </Section>
+      <Section
+        title="Blog"
+        description="Read posts stories and see what others are creating."
+      >
+        <Card.Group itemsPerRow="4" stackable>
+          {data.allSanityPost.edges.map(({ node: post }) => (
+            <Card
+              key={post.slug.current}
+              as={Link}
+              to={`/blog/${post.slug.current}`}
+              header={post.title}
+              image={<Image fluid={post.mainImage.asset.fluid} alt={post.title} />}
+            />
+          ))}
         </Card.Group>
-      </Container>
-      <br />
-      <Container>
-        <h1>Stories</h1>
-        <div>
-          <Card.Group itemsPerRow="2" stackable>
-            {data.allSanityPost.edges.map(({ node: post }) => (
-              <Card
-                key={post.slug.current}
-                as={Link}
-                to={`/blog/${post.slug.current}`}
-                header={post.title}
-                image={<Image fluid={post.mainImage.asset.fluid} alt={post.title} />}
-              />
-            ))}
-          </Card.Group>
+      </Section>
+      <Section
+        description="Hear from us when we have something new"
+        isDark
+        isCenter
+      >
+        <div className="home__contact-buttons">
+          <Input placeholder="Enter your email..." />
+          <br />
+          <Button primary>Sign up to newsletter</Button>
         </div>
-        <br />
-        <h1>Contact</h1>
-        <p>
-          Check out the FAQ, we might already have an answer for you:
-          {' '}
-          <a href="https://help.kassellabs.io">https://help.kassellabs.io</a>
-        </p>
-        <p>
-          Feel free to contact us via the email
-          {' '}
-          <a href="mailto:support@kassellabs.io">support@kassellabs.io</a>
-        </p>
-      </Container>
+      </Section>
     </Layout>
   );
 };
