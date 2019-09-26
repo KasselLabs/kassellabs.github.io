@@ -213,6 +213,7 @@ const IndexPage = ({ data }) => {
         description="Have a special request for us? We can work on other intro creators, customizations, or just something new that you have in mind."
         isDark
         isRight
+        backgroundImageText="stranger-things-lights"
       >
         <Button primary>Contact us with your request</Button>
       </Section>
@@ -220,7 +221,7 @@ const IndexPage = ({ data }) => {
         title="Blog"
         description="Read posts stories and see what others are creating."
       >
-        <Card.Group itemsPerRow="4" stackable>
+        <Card.Group itemsPerRow="4" stackable doubling>
           {data.allSanityPost.edges.map(({ node: post }) => (
             <Card
               key={post.slug.current}

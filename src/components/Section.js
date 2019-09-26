@@ -12,10 +12,12 @@ const Section = ({
   isDark,
   isRight,
   isCenter,
+  backgroundImageText,
 }) => (
   <div className={classNames('section', {
     'section--dark': isDark,
     'section--right': isRight,
+    [`section--${backgroundImageText}`]: backgroundImageText,
   })}
   >
     <Container>
@@ -27,7 +29,7 @@ const Section = ({
         <h1 className="section__title">{title}</h1>
         <p className="section__description">{description}</p>
       </div>
-      <div className="section__children">{children}</div>
+      <div>{children}</div>
     </Container>
   </div>
 );
@@ -39,6 +41,7 @@ Section.propTypes = {
   isDark: PropTypes.bool,
   isRight: PropTypes.bool,
   isCenter: PropTypes.bool,
+  backgroundImageText: PropTypes.string,
 };
 
 export default Section;

@@ -1,4 +1,5 @@
 .section {
+  position: relative;
   margin-top: 40px;
   padding: 100px 0;
 
@@ -48,6 +49,20 @@
   font-size: 1.6rem;
   font-weight: 300;
 }
-.section__children {
 
+.section--stranger-things-lights {
+  &::before {
+    background-image: url('../images/background/stranger-things-lights.jpg')
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center left;
+    opacity: 0.3;
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+  }
 }
