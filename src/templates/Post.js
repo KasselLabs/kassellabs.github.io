@@ -62,6 +62,9 @@ const Post = ({ data }) => {
         <br />
         <hr />
         <Link to={internalPath('home')}>Back to Home</Link>
+        <br />
+        <br />
+        <br />
       </Container>
     </Layout>
   );
