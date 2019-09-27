@@ -3,6 +3,7 @@ import { Container } from 'semantic-ui-react';
 
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
+import { externalPath } from '../contants/paths';
 
 const Contact = () => (
   <Layout>
@@ -13,7 +14,7 @@ const Contact = () => (
       <p>
           Check out the FAQ, we might already have an answer for you:
         {' '}
-        <a href="https://help.kassellabs.io">https://help.kassellabs.io</a>
+        <a href={externalPath('faq')}>{externalPath('faq')}</a>
       </p>
       <p>
           Feel free to contact us via the email

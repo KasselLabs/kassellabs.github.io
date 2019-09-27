@@ -18,6 +18,7 @@ import wicGif from '../images/wic.gif';
 import goticGif from '../images/gotic.gif';
 
 import '../styles/index.styl';
+import { externalPath } from '../contants/paths';
 
 export const query = graphql`
   query Posts {
@@ -181,33 +182,35 @@ const IndexPage = ({ data }) => {
         <h2>Check out our websites:</h2>
       </Container>
       <br /> */}
-      <Section
-        title="Intro Creators"
-        description="Use your texts on intros of movies and series. You can share the intro, request a video for download or start an event or party as a opening."
-      >
-        <Card.Group itemsPerRow="4" stackable doubling>
-          <Card
-            href="http://starwarsintrocreator.kassellabs.io"
-            header="Star Wars Intro Creator"
-            image={<img src={swicGif} alt="Star Wars Intro Creator" width="100%" />}
-          />
-          <Card
-            href="https://strangerthingsintrocreator.kassellabs.io/"
-            header="Stranger Things Intro Creator"
-            image={<img src={sticGif} alt="Stranger Things Intro Creator" width="100%" />}
-          />
-          <Card
-            href="https://westworldintrocreator.kassellabs.io/"
-            header="Westworld Intro Creator"
-            image={<img src={wicGif} alt="Westworld Intro Creator" width="100%" />}
-          />
-          <Card
-            href="https://gameofthronesintrocreator.kassellabs.io"
-            header="Game of Thrones Intro Creator"
-            image={<img src={goticGif} alt="Game of Thrones Intro Creator" width="100%" />}
-          />
-        </Card.Group>
-      </Section>
+      <div id="introCreators">
+        <Section
+          title="Intro Creators"
+          description="Use your texts on intros of movies and series. You can share the intro, request a video for download or start an event or party as a opening."
+        >
+          <Card.Group itemsPerRow="4" stackable doubling>
+            <Card
+              href={externalPath('starWarsIntroCreator')}
+              header="Star Wars Intro Creator"
+              image={<img src={swicGif} alt="Star Wars Intro Creator" width="100%" />}
+            />
+            <Card
+              href={externalPath('strangerThingsIntroCreator')}
+              header="Stranger Things Intro Creator"
+              image={<img src={sticGif} alt="Stranger Things Intro Creator" width="100%" />}
+            />
+            <Card
+              href={externalPath('westworldIntroCreator')}
+              header="Westworld Intro Creator"
+              image={<img src={wicGif} alt="Westworld Intro Creator" width="100%" />}
+            />
+            <Card
+              href={externalPath('gameOfThronesIntroCreator')}
+              header="Game of Thrones Intro Creator"
+              image={<img src={goticGif} alt="Game of Thrones Intro Creator" width="100%" />}
+            />
+          </Card.Group>
+        </Section>
+      </div>
       <Section
         title="Custom Request"
         description="Have a special request for us? We can work on other intro creators, customizations, or just something new that you have in mind."
@@ -217,33 +220,37 @@ const IndexPage = ({ data }) => {
       >
         <Button primary>Contact us with your request</Button>
       </Section>
-      <Section
-        title="Blog"
-        description="Read posts stories and see what others are creating."
-      >
-        <Card.Group itemsPerRow="4" stackable doubling>
-          {data.allSanityPost.edges.map(({ node: post }) => (
-            <Card
-              key={post.slug.current}
-              as={Link}
-              to={`/blog/${post.slug.current}`}
-              header={post.title}
-              image={<Image fluid={post.mainImage.asset.fluid} alt={post.title} />}
-            />
-          ))}
-        </Card.Group>
-      </Section>
-      <Section
-        description="Hear from us when we have something new"
-        isDark
-        isCenter
-      >
-        <div className="home__contact-buttons">
-          <Input placeholder="Enter your email..." />
-          <br />
-          <Button primary>Sign up to newsletter</Button>
-        </div>
-      </Section>
+      <div id="blog">
+        <Section
+          title="Blog"
+          description="Read posts stories and see what others are creating."
+        >
+          <Card.Group itemsPerRow="4" stackable doubling>
+            {data.allSanityPost.edges.map(({ node: post }) => (
+              <Card
+                key={post.slug.current}
+                as={Link}
+                to={`/blog/${post.slug.current}`}
+                header={post.title}
+                image={<Image fluid={post.mainImage.asset.fluid} alt={post.title} />}
+              />
+            ))}
+          </Card.Group>
+        </Section>
+      </div>
+      <div id="contact">
+        <Section
+          description="Hear from us when we have something new"
+          isDark
+          isCenter
+        >
+          <div className="home__contact-buttons">
+            <Input placeholder="Enter your email..." />
+            <br />
+            <Button primary>Sign up to newsletter</Button>
+          </div>
+        </Section>
+      </div>
     </Layout>
   );
 };

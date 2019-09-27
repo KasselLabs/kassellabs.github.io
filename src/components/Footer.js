@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import { Container, Icon } from 'semantic-ui-react';
 
+import { internalPath, externalPath } from '../contants/paths';
 import logo from '../../static/assets/logo.svg';
 import './Footer.styl';
 
@@ -10,7 +11,7 @@ const Footer = () => (
     <Container>
       <div className="footer__content">
         <div className="footer__section">
-          <Link to="/" className="footer__logo">
+          <Link to={internalPath('home')} className="footer__logo">
             <img src={logo} alt="Kassel Labs logo" height="40px" />
           </Link>
           <div>
@@ -24,7 +25,7 @@ const Footer = () => (
           <div>
             <a
               className="footer__link"
-              href="https://www.instagram.com/kassellabs/"
+              href={externalPath('instagram')}
               target="__blank"
               rel="noopener noreferrer"
             >
@@ -32,7 +33,7 @@ const Footer = () => (
             </a>
             <a
               className="footer__link"
-              href="https://www.facebook.com/KasselLabs/"
+              href={externalPath('facebook')}
               target="__blank"
               rel="noopener noreferrer"
             >
@@ -40,7 +41,7 @@ const Footer = () => (
             </a>
             <a
               className="footer__link"
-              href="https://twitter.com/KasselLabs"
+              href={externalPath('twitter')}
               target="__blank"
               rel="noopener noreferrer"
             >
@@ -48,7 +49,7 @@ const Footer = () => (
             </a>
             <a
               className="footer__link"
-              href="https://linkedin.com/company/kassellabs"
+              href={externalPath('linkedin')}
               target="__blank"
               rel="noopener noreferrer"
             >
@@ -58,37 +59,37 @@ const Footer = () => (
         </div>
         <div className="footer__section">
           <span className="footer__section-title">Company</span>
-          <Link to="/" className="footer__link">Home</Link>
-          <Link to="/" className="footer__link">About</Link>
-          <Link to="/" className="footer__link">Blog</Link>
+          <Link to={internalPath('home')} className="footer__link">Home</Link>
+          <Link to={internalPath('about')} className="footer__link">About</Link>
+          <Link to={internalPath('blog')} className="footer__link">Blog</Link>
         </div>
         <div className="footer__section">
           <span className="footer__section-title">Intro Creators</span>
-          <a className="footer__link" href="http://starwarsintrocreator.kassellabs.io/">
+          <a className="footer__link" href={externalPath('starWarsIntroCreator')}>
             Star Wars Intro Creator
           </a>
-          <a className="footer__link" href="https://gameofthronesintrocreator.kassellabs.io/">
-            Game of Thrones Intro Creator
-          </a>
-          <a className="footer__link" href="https://strangerthingsintrocreator.kassellabs.io/">
+          <a className="footer__link" href={externalPath('strangerThingsIntroCreator')}>
             Stranger Things Intro Creator
           </a>
-          <a className="footer__link" href="https://westworldintrocreator.kassellabs.io/">
+          <a className="footer__link" href={externalPath('westworldIntroCreator')}>
             Westworld Intro Intro Creator
+          </a>
+          <a className="footer__link" href={externalPath('gameOfThronesIntroCreator')}>
+            Game of Thrones Intro Creator
           </a>
         </div>
         <div className="footer__section">
           <span className="footer__section-title">Support</span>
-          <a className="footer__link" href="https://help.kassellabs.io">
+          <a className="footer__link" href={externalPath('faq')}>
             FAQ
           </a>
-          <a className="footer__link" href="https://help.kassellabs.io">
+          <a className="footer__link" href={externalPath('faq')}>
             Terms of Service
           </a>
-          <a className="footer__link" href="https://help.kassellabs.io/privacy/">
+          <a className="footer__link" href={externalPath('privacyPolicy')}>
             Privacy Policy
           </a>
-          <Link to="/contact" className="footer__link">Contact</Link>
+          <Link to={internalPath('contact')} className="footer__link">Contact</Link>
         </div>
       </div>
     </Container>

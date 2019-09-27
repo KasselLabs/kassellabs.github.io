@@ -3,6 +3,7 @@ import { Link } from 'gatsby';
 import { Container, Icon } from 'semantic-ui-react';
 import classNames from 'classnames';
 
+import { internalPath, externalPath } from '../contants/paths';
 import logo from '../../static/assets/logo.svg';
 import './Navbar.styl';
 
@@ -14,7 +15,7 @@ const Header = () => {
       <Container>
         <nav className="navbar__content">
           <div>
-            <Link to="/">
+            <Link to={internalPath('home')}>
               <img src={logo} alt="Kassel Labs logo" height="40px" />
             </Link>
           </div>
@@ -33,24 +34,52 @@ const Header = () => {
           })}
           >
             <li className="navbar__right-li">
-              <Link to="/" className="navbar__right-item">Home</Link>
+              <Link
+                to={internalPath('home')}
+                className="navbar__right-item"
+              >
+                Home
+              </Link>
             </li>
             <li className="navbar__right-li">
-              <Link to="/" className="navbar__right-item">Intro Creators</Link>
+              <Link
+                to={internalPath('introCreators')}
+                className="navbar__right-item"
+              >
+                Intro Creators
+              </Link>
             </li>
             <li className="navbar__right-li">
-              <Link to="/" className="navbar__right-item">Blog</Link>
+              <Link
+                to={internalPath('blog')}
+                className="navbar__right-item"
+              >
+                Blog
+              </Link>
             </li>
             <li className="navbar__right-li">
-              <Link to="/" className="navbar__right-item">About</Link>
+              <Link
+                to={internalPath('about')}
+                className="navbar__right-item"
+              >
+                About
+              </Link>
             </li>
             <li className="navbar__right-li">
-              <a className="navbar__right-item" href="https://help.kassellabs.io">
+              <a
+                className="navbar__right-item"
+                href={externalPath('faq')}
+              >
                 FAQ
               </a>
             </li>
             <li className="navbar__right-li">
-              <Link to="/contact" className="navbar__right-item">Contact</Link>
+              <Link
+                to={internalPath('contact')}
+                className="navbar__right-item"
+              >
+                Contact
+              </Link>
             </li>
             <button
               className="navbar__menu-close"

@@ -8,6 +8,7 @@ import { Container } from 'semantic-ui-react';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import BlockContent from '../components/BlockContent';
+import { internalPath } from '../contants/paths';
 import './Post.styl';
 
 export const query = graphql`
@@ -60,7 +61,7 @@ const Post = ({ data }) => {
         </article>
         <br />
         <hr />
-        <Link to="/">Back to Home</Link>
+        <Link to={internalPath('home')}>Back to Home</Link>
       </Container>
     </Layout>
   );
