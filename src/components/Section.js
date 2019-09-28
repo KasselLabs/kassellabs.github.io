@@ -6,6 +6,7 @@ import classNames from 'classnames';
 import './Section.styl';
 
 const Section = ({
+  id,
   title,
   description,
   children,
@@ -14,11 +15,13 @@ const Section = ({
   isCenter,
   backgroundImageText,
 }) => (
-  <div className={classNames('section', {
-    'section--dark': isDark,
-    'section--right': isRight,
-    [`section--${backgroundImageText}`]: backgroundImageText,
-  })}
+  <div
+    id={id}
+    className={classNames('section', {
+      'section--dark': isDark,
+      'section--right': isRight,
+      [`section--${backgroundImageText}`]: backgroundImageText,
+    })}
   >
     <Container>
       <div className={classNames('section__text', {
@@ -35,6 +38,7 @@ const Section = ({
 );
 
 Section.propTypes = {
+  id: PropTypes.string,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   children: PropTypes.node,

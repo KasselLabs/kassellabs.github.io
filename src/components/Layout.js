@@ -5,10 +5,9 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 import './Layout.styl';
 
-const Layout = ({ children, topRender }) => (
+const Layout = ({ children }) => (
   <>
     <Navbar />
-    {topRender}
     <main>
       {children}
     </main>
@@ -18,7 +17,6 @@ const Layout = ({ children, topRender }) => (
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-  topRender: PropTypes.node,
 };
 
 export default Layout;
