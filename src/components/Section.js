@@ -13,16 +13,18 @@ const Section = ({
   isDark,
   isRight,
   isCenter,
-  backgroundImageText,
+  image,
 }) => (
   <div
     id={id}
     className={classNames('section', {
       'section--dark': isDark,
       'section--right': isRight,
-      [`section--${backgroundImageText}`]: backgroundImageText,
     })}
   >
+    <div className="section-image">
+      {image()}
+    </div>
     <Container>
       <div className={classNames('section__text', {
         'section__text--right': isRight,
@@ -39,13 +41,17 @@ const Section = ({
 
 Section.propTypes = {
   id: PropTypes.string,
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
+  title: PropTypes.string,
+  description: PropTypes.string,
   children: PropTypes.node,
   isDark: PropTypes.bool,
   isRight: PropTypes.bool,
   isCenter: PropTypes.bool,
-  backgroundImageText: PropTypes.string,
+  image: PropTypes.func,
+};
+
+Section.defaultProps = {
+  image: () => {},
 };
 
 export default Section;

@@ -20,7 +20,14 @@ import '../styles/index.styl';
 import { externalPath } from '../contants/paths';
 
 export const query = graphql`
-  query Posts {
+  query {
+    file(relativePath: { eq: "background/stranger-things-lights.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1080) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
     allSanityPost(sort: {order: DESC, fields: [publishedAt]}) {
       edges {
         node {
@@ -84,7 +91,7 @@ const IndexPage = ({ data }) => (
       description="Have a special request for us? We can work on other intro creators, customizations, or just something new that you have in mind."
       isDark
       isRight
-      backgroundImageText="stranger-things-lights"
+      image={() => <Image fluid={data.file.childImageSharp.fluid} />}
     >
       <Button primary>Contact us with your request</Button>
     </Section>
