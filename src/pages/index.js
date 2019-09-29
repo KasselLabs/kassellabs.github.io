@@ -21,9 +21,37 @@ import { externalPath } from '../contants/paths';
 
 export const query = graphql`
   query {
-    file(relativePath: { eq: "background/stranger-things-lights.jpg" }) {
+    headerBackground: file(relativePath: { eq: "background/star-wars-death-star.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1080) {
+        fluid(maxWidth: 1920) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    introCreatorsBackground: file(relativePath: { eq: "background/game-of-thrones-buildings.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1920) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    customRequestBackground: file(relativePath: { eq: "background/stranger-things-shadow.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1920) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    blogBackground: file(relativePath: { eq: "background/westworld-body.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1920) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    newsletterBackground: file(relativePath: { eq: "background/star-wars-darth-vader.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1920) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -55,13 +83,17 @@ const IndexPage = ({ data }) => (
     <SEO />
     <Section
       title="Our mission is to help people express their creativity and imagination"
+      description="Create great experiences with Kassel Labs tools and services. Get your favorite movies and series in your presentations, invites and many other uses."
       isDark
       isCenter
+      image={() => <Image fluid={data.headerBackground.childImageSharp.fluid} />}
+      fullImage
     />
     <Section
       id="introCreators"
       title="Intro Creators"
       description="Use your texts on intros of movies and series. You can share the intro, request a video for download or start an event or party as a opening."
+      image={() => <Image fluid={data.introCreatorsBackground.childImageSharp.fluid} />}
     >
       <Card.Group itemsPerRow="4" stackable doubling>
         <Card
@@ -91,7 +123,7 @@ const IndexPage = ({ data }) => (
       description="Have a special request for us? We can work on other intro creators, customizations, or just something new that you have in mind."
       isDark
       isRight
-      image={() => <Image fluid={data.file.childImageSharp.fluid} />}
+      image={() => <Image fluid={data.customRequestBackground.childImageSharp.fluid} />}
     >
       <Button primary>Contact us with your request</Button>
     </Section>
@@ -99,6 +131,7 @@ const IndexPage = ({ data }) => (
       id="blog"
       title="Blog"
       description="Read posts stories and see what others are creating."
+      image={() => <Image fluid={data.blogBackground.childImageSharp.fluid} />}
     >
       <Card.Group itemsPerRow="4" stackable doubling>
         {data.allSanityPost.edges.map(({ node: post }) => (
@@ -117,6 +150,8 @@ const IndexPage = ({ data }) => (
       description="Hear from us when we have something new"
       isDark
       isCenter
+      image={() => <Image fluid={data.newsletterBackground.childImageSharp.fluid} />}
+      fullImage
     >
       <form
         className="home__contact-form"

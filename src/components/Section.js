@@ -14,6 +14,7 @@ const Section = ({
   isRight,
   isCenter,
   image,
+  fullImage,
 }) => (
   <div
     id={id}
@@ -22,20 +23,25 @@ const Section = ({
       'section--right': isRight,
     })}
   >
-    <div className="section-image">
+    <div className={classNames('section__image', {
+      'section__image--full': fullImage,
+    })}
+    >
       {image()}
     </div>
-    <Container>
-      <div className={classNames('section__text', {
-        'section__text--right': isRight,
-        'section__text--center': isCenter,
-      })}
-      >
-        <h1 className="section__title">{title}</h1>
-        <p className="section__description">{description}</p>
-      </div>
-      <div>{children}</div>
-    </Container>
+    <div className="section__content">
+      <Container>
+        <div className={classNames('section__text', {
+          'section__text--right': isRight,
+          'section__text--center': isCenter,
+        })}
+        >
+          <h1 className="section__title">{title}</h1>
+          <p className="section__description">{description}</p>
+        </div>
+        <div>{children}</div>
+      </Container>
+    </div>
   </div>
 );
 
@@ -48,6 +54,7 @@ Section.propTypes = {
   isRight: PropTypes.bool,
   isCenter: PropTypes.bool,
   image: PropTypes.func,
+  fullImage: PropTypes.bool,
 };
 
 Section.defaultProps = {
