@@ -72,7 +72,7 @@ const Footer = () => (
             Stranger Things Intro Creator
           </a>
           <a className="footer__link" href={externalPath('westworldIntroCreator')}>
-            Westworld Intro Intro Creator
+            Westworld Intro Creator
           </a>
           <a className="footer__link" href={externalPath('gameOfThronesIntroCreator')}>
             Game of Thrones Intro Creator
