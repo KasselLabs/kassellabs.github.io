@@ -5,6 +5,7 @@
   --color-active: #003459;
   --color-background-dark: #141414;
   --color-gray-text: #bdbdbd;
+  --transition-speed: 0.2s;
 }
 
 /* overwrite css framework */
