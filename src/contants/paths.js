@@ -6,7 +6,7 @@ const internalPaths = {
   introCreators: '/#introCreators',
   blog: '/#blog',
   about: '/about',
-  contact: '/#contact',
+  contact: '/contact',
 };
 
 const externalPaths = {
