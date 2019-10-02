@@ -3,6 +3,7 @@ import { Container } from 'semantic-ui-react';
 
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
+import Title from '../components/Title';
 
 const About = () => (
   <Layout>
@@ -12,7 +13,7 @@ const About = () => (
     <br />
     <br />
     <Container>
-      <h1>About</h1>
+      <Title>About</Title>
       <br />
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod

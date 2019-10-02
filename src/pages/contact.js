@@ -3,6 +3,7 @@ import { Container } from 'semantic-ui-react';
 
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
+import Title from '../components/Title';
 import { externalPath } from '../contants/paths';
 
 const Contact = () => (
@@ -10,7 +11,7 @@ const Contact = () => (
     <SEO title="Contact" />
     <br />
     <Container>
-      <h1>Contact</h1>
+      <Title>Contact</Title>
       <p>
           Check out the FAQ, we might already have an answer for you:
         {' '}
