@@ -17,7 +17,7 @@ import wicGif from '../images/wic.gif';
 import goticGif from '../images/gotic.gif';
 
 import '../styles/index.styl';
-import { externalPath } from '../contants/paths';
+import { externalPath, internalPath } from '../contants/paths';
 
 export const query = graphql`
   query {
@@ -125,7 +125,11 @@ const IndexPage = ({ data }) => (
       isRight
       image={() => <Image fluid={data.customRequestBackground.childImageSharp.fluid} />}
     >
-      <Button primary>Contact us with your request</Button>
+      <Link to={internalPath('contact')}>
+        <Button primary>
+          Contact us with your request
+        </Button>
+      </Link>
     </Section>
     <Section
       id="blog"
