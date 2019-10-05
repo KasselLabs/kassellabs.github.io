@@ -5,6 +5,7 @@ import {
   Card,
   Input,
   Button,
+  Grid,
 } from 'semantic-ui-react';
 import Image from 'gatsby-image';
 
@@ -52,6 +53,55 @@ export const query = graphql`
     newsletterBackground: file(relativePath: { eq: "background/star-wars-darth-vader.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1920) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    customer1: file(relativePath: { eq: "customerLogo/disney.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 400) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    customer2: file(relativePath: { eq: "customerLogo/google.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 400) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    customer3: file(relativePath: { eq: "customerLogo/harley-davidson.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 400) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    customer4: file(relativePath: { eq: "customerLogo/harvard.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 400) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    customer5: file(relativePath: { eq: "customerLogo/nasa.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 400) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    customer6: file(relativePath: { eq: "customerLogo/red-hat.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 400) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    customer7: file(relativePath: { eq: "customerLogo/tesla.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 400) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -177,6 +227,40 @@ const IndexPage = ({ data }) => (
         <br />
         <Button type="submit" primary>Sign up to newsletter</Button>
       </form>
+    </Section>
+    <Section
+      title="Some of our most known customers"
+      description="Including people from these companies:"
+      isCenter
+    >
+      <Grid relaxed doubling>
+        <Grid.Row columns={4}>
+          <Grid.Column verticalAlign="middle">
+            <Image fluid={data.customer1.childImageSharp.fluid} />
+          </Grid.Column>
+          <Grid.Column verticalAlign="middle">
+            <Image fluid={data.customer2.childImageSharp.fluid} />
+          </Grid.Column>
+          <Grid.Column verticalAlign="middle">
+            <Image fluid={data.customer3.childImageSharp.fluid} />
+          </Grid.Column>
+          <Grid.Column verticalAlign="middle">
+            <Image fluid={data.customer4.childImageSharp.fluid} />
+          </Grid.Column>
+        </Grid.Row>
+        <Grid.Row columns={3}>
+          <Grid.Column verticalAlign="middle">
+            <Image fluid={data.customer5.childImageSharp.fluid} />
+          </Grid.Column>
+          <Grid.Column verticalAlign="middle">
+            <Image fluid={data.customer6.childImageSharp.fluid} />
+          </Grid.Column>
+          <Grid.Column verticalAlign="middle">
+            <Image fluid={data.customer7.childImageSharp.fluid} />
+          </Grid.Column>
+        </Grid.Row>
+      </Grid>
+      <p className="customers__note">Not affiliated with these companies, used by some of their individuals.</p>
     </Section>
   </Layout>
 );
