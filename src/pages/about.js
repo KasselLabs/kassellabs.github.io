@@ -47,7 +47,7 @@ const About = ({ data }) => (
     <Container>
       <Title>About</Title>
       <Paragraph>
-        Kassel Labs is project to deliver the tools to help people create content,
+        Kassel Labs is a project to deliver the tools to help people create content,
         express their ideas and imagination.
       </Paragraph>
       <Paragraph>
