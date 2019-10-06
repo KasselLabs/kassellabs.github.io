@@ -106,6 +106,48 @@ export const query = graphql`
         }
       }
     }
+    supported1: file(relativePath: { eq: "supportedLogo/bcspca.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 400) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    supported2: file(relativePath: { eq: "supportedLogo/variety.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 400) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    supported3: file(relativePath: { eq: "supportedLogo/designing-dreams.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 400) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    supported4: file(relativePath: { eq: "supportedLogo/make-a-wish.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 400) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    supported5: file(relativePath: { eq: "supportedLogo/starlight.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 400) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    supported6: file(relativePath: { eq: "supportedLogo/unicef.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 400) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
     allSanityPost(sort: {order: DESC, fields: [publishedAt]}) {
       edges {
         node {
@@ -145,7 +187,7 @@ const IndexPage = ({ data }) => (
       description="Use your texts on intros of movies and series. You can share the intro, request a video for download or start an event or party as a opening."
       image={() => <Image fluid={data.introCreatorsBackground.childImageSharp.fluid} />}
     >
-      <Card.Group itemsPerRow="4" stackable doubling>
+      <Card.Group itemsPerRow="4" doubling>
         <Card
           href={externalPath('starWarsIntroCreator')}
           header="Star Wars Intro Creator"
@@ -187,7 +229,7 @@ const IndexPage = ({ data }) => (
       description="Read posts stories and see what others are creating."
       image={() => <Image fluid={data.blogBackground.childImageSharp.fluid} />}
     >
-      <Card.Group itemsPerRow="4" stackable doubling>
+      <Card.Group itemsPerRow="4" doubling>
         {data.allSanityPost.edges.map(({ node: post }) => (
           <Card
             key={post.slug.current}
@@ -233,34 +275,51 @@ const IndexPage = ({ data }) => (
       description="Including people from these companies:"
       isCenter
     >
-      <Grid relaxed doubling>
-        <Grid.Row columns={4}>
-          <Grid.Column verticalAlign="middle">
-            <Image fluid={data.customer1.childImageSharp.fluid} />
-          </Grid.Column>
-          <Grid.Column verticalAlign="middle">
-            <Image fluid={data.customer2.childImageSharp.fluid} />
-          </Grid.Column>
-          <Grid.Column verticalAlign="middle">
-            <Image fluid={data.customer3.childImageSharp.fluid} />
-          </Grid.Column>
-          <Grid.Column verticalAlign="middle">
-            <Image fluid={data.customer4.childImageSharp.fluid} />
-          </Grid.Column>
-        </Grid.Row>
-        <Grid.Row columns={3}>
-          <Grid.Column verticalAlign="middle">
-            <Image fluid={data.customer5.childImageSharp.fluid} />
-          </Grid.Column>
-          <Grid.Column verticalAlign="middle">
-            <Image fluid={data.customer6.childImageSharp.fluid} />
-          </Grid.Column>
-          <Grid.Column verticalAlign="middle">
-            <Image fluid={data.customer7.childImageSharp.fluid} />
-          </Grid.Column>
-        </Grid.Row>
+      <Grid doubling centered columns={12}>
+        <Grid.Column mobile={4} verticalAlign="middle">
+          <Image fluid={data.customer1.childImageSharp.fluid} />
+        </Grid.Column>
+        <Grid.Column mobile={4} verticalAlign="middle">
+          <Image fluid={data.customer2.childImageSharp.fluid} />
+        </Grid.Column>
+        <Grid.Column mobile={4} verticalAlign="middle">
+          <Image fluid={data.customer3.childImageSharp.fluid} />
+        </Grid.Column>
+        <Grid.Column mobile={4} verticalAlign="middle">
+          <Image fluid={data.customer4.childImageSharp.fluid} />
+        </Grid.Column>
+        <Grid.Column mobile={4} verticalAlign="middle">
+          <Image fluid={data.customer5.childImageSharp.fluid} />
+        </Grid.Column>
+        <Grid.Column mobile={4} verticalAlign="middle">
+          <Image fluid={data.customer6.childImageSharp.fluid} />
+        </Grid.Column>
+        <Grid.Column mobile={4} verticalAlign="middle">
+          <Image fluid={data.customer7.childImageSharp.fluid} />
+        </Grid.Column>
       </Grid>
-      <p className="customers__note">Not affiliated with these companies, used by some of their individuals.</p>
+      <p className="home__customers-note">Not affiliated with these companies, used by some of their individuals.</p>
+      <h1 className="home__customers-supported">NGOs that we supported:</h1>
+      <Grid doubling centered columns={12}>
+        <Grid.Column mobile={2} verticalAlign="middle">
+          <Image fluid={data.supported1.childImageSharp.fluid} />
+        </Grid.Column>
+        <Grid.Column mobile={2} verticalAlign="middle">
+          <Image fluid={data.supported2.childImageSharp.fluid} />
+        </Grid.Column>
+        <Grid.Column mobile={2} verticalAlign="middle">
+          <Image fluid={data.supported3.childImageSharp.fluid} />
+        </Grid.Column>
+        <Grid.Column mobile={2} verticalAlign="middle">
+          <Image fluid={data.supported4.childImageSharp.fluid} />
+        </Grid.Column>
+        <Grid.Column mobile={2} verticalAlign="middle">
+          <Image fluid={data.supported5.childImageSharp.fluid} />
+        </Grid.Column>
+        <Grid.Column mobile={2} verticalAlign="middle">
+          <Image fluid={data.supported6.childImageSharp.fluid} />
+        </Grid.Column>
+      </Grid>
     </Section>
   </Layout>
 );
