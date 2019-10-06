@@ -106,42 +106,42 @@ export const query = graphql`
         }
       }
     }
-    supported1: file(relativePath: { eq: "supportedLogo/bcspca.png" }) {
+    helped1: file(relativePath: { eq: "helpedLogo/bcspca.png" }) {
       childImageSharp {
         fluid(maxWidth: 400) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    supported2: file(relativePath: { eq: "supportedLogo/variety.png" }) {
+    helped2: file(relativePath: { eq: "helpedLogo/variety.png" }) {
       childImageSharp {
         fluid(maxWidth: 400) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    supported3: file(relativePath: { eq: "supportedLogo/designing-dreams.png" }) {
+    helped3: file(relativePath: { eq: "helpedLogo/designing-dreams.png" }) {
       childImageSharp {
         fluid(maxWidth: 400) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    supported4: file(relativePath: { eq: "supportedLogo/make-a-wish.png" }) {
+    helped4: file(relativePath: { eq: "helpedLogo/make-a-wish.png" }) {
       childImageSharp {
         fluid(maxWidth: 400) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    supported5: file(relativePath: { eq: "supportedLogo/starlight.png" }) {
+    helped5: file(relativePath: { eq: "helpedLogo/starlight.png" }) {
       childImageSharp {
         fluid(maxWidth: 400) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    supported6: file(relativePath: { eq: "supportedLogo/unicef.png" }) {
+    helped6: file(relativePath: { eq: "helpedLogo/unicef.png" }) {
       childImageSharp {
         fluid(maxWidth: 400) {
           ...GatsbyImageSharpFluid
@@ -299,25 +299,25 @@ const IndexPage = ({ data }) => (
         </Grid.Column>
       </Grid>
       <p className="home__customers-note">Not affiliated with these companies, used by some of their individuals.</p>
-      <h1 className="home__customers-supported">NGOs that we supported:</h1>
+      <h1 className="home__customers-helped">NGOs that we helped:</h1>
       <Grid doubling centered columns={12}>
         <Grid.Column mobile={2} verticalAlign="middle">
-          <Image fluid={data.supported1.childImageSharp.fluid} />
+          <Image fluid={data.helped1.childImageSharp.fluid} />
         </Grid.Column>
         <Grid.Column mobile={2} verticalAlign="middle">
-          <Image fluid={data.supported2.childImageSharp.fluid} />
+          <Image fluid={data.helped2.childImageSharp.fluid} />
         </Grid.Column>
         <Grid.Column mobile={2} verticalAlign="middle">
-          <Image fluid={data.supported3.childImageSharp.fluid} />
+          <Image fluid={data.helped3.childImageSharp.fluid} />
         </Grid.Column>
         <Grid.Column mobile={2} verticalAlign="middle">
-          <Image fluid={data.supported4.childImageSharp.fluid} />
+          <Image fluid={data.helped4.childImageSharp.fluid} />
         </Grid.Column>
         <Grid.Column mobile={2} verticalAlign="middle">
-          <Image fluid={data.supported5.childImageSharp.fluid} />
+          <Image fluid={data.helped5.childImageSharp.fluid} />
         </Grid.Column>
         <Grid.Column mobile={2} verticalAlign="middle">
-          <Image fluid={data.supported6.childImageSharp.fluid} />
+          <Image fluid={data.helped6.childImageSharp.fluid} />
         </Grid.Column>
       </Grid>
     </Section>
