@@ -71,7 +71,7 @@ export const query = graphql`
         }
       }
     }
-    customer3: file(relativePath: { eq: "customerLogo/harley-davidson.png" }) {
+    customer3: file(relativePath: { eq: "customerLogo/nasa.png" }) {
       childImageSharp {
         fluid(maxWidth: 400) {
           ...GatsbyImageSharpFluid
@@ -85,21 +85,21 @@ export const query = graphql`
         }
       }
     }
-    customer5: file(relativePath: { eq: "customerLogo/nasa.png" }) {
+    customer5: file(relativePath: { eq: "customerLogo/red-hat.png" }) {
       childImageSharp {
         fluid(maxWidth: 400) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    customer6: file(relativePath: { eq: "customerLogo/red-hat.png" }) {
+    customer6: file(relativePath: { eq: "customerLogo/tesla.png" }) {
       childImageSharp {
         fluid(maxWidth: 400) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    customer7: file(relativePath: { eq: "customerLogo/tesla.png" }) {
+    customer7: file(relativePath: { eq: "customerLogo/harley-davidson.png" }) {
       childImageSharp {
         fluid(maxWidth: 400) {
           ...GatsbyImageSharpFluid
