@@ -226,7 +226,7 @@ const IndexPage = ({ data }) => (
     <Section
       id="blog"
       title="Blog"
-      description="Read posts stories and see what others are creating."
+      description="Read our posts and stories to see what others are creating."
       image={() => <Image fluid={data.blogBackground.childImageSharp.fluid} />}
     >
       <Card.Group itemsPerRow="4" doubling>
