@@ -1,47 +1,19 @@
-.parallax {
-  padding-top: 13vh;
-  padding-bottom: 13vh;
-  position: relative;
-  background-color: #343a40;
-
-  .parallax__starscape {
-    background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
-    margin: 0;
-    overflow: hidden;
-  }
-
-  .parallax__container {
-    position: relative;
-
-    @media (min-width: 768px) {
-      padding: 0 100px;
-    }
-  }
-
-  .parallax__title {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    color: white;
-    text-align: center;
-
-    @media (min-width: 768px) {
-      font-size: 3rem;
-    }
-  }
-
-  .parallax__input {
-    display: flex;
-
-    @media (min-width: 1024px) {
-      margin: 0 120px;
-    }
-  }
+.home__contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  margin: auto;
 }
 
-.parallax--overlay {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
+.home__customers-note {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 80px;
+  font-weight: 300;
+}
+
+.home__customers-helped {
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 40px;
 }

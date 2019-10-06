@@ -2,13 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import BaseBlockContent from '@sanity/block-content-to-react';
 
-import './block-content.styl';
+import './BlockContent.styl';
 
 const serializers = {
   types: {
     // eslint-disable-next-line react/prop-types
-    block({ node, children }) {
-      switch (node.style) {
+    block({ node: { style }, children }) {
+      switch (style) {
         case 'h1':
           return <h1 className="block-content-h1">{children}</h1>;
 
@@ -37,6 +37,7 @@ const BlockContent = ({ blocks }) => (
 
 BlockContent.propTypes = {
   blocks: PropTypes.arrayOf(PropTypes.object).isRequired,
+
 };
 
 export default BlockContent;
