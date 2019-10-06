@@ -187,7 +187,7 @@ const IndexPage = ({ data }) => (
       description="Use your texts on intros of movies and series. You can share the intro, request a video for download or start an event or party as a opening."
       image={() => <Image fluid={data.introCreatorsBackground.childImageSharp.fluid} />}
     >
-      <Card.Group itemsPerRow="4" doubling>
+      <Card.Group itemsPerRow="4" doubling stackable>
         <Card
           href={externalPath('starWarsIntroCreator')}
           header="Star Wars Intro Creator"
@@ -229,7 +229,7 @@ const IndexPage = ({ data }) => (
       description="Read our posts and stories to see what others are creating."
       image={() => <Image fluid={data.blogBackground.childImageSharp.fluid} />}
     >
-      <Card.Group itemsPerRow="4" doubling>
+      <Card.Group itemsPerRow="4" doubling stackable>
         {data.allSanityPost.edges.map(({ node: post }) => (
           <Card
             key={post.slug.current}
