@@ -70,7 +70,7 @@ const Header = () => {
                 className="navbar__right-item"
                 href={externalPath('faq')}
               >
-                FAQ
+                Support
               </a>
             </li>
             <li className="navbar__right-li">
