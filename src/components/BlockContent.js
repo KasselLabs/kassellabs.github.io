@@ -7,8 +7,9 @@ import './BlockContent.styl';
 const serializers = {
   types: {
     // eslint-disable-next-line react/prop-types
-    block({ children, style }) {
-      switch (style) {
+    block({ node, children }) {
+      // eslint-disable-next-line react/prop-types
+      switch (node.style) {
         case 'h1':
           return <h1 className="block-content-h1">{children}</h1>;
 
