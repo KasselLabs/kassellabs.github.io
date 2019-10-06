@@ -39,7 +39,9 @@ const Section = ({
           <h1 className="section__title">{title}</h1>
           <p className="section__description">{description}</p>
         </div>
-        <div className="section__children">{children}</div>
+        {children && (
+          <div className="section__children">{children}</div>
+        )}
       </Container>
     </div>
   </div>
