@@ -61,7 +61,7 @@ const About = ({ data }) => (
       </Paragraph>
       <br />
       <br />
-      <Title>The Team</Title>
+      <Title>Who we are</Title>
       <CardPhoto
         name="Bruno Orlandi"
         linkedin={externalPath('brunoLinkedin')}
