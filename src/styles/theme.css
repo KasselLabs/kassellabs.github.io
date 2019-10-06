@@ -31,3 +31,11 @@ body {
 .ui.card .content .header.header.header {
   font-size: 1.2rem;
 }
+
+main .ui.container.container {
+  margin: 60px 0;
+}
+
+main .ui.container.text.text {
+  margin: 60px 0;
+}

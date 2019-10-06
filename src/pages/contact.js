@@ -11,7 +11,6 @@ const Contact = () => (
   <Layout>
     <SEO title="Contact" />
     <Container text>
-      <br />
       <Title>Contact</Title>
       <Paragraph>
         First, check out the FAQ, we might already have an answer for you:
@@ -45,7 +44,6 @@ const Contact = () => (
           <li>Any details that you already need, please share them</li>
         </ul>
       </Paragraph>
-      <br />
     </Container>
   </Layout>
 );

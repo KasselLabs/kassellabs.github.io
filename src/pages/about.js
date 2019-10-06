@@ -40,10 +40,6 @@ export const query = graphql`
 const About = ({ data }) => (
   <Layout>
     <SEO title="About" />
-    <br />
-    <br />
-    <br />
-    <br />
     <Container>
       <Title>About</Title>
       <Paragraph>
@@ -62,25 +58,27 @@ const About = ({ data }) => (
       <br />
       <br />
       <Title>Who we are</Title>
-      <CardPhoto
-        name="Bruno Orlandi"
-        linkedin={externalPath('brunoLinkedin')}
-        description="Created Star Wars Intro Creator in December 2015 when The Force Awakens was about to release in cinema, starting a new series of movies. With the great success of the website, Bruno dedicated himself to developing more websites and helping people to create personalized videos."
-        image={() => <Image fluid={data.brunoPhoto.childImageSharp.fluid} />}
-      />
-      <CardPhoto
-        name="Nihey Takizawa"
-        linkedin={externalPath('niheyLinkedin')}
-        description="He joined Bruno shortly after the release of Star Wars Intro Creator and developed the functionality most desired by users: download videos created on the site. Nihey also made it possible for advanced video editing, such as customizing the Death Star image in Star Wars videos."
-        image={() => <Image fluid={data.niheyPhoto.childImageSharp.fluid} />}
-        isRight
-      />
-      <CardPhoto
-        name="Luan Orlandi"
-        linkedin={externalPath('luanLinkedin')}
-        description="With his knowledge of video editing, we made it possible for the creation of Westworld Intro Creator and Game of Thrones Intro Creator. In addition to helping users get the best videos, Luan also produces custom videos on demand for the best customers."
-        image={() => <Image fluid={data.luanPhoto.childImageSharp.fluid} />}
-      />
+      <div>
+        <CardPhoto
+          name="Bruno Orlandi"
+          linkedin={externalPath('brunoLinkedin')}
+          description="Created Star Wars Intro Creator in December 2015 when The Force Awakens was about to release, starting a new series of movies. With the great success of the website, Bruno dedicated himself to developing more websites and helping people to create personalized videos."
+          image={() => <Image fluid={data.brunoPhoto.childImageSharp.fluid} />}
+        />
+        <CardPhoto
+          name="Nihey Takizawa"
+          linkedin={externalPath('niheyLinkedin')}
+          description="He joined Bruno shortly after the release of Star Wars Intro Creator and developed the functionality most desired by users: the created video download. Nihey also made it possible for advanced video editing, such as customizing the Death Star image in Star Wars videos."
+          image={() => <Image fluid={data.niheyPhoto.childImageSharp.fluid} />}
+          isRight
+        />
+        <CardPhoto
+          name="Luan Orlandi"
+          linkedin={externalPath('luanLinkedin')}
+          description="With his knowledge of video editing, he made possible the creation of Westworld Intro Creator and Game of Thrones Intro Creator. In addition to helping users get the best videos, Luan also produces custom videos on demand for the best customers."
+          image={() => <Image fluid={data.luanPhoto.childImageSharp.fluid} />}
+        />
+      </div>
     </Container>
   </Layout>
 );
