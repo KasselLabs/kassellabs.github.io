@@ -59,7 +59,6 @@ const Post = ({ data }) => {
             <BlockContent blocks={_rawBody} />
           )}
         </article>
-        <br />
         <hr />
         <Link to={internalPath('home')}>Back to Home</Link>
         <br />
