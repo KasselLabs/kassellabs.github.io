@@ -47,10 +47,10 @@ const About = ({ data }) => (
         express their ideas and imagination.
       </Paragraph>
       <Paragraph>
-        There are many ways to use these tools. Our customers can use our services
-        to create an invite, present an event or anything that will be people be
-        amazed when they see it.
-        Currently we are focused on intro creators and customized orders for even better results.
+        There are many ways to use these tools. Our customers can use our services to create
+        an invite, present an event or anything that will make people
+        feel surprised when they see it. Currently, we are focused on intro
+        creators and customized orders for even better results.
       </Paragraph>
       <Paragraph>
         This website is not related or to Lucasfilm Ltd., Walt Disney, or Twentieth Century Fox.
