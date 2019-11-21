@@ -17,3 +17,4 @@ Setup the environment variables in a `.env` file.
 They are available on **1Password** in **Env vars Site**
 
 - **SANITY_TOKEN** : Token for reading data in Sanity.
+- **FACEBOOK_PIXEL**: Id for Facebook Pixel
