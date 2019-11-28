@@ -8,6 +8,7 @@ import {
   Grid,
 } from 'semantic-ui-react';
 import Image from 'gatsby-image';
+import ReactPixel from 'react-facebook-pixel';
 
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
@@ -192,21 +193,25 @@ const IndexPage = ({ data }) => (
           href={externalPath('starWarsIntroCreator')}
           header="Star Wars Intro Creator"
           image={<img src={swicGif} alt="Star Wars Intro Creator" width="100%" />}
+          onClick={() => ReactPixel.track('ViewContent', { content_ids: 'star-wars-intro' })}
         />
         <Card
           href={externalPath('strangerThingsIntroCreator')}
           header="Stranger Things Intro Creator"
           image={<img src={sticGif} alt="Stranger Things Intro Creator" width="100%" />}
+          onClick={() => ReactPixel.track('ViewContent', { content_ids: 'stranger-things-intro' })}
         />
         <Card
           href={externalPath('westworldIntroCreator')}
           header="Westworld Intro Creator"
           image={<img src={wicGif} alt="Westworld Intro Creator" width="100%" />}
+          onClick={() => ReactPixel.track('ViewContent', { content_ids: 'westworld-intro' })}
         />
         <Card
           href={externalPath('gameOfThronesIntroCreator')}
           header="Game of Thrones Intro Creator"
           image={<img src={goticGif} alt="Game of Thrones Intro Creator" width="100%" />}
+          onClick={() => ReactPixel.track('ViewContent', { content_ids: 'game-of-thrones-intro' })}
         />
       </Card.Group>
     </Section>
@@ -256,6 +261,7 @@ const IndexPage = ({ data }) => (
         id="mc-embedded-subscribe-form"
         name="mc-embedded-subscribe-form"
         target="_blank"
+        onSubmit={() => ReactPixel.track('Lead')}
       >
         <Input
           id="mce-EMAIL"
