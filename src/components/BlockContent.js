@@ -1,7 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import BaseBlockContent from '@sanity/block-content-to-react';
+import YouTube from 'react-youtube';
+import getYouTubeID from 'get-youtube-id';
 
+import CTA from './CTA';
 import './BlockContent.styl';
 
 const serializers = {
@@ -28,6 +31,28 @@ const serializers = {
           return <p className="block-content-p">{children}</p>;
       }
     },
+    // eslint-disable-next-line react/prop-types
+    youtube({ node: { url } }) {
+      const videoId = getYouTubeID(url);
+      const opts = {
+        height: '394',
+        width: '700',
+      };
+
+      return (
+        <YouTube
+          className="block-content-youtube"
+          videoId={videoId}
+          opts={opts}
+        />
+      );
+    },
+    // eslint-disable-next-line react/prop-types
+    cta({ node: { text, url } }) {
+      return (
+        <CTA text={text} url={url} />
+      );
+    },
   },
 };
 
@@ -37,7 +62,6 @@ const BlockContent = ({ blocks }) => (
 
 BlockContent.propTypes = {
   blocks: PropTypes.arrayOf(PropTypes.object).isRequired,
-
 };
 
 export default BlockContent;
