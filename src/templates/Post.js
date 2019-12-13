@@ -25,6 +25,9 @@ export const query = graphql`
       }
       publishedAt
       _rawBody
+      slug {
+        current
+      }
     }
   }
 `;
@@ -35,6 +38,7 @@ const Post = ({ data }) => {
     mainImage,
     publishedAt,
     _rawBody,
+    slug,
   } = data.sanityPost;
 
   let metaTagImage = [];
@@ -56,6 +60,7 @@ const Post = ({ data }) => {
         title={title}
         meta={[
           { property: 'og:type', content: 'article' },
+          { property: 'og:url', content: `https://kassellabs.io/blog/${slug.current}/` },
           ...metaTagImage,
         ]}
       />

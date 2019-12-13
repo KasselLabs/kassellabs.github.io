@@ -9,7 +9,7 @@ import { externalPath } from '../contants/paths';
 
 const Contact = () => (
   <Layout>
-    <SEO title="Contact" />
+    <SEO title="Contact" meta={[{ property: 'og:url', content: 'https://kassellabs.io/contact/' }]} />
     <Container text>
       <Title>Contact</Title>
       <Paragraph>
