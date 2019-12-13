@@ -173,7 +173,7 @@ export const query = graphql`
 
 const IndexPage = ({ data }) => (
   <Layout>
-    <SEO />
+    <SEO meta={[{ property: 'og:url', content: 'https://kassellabs.io' }]} />
     <Section
       title="Our mission is to help people express their creativity and imagination"
       description="Create great experiences with Kassel Labs tools and services. Get your favorite movies and series in your presentations, invites and many other uses."
