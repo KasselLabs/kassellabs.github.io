@@ -33,22 +33,12 @@ const SEO = ({
   return (
     <StaticQuery
       query={detailsQuery}
-      render={(data) => (
-        <Helmet
-          htmlAttributes={{ lang }}
-          title={title || data.site.siteMetadata.title}
-          titleTemplate={title && `%s | ${data.site.siteMetadata.title}`}
-          meta={[
-            { name: 'description', content: description || data.site.siteMetadata.description },
-            { name: 'keywords', content: keywords || data.site.siteMetadata.keywords },
-            { name: 'twitter:card', content: 'summary' },
-            { name: 'twitter:creator', content: data.site.siteMetadata.author },
-            { name: 'twitter:title', content: title || data.site.siteMetadata.title },
-            { name: 'twitter:description', content: description || data.site.siteMetadata.description },
-            { property: 'og:title', content: title || data.site.siteMetadata.title },
-            { property: 'og:description', content: description || data.site.siteMetadata.description },
-            { property: 'og:type', content: 'website' },
-            { property: 'og:url', content: 'https://kassellabs.io' },
+      render={(data) => {
+        const hasMetaImage = !!meta.find((metaTag) => metaTag.property === 'og:image');
+
+        const defaultOgImage = hasMetaImage
+          ? []
+          : [
             { property: 'og:image:alt', content: description || data.site.siteMetadata.description },
             { property: 'og:image:type', content: 'image/jpg' },
             { property: 'og:image:width', content: '1280' },
@@ -57,9 +47,32 @@ const SEO = ({
               property: 'og:image',
               content: `${process.env.NODE_ENV === 'production' ? data.site.siteMetadata.url : ''}${ogImage}`,
             },
-          ].concat(meta)}
-        />
-      )}
+          ];
+
+        const defaultMetaTags = [
+          { name: 'description', content: description || data.site.siteMetadata.description },
+          { name: 'keywords', content: keywords || data.site.siteMetadata.keywords },
+          { name: 'twitter:card', content: 'summary' },
+          { name: 'twitter:creator', content: data.site.siteMetadata.author },
+          { name: 'twitter:title', content: title || data.site.siteMetadata.title },
+          { name: 'twitter:description', content: description || data.site.siteMetadata.description },
+          { property: 'og:title', content: title || data.site.siteMetadata.title },
+          { property: 'og:description', content: description || data.site.siteMetadata.description },
+          { property: 'og:type', content: 'website' },
+          { property: 'og:url', content: 'https://kassellabs.io' },
+        ];
+
+        const metaTags = [...defaultMetaTags, ...defaultOgImage, ...meta];
+
+        return (
+          <Helmet
+            htmlAttributes={{ lang }}
+            title={title || data.site.siteMetadata.title}
+            titleTemplate={title && `%s | ${data.site.siteMetadata.title}`}
+            meta={metaTags}
+          />
+        );
+      }}
     />
   );
 };
