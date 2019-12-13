@@ -39,7 +39,7 @@ export const query = graphql`
 
 const About = ({ data }) => (
   <Layout>
-    <SEO title="About" />
+    <SEO title="About" meta={[{ property: 'og:url', content: 'https://kassellabs.io/about/' }]} />
     <Container>
       <Title>About</Title>
       <Paragraph>
