@@ -40,8 +40,8 @@ const Post = ({ data }) => {
   let metaTagImage = [];
   if (mainImage) {
     // get url params
-    const params = mainImage.asset.fluid.src.split('?')[1];
-    const { w, h } = queryString.parse(params);
+    const queryParams = mainImage.asset.fluid.src.replace(/.*\?/, '?');
+    const { w, h } = queryString.parse(queryParams);
 
     metaTagImage = [
       { property: 'og:image', content: mainImage.asset.fluid.src },
