@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import Image from 'gatsby-image';
 import moment from 'moment';
 import { Container } from 'semantic-ui-react';
+import queryString from 'query-string';
 
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
@@ -36,11 +37,27 @@ const Post = ({ data }) => {
     _rawBody,
   } = data.sanityPost;
 
+  let metaTagImage = [];
+  if (mainImage) {
+    // get url params
+    const params = mainImage.asset.fluid.src.split('?')[1];
+    const { w, h } = queryString.parse(params);
+
+    metaTagImage = [
+      { property: 'og:image', content: mainImage.asset.fluid.src },
+      { property: 'og:image:width', content: w },
+      { property: 'og:image:height', content: h },
+    ];
+  }
+
   return (
     <Layout>
       <SEO
         title={title}
-        meta={[{ property: 'og:type', content: 'article' }]}
+        meta={[
+          { property: 'og:type', content: 'article' },
+          ...metaTagImage,
+        ]}
       />
       <Container text>
         <article className="post">
