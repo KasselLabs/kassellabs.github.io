@@ -20,13 +20,6 @@ export const query = graphql`
         }
       }
     }
-    luanPhoto: file(relativePath: { eq: "photos/luan.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 768) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
     niheyPhoto: file(relativePath: { eq: "photos/nihey.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 768) {
@@ -71,12 +64,6 @@ const About = ({ data }) => (
           description="He joined Bruno shortly after the release of Star Wars Intro Creator and developed the functionality most desired by users: the created video download. Nihey also made it possible for advanced video editing, such as customizing the Death Star image in Star Wars videos."
           image={() => <Image fluid={data.niheyPhoto.childImageSharp.fluid} />}
           isRight
-        />
-        <CardPhoto
-          name="Luan Orlandi"
-          linkedin={externalPath('luanLinkedin')}
-          description="With his knowledge of video editing, he made possible the creation of Westworld Intro Creator and Game of Thrones Intro Creator. In addition to helping users get the best videos, Luan also produces custom videos on demand for the best customers."
-          image={() => <Image fluid={data.luanPhoto.childImageSharp.fluid} />}
         />
       </div>
     </Container>
