@@ -22,7 +22,6 @@ const externalPaths = {
   gameOfThronesIntroCreator: 'https://gameofthronesintrocreator.kassellabs.io',
   brunoLinkedin: 'https://www.linkedin.com/in/brorlandi/',
   niheyLinkedin: 'https://www.linkedin.com/in/nihey/',
-  luanLinkedin: 'https://www.linkedin.com/in/luanorlandi/',
 };
 
 const getPath = ({ pathName, query, paths }) => {
