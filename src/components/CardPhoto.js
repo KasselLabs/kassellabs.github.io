@@ -7,6 +7,7 @@ import './CardPhoto.styl';
 
 const CardPhoto = ({
   name,
+  roleTitle,
   linkedin,
   description,
   image,
@@ -37,6 +38,9 @@ const CardPhoto = ({
           <Icon name="linkedin" size="large" />
         </a>
       </h3>
+      <h4 className="card-photo__role">
+        { roleTitle }
+      </h4>
       <div />
       <p>{description}</p>
     </div>
@@ -45,6 +49,7 @@ const CardPhoto = ({
 
 CardPhoto.propTypes = {
   name: PropTypes.string,
+  roleTitle: PropTypes.string,
   linkedin: PropTypes.string,
   description: PropTypes.string,
   image: PropTypes.func.isRequired,
