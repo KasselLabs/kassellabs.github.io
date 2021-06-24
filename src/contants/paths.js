@@ -20,6 +20,7 @@ const externalPaths = {
   strangerThingsIntroCreator: 'https://strangerthingsintrocreator.kassellabs.io/',
   westworldIntroCreator: 'https://westworldintrocreator.kassellabs.io/',
   gameOfThronesIntroCreator: 'https://gameofthronesintrocreator.kassellabs.io',
+  ejector: 'https://ejector.kassellabs.io',
   brunoLinkedin: 'https://www.linkedin.com/in/brorlandi/',
   niheyLinkedin: 'https://www.linkedin.com/in/nihey/',
 };

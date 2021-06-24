@@ -17,6 +17,7 @@ import swicGif from '../images/swic.gif';
 import sticGif from '../images/stic.gif';
 import wicGif from '../images/wic.gif';
 import goticGif from '../images/gotic.gif';
+import ejectorGif from '../images/ejector.gif';
 
 import '../styles/index.styl';
 import { externalPath, internalPath } from '../contants/paths';
@@ -212,6 +213,12 @@ const IndexPage = ({ data }) => (
           header="Game of Thrones Intro Creator"
           image={<img src={goticGif} alt="Game of Thrones Intro Creator" width="100%" />}
           onClick={() => ReactPixel.track('ViewContent', { content_ids: 'game-of-thrones-intro' })}
+        />
+        <Card
+          href={externalPath('ejector')}
+          header="Ejector"
+          image={<img src={ejectorGif} alt="Ejector" width="100%" />}
+          onClick={() => ReactPixel.track('ViewContent', { content_ids: 'ejector' })}
         />
       </Card.Group>
     </Section>
