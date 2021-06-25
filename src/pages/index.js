@@ -216,8 +216,8 @@ const IndexPage = ({ data }) => (
         />
         <Card
           href={externalPath('ejector')}
-          header="Ejector"
-          image={<img src={ejectorGif} alt="Ejector" width="100%" />}
+          header="Ejector - Among Us"
+          image={<img src={ejectorGif} alt="Ejector - Among Us" width="100%" />}
           onClick={() => ReactPixel.track('ViewContent', { content_ids: 'ejector' })}
         />
       </Card.Group>
