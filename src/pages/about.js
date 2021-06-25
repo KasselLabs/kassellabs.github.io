@@ -54,12 +54,14 @@ const About = ({ data }) => (
       <div>
         <CardPhoto
           name="Bruno Orlandi"
+          roleTitle="CEO and Founder"
           linkedin={externalPath('brunoLinkedin')}
           description="Created Star Wars Intro Creator in December 2015 when The Force Awakens was about to release, starting a new series of movies. With the great success of the website, Bruno dedicated himself to developing more websites and helping people to create personalized videos."
           image={() => <Image fluid={data.brunoPhoto.childImageSharp.fluid} />}
         />
         <CardPhoto
           name="Nihey Takizawa"
+          roleTitle="CTO and Founder"
           linkedin={externalPath('niheyLinkedin')}
           description="He joined Bruno shortly after the release of Star Wars Intro Creator and developed the functionality most desired by users: the created video download. Nihey also made it possible for advanced video editing, such as customizing the Death Star image in Star Wars videos."
           image={() => <Image fluid={data.niheyPhoto.childImageSharp.fluid} />}
