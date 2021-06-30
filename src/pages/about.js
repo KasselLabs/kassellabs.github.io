@@ -63,7 +63,7 @@ const About = ({ data }) => (
           name="Nihey Takizawa"
           roleTitle="CTO and Founder"
           linkedin={externalPath('niheyLinkedin')}
-          description="He joined Bruno shortly after the release of Star Wars Intro Creator and developed the functionality most desired by users: the created video download. Nihey also made it possible for advanced video editing, such as customizing the Death Star image in Star Wars videos."
+          description="He joined Bruno shortly after the release of Star Wars Intro Creator and developed the functionality most desired by users: the possibility to download your own video. Nihey also made it possible for advanced video editing, such as customizing the Death Star image in Star Wars videos."
           image={() => <Image fluid={data.niheyPhoto.childImageSharp.fluid} />}
           isRight
         />
