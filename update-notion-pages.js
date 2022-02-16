@@ -26,7 +26,7 @@ const main = async () => {
       const filepath = path.join(__dirname, 'static', 'assets', filename);
       fs.writeFileSync(filepath, response.data);
 
-      recordMap.signed_urls[urlID] = `/assets/${filename}`;
+      recordMap.signed_urls[urlID] = `https://kassellabs.io/assets/${filename}`;
     }));
 
     const recordMapString = JSON.stringify(recordMap, null, 2);

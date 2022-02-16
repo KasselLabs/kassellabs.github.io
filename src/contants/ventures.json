@@ -993,8 +993,8 @@
   "notion_user": {},
   "collection_query": {},
   "signed_urls": {
-    "fa8f3e06-47af-4384-8624-71b606d6a35a": "/assets/KasselVentures.png",
-    "1ce24af2-b6d7-4c43-91f3-8c725531fb1f": "/assets/KasselLabsTitle.png",
-    "b2e1914c-962d-4f97-992e-9ce16e3dd5bf": "/assets/Untitled.png"
+    "fa8f3e06-47af-4384-8624-71b606d6a35a": "https://kassellabs.io/assets/KasselVentures.png",
+    "1ce24af2-b6d7-4c43-91f3-8c725531fb1f": "https://kassellabs.io/assets/KasselLabsTitle.png",
+    "b2e1914c-962d-4f97-992e-9ce16e3dd5bf": "https://kassellabs.io/assets/Untitled.png"
   }
 }
