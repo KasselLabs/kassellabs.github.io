@@ -1,3 +1,8 @@
+@import "../../node_modules/react-notion-x/src/styles.css";
+@import "../../node_modules/prismjs/themes/prism-tomorrow.css";
+@import "../../node_modules/rc-dropdown/assets/index.css";
+@import "../../node_modules/katex/dist/katex.min.css";
+
 .notion-frame {
   padding-top: 0;
 }

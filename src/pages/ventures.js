@@ -5,6 +5,8 @@ import venturesPageJSON from '../contants/ventures.json';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 
+import '../styles/notion.css';
+
 const Ventures = () => (
   <Layout>
     <SEO title="Ventures" meta={[{ property: 'og:url', content: 'https://kassellabs.io/ventures/' }]} />
