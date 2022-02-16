@@ -1,0 +1,11 @@
+.notion-frame {
+  padding-top: 0;
+}
+
+.notion-page-scroller {
+  margin-top: -1px;
+}
+
+.notion-header {
+  display: none;
+}

@@ -8,6 +8,7 @@
     "@mdx-js/mdx": "^1.4.5",
     "@mdx-js/tag": "^0.20.3",
     "@sanity/block-content-to-react": "^2.0.6",
+    "axios": "^0.26.0",
     "classnames": "^2.2.6",
     "dotenv": "^8.1.0",
     "gatsby": "^2.15.18",
@@ -22,14 +23,19 @@
     "gatsby-source-sanity": "^5.0.2",
     "gatsby-transformer-sharp": "^2.2.15",
     "get-youtube-id": "^1.0.1",
+    "katex": "^0.15.2",
     "lodash": "^4.17.15",
     "moment": "^2.24.0",
+    "notion-client": "^4.15.0",
+    "prismjs": "^1.26.0",
     "prop-types": "^15.7.2",
     "query-string": "^6.8.3",
+    "rc-dropdown": "^3.3.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-facebook-pixel": "^0.1.3",
     "react-helmet": "^5.2.1",
+    "react-notion-x": "^4.15.0",
     "react-youtube": "^7.9.0",
     "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^0.88.1"
@@ -44,7 +50,8 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "eslint": "eslint src/",
-    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
+    "update-notion-pages": "node update-notion-pages.js"
   },
   "repository": {
     "type": "git",

@@ -1,0 +1,1814 @@
+{
+  "block": {
+    "ef891e94-7502-45ad-aed2-f72f262168b0": {
+      "role": "reader",
+      "value": {
+        "id": "ef891e94-7502-45ad-aed2-f72f262168b0",
+        "version": 49,
+        "type": "page",
+        "properties": {
+          "title": [
+            [
+              "Vaga Desenvolvimento Frontend (Estágio / Júnior)"
+            ]
+          ]
+        },
+        "content": [
+          "98a3bed4-159f-4070-ae9f-2e9a646213d2",
+          "28bda1df-0fec-4de8-9452-4a771d42a12f",
+          "73916033-2d6d-4792-80a8-7ec2fb243f1d",
+          "ce09c291-1c35-4828-a5ae-ae2d6a825e0c",
+          "5a0726d1-a338-444a-854b-3ef3b5749537",
+          "c600e54c-33d2-4357-a293-b7733b208da6",
+          "2e0ee499-3292-412c-ba73-000040c1ba64",
+          "d1dfd70c-c257-431d-85e7-bf8ae048f67e",
+          "749384ff-4065-4232-904d-7e54705d7d32",
+          "bd76e249-93a6-4a38-9554-9c990e0d70ab",
+          "0ac7472c-da5c-4bc2-ae77-3267ed123d9b",
+          "d8a7d4f4-601e-4d17-9f69-17b54d299134",
+          "9ccc8be7-a758-4862-bf94-2bd5f6af9cf4",
+          "bc02c481-accd-4356-941d-a6fc11877c57",
+          "69994d03-9c51-416c-93d8-657684a82c1e",
+          "9aab93b5-6705-43b1-a066-baa18da87d4d",
+          "35d26db8-3fed-433a-8290-62c964654075",
+          "9b89dd85-fe2b-4842-b039-356d2efe5d7f",
+          "04633a6a-11ea-477b-b6d0-447a60f6549b",
+          "555bc7d2-b527-42a1-9c6e-f948e7e16468",
+          "40261d7a-8286-478f-b13a-6bffd8f1af70",
+          "c26109bc-a5be-442d-8cf9-cdb5f3d53aa1",
+          "bce84912-f2f4-43c7-bcc9-60fcedf15ce8",
+          "d9740396-ebbb-4270-8c0f-2a6dab664951",
+          "5eab017d-89ac-4e3a-a7b0-7c0aa19b5f85",
+          "a19a2d73-acf3-4e75-aa29-6ba0ab4476f2",
+          "84c46f80-82fc-40b3-80cf-25dfe00ebd7b",
+          "8824866b-471f-431e-a0b6-62d9427724fe",
+          "7ea0ca69-bdba-41d5-bc75-d8ccfc774f6e",
+          "cdabd767-043b-4ded-9de4-084593a85f8b",
+          "bafedd9c-fe22-41d3-ac1c-eb70c3b722a1",
+          "b09a2d4c-b95a-4ee4-9802-21e48f116cc2",
+          "b04ee1d9-9dba-48f4-ad36-46e221922f33",
+          "da162f4e-1133-44ee-a2a0-1b0635a7f95f",
+          "1e341e43-531e-4efa-960f-7bd631f6661f",
+          "9bfdad18-5513-4d75-85d9-71ea6a51f9fa",
+          "0f8d04c3-901e-4945-8454-e7f186f4e36c",
+          "c6fef191-6772-4abc-9183-c8b1ba6184de"
+        ],
+        "format": {
+          "page_cover": "https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6d791794-f49d-4dd0-bdb1-fd580d82aebc/Kassel_Labs_Horizontal.png",
+          "copied_from_pointer": {
+            "id": "47ac9b4d-1490-4e10-9d46-98becb1ac253",
+            "table": "block",
+            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
+          },
+          "page_cover_position": 0.5
+        },
+        "permissions": [
+          {
+            "role": "reader",
+            "type": "public_permission",
+            "added_timestamp": 1645026481750
+          }
+        ],
+        "created_time": 1644953761980,
+        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
+        "last_edited_time": 1645026420000,
+        "parent_id": "fc1dc65d-f35a-4235-b270-2513795d533e",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "47ac9b4d-1490-4e10-9d46-98becb1ac253",
+        "file_ids": [
+          "55e3c80d-b06b-482a-9e84-e48b30882e25",
+          "63988a48-61c9-493e-9c52-fd7668347f0c",
+          "6d791794-f49d-4dd0-bdb1-fd580d82aebc"
+        ],
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "c4a07b7d-7a62-4756-9eee-8ecafc88300d",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "98a3bed4-159f-4070-ae9f-2e9a646213d2": {
+      "role": "reader",
+      "value": {
+        "id": "98a3bed4-159f-4070-ae9f-2e9a646213d2",
+        "version": 1,
+        "type": "sub_header",
+        "properties": {
+          "title": [
+            [
+              "Sobre a empresa"
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "20e328dc-0abd-45cc-83d9-ecd7fac8a416",
+            "table": "block",
+            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
+          }
+        },
+        "created_time": 1644953761983,
+        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
+        "last_edited_time": 1644953761983,
+        "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "20e328dc-0abd-45cc-83d9-ecd7fac8a416",
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "28bda1df-0fec-4de8-9452-4a771d42a12f": {
+      "role": "reader",
+      "value": {
+        "id": "28bda1df-0fec-4de8-9452-4a771d42a12f",
+        "version": 229,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "A Kassel Labs é uma startup especializada em automação de vídeos, nascemos criando softwares para criar vídeos temáticos personalizados de forma automatizada. Também criamos plataformas como o Videomatik para criação de vídeos de forma fácil e escalável. Além de outras plataformas de vídeo desenvolvidas em conjunto com a Oz Produtora. "
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "7bb0f08d-4e48-4e71-a492-76cad548d4ba",
+            "table": "block",
+            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
+          }
+        },
+        "created_time": 1644953761984,
+        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
+        "last_edited_time": 1645017840000,
+        "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "7bb0f08d-4e48-4e71-a492-76cad548d4ba",
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "73916033-2d6d-4792-80a8-7ec2fb243f1d": {
+      "role": "reader",
+      "value": {
+        "id": "73916033-2d6d-4792-80a8-7ec2fb243f1d",
+        "version": 92,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "Conheça mais sobre todas as soluções da empresa aqui!",
+              [
+                [
+                  "a",
+                  "/fa8f3e0647af4384862471b606d6a35a"
+                ]
+              ]
+            ]
+          ]
+        },
+        "created_time": 1645017840000,
+        "last_edited_time": 1645017900000,
+        "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
+        "parent_table": "block",
+        "alive": true,
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "fa8f3e06-47af-4384-8624-71b606d6a35a": {
+      "role": "reader",
+      "value": {
+        "id": "fa8f3e06-47af-4384-8624-71b606d6a35a",
+        "version": 63,
+        "type": "page",
+        "properties": {
+          "title": [
+            [
+              "Kassel Ventures"
+            ]
+          ]
+        },
+        "content": [
+          "8d7c48da-4e51-4135-aafa-86a70fe19db1",
+          "346b800b-56eb-4fb5-9cc6-a668222e3044",
+          "ab80473c-248c-43a3-b47e-b4a8b75fe822",
+          "1ce24af2-b6d7-4c43-91f3-8c725531fb1f",
+          "138e13c6-28a4-4e33-836e-6183e622ced2",
+          "ff6953b7-ab23-40c4-b0e8-c7c150a1ae60",
+          "304e577a-92d0-4dad-aa35-5e31d06ec2c5",
+          "d7ffa1f1-b2bb-4704-848f-e01df3075fed",
+          "b2e1914c-962d-4f97-992e-9ce16e3dd5bf",
+          "9edfc494-5029-4562-b407-d14d9321120f",
+          "f76e1560-b33c-4745-b33a-345a87c00a55",
+          "40372259-af1e-44d1-9c8f-edbb7db9214c",
+          "09b214ff-84a0-4637-97c9-f4a646ec85cf",
+          "14eab58b-91bf-456b-a6fb-9ea7fe4595a7",
+          "511392d9-beda-49ef-a383-a7e4f3227b8d",
+          "a6a03b45-77d1-4b9e-9a3e-967cb461a0f0",
+          "802ad17a-f00f-415b-94d8-96882e510cb7",
+          "ca41b124-2f81-4dcd-abc4-72fff5079ed7",
+          "1d7300c7-7d3e-452e-8f4f-a93be9ec4ec9",
+          "1b14ecda-2121-4c54-8c2b-e2832ed16e04",
+          "3cb6b081-6a46-44e0-b7c0-1a7bd3b437b0",
+          "72918f7d-850a-4944-89ed-e097421301c2",
+          "10deb3c8-34aa-4005-9eec-b419304ebdb4",
+          "ba07ac73-3d8d-4dd5-a2f2-41154c212617",
+          "8b253cef-6ce3-4b8d-a422-e0748a4e5844"
+        ],
+        "format": {
+          "page_cover": "https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e1645a1a-8b59-42e3-9a9f-3a215a5df923/KasselVentures.png",
+          "copied_from_pointer": {
+            "id": "280920d7-8acd-425d-bebf-f3a4d0bc0c6e",
+            "table": "block",
+            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
+          },
+          "page_cover_position": 0.5
+        },
+        "permissions": [
+          {
+            "role": "reader",
+            "type": "public_permission",
+            "added_timestamp": 1644968671199,
+            "allow_duplicate": false
+          }
+        ],
+        "created_time": 1644953761980,
+        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
+        "last_edited_time": 1645025160000,
+        "parent_id": "fc1dc65d-f35a-4235-b270-2513795d533e",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "280920d7-8acd-425d-bebf-f3a4d0bc0c6e",
+        "file_ids": [
+          "326e74a3-eaf4-4150-9804-b04ff38cd888",
+          "e1645a1a-8b59-42e3-9a9f-3a215a5df923"
+        ],
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "ce09c291-1c35-4828-a5ae-ae2d6a825e0c": {
+      "role": "reader",
+      "value": {
+        "id": "ce09c291-1c35-4828-a5ae-ae2d6a825e0c",
+        "version": 1,
+        "type": "sub_header",
+        "properties": {
+          "title": [
+            [
+              "O que você irá fazer"
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "31f3ffac-6b9f-41b4-b2a0-8ad281719599",
+            "table": "block",
+            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
+          }
+        },
+        "created_time": 1644953761983,
+        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
+        "last_edited_time": 1644953761983,
+        "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "31f3ffac-6b9f-41b4-b2a0-8ad281719599",
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "5a0726d1-a338-444a-854b-3ef3b5749537": {
+      "role": "reader",
+      "value": {
+        "id": "5a0726d1-a338-444a-854b-3ef3b5749537",
+        "version": 3,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "Buscamos estagiários que tenham vontade de aprender tecnologias para a Web e queiram fazer parte da construção do Videiomatik. O trabalho será Fullstack e você irá atuar tanto no desenvolvimento do Frontend quanto do Backend. Você irá trabalhar diretamente com os sócios de tecnologia, fazendo bastante pair programming, principalmente no começo para se familiarizar com as tecnologias. Trabalhamos com code review e bastante troca de conhecimento. Você irá trabalhar também com tecnologias inovadoras para renderização de vídeo."
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "5276779c-d2fa-4b4b-9404-0e92652c6846",
+            "table": "block",
+            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
+          }
+        },
+        "created_time": 1644953761983,
+        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
+        "last_edited_time": 1645018260000,
+        "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "5276779c-d2fa-4b4b-9404-0e92652c6846",
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "c600e54c-33d2-4357-a293-b7733b208da6": {
+      "role": "reader",
+      "value": {
+        "id": "c600e54c-33d2-4357-a293-b7733b208da6",
+        "version": 1,
+        "type": "sub_header",
+        "properties": {
+          "title": [
+            [
+              "O que você irá aprender",
+              [
+                [
+                  "b"
+                ]
+              ]
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "b84f3c9d-c9d9-4388-9d65-fd69a4cd3448",
+            "table": "block",
+            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
+          }
+        },
+        "created_time": 1644953761984,
+        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
+        "last_edited_time": 1644953761984,
+        "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "b84f3c9d-c9d9-4388-9d65-fd69a4cd3448",
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "2e0ee499-3292-412c-ba73-000040c1ba64": {
+      "role": "reader",
+      "value": {
+        "id": "2e0ee499-3292-412c-ba73-000040c1ba64",
+        "version": 1,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "Tecnologias modernas de desenvolvimento:"
+            ]
+          ]
+        },
+        "content": [
+          "d5a7f871-b268-4fa1-9513-958fcdedd52c",
+          "1f7069f2-63e7-47a3-9ba0-1f57c5fd11b9",
+          "f5d27104-bc28-45ee-bd2a-5af0d8bfc9d6",
+          "507110fc-05e8-461c-8b7e-67871a9fe97b",
+          "d85b3cea-e961-48d5-b039-7ee2bbdccba6",
+          "f8bb2293-fc9b-47e4-8524-ae69ce83aeca",
+          "e988f5b4-07d4-4ffd-b960-80b61379cb83",
+          "5151eed6-fc8e-44c1-a3dc-4a84770e1126",
+          "f159338b-6406-4d2e-86d9-11e33b63bd65",
+          "4c67036e-a8fc-4bc7-b95a-cf84a7573ae7"
+        ],
+        "format": {
+          "copied_from_pointer": {
+            "id": "29877c6d-f426-4da8-9091-19aa7713d163",
+            "table": "block",
+            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
+          }
+        },
+        "created_time": 1644953761983,
+        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
+        "last_edited_time": 1644953761983,
+        "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "29877c6d-f426-4da8-9091-19aa7713d163",
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "d5a7f871-b268-4fa1-9513-958fcdedd52c": {
+      "role": "reader",
+      "value": {
+        "id": "d5a7f871-b268-4fa1-9513-958fcdedd52c",
+        "version": 1,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "JavaScript"
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "343fab66-3a7a-4058-bc50-3266fd94062c",
+            "table": "block",
+            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
+          }
+        },
+        "created_time": 1644953761984,
+        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
+        "last_edited_time": 1644953761984,
+        "parent_id": "2e0ee499-3292-412c-ba73-000040c1ba64",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "343fab66-3a7a-4058-bc50-3266fd94062c",
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "1f7069f2-63e7-47a3-9ba0-1f57c5fd11b9": {
+      "role": "reader",
+      "value": {
+        "id": "1f7069f2-63e7-47a3-9ba0-1f57c5fd11b9",
+        "version": 1,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "React.js"
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "ddf7a291-059b-427a-973f-b56d863f2e55",
+            "table": "block",
+            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
+          }
+        },
+        "created_time": 1644953761985,
+        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
+        "last_edited_time": 1644953761985,
+        "parent_id": "2e0ee499-3292-412c-ba73-000040c1ba64",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "ddf7a291-059b-427a-973f-b56d863f2e55",
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "f5d27104-bc28-45ee-bd2a-5af0d8bfc9d6": {
+      "role": "reader",
+      "value": {
+        "id": "f5d27104-bc28-45ee-bd2a-5af0d8bfc9d6",
+        "version": 1,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "Node.js"
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "7223ffbe-aed3-40c0-aa35-5a2707a47d75",
+            "table": "block",
+            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
+          }
+        },
+        "created_time": 1644953761985,
+        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
+        "last_edited_time": 1644953761985,
+        "parent_id": "2e0ee499-3292-412c-ba73-000040c1ba64",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "7223ffbe-aed3-40c0-aa35-5a2707a47d75",
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "507110fc-05e8-461c-8b7e-67871a9fe97b": {
+      "role": "reader",
+      "value": {
+        "id": "507110fc-05e8-461c-8b7e-67871a9fe97b",
+        "version": 1,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "Next.js"
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "7b25fbc9-24b2-4a30-bf05-c35713a2f86b",
+            "table": "block",
+            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
+          }
+        },
+        "created_time": 1644953761985,
+        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
+        "last_edited_time": 1644953761985,
+        "parent_id": "2e0ee499-3292-412c-ba73-000040c1ba64",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "7b25fbc9-24b2-4a30-bf05-c35713a2f86b",
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "d85b3cea-e961-48d5-b039-7ee2bbdccba6": {
+      "role": "reader",
+      "value": {
+        "id": "d85b3cea-e961-48d5-b039-7ee2bbdccba6",
+        "version": 1,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "Firebase"
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "4f7d1b2e-2681-407a-adb2-9509015f9819",
+            "table": "block",
+            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
+          }
+        },
+        "created_time": 1644953761985,
+        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
+        "last_edited_time": 1644953761985,
+        "parent_id": "2e0ee499-3292-412c-ba73-000040c1ba64",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "4f7d1b2e-2681-407a-adb2-9509015f9819",
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "f8bb2293-fc9b-47e4-8524-ae69ce83aeca": {
+      "role": "reader",
+      "value": {
+        "id": "f8bb2293-fc9b-47e4-8524-ae69ce83aeca",
+        "version": 1,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "JavaScript!"
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "21ca82ad-3274-4704-ada7-c433321aae8e",
+            "table": "block",
+            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
+          }
+        },
+        "created_time": 1644953761984,
+        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
+        "last_edited_time": 1644953761984,
+        "parent_id": "2e0ee499-3292-412c-ba73-000040c1ba64",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "21ca82ad-3274-4704-ada7-c433321aae8e",
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "e988f5b4-07d4-4ffd-b960-80b61379cb83": {
+      "role": "reader",
+      "value": {
+        "id": "e988f5b4-07d4-4ffd-b960-80b61379cb83",
+        "version": 1,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "GraphQL"
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "cdd22e6d-d3f7-44bb-b107-5b7cdeb3e835",
+            "table": "block",
+            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
+          }
+        },
+        "created_time": 1644953761985,
+        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
+        "last_edited_time": 1644953761985,
+        "parent_id": "2e0ee499-3292-412c-ba73-000040c1ba64",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "cdd22e6d-d3f7-44bb-b107-5b7cdeb3e835",
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "5151eed6-fc8e-44c1-a3dc-4a84770e1126": {
+      "role": "reader",
+      "value": {
+        "id": "5151eed6-fc8e-44c1-a3dc-4a84770e1126",
+        "version": 1,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "Strapi.js"
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "abec135f-d75d-4885-8fd4-2caa3b678b46",
+            "table": "block",
+            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
+          }
+        },
+        "created_time": 1644953761985,
+        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
+        "last_edited_time": 1644953761985,
+        "parent_id": "2e0ee499-3292-412c-ba73-000040c1ba64",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "abec135f-d75d-4885-8fd4-2caa3b678b46",
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "f159338b-6406-4d2e-86d9-11e33b63bd65": {
+      "role": "reader",
+      "value": {
+        "id": "f159338b-6406-4d2e-86d9-11e33b63bd65",
+        "version": 1,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "AWS"
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "3482861f-a018-4ee5-963c-0d0d3fec85b2",
+            "table": "block",
+            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
+          }
+        },
+        "created_time": 1644953761985,
+        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
+        "last_edited_time": 1644953761985,
+        "parent_id": "2e0ee499-3292-412c-ba73-000040c1ba64",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "3482861f-a018-4ee5-963c-0d0d3fec85b2",
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "4c67036e-a8fc-4bc7-b95a-cf84a7573ae7": {
+      "role": "reader",
+      "value": {
+        "id": "4c67036e-a8fc-4bc7-b95a-cf84a7573ae7",
+        "version": 1,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "JavaScript e várias outras. Já falei JavaScript?"
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "b61db2d1-4847-45bb-afe6-932e93db260d",
+            "table": "block",
+            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
+          }
+        },
+        "created_time": 1644953761985,
+        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
+        "last_edited_time": 1644953761985,
+        "parent_id": "2e0ee499-3292-412c-ba73-000040c1ba64",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "b61db2d1-4847-45bb-afe6-932e93db260d",
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "d1dfd70c-c257-431d-85e7-bf8ae048f67e": {
+      "role": "reader",
+      "value": {
+        "id": "d1dfd70c-c257-431d-85e7-bf8ae048f67e",
+        "version": 1,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "Irá aprender sobre todo o desenvolvimento das aplicações, frontend, backend, banco de dados, testes e Devops. Além disso boas práticas no desenvolvimento de software"
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "e9fa5a69-684e-44a5-91b0-5d6f5e76e9f3",
+            "table": "block",
+            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
+          }
+        },
+        "created_time": 1644953761984,
+        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
+        "last_edited_time": 1644953761984,
+        "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "e9fa5a69-684e-44a5-91b0-5d6f5e76e9f3",
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "749384ff-4065-4232-904d-7e54705d7d32": {
+      "role": "reader",
+      "value": {
+        "id": "749384ff-4065-4232-904d-7e54705d7d32",
+        "version": 1,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "Metodologias ágeis"
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "6e2e89e9-a611-41b5-94ac-715dd5ce3f5e",
+            "table": "block",
+            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
+          }
+        },
+        "created_time": 1644953761983,
+        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
+        "last_edited_time": 1644953761983,
+        "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "6e2e89e9-a611-41b5-94ac-715dd5ce3f5e",
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "bd76e249-93a6-4a38-9554-9c990e0d70ab": {
+      "role": "reader",
+      "value": {
+        "id": "bd76e249-93a6-4a38-9554-9c990e0d70ab",
+        "version": 1,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "Continuous Integration / Continuous Delivery"
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "89d2a2e4-b814-4984-bb76-7731b88a47cd",
+            "table": "block",
+            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
+          }
+        },
+        "created_time": 1644953761984,
+        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
+        "last_edited_time": 1644953761984,
+        "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "89d2a2e4-b814-4984-bb76-7731b88a47cd",
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "0ac7472c-da5c-4bc2-ae77-3267ed123d9b": {
+      "role": "reader",
+      "value": {
+        "id": "0ac7472c-da5c-4bc2-ae77-3267ed123d9b",
+        "version": 1,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "Clean Code"
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "9590aaae-95b0-4947-a8ab-5ef92d699fa9",
+            "table": "block",
+            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
+          }
+        },
+        "created_time": 1644953761984,
+        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
+        "last_edited_time": 1644953761984,
+        "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "9590aaae-95b0-4947-a8ab-5ef92d699fa9",
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "d8a7d4f4-601e-4d17-9f69-17b54d299134": {
+      "role": "reader",
+      "value": {
+        "id": "d8a7d4f4-601e-4d17-9f69-17b54d299134",
+        "version": 1,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "Code review"
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "a4bf6678-c7f1-45e3-aff4-4d9ba1a88399",
+            "table": "block",
+            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
+          }
+        },
+        "created_time": 1644953761984,
+        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
+        "last_edited_time": 1644953761984,
+        "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "a4bf6678-c7f1-45e3-aff4-4d9ba1a88399",
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "9ccc8be7-a758-4862-bf94-2bd5f6af9cf4": {
+      "role": "reader",
+      "value": {
+        "id": "9ccc8be7-a758-4862-bf94-2bd5f6af9cf4",
+        "version": 1,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "UI/UX"
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "38735d77-881d-48ba-9dae-4f332fdf1f8e",
+            "table": "block",
+            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
+          }
+        },
+        "created_time": 1644953761983,
+        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
+        "last_edited_time": 1644953761983,
+        "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "38735d77-881d-48ba-9dae-4f332fdf1f8e",
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "bc02c481-accd-4356-941d-a6fc11877c57": {
+      "role": "reader",
+      "value": {
+        "id": "bc02c481-accd-4356-941d-a6fc11877c57",
+        "version": 1,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "Design Thinking"
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "35bc9e01-92db-405a-a019-6a16895f51ba",
+            "table": "block",
+            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
+          }
+        },
+        "created_time": 1644953761983,
+        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
+        "last_edited_time": 1644953761983,
+        "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "35bc9e01-92db-405a-a019-6a16895f51ba",
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "69994d03-9c51-416c-93d8-657684a82c1e": {
+      "role": "reader",
+      "value": {
+        "id": "69994d03-9c51-416c-93d8-657684a82c1e",
+        "version": 1,
+        "type": "sub_header",
+        "properties": {
+          "title": [
+            [
+              "Requisitos"
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "658e39ef-4c3c-4df4-b996-cd79b4dc81b2",
+            "table": "block",
+            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
+          }
+        },
+        "created_time": 1644953761983,
+        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
+        "last_edited_time": 1644953761983,
+        "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "658e39ef-4c3c-4df4-b996-cd79b4dc81b2",
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "9aab93b5-6705-43b1-a066-baa18da87d4d": {
+      "role": "reader",
+      "value": {
+        "id": "9aab93b5-6705-43b1-a066-baa18da87d4d",
+        "version": 1,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "Conhecimentos necessários pra você mandar bem: "
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "b672d798-e928-4874-baa3-fb006e92870a",
+            "table": "block",
+            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
+          }
+        },
+        "created_time": 1644953761984,
+        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
+        "last_edited_time": 1644953761984,
+        "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "b672d798-e928-4874-baa3-fb006e92870a",
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "35d26db8-3fed-433a-8290-62c964654075": {
+      "role": "reader",
+      "value": {
+        "id": "35d26db8-3fed-433a-8290-62c964654075",
+        "version": 1,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "Web (HTML, CSS, JavaScript)"
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "96dccb79-3077-486d-9174-4f69c1fdc135",
+            "table": "block",
+            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
+          }
+        },
+        "created_time": 1644953761984,
+        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
+        "last_edited_time": 1644953761984,
+        "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "96dccb79-3077-486d-9174-4f69c1fdc135",
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "9b89dd85-fe2b-4842-b039-356d2efe5d7f": {
+      "role": "reader",
+      "value": {
+        "id": "9b89dd85-fe2b-4842-b039-356d2efe5d7f",
+        "version": 1,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "Contato com algum framework de backend"
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "64ac252c-7eeb-4653-90c3-4c9b274b635b",
+            "table": "block",
+            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
+          }
+        },
+        "created_time": 1644953761983,
+        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
+        "last_edited_time": 1644953761983,
+        "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "64ac252c-7eeb-4653-90c3-4c9b274b635b",
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "04633a6a-11ea-477b-b6d0-447a60f6549b": {
+      "role": "reader",
+      "value": {
+        "id": "04633a6a-11ea-477b-b6d0-447a60f6549b",
+        "version": 1,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "Conhecimentos básicos de Linux e Git"
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "2e68ad02-544e-4140-80f5-6ce624d5dae5",
+            "table": "block",
+            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
+          }
+        },
+        "created_time": 1644953761983,
+        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
+        "last_edited_time": 1644953761983,
+        "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "2e68ad02-544e-4140-80f5-6ce624d5dae5",
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "555bc7d2-b527-42a1-9c6e-f948e7e16468": {
+      "role": "reader",
+      "value": {
+        "id": "555bc7d2-b527-42a1-9c6e-f948e7e16468",
+        "version": 1,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "Inglês técnico"
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "72ef0878-3905-42f5-a278-75e81d024805",
+            "table": "block",
+            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
+          }
+        },
+        "created_time": 1644953761984,
+        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
+        "last_edited_time": 1644953761984,
+        "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "72ef0878-3905-42f5-a278-75e81d024805",
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "40261d7a-8286-478f-b13a-6bffd8f1af70": {
+      "role": "reader",
+      "value": {
+        "id": "40261d7a-8286-478f-b13a-6bffd8f1af70",
+        "version": 1,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "É desejável já ter tido algum contato com React.js e Node.js"
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "55405604-2b8d-4df2-83d3-d11735386346",
+            "table": "block",
+            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
+          }
+        },
+        "created_time": 1644953761983,
+        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
+        "last_edited_time": 1644953761983,
+        "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "55405604-2b8d-4df2-83d3-d11735386346",
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "c26109bc-a5be-442d-8cf9-cdb5f3d53aa1": {
+      "role": "reader",
+      "value": {
+        "id": "c26109bc-a5be-442d-8cf9-cdb5f3d53aa1",
+        "version": 1,
+        "type": "sub_header",
+        "properties": {
+          "title": [
+            [
+              "Mais detalhes"
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "7b3b3f55-85a6-4b25-8204-57984a6bbf76",
+            "table": "block",
+            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
+          }
+        },
+        "created_time": 1644953761984,
+        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
+        "last_edited_time": 1644953761984,
+        "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "7b3b3f55-85a6-4b25-8204-57984a6bbf76",
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "bce84912-f2f4-43c7-bcc9-60fcedf15ce8": {
+      "role": "reader",
+      "value": {
+        "id": "bce84912-f2f4-43c7-bcc9-60fcedf15ce8",
+        "version": 1,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "Local da Vaga: São Carlos - SP"
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "d2143ae7-001b-4349-8e5b-d644542e3529",
+            "table": "block",
+            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
+          }
+        },
+        "created_time": 1644953761984,
+        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
+        "last_edited_time": 1644953761984,
+        "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "d2143ae7-001b-4349-8e5b-d644542e3529",
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "d9740396-ebbb-4270-8c0f-2a6dab664951": {
+      "role": "reader",
+      "value": {
+        "id": "d9740396-ebbb-4270-8c0f-2a6dab664951",
+        "version": 1,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "Fazemos parte do ecossistema de startups SancaHub e estamos no ONOVOLAB, um dos maiores centros de inovação do Brasil."
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "b3dea926-20b6-4854-95b0-4865ecdb418f",
+            "table": "block",
+            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
+          }
+        },
+        "created_time": 1644953761984,
+        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
+        "last_edited_time": 1644953761984,
+        "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "b3dea926-20b6-4854-95b0-4865ecdb418f",
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "5eab017d-89ac-4e3a-a7b0-7c0aa19b5f85": {
+      "role": "reader",
+      "value": {
+        "id": "5eab017d-89ac-4e3a-a7b0-7c0aa19b5f85",
+        "version": 1,
+        "type": "text",
+        "format": {
+          "copied_from_pointer": {
+            "id": "08b5332a-a4ad-4e74-9212-452990eaf826",
+            "table": "block",
+            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
+          }
+        },
+        "created_time": 1644953761982,
+        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
+        "last_edited_time": 1644953761982,
+        "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "08b5332a-a4ad-4e74-9212-452990eaf826",
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "a19a2d73-acf3-4e75-aa29-6ba0ab4476f2": {
+      "role": "reader",
+      "value": {
+        "id": "a19a2d73-acf3-4e75-aa29-6ba0ab4476f2",
+        "version": 1,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "Formato híbrido: Trabalho remoto mas com possibilidade de trabalho presencial também."
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "d9cf2238-5d7d-4b8d-95d0-6e727893912a",
+            "table": "block",
+            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
+          }
+        },
+        "created_time": 1644953761984,
+        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
+        "last_edited_time": 1644953761984,
+        "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "d9cf2238-5d7d-4b8d-95d0-6e727893912a",
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "84c46f80-82fc-40b3-80cf-25dfe00ebd7b": {
+      "role": "reader",
+      "value": {
+        "id": "84c46f80-82fc-40b3-80cf-25dfe00ebd7b",
+        "version": 1,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "Horário: Flexível com pelo menos 30 horas semanais"
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "bb10045b-55a2-45e5-aaef-7b5f586c1fcc",
+            "table": "block",
+            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
+          }
+        },
+        "created_time": 1644953761984,
+        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
+        "last_edited_time": 1644953761984,
+        "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "bb10045b-55a2-45e5-aaef-7b5f586c1fcc",
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "8824866b-471f-431e-a0b6-62d9427724fe": {
+      "role": "reader",
+      "value": {
+        "id": "8824866b-471f-431e-a0b6-62d9427724fe",
+        "version": 1,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "Remuneração a combinar."
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "a9e5f5c1-7bde-4af2-9e19-c4fee6612e33",
+            "table": "block",
+            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
+          }
+        },
+        "created_time": 1644953761984,
+        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
+        "last_edited_time": 1644953761984,
+        "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "a9e5f5c1-7bde-4af2-9e19-c4fee6612e33",
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "7ea0ca69-bdba-41d5-bc75-d8ccfc774f6e": {
+      "role": "reader",
+      "value": {
+        "id": "7ea0ca69-bdba-41d5-bc75-d8ccfc774f6e",
+        "version": 1,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "Possibilidade de efetivação após o período de estágio."
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "22ea0723-c9a9-4d36-b29b-8469ca5569a5",
+            "table": "block",
+            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
+          }
+        },
+        "created_time": 1644953761983,
+        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
+        "last_edited_time": 1644953761983,
+        "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "22ea0723-c9a9-4d36-b29b-8469ca5569a5",
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "cdabd767-043b-4ded-9de4-084593a85f8b": {
+      "role": "reader",
+      "value": {
+        "id": "cdabd767-043b-4ded-9de4-084593a85f8b",
+        "version": 1,
+        "type": "text",
+        "format": {
+          "copied_from_pointer": {
+            "id": "c43bdc2b-5acb-4800-9ea7-85c89b3b5736",
+            "table": "block",
+            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
+          }
+        },
+        "created_time": 1644953761984,
+        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
+        "last_edited_time": 1644953761984,
+        "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "c43bdc2b-5acb-4800-9ea7-85c89b3b5736",
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "bafedd9c-fe22-41d3-ac1c-eb70c3b722a1": {
+      "role": "reader",
+      "value": {
+        "id": "bafedd9c-fe22-41d3-ac1c-eb70c3b722a1",
+        "version": 1,
+        "type": "text",
+        "format": {
+          "copied_from_pointer": {
+            "id": "d6fdec2a-7de7-46bf-855e-0afb4da23e27",
+            "table": "block",
+            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
+          }
+        },
+        "created_time": 1644953761984,
+        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
+        "last_edited_time": 1644953761984,
+        "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "d6fdec2a-7de7-46bf-855e-0afb4da23e27",
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "b09a2d4c-b95a-4ee4-9802-21e48f116cc2": {
+      "role": "reader",
+      "value": {
+        "id": "b09a2d4c-b95a-4ee4-9802-21e48f116cc2",
+        "version": 1,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "Entre no nosso site e conheça nosso trabalho, lá você pode experimentar o Videomatik: "
+            ],
+            [
+              "videomatik.com.br",
+              [
+                [
+                  "a",
+                  "http://videomatik.com.br"
+                ]
+              ]
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "11ffab79-03e1-4c2b-9c60-0b6d8e2147d2",
+            "table": "block",
+            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
+          }
+        },
+        "created_time": 1644953761983,
+        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
+        "last_edited_time": 1644953761983,
+        "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "11ffab79-03e1-4c2b-9c60-0b6d8e2147d2",
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "b04ee1d9-9dba-48f4-ad36-46e221922f33": {
+      "role": "reader",
+      "value": {
+        "id": "b04ee1d9-9dba-48f4-ad36-46e221922f33",
+        "version": 1,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "Conheça também as empresas fundadoras "
+            ],
+            [
+              "http://kassellabs.io/",
+              [
+                [
+                  "a",
+                  "http://kassellabs.io/"
+                ]
+              ]
+            ],
+            [
+              " e "
+            ],
+            [
+              "https://ozprodutora.com.br/",
+              [
+                [
+                  "a",
+                  "https://ozprodutora.com.br/"
+                ]
+              ]
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "414a87be-365f-44d8-8101-a64157565f2f",
+            "table": "block",
+            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
+          }
+        },
+        "created_time": 1644953761983,
+        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
+        "last_edited_time": 1644953761983,
+        "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "414a87be-365f-44d8-8101-a64157565f2f",
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "da162f4e-1133-44ee-a2a0-1b0635a7f95f": {
+      "role": "reader",
+      "value": {
+        "id": "da162f4e-1133-44ee-a2a0-1b0635a7f95f",
+        "version": 1,
+        "type": "text",
+        "format": {
+          "copied_from_pointer": {
+            "id": "2c43ea7e-9375-4ede-a3f4-afe947d391e9",
+            "table": "block",
+            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
+          }
+        },
+        "created_time": 1644953761983,
+        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
+        "last_edited_time": 1644953761983,
+        "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "2c43ea7e-9375-4ede-a3f4-afe947d391e9",
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "1e341e43-531e-4efa-960f-7bd631f6661f": {
+      "role": "reader",
+      "value": {
+        "id": "1e341e43-531e-4efa-960f-7bd631f6661f",
+        "version": 1,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "Interesse ou dúvidas enviar email para: "
+            ],
+            [
+              "vagas@videomatik.com.br",
+              [
+                [
+                  "b"
+                ],
+                [
+                  "a",
+                  "mailto:vagas@videomatik.com.br"
+                ]
+              ]
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "2f83b36a-4897-4e75-a15b-b928796a0d9f",
+            "table": "block",
+            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
+          }
+        },
+        "created_time": 1644953761983,
+        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
+        "last_edited_time": 1644953761983,
+        "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "2f83b36a-4897-4e75-a15b-b928796a0d9f",
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "9bfdad18-5513-4d75-85d9-71ea6a51f9fa": {
+      "role": "reader",
+      "value": {
+        "id": "9bfdad18-5513-4d75-85d9-71ea6a51f9fa",
+        "version": 1,
+        "type": "text",
+        "format": {
+          "copied_from_pointer": {
+            "id": "afb0795a-a6e9-4e57-84cf-93cf00af7bc8",
+            "table": "block",
+            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
+          }
+        },
+        "created_time": 1644953761984,
+        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
+        "last_edited_time": 1644953761984,
+        "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "afb0795a-a6e9-4e57-84cf-93cf00af7bc8",
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "0f8d04c3-901e-4945-8454-e7f186f4e36c": {
+      "role": "reader",
+      "value": {
+        "id": "0f8d04c3-901e-4945-8454-e7f186f4e36c",
+        "version": 1,
+        "type": "text",
+        "format": {
+          "copied_from_pointer": {
+            "id": "f79a64ce-17c0-44e5-8d4c-c70b18809cfc",
+            "table": "block",
+            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
+          }
+        },
+        "created_time": 1644953761984,
+        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
+        "last_edited_time": 1644953761984,
+        "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "f79a64ce-17c0-44e5-8d4c-c70b18809cfc",
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "c6fef191-6772-4abc-9183-c8b1ba6184de": {
+      "role": "reader",
+      "value": {
+        "id": "c6fef191-6772-4abc-9183-c8b1ba6184de",
+        "version": 1,
+        "type": "text",
+        "format": {
+          "copied_from_pointer": {
+            "id": "9788024b-a009-4ac6-99af-882afa34e4e6",
+            "table": "block",
+            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
+          }
+        },
+        "created_time": 1644953761984,
+        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
+        "last_edited_time": 1644953761984,
+        "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "9788024b-a009-4ac6-99af-882afa34e4e6",
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    }
+  },
+  "space": {},
+  "collection": {},
+  "collection_view": {},
+  "notion_user": {},
+  "collection_query": {},
+  "signed_urls": {
+    "ef891e94-7502-45ad-aed2-f72f262168b0": "/assets/Kassel_Labs_Horizontal.png"
+  }
+}
