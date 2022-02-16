@@ -1,0 +1,1000 @@
+{
+  "block": {
+    "fa8f3e06-47af-4384-8624-71b606d6a35a": {
+      "role": "reader",
+      "value": {
+        "id": "fa8f3e06-47af-4384-8624-71b606d6a35a",
+        "version": 63,
+        "type": "page",
+        "properties": {
+          "title": [
+            [
+              "Kassel Ventures"
+            ]
+          ]
+        },
+        "content": [
+          "8d7c48da-4e51-4135-aafa-86a70fe19db1",
+          "346b800b-56eb-4fb5-9cc6-a668222e3044",
+          "ab80473c-248c-43a3-b47e-b4a8b75fe822",
+          "1ce24af2-b6d7-4c43-91f3-8c725531fb1f",
+          "138e13c6-28a4-4e33-836e-6183e622ced2",
+          "ff6953b7-ab23-40c4-b0e8-c7c150a1ae60",
+          "304e577a-92d0-4dad-aa35-5e31d06ec2c5",
+          "d7ffa1f1-b2bb-4704-848f-e01df3075fed",
+          "b2e1914c-962d-4f97-992e-9ce16e3dd5bf",
+          "9edfc494-5029-4562-b407-d14d9321120f",
+          "f76e1560-b33c-4745-b33a-345a87c00a55",
+          "40372259-af1e-44d1-9c8f-edbb7db9214c",
+          "09b214ff-84a0-4637-97c9-f4a646ec85cf",
+          "14eab58b-91bf-456b-a6fb-9ea7fe4595a7",
+          "511392d9-beda-49ef-a383-a7e4f3227b8d",
+          "a6a03b45-77d1-4b9e-9a3e-967cb461a0f0",
+          "802ad17a-f00f-415b-94d8-96882e510cb7",
+          "ca41b124-2f81-4dcd-abc4-72fff5079ed7",
+          "1d7300c7-7d3e-452e-8f4f-a93be9ec4ec9",
+          "1b14ecda-2121-4c54-8c2b-e2832ed16e04",
+          "3cb6b081-6a46-44e0-b7c0-1a7bd3b437b0",
+          "72918f7d-850a-4944-89ed-e097421301c2",
+          "10deb3c8-34aa-4005-9eec-b419304ebdb4",
+          "ba07ac73-3d8d-4dd5-a2f2-41154c212617",
+          "8b253cef-6ce3-4b8d-a422-e0748a4e5844"
+        ],
+        "format": {
+          "page_cover": "https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e1645a1a-8b59-42e3-9a9f-3a215a5df923/KasselVentures.png",
+          "copied_from_pointer": {
+            "id": "280920d7-8acd-425d-bebf-f3a4d0bc0c6e",
+            "table": "block",
+            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
+          },
+          "page_cover_position": 0.5
+        },
+        "permissions": [
+          {
+            "role": "reader",
+            "type": "public_permission",
+            "added_timestamp": 1644968671199,
+            "allow_duplicate": false
+          }
+        ],
+        "created_time": 1644953761980,
+        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
+        "last_edited_time": 1645025160000,
+        "parent_id": "fc1dc65d-f35a-4235-b270-2513795d533e",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "280920d7-8acd-425d-bebf-f3a4d0bc0c6e",
+        "file_ids": [
+          "326e74a3-eaf4-4150-9804-b04ff38cd888",
+          "e1645a1a-8b59-42e3-9a9f-3a215a5df923"
+        ],
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "8d7c48da-4e51-4135-aafa-86a70fe19db1": {
+      "role": "reader",
+      "value": {
+        "id": "8d7c48da-4e51-4135-aafa-86a70fe19db1",
+        "version": 1,
+        "type": "sub_header",
+        "properties": {
+          "title": [
+            [
+              "Sobre a empresa"
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "2a09b3c4-31e8-4019-af8a-ad823468683d",
+            "table": "block",
+            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
+          }
+        },
+        "created_time": 1644953761980,
+        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
+        "last_edited_time": 1644953761980,
+        "parent_id": "fa8f3e06-47af-4384-8624-71b606d6a35a",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "2a09b3c4-31e8-4019-af8a-ad823468683d",
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "346b800b-56eb-4fb5-9cc6-a668222e3044": {
+      "role": "reader",
+      "value": {
+        "id": "346b800b-56eb-4fb5-9cc6-a668222e3044",
+        "version": 1,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "A Kassel Ventures representando o time por trás de diversas soluções de tecnologia que envolvem vídeos. Somos especializados em soluções que envolvam plataformas e automação de vídeos. Tudo começou com a "
+            ],
+            [
+              "Kassel Labs",
+              [
+                [
+                  "a",
+                  "https://kassellabs.io/"
+                ],
+                [
+                  "b"
+                ]
+              ]
+            ],
+            [
+              ", ",
+              [
+                [
+                  "b"
+                ]
+              ]
+            ],
+            [
+              "onde desenvolvemos tecnologias para permitir a criação de vídeos temáticos personalizados. E em busca de expandir as soluções além da tecnologia nasceu a parceria com a "
+            ],
+            [
+              "Oz Produtora",
+              [
+                [
+                  "b"
+                ],
+                [
+                  "a",
+                  "https://ozprodutora.com.br/"
+                ]
+              ]
+            ],
+            [
+              ", ",
+              [
+                [
+                  "b"
+                ]
+              ]
+            ],
+            [
+              "uma consultoria criativa em soluções audiovisuais , que estava buscando aplicar mais tecnologia nas suas soluções. Essa parceria rendeu a criação da startup "
+            ],
+            [
+              "Videomatik",
+              [
+                [
+                  "a",
+                  "https://videomatik.com.br/"
+                ],
+                [
+                  "b"
+                ]
+              ]
+            ],
+            [
+              " e novas soluções de plataformas de vídeo. "
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "8a1050b5-e14e-4162-86ad-5c426464c695",
+            "table": "block",
+            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
+          }
+        },
+        "created_time": 1644953761982,
+        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
+        "last_edited_time": 1644953761982,
+        "parent_id": "fa8f3e06-47af-4384-8624-71b606d6a35a",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "8a1050b5-e14e-4162-86ad-5c426464c695",
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "ab80473c-248c-43a3-b47e-b4a8b75fe822": {
+      "role": "reader",
+      "value": {
+        "id": "ab80473c-248c-43a3-b47e-b4a8b75fe822",
+        "version": 1,
+        "type": "text",
+        "format": {
+          "copied_from_pointer": {
+            "id": "b790cdbb-c275-43fa-b652-cb9ae2c478eb",
+            "table": "block",
+            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
+          }
+        },
+        "created_time": 1644953761982,
+        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
+        "last_edited_time": 1644953761982,
+        "parent_id": "fa8f3e06-47af-4384-8624-71b606d6a35a",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "b790cdbb-c275-43fa-b652-cb9ae2c478eb",
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "1ce24af2-b6d7-4c43-91f3-8c725531fb1f": {
+      "role": "reader",
+      "value": {
+        "id": "1ce24af2-b6d7-4c43-91f3-8c725531fb1f",
+        "version": 1,
+        "type": "image",
+        "properties": {
+          "size": [
+            [
+              "32.8KB"
+            ]
+          ],
+          "title": [
+            [
+              "KasselLabsTitle.png"
+            ]
+          ],
+          "source": [
+            [
+              "https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5acb2bc6-f15d-4c5f-a009-5e6abf01d303/KasselLabsTitle.png"
+            ]
+          ]
+        },
+        "format": {
+          "block_width": 528,
+          "display_source": "https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5acb2bc6-f15d-4c5f-a009-5e6abf01d303/KasselLabsTitle.png",
+          "block_full_width": false,
+          "block_page_width": false,
+          "block_aspect_ratio": 0.282622533418205,
+          "copied_from_pointer": {
+            "id": "3d7881c3-2041-4c3e-931a-51a20d62d5b4",
+            "table": "block",
+            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
+          },
+          "block_preserve_scale": true
+        },
+        "created_time": 1644953761981,
+        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
+        "last_edited_time": 1644953761981,
+        "parent_id": "fa8f3e06-47af-4384-8624-71b606d6a35a",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "3d7881c3-2041-4c3e-931a-51a20d62d5b4",
+        "file_ids": [
+          "b92a1a9a-2d75-45d4-b0e3-86f5fa0cd24d",
+          "94dbc8c3-fc8d-42b6-946e-40d9ace575bd",
+          "5acb2bc6-f15d-4c5f-a009-5e6abf01d303"
+        ],
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "138e13c6-28a4-4e33-836e-6183e622ced2": {
+      "role": "reader",
+      "value": {
+        "id": "138e13c6-28a4-4e33-836e-6183e622ced2",
+        "version": 1,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "A "
+            ],
+            [
+              "Kassel Labs",
+              [
+                [
+                  "b"
+                ],
+                [
+                  "a",
+                  "https://kassellabs.io/"
+                ]
+              ]
+            ],
+            [
+              " é uma startup especializada em automação de vídeos, nascemos criando softwares para criar vídeos temáticos personalizados de forma automatizada. Um dos nossos primeiro produtos foi o "
+            ],
+            [
+              "Star Wars Intro Creator",
+              [
+                [
+                  "a",
+                  "https://starwarsintrocreator.kassellabs.io/"
+                ]
+              ]
+            ],
+            [
+              " um site onde fãs podem criar sua própria abertura personalizada de Star Wars e baixar o vídeo em MP4 que será gerado automaticamente. Nessa tecnologia outras criações temáticas surgiram como a criação de vídeos personalizados de Stranger Things, Westworld, Game of Thrones e Among Us. A Kassel Labs já atua há 6 anos criando vídeos personalizados através da tecnologia."
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "853c97a0-33b9-4f70-9d2c-8647292b9a3b",
+            "table": "block",
+            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
+          }
+        },
+        "created_time": 1644953761981,
+        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
+        "last_edited_time": 1644953761981,
+        "parent_id": "fa8f3e06-47af-4384-8624-71b606d6a35a",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "853c97a0-33b9-4f70-9d2c-8647292b9a3b",
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "ff6953b7-ab23-40c4-b0e8-c7c150a1ae60": {
+      "role": "reader",
+      "value": {
+        "id": "ff6953b7-ab23-40c4-b0e8-c7c150a1ae60",
+        "version": 1,
+        "type": "text",
+        "format": {
+          "copied_from_pointer": {
+            "id": "072705b2-2a34-4073-9f51-968fabcf0275",
+            "table": "block",
+            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
+          }
+        },
+        "created_time": 1644953761980,
+        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
+        "last_edited_time": 1644953761980,
+        "parent_id": "fa8f3e06-47af-4384-8624-71b606d6a35a",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "072705b2-2a34-4073-9f51-968fabcf0275",
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "304e577a-92d0-4dad-aa35-5e31d06ec2c5": {
+      "role": "reader",
+      "value": {
+        "id": "304e577a-92d0-4dad-aa35-5e31d06ec2c5",
+        "version": 1,
+        "type": "bookmark",
+        "properties": {
+          "link": [
+            [
+              "https://kassellabs.io/"
+            ]
+          ],
+          "title": [
+            [
+              "Kassel Labs"
+            ]
+          ],
+          "description": [
+            [
+              "Helping you to express your creativity and imagination with tools to create videos. Create your own opening of movies and series with our Intro Creators."
+            ]
+          ]
+        },
+        "format": {
+          "bookmark_icon": "https://kassellabs.io/icons/icon-48x48.png?v=7209f0ed25c3f35ee0ce3a158f5c30b0",
+          "bookmark_cover": "https://kassellabs.io/static/kassellabs-1280x720-6fd83c0e8beba26ec752e86f10a77752.png",
+          "copied_from_pointer": {
+            "id": "b606e5e4-def1-4c3c-85e1-10ff20e45b44",
+            "table": "block",
+            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
+          }
+        },
+        "created_time": 1644953761982,
+        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
+        "last_edited_time": 1644953761982,
+        "parent_id": "fa8f3e06-47af-4384-8624-71b606d6a35a",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "b606e5e4-def1-4c3c-85e1-10ff20e45b44",
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "d7ffa1f1-b2bb-4704-848f-e01df3075fed": {
+      "role": "reader",
+      "value": {
+        "id": "d7ffa1f1-b2bb-4704-848f-e01df3075fed",
+        "version": 1,
+        "type": "text",
+        "format": {
+          "copied_from_pointer": {
+            "id": "5be90476-9396-4677-8d90-f320689bbe77",
+            "table": "block",
+            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
+          }
+        },
+        "created_time": 1644953761981,
+        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
+        "last_edited_time": 1644953761981,
+        "parent_id": "fa8f3e06-47af-4384-8624-71b606d6a35a",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "5be90476-9396-4677-8d90-f320689bbe77",
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "b2e1914c-962d-4f97-992e-9ce16e3dd5bf": {
+      "role": "reader",
+      "value": {
+        "id": "b2e1914c-962d-4f97-992e-9ce16e3dd5bf",
+        "version": 1,
+        "type": "image",
+        "properties": {
+          "size": [
+            [
+              "1447.9KB"
+            ]
+          ],
+          "title": [
+            [
+              "Untitled"
+            ]
+          ],
+          "source": [
+            [
+              "https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f6ff4317-6574-48e6-b1be-d8a1379fb00e/Untitled.png"
+            ]
+          ]
+        },
+        "format": {
+          "block_width": 528,
+          "display_source": "https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f6ff4317-6574-48e6-b1be-d8a1379fb00e/Untitled.png",
+          "block_full_width": false,
+          "block_page_width": false,
+          "block_aspect_ratio": 0.28872814948764314,
+          "copied_from_pointer": {
+            "id": "c3c7a882-a325-48f8-93f0-e257983c6cf2",
+            "table": "block",
+            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
+          },
+          "block_preserve_scale": true
+        },
+        "created_time": 1644953761982,
+        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
+        "last_edited_time": 1644953761982,
+        "parent_id": "fa8f3e06-47af-4384-8624-71b606d6a35a",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "c3c7a882-a325-48f8-93f0-e257983c6cf2",
+        "file_ids": [
+          "f6ff4317-6574-48e6-b1be-d8a1379fb00e"
+        ],
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "9edfc494-5029-4562-b407-d14d9321120f": {
+      "role": "reader",
+      "value": {
+        "id": "9edfc494-5029-4562-b407-d14d9321120f",
+        "version": 273,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "A "
+            ],
+            [
+              "Videomatik",
+              [
+                [
+                  "a",
+                  "https://videomatik.com.br/"
+                ],
+                [
+                  "b"
+                ]
+              ]
+            ],
+            [
+              " possui uma plataforma de criação de vídeos animados baseado em modelos pré prontos, onde o usuário edita textos, imagens e cores, e cria um post ou anúncio em poucos minutos sem nenhum conhecimento técnico. Além de assinaturas individuais também oferecemos planos personalizados para empresas que podem ter uma solução personalizada para produzir vídeos para sua empresa. A tecnologia permite trazer automação e escala na produção de vídeos de uma empresa como por exemplo através da integração com a nossa API. A empresa está ainda numa fase de validação do modelo de negócio com muito a aprender e melhorar nas soluções. Junto com o trabalho criativo da Oz Produtora, juntamos arte e tecnologia para produzir modelos de vídeos para diversos segmentos diferentes."
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "efe29f9c-8b80-4573-b472-d7e196ebbf21",
+            "table": "block",
+            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
+          }
+        },
+        "created_time": 1644953761982,
+        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
+        "last_edited_time": 1644968640000,
+        "parent_id": "fa8f3e06-47af-4384-8624-71b606d6a35a",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "efe29f9c-8b80-4573-b472-d7e196ebbf21",
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "f76e1560-b33c-4745-b33a-345a87c00a55": {
+      "role": "reader",
+      "value": {
+        "id": "f76e1560-b33c-4745-b33a-345a87c00a55",
+        "version": 1,
+        "type": "text",
+        "format": {
+          "copied_from_pointer": {
+            "id": "e21ff5bb-0842-46ed-9755-f4676ca53239",
+            "table": "block",
+            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
+          }
+        },
+        "created_time": 1644953761982,
+        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
+        "last_edited_time": 1644953761982,
+        "parent_id": "fa8f3e06-47af-4384-8624-71b606d6a35a",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "e21ff5bb-0842-46ed-9755-f4676ca53239",
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "40372259-af1e-44d1-9c8f-edbb7db9214c": {
+      "role": "reader",
+      "value": {
+        "id": "40372259-af1e-44d1-9c8f-edbb7db9214c",
+        "version": 1,
+        "type": "bookmark",
+        "properties": {
+          "link": [
+            [
+              "https://videomatik.com.br/"
+            ]
+          ],
+          "title": [
+            [
+              "Videomatik - Crie vídeos de forma fácil e rápida."
+            ]
+          ],
+          "description": [
+            [
+              "Crie rapidamente anúncios de produtos e serviços para mídias pagas Faça testes A/B criando várias versões do mesmo vídeo anúncio com poucos cliques Ideal para aumentar a produtividade de Agências e Freelancers de Marketing Digital Ter vídeos para seus anúncios deixou de ser caro e demorado."
+            ]
+          ]
+        },
+        "format": {
+          "bookmark_icon": "https://videomatik.com.br/icons/icon-48x48.png",
+          "bookmark_cover": "https://videomatik.com.br/images/preview.png",
+          "copied_from_pointer": {
+            "id": "3602c198-a4cd-4e76-bd9b-e8d5ebe2a8c2",
+            "table": "block",
+            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
+          }
+        },
+        "created_time": 1644953761980,
+        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
+        "last_edited_time": 1644953761980,
+        "parent_id": "fa8f3e06-47af-4384-8624-71b606d6a35a",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "3602c198-a4cd-4e76-bd9b-e8d5ebe2a8c2",
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "09b214ff-84a0-4637-97c9-f4a646ec85cf": {
+      "role": "reader",
+      "value": {
+        "id": "09b214ff-84a0-4637-97c9-f4a646ec85cf",
+        "version": 1,
+        "type": "text",
+        "format": {
+          "copied_from_pointer": {
+            "id": "569a557c-48cb-4bfa-94aa-6c80c415be29",
+            "table": "block",
+            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
+          }
+        },
+        "created_time": 1644953761981,
+        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
+        "last_edited_time": 1644953761981,
+        "parent_id": "fa8f3e06-47af-4384-8624-71b606d6a35a",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "569a557c-48cb-4bfa-94aa-6c80c415be29",
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "14eab58b-91bf-456b-a6fb-9ea7fe4595a7": {
+      "role": "reader",
+      "value": {
+        "id": "14eab58b-91bf-456b-a6fb-9ea7fe4595a7",
+        "version": 1,
+        "type": "header",
+        "properties": {
+          "title": [
+            [
+              "XPlay"
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "d6417cdd-93d6-473b-91c4-7c3e99289030",
+            "table": "block",
+            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
+          }
+        },
+        "created_time": 1644953761982,
+        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
+        "last_edited_time": 1644953761982,
+        "parent_id": "fa8f3e06-47af-4384-8624-71b606d6a35a",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "d6417cdd-93d6-473b-91c4-7c3e99289030",
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "511392d9-beda-49ef-a383-a7e4f3227b8d": {
+      "role": "reader",
+      "value": {
+        "id": "511392d9-beda-49ef-a383-a7e4f3227b8d",
+        "version": 1,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "O XPlay é uma plataforma de streaming de conteúdo personalizada que permite que qualquer empresa tenha sua própria Netflix com conteúdo próprio. É bastante personalizável para ter a identidade visual do cliente. Foi construída como um aplicativo híbrido para múltiplas plataformas Web, Android e iOS com bastante foco na experiência de consumo de conteúdos em vídeo e em áudio."
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "70fdd7be-1435-447a-919d-4d57217d3b50",
+            "table": "block",
+            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
+          }
+        },
+        "created_time": 1644953761981,
+        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
+        "last_edited_time": 1644953761981,
+        "parent_id": "fa8f3e06-47af-4384-8624-71b606d6a35a",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "70fdd7be-1435-447a-919d-4d57217d3b50",
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "a6a03b45-77d1-4b9e-9a3e-967cb461a0f0": {
+      "role": "reader",
+      "value": {
+        "id": "a6a03b45-77d1-4b9e-9a3e-967cb461a0f0",
+        "version": 1,
+        "type": "header",
+        "properties": {
+          "title": [
+            [
+              "XTraining"
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "7d21240b-6dad-49d0-a5a9-f7f14ad52850",
+            "table": "block",
+            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
+          }
+        },
+        "created_time": 1644953761981,
+        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
+        "last_edited_time": 1644953761981,
+        "parent_id": "fa8f3e06-47af-4384-8624-71b606d6a35a",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "7d21240b-6dad-49d0-a5a9-f7f14ad52850",
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "802ad17a-f00f-415b-94d8-96882e510cb7": {
+      "role": "reader",
+      "value": {
+        "id": "802ad17a-f00f-415b-94d8-96882e510cb7",
+        "version": 430,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "O XTraining é uma plataforma personalizada de cursos e treinamentos online. Está em desenvolvimento para a tender um cliente que precisa ter uma plataforma própria de treinamento. A plataforma gerencia trilhas de conhecimento, aulas em vídeo, materiais complementares, questionários, emissão de certificados e métricas de uso."
+            ]
+          ]
+        },
+        "format": {
+          "copied_from_pointer": {
+            "id": "de7a811a-6d92-4f11-bffa-6738c7f912d8",
+            "table": "block",
+            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
+          }
+        },
+        "created_time": 1644953761982,
+        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
+        "last_edited_time": 1644956460000,
+        "parent_id": "fa8f3e06-47af-4384-8624-71b606d6a35a",
+        "parent_table": "block",
+        "alive": true,
+        "copied_from": "de7a811a-6d92-4f11-bffa-6738c7f912d8",
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "ca41b124-2f81-4dcd-abc4-72fff5079ed7": {
+      "role": "reader",
+      "value": {
+        "id": "ca41b124-2f81-4dcd-abc4-72fff5079ed7",
+        "version": 6,
+        "type": "text",
+        "created_time": 1644956460000,
+        "last_edited_time": 1644956460000,
+        "parent_id": "fa8f3e06-47af-4384-8624-71b606d6a35a",
+        "parent_table": "block",
+        "alive": true,
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "1d7300c7-7d3e-452e-8f4f-a93be9ec4ec9": {
+      "role": "reader",
+      "value": {
+        "id": "1d7300c7-7d3e-452e-8f4f-a93be9ec4ec9",
+        "version": 450,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "As soluções "
+            ],
+            [
+              "XPlay ",
+              [
+                [
+                  "b"
+                ]
+              ]
+            ],
+            [
+              "e "
+            ],
+            [
+              "XTraining ",
+              [
+                [
+                  "b"
+                ]
+              ]
+            ],
+            [
+              "são ofertadas em conjunto com a produção dos conteúdos pela Oz Produtora. Isso garante que a criação do conteúdo e a plataforma de tecnologia para consumi-lá estejam em sinergia oferecendo a melhor experiência de distribuição e consumo dos conteúdos."
+            ]
+          ]
+        },
+        "created_time": 1644956460000,
+        "last_edited_time": 1644968520000,
+        "parent_id": "fa8f3e06-47af-4384-8624-71b606d6a35a",
+        "parent_table": "block",
+        "alive": true,
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "1b14ecda-2121-4c54-8c2b-e2832ed16e04": {
+      "role": "reader",
+      "value": {
+        "id": "1b14ecda-2121-4c54-8c2b-e2832ed16e04",
+        "version": 4,
+        "type": "text",
+        "created_time": 1644968580000,
+        "last_edited_time": 1644968580000,
+        "parent_id": "fa8f3e06-47af-4384-8624-71b606d6a35a",
+        "parent_table": "block",
+        "alive": true,
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "3cb6b081-6a46-44e0-b7c0-1a7bd3b437b0": {
+      "role": "reader",
+      "value": {
+        "id": "3cb6b081-6a46-44e0-b7c0-1a7bd3b437b0",
+        "version": 8,
+        "type": "bookmark",
+        "properties": {
+          "link": [
+            [
+              "https://ozprodutora.com.br/"
+            ]
+          ],
+          "title": [
+            [
+              "Oz Produtora - Sua consultoria criativa em soluções audiovisuais"
+            ]
+          ],
+          "description": [
+            [
+              "Mais que uma produtora de vídeos Desde 2002 gerando valor através da inovação no mercado audiovisual. Criação de soluções audiovisuais ideais para seus objetivos e estratégias. Diversidade gera inovação, inovação resolve problemas complexos."
+            ]
+          ]
+        },
+        "format": {
+          "bookmark_icon": "https://ozprodutora.com.br/wp-content/uploads/fbrfg/favicon.ico",
+          "bookmark_cover": "https://ozprodutora.com.br/wp-content/uploads/2021/07/thumbsiteoz.jpg"
+        },
+        "created_time": 1644968520000,
+        "last_edited_time": 1644968520000,
+        "parent_id": "fa8f3e06-47af-4384-8624-71b606d6a35a",
+        "parent_table": "block",
+        "alive": true,
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "72918f7d-850a-4944-89ed-e097421301c2": {
+      "role": "reader",
+      "value": {
+        "id": "72918f7d-850a-4944-89ed-e097421301c2",
+        "version": 7,
+        "type": "text",
+        "created_time": 1644981900000,
+        "last_edited_time": 1645017180000,
+        "parent_id": "fa8f3e06-47af-4384-8624-71b606d6a35a",
+        "parent_table": "block",
+        "alive": true,
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "10deb3c8-34aa-4005-9eec-b419304ebdb4": {
+      "role": "reader",
+      "value": {
+        "id": "10deb3c8-34aa-4005-9eec-b419304ebdb4",
+        "version": 14,
+        "type": "header",
+        "properties": {
+          "title": [
+            [
+              "Vagas"
+            ]
+          ]
+        },
+        "created_time": 1644981900000,
+        "last_edited_time": 1645017240000,
+        "parent_id": "fa8f3e06-47af-4384-8624-71b606d6a35a",
+        "parent_table": "block",
+        "alive": true,
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "ba07ac73-3d8d-4dd5-a2f2-41154c212617": {
+      "role": "reader",
+      "value": {
+        "id": "ba07ac73-3d8d-4dd5-a2f2-41154c212617",
+        "version": 39,
+        "type": "text",
+        "created_time": 1645017600000,
+        "last_edited_time": 1645025160000,
+        "parent_id": "fa8f3e06-47af-4384-8624-71b606d6a35a",
+        "parent_table": "block",
+        "alive": true,
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "8b253cef-6ce3-4b8d-a422-e0748a4e5844": {
+      "role": "reader",
+      "value": {
+        "id": "8b253cef-6ce3-4b8d-a422-e0748a4e5844",
+        "version": 3,
+        "type": "text",
+        "created_time": 1645017240000,
+        "last_edited_time": 1645017240000,
+        "parent_id": "fa8f3e06-47af-4384-8624-71b606d6a35a",
+        "parent_table": "block",
+        "alive": true,
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    }
+  },
+  "space": {},
+  "collection": {},
+  "collection_view": {},
+  "notion_user": {},
+  "collection_query": {},
+  "signed_urls": {
+    "fa8f3e06-47af-4384-8624-71b606d6a35a": "/assets/KasselVentures.png",
+    "1ce24af2-b6d7-4c43-91f3-8c725531fb1f": "/assets/KasselLabsTitle.png",
+    "b2e1914c-962d-4f97-992e-9ce16e3dd5bf": "/assets/Untitled.png"
+  }
+}
