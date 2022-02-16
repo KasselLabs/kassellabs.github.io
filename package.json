@@ -24,7 +24,7 @@
     "gatsby-transformer-sharp": "^2.2.15",
     "get-youtube-id": "^1.0.1",
     "katex": "^0.15.2",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "moment": "^2.24.0",
     "notion-client": "^4.15.0",
     "prismjs": "^1.26.0",
