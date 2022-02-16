@@ -8,10 +8,10 @@ import SEO from '../components/SEO';
 import '../styles/notion.css';
 
 const Jobs = () => (
-  <Layout>
-    <SEO title="Ventures" meta={[{ property: 'og:url', content: 'https://kassellabs.io/ventures/' }]} />
+  <>
+    <SEO title="Vagas" meta={[{ property: 'og:url', content: 'https://kassellabs.io/vagas/' }]} />
     <NotionRenderer recordMap={jobsPageJSON} fullPage darkMode={false} />
-  </Layout>
+  </>
 );
 
 export default Jobs;

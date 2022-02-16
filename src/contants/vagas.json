@@ -4,7 +4,7 @@
       "role": "reader",
       "value": {
         "id": "ef891e94-7502-45ad-aed2-f72f262168b0",
-        "version": 49,
+        "version": 103,
         "type": "page",
         "properties": {
           "title": [
@@ -16,7 +16,7 @@
         "content": [
           "98a3bed4-159f-4070-ae9f-2e9a646213d2",
           "28bda1df-0fec-4de8-9452-4a771d42a12f",
-          "73916033-2d6d-4792-80a8-7ec2fb243f1d",
+          "ed024a6a-a0a4-452b-a451-a5f9d9a598a1",
           "ce09c291-1c35-4828-a5ae-ae2d6a825e0c",
           "5a0726d1-a338-444a-854b-3ef3b5749537",
           "c600e54c-33d2-4357-a293-b7733b208da6",
@@ -31,36 +31,39 @@
           "69994d03-9c51-416c-93d8-657684a82c1e",
           "9aab93b5-6705-43b1-a066-baa18da87d4d",
           "35d26db8-3fed-433a-8290-62c964654075",
-          "9b89dd85-fe2b-4842-b039-356d2efe5d7f",
           "04633a6a-11ea-477b-b6d0-447a60f6549b",
           "555bc7d2-b527-42a1-9c6e-f948e7e16468",
           "40261d7a-8286-478f-b13a-6bffd8f1af70",
+          "4422c73f-6e9c-4ae6-b48a-a0c9c8c21e6b",
+          "0cbd5d7a-af9d-495d-a6a6-a64c1f2bdad7",
+          "9275aeaf-85c3-49f5-9e54-8c7297420e42",
           "c26109bc-a5be-442d-8cf9-cdb5f3d53aa1",
           "bce84912-f2f4-43c7-bcc9-60fcedf15ce8",
-          "d9740396-ebbb-4270-8c0f-2a6dab664951",
           "5eab017d-89ac-4e3a-a7b0-7c0aa19b5f85",
           "a19a2d73-acf3-4e75-aa29-6ba0ab4476f2",
           "84c46f80-82fc-40b3-80cf-25dfe00ebd7b",
           "8824866b-471f-431e-a0b6-62d9427724fe",
           "7ea0ca69-bdba-41d5-bc75-d8ccfc774f6e",
+          "545971cc-5089-492d-a284-a194853b17b2",
+          "d817ae54-7ad4-4062-98b0-5752866db4f3",
           "cdabd767-043b-4ded-9de4-084593a85f8b",
           "bafedd9c-fe22-41d3-ac1c-eb70c3b722a1",
-          "b09a2d4c-b95a-4ee4-9802-21e48f116cc2",
-          "b04ee1d9-9dba-48f4-ad36-46e221922f33",
+          "d6da27ff-d2e1-4571-9113-4f6068ea51f0",
           "da162f4e-1133-44ee-a2a0-1b0635a7f95f",
+          "23080dff-7634-474e-a3c1-53215275edda",
           "1e341e43-531e-4efa-960f-7bd631f6661f",
           "9bfdad18-5513-4d75-85d9-71ea6a51f9fa",
           "0f8d04c3-901e-4945-8454-e7f186f4e36c",
           "c6fef191-6772-4abc-9183-c8b1ba6184de"
         ],
         "format": {
-          "page_cover": "https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6d791794-f49d-4dd0-bdb1-fd580d82aebc/Kassel_Labs_Horizontal.png",
+          "page_cover": "https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b78f2d04-e5d1-45df-9d97-3648d9afeff4/Kassel_Labs_Horizontal.png",
           "copied_from_pointer": {
             "id": "47ac9b4d-1490-4e10-9d46-98becb1ac253",
             "table": "block",
             "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
           },
-          "page_cover_position": 0.5
+          "page_cover_position": 0.57
         },
         "permissions": [
           {
@@ -71,7 +74,7 @@
         ],
         "created_time": 1644953761980,
         "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
-        "last_edited_time": 1645026420000,
+        "last_edited_time": 1645049280000,
         "parent_id": "fc1dc65d-f35a-4235-b270-2513795d533e",
         "parent_table": "block",
         "alive": true,
@@ -79,12 +82,15 @@
         "file_ids": [
           "55e3c80d-b06b-482a-9e84-e48b30882e25",
           "63988a48-61c9-493e-9c52-fd7668347f0c",
-          "6d791794-f49d-4dd0-bdb1-fd580d82aebc"
+          "6d791794-f49d-4dd0-bdb1-fd580d82aebc",
+          "6fa4a9de-6039-47fa-a450-0be12d952086",
+          "c0038a2e-e2c6-48c6-b29e-91ca7af4b0a6",
+          "b78f2d04-e5d1-45df-9d97-3648d9afeff4"
         ],
         "created_by_table": "notion_user",
         "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
         "last_edited_by_table": "notion_user",
-        "last_edited_by_id": "c4a07b7d-7a62-4756-9eee-8ecafc88300d",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
         "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
       }
     },
@@ -126,7 +132,7 @@
       "role": "reader",
       "value": {
         "id": "28bda1df-0fec-4de8-9452-4a771d42a12f",
-        "version": 229,
+        "version": 231,
         "type": "text",
         "properties": {
           "title": [
@@ -144,7 +150,7 @@
         },
         "created_time": 1644953761984,
         "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
-        "last_edited_time": 1645017840000,
+        "last_edited_time": 1645039440000,
         "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
         "parent_table": "block",
         "alive": true,
@@ -156,11 +162,11 @@
         "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
       }
     },
-    "73916033-2d6d-4792-80a8-7ec2fb243f1d": {
+    "ed024a6a-a0a4-452b-a451-a5f9d9a598a1": {
       "role": "reader",
       "value": {
-        "id": "73916033-2d6d-4792-80a8-7ec2fb243f1d",
-        "version": 92,
+        "id": "ed024a6a-a0a4-452b-a451-a5f9d9a598a1",
+        "version": 10,
         "type": "text",
         "properties": {
           "title": [
@@ -169,92 +175,17 @@
               [
                 [
                   "a",
-                  "/fa8f3e0647af4384862471b606d6a35a"
+                  "https://kassellabs.io/ventures"
                 ]
               ]
             ]
           ]
         },
-        "created_time": 1645017840000,
-        "last_edited_time": 1645017900000,
+        "created_time": 1645039440000,
+        "last_edited_time": 1645039500000,
         "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
         "parent_table": "block",
         "alive": true,
-        "created_by_table": "notion_user",
-        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
-        "last_edited_by_table": "notion_user",
-        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
-        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
-      }
-    },
-    "fa8f3e06-47af-4384-8624-71b606d6a35a": {
-      "role": "reader",
-      "value": {
-        "id": "fa8f3e06-47af-4384-8624-71b606d6a35a",
-        "version": 63,
-        "type": "page",
-        "properties": {
-          "title": [
-            [
-              "Kassel Ventures"
-            ]
-          ]
-        },
-        "content": [
-          "8d7c48da-4e51-4135-aafa-86a70fe19db1",
-          "346b800b-56eb-4fb5-9cc6-a668222e3044",
-          "ab80473c-248c-43a3-b47e-b4a8b75fe822",
-          "1ce24af2-b6d7-4c43-91f3-8c725531fb1f",
-          "138e13c6-28a4-4e33-836e-6183e622ced2",
-          "ff6953b7-ab23-40c4-b0e8-c7c150a1ae60",
-          "304e577a-92d0-4dad-aa35-5e31d06ec2c5",
-          "d7ffa1f1-b2bb-4704-848f-e01df3075fed",
-          "b2e1914c-962d-4f97-992e-9ce16e3dd5bf",
-          "9edfc494-5029-4562-b407-d14d9321120f",
-          "f76e1560-b33c-4745-b33a-345a87c00a55",
-          "40372259-af1e-44d1-9c8f-edbb7db9214c",
-          "09b214ff-84a0-4637-97c9-f4a646ec85cf",
-          "14eab58b-91bf-456b-a6fb-9ea7fe4595a7",
-          "511392d9-beda-49ef-a383-a7e4f3227b8d",
-          "a6a03b45-77d1-4b9e-9a3e-967cb461a0f0",
-          "802ad17a-f00f-415b-94d8-96882e510cb7",
-          "ca41b124-2f81-4dcd-abc4-72fff5079ed7",
-          "1d7300c7-7d3e-452e-8f4f-a93be9ec4ec9",
-          "1b14ecda-2121-4c54-8c2b-e2832ed16e04",
-          "3cb6b081-6a46-44e0-b7c0-1a7bd3b437b0",
-          "72918f7d-850a-4944-89ed-e097421301c2",
-          "10deb3c8-34aa-4005-9eec-b419304ebdb4",
-          "ba07ac73-3d8d-4dd5-a2f2-41154c212617",
-          "8b253cef-6ce3-4b8d-a422-e0748a4e5844"
-        ],
-        "format": {
-          "page_cover": "https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e1645a1a-8b59-42e3-9a9f-3a215a5df923/KasselVentures.png",
-          "copied_from_pointer": {
-            "id": "280920d7-8acd-425d-bebf-f3a4d0bc0c6e",
-            "table": "block",
-            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
-          },
-          "page_cover_position": 0.5
-        },
-        "permissions": [
-          {
-            "role": "reader",
-            "type": "public_permission",
-            "added_timestamp": 1644968671199,
-            "allow_duplicate": false
-          }
-        ],
-        "created_time": 1644953761980,
-        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
-        "last_edited_time": 1645025160000,
-        "parent_id": "fc1dc65d-f35a-4235-b270-2513795d533e",
-        "parent_table": "block",
-        "alive": true,
-        "copied_from": "280920d7-8acd-425d-bebf-f3a4d0bc0c6e",
-        "file_ids": [
-          "326e74a3-eaf4-4150-9804-b04ff38cd888",
-          "e1645a1a-8b59-42e3-9a9f-3a215a5df923"
-        ],
         "created_by_table": "notion_user",
         "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
         "last_edited_by_table": "notion_user",
@@ -300,12 +231,12 @@
       "role": "reader",
       "value": {
         "id": "5a0726d1-a338-444a-854b-3ef3b5749537",
-        "version": 3,
+        "version": 93,
         "type": "text",
         "properties": {
           "title": [
             [
-              "Buscamos estagiários que tenham vontade de aprender tecnologias para a Web e queiram fazer parte da construção do Videiomatik. O trabalho será Fullstack e você irá atuar tanto no desenvolvimento do Frontend quanto do Backend. Você irá trabalhar diretamente com os sócios de tecnologia, fazendo bastante pair programming, principalmente no começo para se familiarizar com as tecnologias. Trabalhamos com code review e bastante troca de conhecimento. Você irá trabalhar também com tecnologias inovadoras para renderização de vídeo."
+              "Buscamos estagiários que tenham vontade de aprender tecnologias para a Web e queiram fazer parte da construção dos nossos produtos. O foco será Frontend mas você poderá atuar no Backend também se tiver interesse. Você irá trabalhar diretamente com os sócios de tecnologia, fazendo bastante pair programming, principalmente no começo para se familiarizar com as tecnologias. Trabalhamos com code review e bastante troca de conhecimento."
             ]
           ]
         },
@@ -318,7 +249,7 @@
         },
         "created_time": 1644953761983,
         "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
-        "last_edited_time": 1645018260000,
+        "last_edited_time": 1645038660000,
         "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
         "parent_table": "block",
         "alive": true,
@@ -373,7 +304,7 @@
       "role": "reader",
       "value": {
         "id": "2e0ee499-3292-412c-ba73-000040c1ba64",
-        "version": 1,
+        "version": 23,
         "type": "bulleted_list",
         "properties": {
           "title": [
@@ -385,14 +316,9 @@
         "content": [
           "d5a7f871-b268-4fa1-9513-958fcdedd52c",
           "1f7069f2-63e7-47a3-9ba0-1f57c5fd11b9",
-          "f5d27104-bc28-45ee-bd2a-5af0d8bfc9d6",
-          "507110fc-05e8-461c-8b7e-67871a9fe97b",
-          "d85b3cea-e961-48d5-b039-7ee2bbdccba6",
-          "f8bb2293-fc9b-47e4-8524-ae69ce83aeca",
+          "93fddbd7-6fae-47b9-903d-31f34bf76cce",
           "e988f5b4-07d4-4ffd-b960-80b61379cb83",
-          "5151eed6-fc8e-44c1-a3dc-4a84770e1126",
-          "f159338b-6406-4d2e-86d9-11e33b63bd65",
-          "4c67036e-a8fc-4bc7-b95a-cf84a7573ae7"
+          "366a0eaf-a9fd-48d9-bf04-2990d51404ce"
         ],
         "format": {
           "copied_from_pointer": {
@@ -403,7 +329,7 @@
         },
         "created_time": 1644953761983,
         "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
-        "last_edited_time": 1644953761983,
+        "last_edited_time": 1645038840000,
         "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
         "parent_table": "block",
         "alive": true,
@@ -453,7 +379,7 @@
       "role": "reader",
       "value": {
         "id": "1f7069f2-63e7-47a3-9ba0-1f57c5fd11b9",
-        "version": 1,
+        "version": 3,
         "type": "bulleted_list",
         "properties": {
           "title": [
@@ -471,7 +397,7 @@
         },
         "created_time": 1644953761985,
         "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
-        "last_edited_time": 1644953761985,
+        "last_edited_time": 1645038720000,
         "parent_id": "2e0ee499-3292-412c-ba73-000040c1ba64",
         "parent_table": "block",
         "alive": true,
@@ -483,45 +409,11 @@
         "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
       }
     },
-    "f5d27104-bc28-45ee-bd2a-5af0d8bfc9d6": {
+    "93fddbd7-6fae-47b9-903d-31f34bf76cce": {
       "role": "reader",
       "value": {
-        "id": "f5d27104-bc28-45ee-bd2a-5af0d8bfc9d6",
-        "version": 1,
-        "type": "bulleted_list",
-        "properties": {
-          "title": [
-            [
-              "Node.js"
-            ]
-          ]
-        },
-        "format": {
-          "copied_from_pointer": {
-            "id": "7223ffbe-aed3-40c0-aa35-5a2707a47d75",
-            "table": "block",
-            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
-          }
-        },
-        "created_time": 1644953761985,
-        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
-        "last_edited_time": 1644953761985,
-        "parent_id": "2e0ee499-3292-412c-ba73-000040c1ba64",
-        "parent_table": "block",
-        "alive": true,
-        "copied_from": "7223ffbe-aed3-40c0-aa35-5a2707a47d75",
-        "created_by_table": "notion_user",
-        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
-        "last_edited_by_table": "notion_user",
-        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
-        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
-      }
-    },
-    "507110fc-05e8-461c-8b7e-67871a9fe97b": {
-      "role": "reader",
-      "value": {
-        "id": "507110fc-05e8-461c-8b7e-67871a9fe97b",
-        "version": 1,
+        "id": "93fddbd7-6fae-47b9-903d-31f34bf76cce",
+        "version": 15,
         "type": "bulleted_list",
         "properties": {
           "title": [
@@ -532,86 +424,18 @@
         },
         "format": {
           "copied_from_pointer": {
-            "id": "7b25fbc9-24b2-4a30-bf05-c35713a2f86b",
+            "id": "507110fc-05e8-461c-8b7e-67871a9fe97b",
             "table": "block",
-            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
+            "spaceId": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
           }
         },
-        "created_time": 1644953761985,
-        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
-        "last_edited_time": 1644953761985,
+        "created_time": 1645038775702,
+        "last_edited_by": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_time": 1645038840000,
         "parent_id": "2e0ee499-3292-412c-ba73-000040c1ba64",
         "parent_table": "block",
         "alive": true,
-        "copied_from": "7b25fbc9-24b2-4a30-bf05-c35713a2f86b",
-        "created_by_table": "notion_user",
-        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
-        "last_edited_by_table": "notion_user",
-        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
-        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
-      }
-    },
-    "d85b3cea-e961-48d5-b039-7ee2bbdccba6": {
-      "role": "reader",
-      "value": {
-        "id": "d85b3cea-e961-48d5-b039-7ee2bbdccba6",
-        "version": 1,
-        "type": "bulleted_list",
-        "properties": {
-          "title": [
-            [
-              "Firebase"
-            ]
-          ]
-        },
-        "format": {
-          "copied_from_pointer": {
-            "id": "4f7d1b2e-2681-407a-adb2-9509015f9819",
-            "table": "block",
-            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
-          }
-        },
-        "created_time": 1644953761985,
-        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
-        "last_edited_time": 1644953761985,
-        "parent_id": "2e0ee499-3292-412c-ba73-000040c1ba64",
-        "parent_table": "block",
-        "alive": true,
-        "copied_from": "4f7d1b2e-2681-407a-adb2-9509015f9819",
-        "created_by_table": "notion_user",
-        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
-        "last_edited_by_table": "notion_user",
-        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
-        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
-      }
-    },
-    "f8bb2293-fc9b-47e4-8524-ae69ce83aeca": {
-      "role": "reader",
-      "value": {
-        "id": "f8bb2293-fc9b-47e4-8524-ae69ce83aeca",
-        "version": 1,
-        "type": "bulleted_list",
-        "properties": {
-          "title": [
-            [
-              "JavaScript!"
-            ]
-          ]
-        },
-        "format": {
-          "copied_from_pointer": {
-            "id": "21ca82ad-3274-4704-ada7-c433321aae8e",
-            "table": "block",
-            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
-          }
-        },
-        "created_time": 1644953761984,
-        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
-        "last_edited_time": 1644953761984,
-        "parent_id": "2e0ee499-3292-412c-ba73-000040c1ba64",
-        "parent_table": "block",
-        "alive": true,
-        "copied_from": "21ca82ad-3274-4704-ada7-c433321aae8e",
+        "copied_from": "507110fc-05e8-461c-8b7e-67871a9fe97b",
         "created_by_table": "notion_user",
         "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
         "last_edited_by_table": "notion_user",
@@ -623,7 +447,7 @@
       "role": "reader",
       "value": {
         "id": "e988f5b4-07d4-4ffd-b960-80b61379cb83",
-        "version": 1,
+        "version": 6,
         "type": "bulleted_list",
         "properties": {
           "title": [
@@ -641,7 +465,7 @@
         },
         "created_time": 1644953761985,
         "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
-        "last_edited_time": 1644953761985,
+        "last_edited_time": 1645038840000,
         "parent_id": "2e0ee499-3292-412c-ba73-000040c1ba64",
         "parent_table": "block",
         "alive": true,
@@ -653,101 +477,24 @@
         "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
       }
     },
-    "5151eed6-fc8e-44c1-a3dc-4a84770e1126": {
+    "366a0eaf-a9fd-48d9-bf04-2990d51404ce": {
       "role": "reader",
       "value": {
-        "id": "5151eed6-fc8e-44c1-a3dc-4a84770e1126",
-        "version": 1,
+        "id": "366a0eaf-a9fd-48d9-bf04-2990d51404ce",
+        "version": 51,
         "type": "bulleted_list",
         "properties": {
           "title": [
             [
-              "Strapi.js"
+              "Capacitor e Ionic"
             ]
           ]
         },
-        "format": {
-          "copied_from_pointer": {
-            "id": "abec135f-d75d-4885-8fd4-2caa3b678b46",
-            "table": "block",
-            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
-          }
-        },
-        "created_time": 1644953761985,
-        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
-        "last_edited_time": 1644953761985,
+        "created_time": 1645038840000,
+        "last_edited_time": 1645039200000,
         "parent_id": "2e0ee499-3292-412c-ba73-000040c1ba64",
         "parent_table": "block",
         "alive": true,
-        "copied_from": "abec135f-d75d-4885-8fd4-2caa3b678b46",
-        "created_by_table": "notion_user",
-        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
-        "last_edited_by_table": "notion_user",
-        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
-        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
-      }
-    },
-    "f159338b-6406-4d2e-86d9-11e33b63bd65": {
-      "role": "reader",
-      "value": {
-        "id": "f159338b-6406-4d2e-86d9-11e33b63bd65",
-        "version": 1,
-        "type": "bulleted_list",
-        "properties": {
-          "title": [
-            [
-              "AWS"
-            ]
-          ]
-        },
-        "format": {
-          "copied_from_pointer": {
-            "id": "3482861f-a018-4ee5-963c-0d0d3fec85b2",
-            "table": "block",
-            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
-          }
-        },
-        "created_time": 1644953761985,
-        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
-        "last_edited_time": 1644953761985,
-        "parent_id": "2e0ee499-3292-412c-ba73-000040c1ba64",
-        "parent_table": "block",
-        "alive": true,
-        "copied_from": "3482861f-a018-4ee5-963c-0d0d3fec85b2",
-        "created_by_table": "notion_user",
-        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
-        "last_edited_by_table": "notion_user",
-        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
-        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
-      }
-    },
-    "4c67036e-a8fc-4bc7-b95a-cf84a7573ae7": {
-      "role": "reader",
-      "value": {
-        "id": "4c67036e-a8fc-4bc7-b95a-cf84a7573ae7",
-        "version": 1,
-        "type": "bulleted_list",
-        "properties": {
-          "title": [
-            [
-              "JavaScript e várias outras. Já falei JavaScript?"
-            ]
-          ]
-        },
-        "format": {
-          "copied_from_pointer": {
-            "id": "b61db2d1-4847-45bb-afe6-932e93db260d",
-            "table": "block",
-            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
-          }
-        },
-        "created_time": 1644953761985,
-        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
-        "last_edited_time": 1644953761985,
-        "parent_id": "2e0ee499-3292-412c-ba73-000040c1ba64",
-        "parent_table": "block",
-        "alive": true,
-        "copied_from": "b61db2d1-4847-45bb-afe6-932e93db260d",
         "created_by_table": "notion_user",
         "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
         "last_edited_by_table": "notion_user",
@@ -1031,12 +778,12 @@
       "role": "reader",
       "value": {
         "id": "9aab93b5-6705-43b1-a066-baa18da87d4d",
-        "version": 1,
+        "version": 32,
         "type": "text",
         "properties": {
           "title": [
             [
-              "Conhecimentos necessários pra você mandar bem: "
+              "Conhecimentos necessários pra você mandar bem pra nossa vaga: "
             ]
           ]
         },
@@ -1049,7 +796,7 @@
         },
         "created_time": 1644953761984,
         "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
-        "last_edited_time": 1644953761984,
+        "last_edited_time": 1645039200000,
         "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
         "parent_table": "block",
         "alive": true,
@@ -1065,7 +812,7 @@
       "role": "reader",
       "value": {
         "id": "35d26db8-3fed-433a-8290-62c964654075",
-        "version": 1,
+        "version": 3,
         "type": "bulleted_list",
         "properties": {
           "title": [
@@ -1083,7 +830,7 @@
         },
         "created_time": 1644953761984,
         "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
-        "last_edited_time": 1644953761984,
+        "last_edited_time": 1645039200000,
         "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
         "parent_table": "block",
         "alive": true,
@@ -1095,50 +842,16 @@
         "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
       }
     },
-    "9b89dd85-fe2b-4842-b039-356d2efe5d7f": {
-      "role": "reader",
-      "value": {
-        "id": "9b89dd85-fe2b-4842-b039-356d2efe5d7f",
-        "version": 1,
-        "type": "bulleted_list",
-        "properties": {
-          "title": [
-            [
-              "Contato com algum framework de backend"
-            ]
-          ]
-        },
-        "format": {
-          "copied_from_pointer": {
-            "id": "64ac252c-7eeb-4653-90c3-4c9b274b635b",
-            "table": "block",
-            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
-          }
-        },
-        "created_time": 1644953761983,
-        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
-        "last_edited_time": 1644953761983,
-        "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
-        "parent_table": "block",
-        "alive": true,
-        "copied_from": "64ac252c-7eeb-4653-90c3-4c9b274b635b",
-        "created_by_table": "notion_user",
-        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
-        "last_edited_by_table": "notion_user",
-        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
-        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
-      }
-    },
     "04633a6a-11ea-477b-b6d0-447a60f6549b": {
       "role": "reader",
       "value": {
         "id": "04633a6a-11ea-477b-b6d0-447a60f6549b",
-        "version": 1,
+        "version": 4,
         "type": "bulleted_list",
         "properties": {
           "title": [
             [
-              "Conhecimentos básicos de Linux e Git"
+              "Conhecimentos básicos de Git"
             ]
           ]
         },
@@ -1151,7 +864,7 @@
         },
         "created_time": 1644953761983,
         "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
-        "last_edited_time": 1644953761983,
+        "last_edited_time": 1645039200000,
         "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
         "parent_table": "block",
         "alive": true,
@@ -1201,7 +914,7 @@
       "role": "reader",
       "value": {
         "id": "40261d7a-8286-478f-b13a-6bffd8f1af70",
-        "version": 1,
+        "version": 3,
         "type": "bulleted_list",
         "properties": {
           "title": [
@@ -1219,11 +932,86 @@
         },
         "created_time": 1644953761983,
         "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
-        "last_edited_time": 1644953761983,
+        "last_edited_time": 1645039260000,
         "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
         "parent_table": "block",
         "alive": true,
         "copied_from": "55405604-2b8d-4df2-83d3-d11735386346",
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "4422c73f-6e9c-4ae6-b48a-a0c9c8c21e6b": {
+      "role": "reader",
+      "value": {
+        "id": "4422c73f-6e9c-4ae6-b48a-a0c9c8c21e6b",
+        "version": 25,
+        "type": "sub_header",
+        "properties": {
+          "title": [
+            [
+              "Diferenciais"
+            ]
+          ]
+        },
+        "created_time": 1645039260000,
+        "last_edited_time": 1645039260000,
+        "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
+        "parent_table": "block",
+        "alive": true,
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "0cbd5d7a-af9d-495d-a6a6-a64c1f2bdad7": {
+      "role": "reader",
+      "value": {
+        "id": "0cbd5d7a-af9d-495d-a6a6-a64c1f2bdad7",
+        "version": 32,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "Ter projetos open source"
+            ]
+          ]
+        },
+        "created_time": 1645039260000,
+        "last_edited_time": 1645039260000,
+        "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
+        "parent_table": "block",
+        "alive": true,
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "9275aeaf-85c3-49f5-9e54-8c7297420e42": {
+      "role": "reader",
+      "value": {
+        "id": "9275aeaf-85c3-49f5-9e54-8c7297420e42",
+        "version": 98,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "Já ter estudados sobre UI/UX"
+            ]
+          ]
+        },
+        "created_time": 1645039260000,
+        "last_edited_time": 1645039320000,
+        "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
+        "parent_table": "block",
+        "alive": true,
         "created_by_table": "notion_user",
         "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
         "last_edited_by_table": "notion_user",
@@ -1269,8 +1057,8 @@
       "role": "reader",
       "value": {
         "id": "bce84912-f2f4-43c7-bcc9-60fcedf15ce8",
-        "version": 1,
-        "type": "text",
+        "version": 7,
+        "type": "bulleted_list",
         "properties": {
           "title": [
             [
@@ -1278,6 +1066,9 @@
             ]
           ]
         },
+        "content": [
+          "d9740396-ebbb-4270-8c0f-2a6dab664951"
+        ],
         "format": {
           "copied_from_pointer": {
             "id": "d2143ae7-001b-4349-8e5b-d644542e3529",
@@ -1287,7 +1078,7 @@
         },
         "created_time": 1644953761984,
         "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
-        "last_edited_time": 1644953761984,
+        "last_edited_time": 1645039500000,
         "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
         "parent_table": "block",
         "alive": true,
@@ -1303,8 +1094,8 @@
       "role": "reader",
       "value": {
         "id": "d9740396-ebbb-4270-8c0f-2a6dab664951",
-        "version": 1,
-        "type": "text",
+        "version": 8,
+        "type": "bulleted_list",
         "properties": {
           "title": [
             [
@@ -1321,8 +1112,8 @@
         },
         "created_time": 1644953761984,
         "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
-        "last_edited_time": 1644953761984,
-        "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
+        "last_edited_time": 1645039500000,
+        "parent_id": "bce84912-f2f4-43c7-bcc9-60fcedf15ce8",
         "parent_table": "block",
         "alive": true,
         "copied_from": "b3dea926-20b6-4854-95b0-4865ecdb418f",
@@ -1364,8 +1155,8 @@
       "role": "reader",
       "value": {
         "id": "a19a2d73-acf3-4e75-aa29-6ba0ab4476f2",
-        "version": 1,
-        "type": "text",
+        "version": 6,
+        "type": "bulleted_list",
         "properties": {
           "title": [
             [
@@ -1382,7 +1173,7 @@
         },
         "created_time": 1644953761984,
         "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
-        "last_edited_time": 1644953761984,
+        "last_edited_time": 1645039500000,
         "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
         "parent_table": "block",
         "alive": true,
@@ -1398,8 +1189,8 @@
       "role": "reader",
       "value": {
         "id": "84c46f80-82fc-40b3-80cf-25dfe00ebd7b",
-        "version": 1,
-        "type": "text",
+        "version": 6,
+        "type": "bulleted_list",
         "properties": {
           "title": [
             [
@@ -1416,7 +1207,7 @@
         },
         "created_time": 1644953761984,
         "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
-        "last_edited_time": 1644953761984,
+        "last_edited_time": 1645039500000,
         "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
         "parent_table": "block",
         "alive": true,
@@ -1432,8 +1223,8 @@
       "role": "reader",
       "value": {
         "id": "8824866b-471f-431e-a0b6-62d9427724fe",
-        "version": 1,
-        "type": "text",
+        "version": 6,
+        "type": "bulleted_list",
         "properties": {
           "title": [
             [
@@ -1450,7 +1241,7 @@
         },
         "created_time": 1644953761984,
         "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
-        "last_edited_time": 1644953761984,
+        "last_edited_time": 1645039500000,
         "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
         "parent_table": "block",
         "alive": true,
@@ -1466,8 +1257,8 @@
       "role": "reader",
       "value": {
         "id": "7ea0ca69-bdba-41d5-bc75-d8ccfc774f6e",
-        "version": 1,
-        "type": "text",
+        "version": 8,
+        "type": "bulleted_list",
         "properties": {
           "title": [
             [
@@ -1484,11 +1275,61 @@
         },
         "created_time": 1644953761983,
         "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
-        "last_edited_time": 1644953761983,
+        "last_edited_time": 1645044240000,
         "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
         "parent_table": "block",
         "alive": true,
         "copied_from": "22ea0723-c9a9-4d36-b29b-8469ca5569a5",
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "545971cc-5089-492d-a284-a194853b17b2": {
+      "role": "reader",
+      "value": {
+        "id": "545971cc-5089-492d-a284-a194853b17b2",
+        "version": 28,
+        "type": "sub_header",
+        "properties": {
+          "title": [
+            [
+              "Etapas do processo"
+            ]
+          ]
+        },
+        "created_time": 1645044180000,
+        "last_edited_time": 1645044240000,
+        "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
+        "parent_table": "block",
+        "alive": true,
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "d817ae54-7ad4-4062-98b0-5752866db4f3": {
+      "role": "reader",
+      "value": {
+        "id": "d817ae54-7ad4-4062-98b0-5752866db4f3",
+        "version": 75,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "Análise de currículo → Teste técnico → Entrevista"
+            ]
+          ]
+        },
+        "created_time": 1645044240000,
+        "last_edited_time": 1645044240000,
+        "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
+        "parent_table": "block",
+        "alive": true,
         "created_by_table": "notion_user",
         "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
         "last_edited_by_table": "notion_user",
@@ -1527,22 +1368,32 @@
       "role": "reader",
       "value": {
         "id": "bafedd9c-fe22-41d3-ac1c-eb70c3b722a1",
-        "version": 1,
+        "version": 81,
         "type": "text",
-        "format": {
-          "copied_from_pointer": {
-            "id": "d6fdec2a-7de7-46bf-855e-0afb4da23e27",
-            "table": "block",
-            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
-          }
+        "properties": {
+          "title": [
+            [
+              "Não esqueça de conhecer sobre nossos projetos "
+            ],
+            [
+              "aqui",
+              [
+                [
+                  "a",
+                  "https://kassellabs.io/ventures"
+                ]
+              ]
+            ],
+            [
+              "!"
+            ]
+          ]
         },
-        "created_time": 1644953761984,
-        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
-        "last_edited_time": 1644953761984,
+        "created_time": 1645040520000,
+        "last_edited_time": 1645040640000,
         "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
         "parent_table": "block",
         "alive": true,
-        "copied_from": "d6fdec2a-7de7-46bf-855e-0afb4da23e27",
         "created_by_table": "notion_user",
         "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
         "last_edited_by_table": "notion_user",
@@ -1550,16 +1401,16 @@
         "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
       }
     },
-    "b09a2d4c-b95a-4ee4-9802-21e48f116cc2": {
+    "d6da27ff-d2e1-4571-9113-4f6068ea51f0": {
       "role": "reader",
       "value": {
-        "id": "b09a2d4c-b95a-4ee4-9802-21e48f116cc2",
-        "version": 1,
+        "id": "d6da27ff-d2e1-4571-9113-4f6068ea51f0",
+        "version": 149,
         "type": "text",
         "properties": {
           "title": [
             [
-              "Entre no nosso site e conheça nosso trabalho, lá você pode experimentar o Videomatik: "
+              "Experimente um de nossos projetos como o Videomatik, lá você pode fazer um teste gratuito: "
             ],
             [
               "videomatik.com.br",
@@ -1574,73 +1425,18 @@
         },
         "format": {
           "copied_from_pointer": {
-            "id": "11ffab79-03e1-4c2b-9c60-0b6d8e2147d2",
+            "id": "d6fdec2a-7de7-46bf-855e-0afb4da23e27",
             "table": "block",
             "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
           }
         },
-        "created_time": 1644953761983,
+        "created_time": 1644953761984,
         "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
-        "last_edited_time": 1644953761983,
+        "last_edited_time": 1645040700000,
         "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
         "parent_table": "block",
         "alive": true,
-        "copied_from": "11ffab79-03e1-4c2b-9c60-0b6d8e2147d2",
-        "created_by_table": "notion_user",
-        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
-        "last_edited_by_table": "notion_user",
-        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
-        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
-      }
-    },
-    "b04ee1d9-9dba-48f4-ad36-46e221922f33": {
-      "role": "reader",
-      "value": {
-        "id": "b04ee1d9-9dba-48f4-ad36-46e221922f33",
-        "version": 1,
-        "type": "text",
-        "properties": {
-          "title": [
-            [
-              "Conheça também as empresas fundadoras "
-            ],
-            [
-              "http://kassellabs.io/",
-              [
-                [
-                  "a",
-                  "http://kassellabs.io/"
-                ]
-              ]
-            ],
-            [
-              " e "
-            ],
-            [
-              "https://ozprodutora.com.br/",
-              [
-                [
-                  "a",
-                  "https://ozprodutora.com.br/"
-                ]
-              ]
-            ]
-          ]
-        },
-        "format": {
-          "copied_from_pointer": {
-            "id": "414a87be-365f-44d8-8101-a64157565f2f",
-            "table": "block",
-            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
-          }
-        },
-        "created_time": 1644953761983,
-        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
-        "last_edited_time": 1644953761983,
-        "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
-        "parent_table": "block",
-        "alive": true,
-        "copied_from": "414a87be-365f-44d8-8101-a64157565f2f",
+        "copied_from": "d6fdec2a-7de7-46bf-855e-0afb4da23e27",
         "created_by_table": "notion_user",
         "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
         "last_edited_by_table": "notion_user",
@@ -1652,8 +1448,33 @@
       "role": "reader",
       "value": {
         "id": "da162f4e-1133-44ee-a2a0-1b0635a7f95f",
-        "version": 1,
+        "version": 3,
         "type": "text",
+        "created_time": 1645039380000,
+        "last_edited_time": 1645039380000,
+        "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
+        "parent_table": "block",
+        "alive": true,
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "23080dff-7634-474e-a3c1-53215275edda": {
+      "role": "reader",
+      "value": {
+        "id": "23080dff-7634-474e-a3c1-53215275edda",
+        "version": 68,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "Ficou interessado na vaga ou ficou com alguma dúvida?"
+            ]
+          ]
+        },
         "format": {
           "copied_from_pointer": {
             "id": "2c43ea7e-9375-4ede-a3f4-afe947d391e9",
@@ -1663,7 +1484,7 @@
         },
         "created_time": 1644953761983,
         "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
-        "last_edited_time": 1644953761983,
+        "last_edited_time": 1645039380000,
         "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
         "parent_table": "block",
         "alive": true,
@@ -1679,22 +1500,22 @@
       "role": "reader",
       "value": {
         "id": "1e341e43-531e-4efa-960f-7bd631f6661f",
-        "version": 1,
+        "version": 98,
         "type": "text",
         "properties": {
           "title": [
             [
-              "Interesse ou dúvidas enviar email para: "
+              "Mande seu Currículo ou LinkedIn para o email: "
             ],
             [
-              "vagas@videomatik.com.br",
+              "vagas@kassellabs.io",
               [
                 [
                   "b"
                 ],
                 [
                   "a",
-                  "mailto:vagas@videomatik.com.br"
+                  "mailto:vagas@kassellabs.io"
                 ]
               ]
             ]
@@ -1709,7 +1530,7 @@
         },
         "created_time": 1644953761983,
         "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
-        "last_edited_time": 1644953761983,
+        "last_edited_time": 1645039440000,
         "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
         "parent_table": "block",
         "alive": true,
@@ -1809,6 +1630,6 @@
   "notion_user": {},
   "collection_query": {},
   "signed_urls": {
-    "ef891e94-7502-45ad-aed2-f72f262168b0": "https://kassellabs.io/assets/Kassel_Labs_Horizontal.png"
+    "ef891e94-7502-45ad-aed2-f72f262168b0": "https://kassellabs.io/assets/notion/Kassel_Labs_Horizontal.png"
   }
 }

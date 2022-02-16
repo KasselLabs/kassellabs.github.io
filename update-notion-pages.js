@@ -11,6 +11,13 @@ const PAGES = {
 const notion = new NotionAPI();
 
 const main = async () => {
+  const imagesDir = path.join(__dirname, 'static', 'assets', 'notion');
+  if (fs.existsSync(imagesDir)) {
+    fs.rmdirSync(imagesDir, { recursive: true });
+  }
+
+  fs.mkdirSync(imagesDir);
+
   await Promise.all(Object.entries(PAGES).map(async ([pageId, jsonPath]) => {
     const recordMap = await notion.getPage(pageId);
 
@@ -23,10 +30,12 @@ const main = async () => {
       const url = signedURL.split('?')[0];
       const { name, ext } = path.parse(url);
       const filename = `${name}${ext}`;
-      const filepath = path.join(__dirname, 'static', 'assets', filename);
+      const filepath = path.join(imagesDir, filename);
+
+
       fs.writeFileSync(filepath, response.data);
 
-      recordMap.signed_urls[urlID] = `https://kassellabs.io/assets/${filename}`;
+      recordMap.signed_urls[urlID] = `https://kassellabs.io/assets/notion/${filename}`;
     }));
 
     const recordMapString = JSON.stringify(recordMap, null, 2);

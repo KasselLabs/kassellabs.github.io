@@ -4,7 +4,7 @@
       "role": "reader",
       "value": {
         "id": "fa8f3e06-47af-4384-8624-71b606d6a35a",
-        "version": 63,
+        "version": 88,
         "type": "page",
         "properties": {
           "title": [
@@ -17,13 +17,15 @@
           "8d7c48da-4e51-4135-aafa-86a70fe19db1",
           "346b800b-56eb-4fb5-9cc6-a668222e3044",
           "ab80473c-248c-43a3-b47e-b4a8b75fe822",
-          "1ce24af2-b6d7-4c43-91f3-8c725531fb1f",
+          "5d349ca9-a50f-42e3-ba75-ca585115f0d9",
           "138e13c6-28a4-4e33-836e-6183e622ced2",
+          "198474c2-244e-4240-99bb-bb08fcafa2be",
           "ff6953b7-ab23-40c4-b0e8-c7c150a1ae60",
           "304e577a-92d0-4dad-aa35-5e31d06ec2c5",
           "d7ffa1f1-b2bb-4704-848f-e01df3075fed",
-          "b2e1914c-962d-4f97-992e-9ce16e3dd5bf",
+          "c95cf750-292d-48aa-b8ea-510eed2dacde",
           "9edfc494-5029-4562-b407-d14d9321120f",
+          "c0a93f14-deab-43f0-8c04-d0dafa6f4b1c",
           "f76e1560-b33c-4745-b33a-345a87c00a55",
           "40372259-af1e-44d1-9c8f-edbb7db9214c",
           "09b214ff-84a0-4637-97c9-f4a646ec85cf",
@@ -41,7 +43,7 @@
           "8b253cef-6ce3-4b8d-a422-e0748a4e5844"
         ],
         "format": {
-          "page_cover": "https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e1645a1a-8b59-42e3-9a9f-3a215a5df923/KasselVentures.png",
+          "page_cover": "https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0f20f594-8fd5-44da-8413-d49fbd36ae88/KasselVentures.png",
           "copied_from_pointer": {
             "id": "280920d7-8acd-425d-bebf-f3a4d0bc0c6e",
             "table": "block",
@@ -59,14 +61,16 @@
         ],
         "created_time": 1644953761980,
         "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
-        "last_edited_time": 1645025160000,
+        "last_edited_time": 1645049460000,
         "parent_id": "fc1dc65d-f35a-4235-b270-2513795d533e",
         "parent_table": "block",
         "alive": true,
         "copied_from": "280920d7-8acd-425d-bebf-f3a4d0bc0c6e",
         "file_ids": [
           "326e74a3-eaf4-4150-9804-b04ff38cd888",
-          "e1645a1a-8b59-42e3-9a9f-3a215a5df923"
+          "e1645a1a-8b59-42e3-9a9f-3a215a5df923",
+          "131505f8-f9d2-42bd-b9d8-561d95a5e651",
+          "0f20f594-8fd5-44da-8413-d49fbd36ae88"
         ],
         "created_by_table": "notion_user",
         "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
@@ -231,16 +235,16 @@
         "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
       }
     },
-    "1ce24af2-b6d7-4c43-91f3-8c725531fb1f": {
+    "5d349ca9-a50f-42e3-ba75-ca585115f0d9": {
       "role": "reader",
       "value": {
-        "id": "1ce24af2-b6d7-4c43-91f3-8c725531fb1f",
-        "version": 1,
+        "id": "5d349ca9-a50f-42e3-ba75-ca585115f0d9",
+        "version": 9,
         "type": "image",
         "properties": {
           "size": [
             [
-              "32.8KB"
+              "24.2KB"
             ]
           ],
           "title": [
@@ -250,34 +254,26 @@
           ],
           "source": [
             [
-              "https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5acb2bc6-f15d-4c5f-a009-5e6abf01d303/KasselLabsTitle.png"
+              "https://s3-us-west-2.amazonaws.com/secure.notion-static.com/995aaba7-0271-4516-b5b2-b77ae73b48cc/KasselLabsTitle.png"
             ]
           ]
         },
         "format": {
-          "block_width": 528,
-          "display_source": "https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5acb2bc6-f15d-4c5f-a009-5e6abf01d303/KasselLabsTitle.png",
+          "block_width": 531,
+          "block_height": 150,
+          "display_source": "https://s3-us-west-2.amazonaws.com/secure.notion-static.com/995aaba7-0271-4516-b5b2-b77ae73b48cc/KasselLabsTitle.png",
           "block_full_width": false,
           "block_page_width": false,
-          "block_aspect_ratio": 0.282622533418205,
-          "copied_from_pointer": {
-            "id": "3d7881c3-2041-4c3e-931a-51a20d62d5b4",
-            "table": "block",
-            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
-          },
+          "block_aspect_ratio": 0.2824858757062147,
           "block_preserve_scale": true
         },
-        "created_time": 1644953761981,
-        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
-        "last_edited_time": 1644953761981,
+        "created_time": 1645046220000,
+        "last_edited_time": 1645046220000,
         "parent_id": "fa8f3e06-47af-4384-8624-71b606d6a35a",
         "parent_table": "block",
         "alive": true,
-        "copied_from": "3d7881c3-2041-4c3e-931a-51a20d62d5b4",
         "file_ids": [
-          "b92a1a9a-2d75-45d4-b0e3-86f5fa0cd24d",
-          "94dbc8c3-fc8d-42b6-946e-40d9ace575bd",
-          "5acb2bc6-f15d-4c5f-a009-5e6abf01d303"
+          "995aaba7-0271-4516-b5b2-b77ae73b48cc"
         ],
         "created_by_table": "notion_user",
         "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
@@ -290,7 +286,32 @@
       "role": "reader",
       "value": {
         "id": "138e13c6-28a4-4e33-836e-6183e622ced2",
-        "version": 1,
+        "version": 26,
+        "type": "sub_header",
+        "properties": {
+          "title": [
+            [
+              "Kassel Labs"
+            ]
+          ]
+        },
+        "created_time": 1645046160000,
+        "last_edited_time": 1645046280000,
+        "parent_id": "fa8f3e06-47af-4384-8624-71b606d6a35a",
+        "parent_table": "block",
+        "alive": true,
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "198474c2-244e-4240-99bb-bb08fcafa2be": {
+      "role": "reader",
+      "value": {
+        "id": "198474c2-244e-4240-99bb-bb08fcafa2be",
+        "version": 3,
         "type": "text",
         "properties": {
           "title": [
@@ -335,7 +356,7 @@
         },
         "created_time": 1644953761981,
         "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
-        "last_edited_time": 1644953761981,
+        "last_edited_time": 1645046160000,
         "parent_id": "fa8f3e06-47af-4384-8624-71b606d6a35a",
         "parent_table": "block",
         "alive": true,
@@ -447,51 +468,45 @@
         "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
       }
     },
-    "b2e1914c-962d-4f97-992e-9ce16e3dd5bf": {
+    "c95cf750-292d-48aa-b8ea-510eed2dacde": {
       "role": "reader",
       "value": {
-        "id": "b2e1914c-962d-4f97-992e-9ce16e3dd5bf",
-        "version": 1,
+        "id": "c95cf750-292d-48aa-b8ea-510eed2dacde",
+        "version": 10,
         "type": "image",
         "properties": {
           "size": [
             [
-              "1447.9KB"
+              "55.9KB"
             ]
           ],
           "title": [
             [
-              "Untitled"
+              "Untitled (1).png"
             ]
           ],
           "source": [
             [
-              "https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f6ff4317-6574-48e6-b1be-d8a1379fb00e/Untitled.png"
+              "https://s3-us-west-2.amazonaws.com/secure.notion-static.com/825046c9-6d3d-49e3-9eae-97ebb50942fc/Untitled_(1).png"
             ]
           ]
         },
         "format": {
-          "block_width": 528,
-          "display_source": "https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f6ff4317-6574-48e6-b1be-d8a1379fb00e/Untitled.png",
+          "block_width": 520,
+          "block_height": 150,
+          "display_source": "https://s3-us-west-2.amazonaws.com/secure.notion-static.com/825046c9-6d3d-49e3-9eae-97ebb50942fc/Untitled_(1).png",
           "block_full_width": false,
           "block_page_width": false,
-          "block_aspect_ratio": 0.28872814948764314,
-          "copied_from_pointer": {
-            "id": "c3c7a882-a325-48f8-93f0-e257983c6cf2",
-            "table": "block",
-            "spaceId": "c5c31335-f7b2-4360-8c6d-65ab84dab3b3"
-          },
+          "block_aspect_ratio": 0.28846153846153844,
           "block_preserve_scale": true
         },
-        "created_time": 1644953761982,
-        "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
-        "last_edited_time": 1644953761982,
+        "created_time": 1645046220000,
+        "last_edited_time": 1645046280000,
         "parent_id": "fa8f3e06-47af-4384-8624-71b606d6a35a",
         "parent_table": "block",
         "alive": true,
-        "copied_from": "c3c7a882-a325-48f8-93f0-e257983c6cf2",
         "file_ids": [
-          "f6ff4317-6574-48e6-b1be-d8a1379fb00e"
+          "825046c9-6d3d-49e3-9eae-97ebb50942fc"
         ],
         "created_by_table": "notion_user",
         "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
@@ -504,7 +519,32 @@
       "role": "reader",
       "value": {
         "id": "9edfc494-5029-4562-b407-d14d9321120f",
-        "version": 273,
+        "version": 290,
+        "type": "sub_header",
+        "properties": {
+          "title": [
+            [
+              "Videomatik"
+            ]
+          ]
+        },
+        "created_time": 1645046280000,
+        "last_edited_time": 1645046280000,
+        "parent_id": "fa8f3e06-47af-4384-8624-71b606d6a35a",
+        "parent_table": "block",
+        "alive": true,
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "c0a93f14-deab-43f0-8c04-d0dafa6f4b1c": {
+      "role": "reader",
+      "value": {
+        "id": "c0a93f14-deab-43f0-8c04-d0dafa6f4b1c",
+        "version": 3,
         "type": "text",
         "properties": {
           "title": [
@@ -537,7 +577,7 @@
         },
         "created_time": 1644953761982,
         "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
-        "last_edited_time": 1644968640000,
+        "last_edited_time": 1645046280000,
         "parent_id": "fa8f3e06-47af-4384-8624-71b606d6a35a",
         "parent_table": "block",
         "alive": true,
@@ -653,8 +693,8 @@
       "role": "reader",
       "value": {
         "id": "14eab58b-91bf-456b-a6fb-9ea7fe4595a7",
-        "version": 1,
-        "type": "header",
+        "version": 7,
+        "type": "sub_header",
         "properties": {
           "title": [
             [
@@ -671,7 +711,7 @@
         },
         "created_time": 1644953761982,
         "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
-        "last_edited_time": 1644953761982,
+        "last_edited_time": 1645046280000,
         "parent_id": "fa8f3e06-47af-4384-8624-71b606d6a35a",
         "parent_table": "block",
         "alive": true,
@@ -721,8 +761,8 @@
       "role": "reader",
       "value": {
         "id": "a6a03b45-77d1-4b9e-9a3e-967cb461a0f0",
-        "version": 1,
-        "type": "header",
+        "version": 7,
+        "type": "sub_header",
         "properties": {
           "title": [
             [
@@ -739,7 +779,7 @@
         },
         "created_time": 1644953761981,
         "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
-        "last_edited_time": 1644953761981,
+        "last_edited_time": 1645046280000,
         "parent_id": "fa8f3e06-47af-4384-8624-71b606d6a35a",
         "parent_table": "block",
         "alive": true,
@@ -954,10 +994,26 @@
       "role": "reader",
       "value": {
         "id": "ba07ac73-3d8d-4dd5-a2f2-41154c212617",
-        "version": 39,
+        "version": 80,
         "type": "text",
+        "properties": {
+          "title": [
+            [
+              "Acesse: "
+            ],
+            [
+              "https://kassellabs.io/vagas",
+              [
+                [
+                  "a",
+                  "https://kassellabs.io/vagas"
+                ]
+              ]
+            ]
+          ]
+        },
         "created_time": 1645017600000,
-        "last_edited_time": 1645025160000,
+        "last_edited_time": 1645046280000,
         "parent_id": "fa8f3e06-47af-4384-8624-71b606d6a35a",
         "parent_table": "block",
         "alive": true,
@@ -993,8 +1049,8 @@
   "notion_user": {},
   "collection_query": {},
   "signed_urls": {
-    "fa8f3e06-47af-4384-8624-71b606d6a35a": "https://kassellabs.io/assets/KasselVentures.png",
-    "1ce24af2-b6d7-4c43-91f3-8c725531fb1f": "https://kassellabs.io/assets/KasselLabsTitle.png",
-    "b2e1914c-962d-4f97-992e-9ce16e3dd5bf": "https://kassellabs.io/assets/Untitled.png"
+    "fa8f3e06-47af-4384-8624-71b606d6a35a": "https://kassellabs.io/assets/notion/KasselVentures.png",
+    "5d349ca9-a50f-42e3-ba75-ca585115f0d9": "https://kassellabs.io/assets/notion/KasselLabsTitle.png",
+    "c95cf750-292d-48aa-b8ea-510eed2dacde": "https://kassellabs.io/assets/notion/Untitled_%281%29.png"
   }
 }
