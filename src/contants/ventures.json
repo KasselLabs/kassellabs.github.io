@@ -4,7 +4,7 @@
       "role": "reader",
       "value": {
         "id": "fa8f3e06-47af-4384-8624-71b606d6a35a",
-        "version": 91,
+        "version": 92,
         "type": "page",
         "properties": {
           "title": [
@@ -61,7 +61,7 @@
         ],
         "created_time": 1644953761980,
         "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
-        "last_edited_time": 1645072860000,
+        "last_edited_time": 1645111020000,
         "parent_id": "fc1dc65d-f35a-4235-b270-2513795d533e",
         "parent_table": "block",
         "alive": true,
@@ -117,12 +117,12 @@
       "role": "reader",
       "value": {
         "id": "346b800b-56eb-4fb5-9cc6-a668222e3044",
-        "version": 1,
+        "version": 3,
         "type": "text",
         "properties": {
           "title": [
             [
-              "A Kassel Ventures representando o time por trás de diversas soluções de tecnologia que envolvem vídeos. Somos especializados em soluções que envolvam plataformas e automação de vídeos. Tudo começou com a "
+              "A Kassel Ventures representa o time por trás de diversas soluções de tecnologia que envolvem vídeos. Somos especializados em soluções que envolvam plataformas e automação de vídeos. Tudo começou com a "
             ],
             [
               "Kassel Labs",
@@ -196,7 +196,7 @@
         },
         "created_time": 1644953761982,
         "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
-        "last_edited_time": 1644953761982,
+        "last_edited_time": 1645111020000,
         "parent_id": "fa8f3e06-47af-4384-8624-71b606d6a35a",
         "parent_table": "block",
         "alive": true,
