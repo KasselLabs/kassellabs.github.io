@@ -4,7 +4,7 @@
       "role": "reader",
       "value": {
         "id": "fa8f3e06-47af-4384-8624-71b606d6a35a",
-        "version": 88,
+        "version": 91,
         "type": "page",
         "properties": {
           "title": [
@@ -23,7 +23,7 @@
           "ff6953b7-ab23-40c4-b0e8-c7c150a1ae60",
           "304e577a-92d0-4dad-aa35-5e31d06ec2c5",
           "d7ffa1f1-b2bb-4704-848f-e01df3075fed",
-          "c95cf750-292d-48aa-b8ea-510eed2dacde",
+          "c15ed4c6-01c1-4c48-85c5-16ee38c32368",
           "9edfc494-5029-4562-b407-d14d9321120f",
           "c0a93f14-deab-43f0-8c04-d0dafa6f4b1c",
           "f76e1560-b33c-4745-b33a-345a87c00a55",
@@ -61,7 +61,7 @@
         ],
         "created_time": 1644953761980,
         "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
-        "last_edited_time": 1645049460000,
+        "last_edited_time": 1645072860000,
         "parent_id": "fc1dc65d-f35a-4235-b270-2513795d533e",
         "parent_table": "block",
         "alive": true,
@@ -468,11 +468,11 @@
         "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
       }
     },
-    "c95cf750-292d-48aa-b8ea-510eed2dacde": {
+    "c15ed4c6-01c1-4c48-85c5-16ee38c32368": {
       "role": "reader",
       "value": {
-        "id": "c95cf750-292d-48aa-b8ea-510eed2dacde",
-        "version": 10,
+        "id": "c15ed4c6-01c1-4c48-85c5-16ee38c32368",
+        "version": 9,
         "type": "image",
         "properties": {
           "size": [
@@ -482,31 +482,31 @@
           ],
           "title": [
             [
-              "Untitled (1).png"
+              "VideomatikLogo.png"
             ]
           ],
           "source": [
             [
-              "https://s3-us-west-2.amazonaws.com/secure.notion-static.com/825046c9-6d3d-49e3-9eae-97ebb50942fc/Untitled_(1).png"
+              "https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c4a0dbf2-20c2-4b68-bb3a-1822eb2bc476/VideomatikLogo.png"
             ]
           ]
         },
         "format": {
           "block_width": 520,
           "block_height": 150,
-          "display_source": "https://s3-us-west-2.amazonaws.com/secure.notion-static.com/825046c9-6d3d-49e3-9eae-97ebb50942fc/Untitled_(1).png",
+          "display_source": "https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c4a0dbf2-20c2-4b68-bb3a-1822eb2bc476/VideomatikLogo.png",
           "block_full_width": false,
           "block_page_width": false,
           "block_aspect_ratio": 0.28846153846153844,
           "block_preserve_scale": true
         },
-        "created_time": 1645046220000,
-        "last_edited_time": 1645046280000,
+        "created_time": 1645072860000,
+        "last_edited_time": 1645072860000,
         "parent_id": "fa8f3e06-47af-4384-8624-71b606d6a35a",
         "parent_table": "block",
         "alive": true,
         "file_ids": [
-          "825046c9-6d3d-49e3-9eae-97ebb50942fc"
+          "c4a0dbf2-20c2-4b68-bb3a-1822eb2bc476"
         ],
         "created_by_table": "notion_user",
         "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
@@ -1051,6 +1051,6 @@
   "signed_urls": {
     "fa8f3e06-47af-4384-8624-71b606d6a35a": "https://kassellabs.io/assets/notion/KasselVentures.png",
     "5d349ca9-a50f-42e3-ba75-ca585115f0d9": "https://kassellabs.io/assets/notion/KasselLabsTitle.png",
-    "c95cf750-292d-48aa-b8ea-510eed2dacde": "https://kassellabs.io/assets/notion/Untitled_%281%29.png"
+    "c15ed4c6-01c1-4c48-85c5-16ee38c32368": "https://kassellabs.io/assets/notion/VideomatikLogo.png"
   }
 }
