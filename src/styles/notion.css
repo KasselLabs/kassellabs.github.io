@@ -3,6 +3,10 @@
 @import "../../node_modules/rc-dropdown/assets/index.css";
 @import "../../node_modules/katex/dist/katex.min.css";
 
+:root {
+  --notion-max-width: 900px;
+}
+
 .notion-frame {
   padding-top: 0;
 }

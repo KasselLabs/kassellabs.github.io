@@ -4,7 +4,7 @@
       "role": "reader",
       "value": {
         "id": "ef891e94-7502-45ad-aed2-f72f262168b0",
-        "version": 110,
+        "version": 131,
         "type": "page",
         "properties": {
           "title": [
@@ -15,6 +15,9 @@
         },
         "content": [
           "98a3bed4-159f-4070-ae9f-2e9a646213d2",
+          "b3ba8add-ab30-4413-af27-0b2cdc6a159b",
+          "a060ff23-31a7-42af-aff9-3f63da3532d5",
+          "1c6866d4-3ca6-4ae9-abb9-b192ec26f7f5",
           "28bda1df-0fec-4de8-9452-4a771d42a12f",
           "ed024a6a-a0a4-452b-a451-a5f9d9a598a1",
           "ce09c291-1c35-4828-a5ae-ae2d6a825e0c",
@@ -46,7 +49,8 @@
           "7ea0ca69-bdba-41d5-bc75-d8ccfc774f6e",
           "545971cc-5089-492d-a284-a194853b17b2",
           "d817ae54-7ad4-4062-98b0-5752866db4f3",
-          "c95ca9ed-f0ed-4176-9880-97ac0b63b3ff",
+          "4b8935da-f1e8-44e2-b585-cb66c1a332ab",
+          "1888b9ba-87a9-4721-9014-8763eed23cd7",
           "6e5b8480-8b49-4373-86e2-e5d7225f5d53",
           "0518e76f-9afd-4052-8a9f-8b15c80412be",
           "cdabd767-043b-4ded-9de4-084593a85f8b",
@@ -77,7 +81,7 @@
         ],
         "created_time": 1644953761980,
         "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
-        "last_edited_time": 1645078920000,
+        "last_edited_time": 1645503840000,
         "parent_id": "fc1dc65d-f35a-4235-b270-2513795d533e",
         "parent_table": "block",
         "alive": true,
@@ -101,7 +105,86 @@
       "role": "reader",
       "value": {
         "id": "98a3bed4-159f-4070-ae9f-2e9a646213d2",
-        "version": 1,
+        "version": 5,
+        "type": "text",
+        "created_time": 1645502700000,
+        "last_edited_time": 1645502700000,
+        "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
+        "parent_table": "block",
+        "alive": true,
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "b3ba8add-ab30-4413-af27-0b2cdc6a159b": {
+      "role": "reader",
+      "value": {
+        "id": "b3ba8add-ab30-4413-af27-0b2cdc6a159b",
+        "version": 47,
+        "type": "sub_header",
+        "properties": {
+          "title": [
+            [
+              "⚠️ IMPORTANTE ⚠️"
+            ]
+          ]
+        },
+        "created_time": 1645502700000,
+        "last_edited_time": 1645503840000,
+        "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
+        "parent_table": "block",
+        "alive": true,
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "a060ff23-31a7-42af-aff9-3f63da3532d5": {
+      "role": "reader",
+      "value": {
+        "id": "a060ff23-31a7-42af-aff9-3f63da3532d5",
+        "version": 274,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "Para participar do processo seletivo e atuar na nossa empresa você precisa residir em "
+            ],
+            [
+              "São Carlos - SP",
+              [
+                [
+                  "b"
+                ]
+              ]
+            ],
+            [
+              " para o trabalho híbrido (parcialmente remoto e parcialmente presencial)."
+            ]
+          ]
+        },
+        "created_time": 1645502700000,
+        "last_edited_time": 1645503840000,
+        "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
+        "parent_table": "block",
+        "alive": true,
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "1c6866d4-3ca6-4ae9-abb9-b192ec26f7f5": {
+      "role": "reader",
+      "value": {
+        "id": "1c6866d4-3ca6-4ae9-abb9-b192ec26f7f5",
+        "version": 3,
         "type": "sub_header",
         "properties": {
           "title": [
@@ -119,7 +202,7 @@
         },
         "created_time": 1644953761983,
         "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
-        "last_edited_time": 1644953761983,
+        "last_edited_time": 1645502700000,
         "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
         "parent_table": "block",
         "alive": true,
@@ -1158,12 +1241,12 @@
       "role": "reader",
       "value": {
         "id": "a19a2d73-acf3-4e75-aa29-6ba0ab4476f2",
-        "version": 6,
+        "version": 11,
         "type": "bulleted_list",
         "properties": {
           "title": [
             [
-              "Formato híbrido: Trabalho remoto mas com possibilidade de trabalho presencial também."
+              "Formato híbrido: Trabalho remoto com possibilidade de trabalho presencial também."
             ]
           ]
         },
@@ -1176,7 +1259,7 @@
         },
         "created_time": 1644953761984,
         "last_edited_by": "a55fa691-a953-4191-a9d5-b6358c09eef4",
-        "last_edited_time": 1645039500000,
+        "last_edited_time": 1645502760000,
         "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
         "parent_table": "block",
         "alive": true,
@@ -1319,17 +1402,20 @@
       "role": "reader",
       "value": {
         "id": "d817ae54-7ad4-4062-98b0-5752866db4f3",
-        "version": 75,
+        "version": 81,
         "type": "bulleted_list",
         "properties": {
           "title": [
             [
-              "Análise de currículo → Teste técnico → Entrevista"
+              "Análise de currículo"
             ]
           ]
         },
+        "content": [
+          "c77d8f16-5216-4f5c-89df-82917ebe0325"
+        ],
         "created_time": 1645044240000,
-        "last_edited_time": 1645044240000,
+        "last_edited_time": 1645503480000,
         "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
         "parent_table": "block",
         "alive": true,
@@ -1340,15 +1426,154 @@
         "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
       }
     },
-    "c95ca9ed-f0ed-4176-9880-97ac0b63b3ff": {
+    "c77d8f16-5216-4f5c-89df-82917ebe0325": {
       "role": "reader",
       "value": {
-        "id": "c95ca9ed-f0ed-4176-9880-97ac0b63b3ff",
-        "version": 7,
-        "type": "text",
-        "created_time": 1645078740000,
-        "last_edited_time": 1645078740000,
+        "id": "c77d8f16-5216-4f5c-89df-82917ebe0325",
+        "version": 120,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "Analisaremos suas experiências anteriores e estudos além da formação acadêmica."
+            ]
+          ]
+        },
+        "created_time": 1645503480000,
+        "last_edited_time": 1645503720000,
+        "parent_id": "d817ae54-7ad4-4062-98b0-5752866db4f3",
+        "parent_table": "block",
+        "alive": true,
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "4b8935da-f1e8-44e2-b585-cb66c1a332ab": {
+      "role": "reader",
+      "value": {
+        "id": "4b8935da-f1e8-44e2-b585-cb66c1a332ab",
+        "version": 25,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "Teste técnico"
+            ]
+          ]
+        },
+        "content": [
+          "126ea501-d25a-441d-9f49-e4166f1d28cd",
+          "63d9069c-88f8-47ce-b1b6-d9a65b6f4f51"
+        ],
+        "created_time": 1645503480000,
+        "last_edited_time": 1645503720000,
         "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
+        "parent_table": "block",
+        "alive": true,
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "126ea501-d25a-441d-9f49-e4166f1d28cd": {
+      "role": "reader",
+      "value": {
+        "id": "126ea501-d25a-441d-9f49-e4166f1d28cd",
+        "version": 494,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "Enviaremos um teste para desenvolver um sistema frontend com React. O objetivo é medir qual o seu nível de conhecimento das tecnologias relacionadas ao Frontend. "
+            ]
+          ]
+        },
+        "created_time": 1645503540000,
+        "last_edited_time": 1645503720000,
+        "parent_id": "4b8935da-f1e8-44e2-b585-cb66c1a332ab",
+        "parent_table": "block",
+        "alive": true,
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "63d9069c-88f8-47ce-b1b6-d9a65b6f4f51": {
+      "role": "reader",
+      "value": {
+        "id": "63d9069c-88f8-47ce-b1b6-d9a65b6f4f51",
+        "version": 141,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "Não queremos ver se você consegue desenvolver o projeto por completo, mas sim avaliar como você implementa as partes que conseguir e quais são seus pontos a melhorar."
+            ]
+          ]
+        },
+        "created_time": 1645503720000,
+        "last_edited_time": 1645503720000,
+        "parent_id": "4b8935da-f1e8-44e2-b585-cb66c1a332ab",
+        "parent_table": "block",
+        "alive": true,
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "1888b9ba-87a9-4721-9014-8763eed23cd7": {
+      "role": "reader",
+      "value": {
+        "id": "1888b9ba-87a9-4721-9014-8763eed23cd7",
+        "version": 16,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "Entrevista"
+            ]
+          ]
+        },
+        "content": [
+          "0f2e9bed-b823-4c17-8f91-7503b02d6756"
+        ],
+        "created_time": 1645503540000,
+        "last_edited_time": 1645503780000,
+        "parent_id": "ef891e94-7502-45ad-aed2-f72f262168b0",
+        "parent_table": "block",
+        "alive": true,
+        "created_by_table": "notion_user",
+        "created_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "25a394eb-e3da-41ea-9918-4dc92bf478b3",
+        "space_id": "d6dd297c-2859-43a9-a5f9-7c03061df3dc"
+      }
+    },
+    "0f2e9bed-b823-4c17-8f91-7503b02d6756": {
+      "role": "reader",
+      "value": {
+        "id": "0f2e9bed-b823-4c17-8f91-7503b02d6756",
+        "version": 165,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "Vamos te contar mais da nossa empresa, apresentar nosso time e avaliar se você tem o perfil ideal para trabalhar junto ao nosso time."
+            ]
+          ]
+        },
+        "created_time": 1645503780000,
+        "last_edited_time": 1645503780000,
+        "parent_id": "1888b9ba-87a9-4721-9014-8763eed23cd7",
         "parent_table": "block",
         "alive": true,
         "created_by_table": "notion_user",
