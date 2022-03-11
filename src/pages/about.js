@@ -46,7 +46,9 @@ const About = ({ data }) => (
         creators and customized orders for even better results.
       </Paragraph>
       <Paragraph>
-        This website is not related or to Lucasfilm Ltd., Walt Disney, or Twentieth Century Fox.
+        Our company is not related to Lucasfilm Ltd., Walt Disney Company, Netflix
+        and any other companies related to the production and distribution
+        of movies and shows mentioned in our websites.
       </Paragraph>
       <br />
       <br />
