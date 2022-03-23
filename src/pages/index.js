@@ -18,6 +18,7 @@ import sticGif from '../images/stic.gif';
 import wicGif from '../images/wic.gif';
 import goticGif from '../images/gotic.gif';
 import ejectorGif from '../images/ejector.gif';
+import breakingBadGif from '../images/breaking-bad.gif';
 
 import '../styles/index.styl';
 import { externalPath, internalPath } from '../contants/paths';
@@ -219,6 +220,12 @@ const IndexPage = ({ data }) => (
           header="Ejector - Among Us"
           image={<img src={ejectorGif} alt="Ejector - Among Us" width="100%" />}
           onClick={() => ReactPixel.track('ViewContent', { content_ids: 'ejector' })}
+        />
+        <Card
+          href={externalPath('breakingBad')}
+          header="Breaking Bad Intro Creator"
+          image={<img src={breakingBadGif} alt="Breaking Bad Intro Creator" width="100%" />}
+          onClick={() => ReactPixel.track('ViewContent', { content_ids: 'breaking-bad' })}
         />
       </Card.Group>
     </Section>
