@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { Link, graphql } from 'gatsby';
 import {
   Card,
-  Input,
   Button,
   Grid,
 } from 'semantic-ui-react';
@@ -13,6 +12,7 @@ import ReactPixel from 'react-facebook-pixel';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import Section from '../components/Section';
+import NewsletterSubscribeForm from '../components/NewsletterSubscribeForm';
 import swicGif from '../images/swic.gif';
 import sticGif from '../images/stic.gif';
 import wicGif from '../images/wic.gif';
@@ -268,27 +268,7 @@ const IndexPage = ({ data }) => (
       image={() => <Image fluid={data.newsletterBackground.childImageSharp.fluid} />}
       fullImage
     >
-      <form
-        className="home__contact-form"
-        action="https://kassellabs.us18.list-manage.com/subscribe/post?u=955f23a083dc8aff26326536a&amp;id=3a0fe71a75"
-        method="post"
-        id="mc-embedded-subscribe-form"
-        name="mc-embedded-subscribe-form"
-        target="_blank"
-        onSubmit={() => ReactPixel.track('Lead')}
-      >
-        <Input
-          id="mce-EMAIL"
-          name="EMAIL"
-          type="email"
-          autocomplete="email"
-          required
-          placeholder="Enter your email..."
-          aria-label="Enter your email..."
-        />
-        <br />
-        <Button type="submit" primary>Sign up to newsletter</Button>
-      </form>
+      <NewsletterSubscribeForm />
     </Section>
     <Section
       title="Some of our most known customers"
