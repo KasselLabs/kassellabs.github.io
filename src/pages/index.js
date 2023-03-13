@@ -19,6 +19,7 @@ import wicGif from '../images/wic.gif';
 import goticGif from '../images/gotic.gif';
 import ejectorGif from '../images/ejector.gif';
 import breakingBadGif from '../images/breaking-bad.gif';
+import theLastOfUsGif from '../images/the-last-of-us.gif';
 
 import '../styles/index.styl';
 import { externalPath, internalPath } from '../contants/paths';
@@ -226,6 +227,12 @@ const IndexPage = ({ data }) => (
           header="Breaking Bad Intro Creator"
           image={<img src={breakingBadGif} alt="Breaking Bad Intro Creator" width="100%" />}
           onClick={() => ReactPixel.track('ViewContent', { content_ids: 'breaking-bad' })}
+        />
+        <Card
+          href={externalPath('theLastOfUs')}
+          header="The Last of Us Intro Creator"
+          image={<img src={theLastOfUsGif} alt="The Last of Us Intro Creator" width="100%" />}
+          onClick={() => ReactPixel.track('ViewContent', { content_ids: 'the-last-of-us' })}
         />
       </Card.Group>
     </Section>
