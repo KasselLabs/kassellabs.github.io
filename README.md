@@ -4,7 +4,7 @@
 
 Node.js v14
 
-## Deploy
+## Deploy Steps
 
 Follow these steps:
 
