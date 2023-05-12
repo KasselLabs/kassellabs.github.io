@@ -36,11 +36,9 @@ module.exports = {
     'gatsby-plugin-offline',
     'gatsby-mdx',
     {
-      resolve: 'gatsby-plugin-gtag',
+      resolve: 'gatsby-plugin-google-tagmanager',
       options: {
-        trackingId: 'UA-116931857-3',
-        head: false,
-        anonymize: true,
+        id: 'GTM-52B49WF',
       },
     },
     {
