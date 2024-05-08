@@ -9,6 +9,7 @@
     "@mdx-js/tag": "^0.20.3",
     "@sanity/block-content-to-react": "^2.0.6",
     "axios": "^0.26.0",
+    "canvas": "^2.11.2",
     "classnames": "^2.2.6",
     "dotenv": "^8.1.0",
     "gatsby": "^2.15.18",
