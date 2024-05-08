@@ -5,9 +5,11 @@ import {
   Card,
   Button,
   Grid,
+  Container,
 } from 'semantic-ui-react';
 import Image from 'gatsby-image';
 import ReactPixel from 'react-facebook-pixel';
+
 
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
@@ -20,9 +22,48 @@ import goticGif from '../images/gotic.gif';
 import ejectorGif from '../images/ejector.gif';
 import breakingBadGif from '../images/breaking-bad.gif';
 import theLastOfUsGif from '../images/the-last-of-us.gif';
+import marvelStudiosGif from '../images/marvel-studios.gif';
+import harryPotterDeathlyHallowsGif from '../images/harry-potter-deathly-hallows.gif';
+import pixarGif from '../images/pixar.gif';
+import avengersInifityWarGif from '../images/avengers-infinity-war.gif';
+import spiderManFarFromHomeGif from '../images/spider-man-far-from-home.gif';
+import lokiGif from '../images/loki.gif';
 
 import '../styles/index.styl';
 import { externalPath, internalPath } from '../contants/paths';
+
+const OTHER_INTROS = [
+  {
+    title: 'Marvel Studios',
+    image: marvelStudiosGif,
+    slug: 'marvel-studios',
+  },
+  {
+    title: 'Harry Potter',
+    image: harryPotterDeathlyHallowsGif,
+    slug: 'harry-potter',
+  },
+  {
+    title: 'Pixar',
+    image: pixarGif,
+    slug: 'pixar',
+  },
+  {
+    title: 'Avengers - Infinity War',
+    image: avengersInifityWarGif,
+    slug: 'avengers-infinity-war',
+  },
+  {
+    title: 'Spider Man Far From Home',
+    image: spiderManFarFromHomeGif,
+    slug: 'spider-man-far-from-home',
+  },
+  {
+    title: 'Loki',
+    image: lokiGif,
+    slug: 'loki',
+  },
+];
 
 export const query = graphql`
   query {
@@ -234,6 +275,29 @@ const IndexPage = ({ data }) => (
           image={<img src={theLastOfUsGif} alt="The Last of Us Intro Creator" width="100%" />}
           onClick={() => ReactPixel.track('ViewContent', { content_ids: 'the-last-of-us' })}
         />
+      </Card.Group>
+      <Container>
+        <div
+          className="section__text"
+          style={{ marginTop: '2rem' }}
+        >
+          <h1 className="section__title">Other Openings</h1>
+          <p className="section__description" style={{ marginTop: '2rem' }}>
+            We are also able to make videos from these others shows and movies, these still do
+            not have an intro creator that you can play with, but can be done as a comissioned work.
+          </p>
+        </div>
+      </Container>
+      <Card.Group itemsPerRow="4" doubling stackable>
+        {OTHER_INTROS.map((intro) => (
+          <Card
+            key={intro.slug}
+            href={externalPath('starWarsIntroCreator')}
+            header={intro.title}
+            image={<img src={intro.image} alt={intro.title} width="100%" />}
+            onClick={() => ReactPixel.track('ViewContent', { content_ids: intro.slug })}
+          />
+        ))}
       </Card.Group>
     </Section>
     <Section
