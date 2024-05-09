@@ -18,7 +18,7 @@ const Contact = () => (
         <a href={externalPath('faq')}>{externalPath('faq')}</a>
       </Paragraph>
       <Paragraph>
-          Feel free to contact us via the email:
+        Feel free to contact us via the email:
         {' '}
         <a href="mailto:contact@kassellabs.io">contact@kassellabs.io</a>
       </Paragraph>
