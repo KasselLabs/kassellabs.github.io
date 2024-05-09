@@ -1,3 +1,5 @@
+const { OTHER_INTROS } = require('./src/contants/intros');
+
 // eslint-disable-next-line import/prefer-default-export
 exports.createPages = async ({ actions, graphql }) => {
   const result = await graphql(`
@@ -26,6 +28,15 @@ exports.createPages = async ({ actions, graphql }) => {
       component: require.resolve('./src/templates/Post.js'),
       context: {
         slug: post.slug.current,
+      },
+    });
+  });
+  OTHER_INTROS.forEach((intro) => {
+    actions.createPage({
+      path: `/intro/${intro.slug}`,
+      component: require.resolve('./src/templates/PurchaseIntro.js'),
+      context: {
+        slug: intro.slug,
       },
     });
   });

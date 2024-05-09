@@ -1,5 +1,6 @@
 import get from 'lodash/get';
 import queryString from 'query-string';
+import { OTHER_INTROS } from './intros';
 
 const internalPaths = {
   home: '/',
@@ -26,6 +27,10 @@ const externalPaths = {
   brunoLinkedin: 'https://www.linkedin.com/in/brorlandi/',
   niheyLinkedin: 'https://www.linkedin.com/in/nihey/',
 };
+
+OTHER_INTROS.forEach((intro) => {
+  externalPaths[intro.slug] = `/intro/${intro.slug}`;
+});
 
 const getPath = ({ pathName, query, paths }) => {
   const path = get(paths, pathName);

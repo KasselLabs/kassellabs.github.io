@@ -10,7 +10,6 @@ import {
 import Image from 'gatsby-image';
 import ReactPixel from 'react-facebook-pixel';
 
-
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import Section from '../components/Section';
@@ -31,39 +30,16 @@ import lokiGif from '../images/loki.gif';
 
 import '../styles/index.styl';
 import { externalPath, internalPath } from '../contants/paths';
+import { OTHER_INTROS } from '../contants/intros';
 
-const OTHER_INTROS = [
-  {
-    title: 'Marvel Studios',
-    image: marvelStudiosGif,
-    slug: 'marvel-studios',
-  },
-  {
-    title: 'Harry Potter',
-    image: harryPotterDeathlyHallowsGif,
-    slug: 'harry-potter',
-  },
-  {
-    title: 'Pixar',
-    image: pixarGif,
-    slug: 'pixar',
-  },
-  {
-    title: 'Avengers - Infinity War',
-    image: avengersInifityWarGif,
-    slug: 'avengers-infinity-war',
-  },
-  {
-    title: 'Spider Man Far From Home',
-    image: spiderManFarFromHomeGif,
-    slug: 'spider-man-far-from-home',
-  },
-  {
-    title: 'Loki',
-    image: lokiGif,
-    slug: 'loki',
-  },
-];
+const INTRO_IMAGE_MAP = {
+  'marvel-studios': marvelStudiosGif,
+  'harry-potter': harryPotterDeathlyHallowsGif,
+  pixar: pixarGif,
+  'avengers-infinity-war': avengersInifityWarGif,
+  'spider-man-far-from-home': spiderManFarFromHomeGif,
+  loki: lokiGif,
+};
 
 export const query = graphql`
   query {
@@ -292,9 +268,9 @@ const IndexPage = ({ data }) => (
         {OTHER_INTROS.map((intro) => (
           <Card
             key={intro.slug}
-            href={externalPath('starWarsIntroCreator')}
+            href={externalPath(intro.slug)}
             header={intro.title}
-            image={<img src={intro.image} alt={intro.title} width="100%" />}
+            image={<img src={INTRO_IMAGE_MAP[intro.slug]} alt={intro.title} width="100%" />}
             onClick={() => ReactPixel.track('ViewContent', { content_ids: intro.slug })}
           />
         ))}
