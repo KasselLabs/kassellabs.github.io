@@ -8,6 +8,7 @@ import {
   Button,
   FormCheckbox,
 } from 'semantic-ui-react';
+import ReactMarkdown from 'react-markdown';
 
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
@@ -33,7 +34,7 @@ const PurchaseIntro = ({ pathContext: { slug } }) => {
     return basePrice + checkedOptionals.reduce((accumulated, current) => (
       accumulated + current.price
     ), 0);
-  }, [intro, formValues]);
+  }, [intro, formValues, checkedOptionals]);
 
   const [loading, setLoading] = useState(false);
 
@@ -43,14 +44,23 @@ const PurchaseIntro = ({ pathContext: { slug } }) => {
     }
 
     const eachOptionalText = intro.optionals.map((optional) => `
-${optional.label}: ${optional.description}
-    `).join('\n\n');
+- **${optional.label}**: ${optional.description || ''}
+    `.trim()).join('\n\n\n');
 
     return `You can also improve your intro with some additional options, including:
 
 ${eachOptionalText}
 `;
   }, [intro.optionals]);
+
+  const description = useMemo(() => {
+    const baseText = `
+The intro is available in **${intro.resolution}** resolution.
+
+The estimated delivery time for it is **${intro.deliveryTime}**.
+`.trim();
+    return `${baseText}\n\n${optionalsText}`;
+  }, [intro, optionalsText]);
 
   return (
     <Layout>
@@ -96,18 +106,23 @@ ${eachOptionalText}
 
                     setFormValues((currentValues) => ({
                       ...currentValues,
-                      optionals: currentValues.optionals.filter((o) => o === field.id),
+                      optionals: currentValues.optionals.filter((o) => o !== field.id),
                     }));
                   }}
                 />
               ))}
               {intro.fields.map((field) => {
                 if (field.type === 'text') {
+                  const label = (
+                    field.maxLength
+                      ? `${field.label} (Up to ${field.maxLength} characters)`
+                      : field.label
+                  );
                   return (
                     <FormField
                       key={field.id}
                     >
-                      <label htmlFor={field.id}>{ field.label }</label>
+                      <label htmlFor={field.id}>{ label }</label>
                       <Input
                         id={field.id}
                         type="text"
@@ -146,16 +161,11 @@ ${eachOptionalText}
         <h2>
           Description:
         </h2>
-        <Paragraph>
-          The intro is available in the
-          {' '}
-          {intro.resolution}
-          {' '}
-          resolution.
-          <br />
-          <br />
-          {optionalsText}
-        </Paragraph>
+        <div className="markdown-description">
+          <ReactMarkdown>
+            { description }
+          </ReactMarkdown>
+        </div>
       </Container>
     </Layout>
   );

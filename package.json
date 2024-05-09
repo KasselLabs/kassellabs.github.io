@@ -35,6 +35,7 @@
     "react-dom": "^16.9.0",
     "react-facebook-pixel": "^0.1.3",
     "react-helmet": "^5.2.1",
+    "react-markdown": "^6.0.3",
     "react-youtube": "^7.9.0",
     "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^0.88.1"
@@ -45,6 +46,7 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
+    "dev": "npm run develop",
     "develop": "node --no-experimental-fetch node_modules/.bin/gatsby develop -H 0.0.0.0",
     "start": "npm run develop",
     "serve": "gatsby serve",
