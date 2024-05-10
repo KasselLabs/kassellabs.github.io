@@ -268,7 +268,7 @@ const IndexPage = ({ data }) => (
         {OTHER_INTROS.map((intro) => (
           <Card
             key={intro.slug}
-            href={externalPath(intro.slug)}
+            href={internalPath(intro.slug)}
             header={intro.title}
             image={<img src={INTRO_IMAGE_MAP[intro.slug]} alt={intro.title} width="100%" />}
             onClick={() => ReactPixel.track('ViewContent', { content_ids: intro.slug })}

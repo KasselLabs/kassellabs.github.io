@@ -3,12 +3,13 @@ import PropTypes from 'prop-types';
 
 import './Paragraph.styl';
 
-const Paragraph = ({ children }) => (
-  <h1 className="paragraph">{children}</h1>
+const Paragraph = ({ children, style }) => (
+  <h1 className="paragraph" style={style}>{children}</h1>
 );
 
 Paragraph.propTypes = {
   children: PropTypes.node.isRequired,
+  style: PropTypes.object,
 };
 
 export default Paragraph;

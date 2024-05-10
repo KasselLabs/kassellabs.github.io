@@ -9,13 +9,16 @@ import {
   FormCheckbox,
 } from 'semantic-ui-react';
 import ReactMarkdown from 'react-markdown';
+import { navigate } from 'gatsby';
 
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import Title from '../components/Title';
-import Paragraph from '../components/Paragraph';
+import kasselApi from '../kasselApi';
 import YouTubeEmbed from '../components/YouTubeEmbed';
 import { OTHER_INTROS } from '../contants/intros';
+import { internalPath } from '../contants/paths';
+
 import './PurchaseIntro.styl';
 
 const PurchaseIntro = ({ pathContext: { slug } }) => {
@@ -72,12 +75,21 @@ The estimated delivery time for it is **${intro.deliveryTime}**.
         <div className="purchase-intro-main-section">
           <div className="forms">
             <Form
-              onSubmit={() => {
+              onSubmit={async () => {
                 setLoading(true);
-                console.log(formValues);
-                setTimeout(() => {
+                try {
+                  const response = await kasselApi.request({
+                    method: 'POST',
+                    url: 'api/intro',
+                    data: {
+                      type: slug,
+                      intro: formValues,
+                    },
+                  });
+                  navigate(internalPath('purchase', { intro: response.data.id }));
+                } finally {
                   setLoading(false);
-                }, 3000);
+                }
               }}
             >
               <Title>

@@ -8,7 +8,12 @@ const internalPaths = {
   blog: '/#blog',
   about: '/about',
   contact: '/contact',
+  purchase: '/purchase',
 };
+
+OTHER_INTROS.forEach((intro) => {
+  internalPaths[intro.slug] = `/intro/${intro.slug}`;
+});
 
 const externalPaths = {
   faq: 'https://help.kassellabs.io',
@@ -27,10 +32,6 @@ const externalPaths = {
   brunoLinkedin: 'https://www.linkedin.com/in/brorlandi/',
   niheyLinkedin: 'https://www.linkedin.com/in/nihey/',
 };
-
-OTHER_INTROS.forEach((intro) => {
-  externalPaths[intro.slug] = `/intro/${intro.slug}`;
-});
 
 const getPath = ({ pathName, query, paths }) => {
   const path = get(paths, pathName);
