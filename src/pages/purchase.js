@@ -166,16 +166,22 @@ const PurchasePage = ({ location }) => {
 
             return null;
           })}
-          <Title>
+          <Paragraph>
             Total Price: $
             {' '}
             {price.toFixed(2)}
-          </Title>
+            <br />
+            <small>
+              Estimated Delivery:
+              {' '}
+              {intro.deliveryTime}
+            </small>
+          </Paragraph>
           <iframe
             ref={iframeRef}
             className="payment-iframe"
             title="Payment Form"
-            src={`${process.env.GATSBY_PAYMENT_PAGE_URL}?embed=true&app=custom&code=${introData.id}&amount=${Math.round(price * 100)}`}
+            src={`${process.env.GATSBY_PAYMENT_PAGE_URL}?embed=true&app=custom&code=${introData.id}&amount=${Math.round(price * 100)}&fixedAmount=true`}
             style={{
               border: 'none',
               width: '100%',

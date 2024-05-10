@@ -11,6 +11,7 @@ import {
 import ReactMarkdown from 'react-markdown';
 import { navigate } from 'gatsby';
 
+import lodash from 'lodash';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import Title from '../components/Title';
@@ -21,8 +22,21 @@ import { internalPath } from '../contants/paths';
 
 import './PurchaseIntro.styl';
 
+const areIntrosEqual = (intro1, intro2, settings) => {
+  const fieldIds = [
+    'optionals',
+    ...settings.fields.map((f) => f.id),
+  ];
+  const sanitizedIntro1 = lodash.pick(intro1, fieldIds);
+  const sanitizedIntro2 = lodash.pick(intro2, fieldIds);
+
+  return lodash.isEqual(sanitizedIntro1, sanitizedIntro2);
+};
+
 const PurchaseIntro = ({ pathContext: { slug }, location }) => {
   const intro = useMemo(() => OTHER_INTROS.find((currentIntro) => currentIntro.slug === slug), []);
+
+  const [originalIntro, setOriginalIntro] = useState(null);
   const [formValues, setFormValues] = useState({
     optionals: [],
   });
@@ -41,6 +55,7 @@ const PurchaseIntro = ({ pathContext: { slug }, location }) => {
       url: `/api/intro/${introId}`,
     }).then((response) => {
       setFormValues(response.data);
+      setOriginalIntro(response.data);
     });
   }, [introId]);
 
@@ -93,6 +108,11 @@ The estimated delivery time for it is **${intro.deliveryTime}**.
           <div className="forms">
             <Form
               onSubmit={async () => {
+                if (areIntrosEqual(formValues, originalIntro, intro)) {
+                  navigate(internalPath('purchase', { intro: originalIntro.id }));
+                  return;
+                }
+
                 setLoading(true);
                 try {
                   const response = await kasselApi.request({
