@@ -8,6 +8,7 @@ import {
   FormField,
   Container,
 } from 'semantic-ui-react';
+import { Link } from 'gatsby';
 
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
@@ -15,11 +16,11 @@ import Title from '../components/Title';
 import Paragraph from '../components/Paragraph';
 import kasselApi from '../kasselApi';
 import { OTHER_INTROS } from '../contants/intros';
+import { internalPath } from '../contants/paths';
 
 const PurchasePage = ({ location }) => {
   const iframeRef = useRef();
   const [introData, setIntroData] = useState(null);
-  const [loading, setLoading] = useState(false);
   const introId = useMemo(() => {
     const params = new URLSearchParams(location.search);
     return params.get('intro');
@@ -31,13 +32,10 @@ const PurchasePage = ({ location }) => {
       return;
     }
 
-    setLoading(true);
     kasselApi.request({
       url: `/api/intro/${introId}`,
     }).then((response) => {
       setIntroData(response.data);
-    }).finally(() => {
-      setLoading(false);
     });
   }, [introId]);
 
@@ -72,7 +70,11 @@ const PurchasePage = ({ location }) => {
       />
       <Container text>
         <Title style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-          <Icon name="arrow left" size="small" />
+          <Link
+            to={internalPath(intro.slug, { intro: introData.id })}
+          >
+            <Icon name="arrow left" size="small" />
+          </Link>
           Purchase:
           {' '}
           {intro.title}
@@ -82,7 +84,13 @@ const PurchasePage = ({ location }) => {
         <Paragraph style={{ textAlign: 'center' }}>
           Please check the intro information before submitting the payment.
           <br />
-          Go back and edit your intro if you need to adjust anything.
+          <Link
+            to={internalPath(intro.slug, { intro: introData.id })}
+          >
+            Go back
+          </Link>
+          {' '}
+          and edit your intro if you need to adjust anything.
         </Paragraph>
         <Form
           onSubmit={(event) => {
@@ -167,7 +175,7 @@ const PurchasePage = ({ location }) => {
             ref={iframeRef}
             className="payment-iframe"
             title="Payment Form"
-            src={`${process.env.GATSBY_PAYMENT_PAGE_URL}?embed=true&app=custom&code=${intro.id}&amount=${Math.round(price * 100)}`}
+            src={`${process.env.GATSBY_PAYMENT_PAGE_URL}?embed=true&app=custom&code=${introData.id}&amount=${Math.round(price * 100)}`}
             style={{
               border: 'none',
               width: '100%',

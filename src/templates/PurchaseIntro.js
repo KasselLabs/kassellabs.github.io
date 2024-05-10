@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react';
+import React, { useMemo, useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import {
   Form,
@@ -21,11 +21,28 @@ import { internalPath } from '../contants/paths';
 
 import './PurchaseIntro.styl';
 
-const PurchaseIntro = ({ pathContext: { slug } }) => {
+const PurchaseIntro = ({ pathContext: { slug }, location }) => {
   const intro = useMemo(() => OTHER_INTROS.find((currentIntro) => currentIntro.slug === slug), []);
   const [formValues, setFormValues] = useState({
     optionals: [],
   });
+
+  const introId = useMemo(() => {
+    const params = new URLSearchParams(location.search);
+    return params.get('intro');
+  }, [location]);
+
+  useEffect(() => {
+    if (!introId) {
+      return;
+    }
+
+    kasselApi.request({
+      url: `/api/intro/${introId}`,
+    }).then((response) => {
+      setFormValues(response.data);
+    });
+  }, [introId]);
 
   const checkedOptionals = useMemo(() => {
     const checkedOptionalsSet = new Set(formValues.optionals);
@@ -106,6 +123,7 @@ The estimated delivery time for it is **${intro.deliveryTime}**.
                 <FormCheckbox
                   id={field.id}
                   label={`${field.label} (+ $ ${field.price.toFixed(2)})`}
+                  checked={formValues.optionals.some((o) => o === field.id)}
                   onChange={(event) => {
                     const isChecked = event.target.checked;
                     if (isChecked) {
@@ -184,6 +202,7 @@ The estimated delivery time for it is **${intro.deliveryTime}**.
 };
 
 PurchaseIntro.propTypes = {
+  location: PropTypes.object,
   pathContext: PropTypes.object,
 };
 
