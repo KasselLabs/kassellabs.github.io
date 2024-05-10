@@ -181,14 +181,13 @@ const PurchasePage = ({ location }) => {
             ref={iframeRef}
             className="payment-iframe"
             title="Payment Form"
-            src={`${process.env.GATSBY_PAYMENT_PAGE_URL}?embed=true&app=custom&code=${introData.id}&amount=${Math.round(price * 100)}&fixedAmount=true`}
+            src={`${process.env.GATSBY_PAYMENT_PAGE_URL}?embed=true&app=custom-video&code=${introData.id}&amount=${Math.round(price * 100)}&fixedAmount=true`}
             style={{
               border: 'none',
               width: '100%',
               height: '520px',
             }}
           />
-
         </Form>
       </Container>
     </Layout>
