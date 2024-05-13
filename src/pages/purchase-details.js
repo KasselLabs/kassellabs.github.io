@@ -1,25 +1,22 @@
 import React, {
-  useRef, useMemo, useEffect,
+  useMemo, useEffect,
 } from 'react';
 import PropTypes from 'prop-types';
 import {
-  Icon,
   Form,
   FormField,
   Container,
 } from 'semantic-ui-react';
-import { Link, navigate } from 'gatsby';
+import { navigate } from 'gatsby';
 
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import Title from '../components/Title';
 import Paragraph from '../components/Paragraph';
-import PaymentForm from '../components/PaymentForm';
 import useIntroData from '../hooks/useIntroData';
-import { internalPath } from '../contants/paths';
+import { externalPath } from '../contants/paths';
 
 const PurchasePage = ({ location }) => {
-  const iframeRef = useRef();
   const introId = useMemo(() => {
     const params = new URLSearchParams(location.search);
     return params.get('intro');
@@ -41,43 +38,6 @@ const PurchasePage = ({ location }) => {
     }
   }, [introId]);
 
-  const paymentParams = useMemo(() => ({
-    embed: true,
-    app: 'custom-video',
-    code: introData?.id,
-    amount: Math.round(price * 100),
-    fixedAmount: 'true',
-  }), [introData, price]);
-
-  useEffect(() => {
-    if (!iframeRef.current) {
-      return () => {};
-    }
-
-    const onPaymentFinished = (event) => {
-      const { data } = event;
-
-      if (data?.type !== 'payment') {
-        return;
-      }
-
-      if (window.dataLayer) {
-        window.dataLayer.push({
-          event: 'purchase',
-          value: data.payload.finalAmount,
-          currency: data.payload.currency,
-        });
-      }
-      navigate(internalPath('purchaseDetails', {
-        intro: introData.id,
-      }));
-    };
-    window.addEventListener('message', onPaymentFinished);
-    return () => {
-      window.removeEventListener('message', onPaymentFinished);
-    };
-  }, [iframeRef.current, introData]);
-
   if (!introData) {
     return null;
   }
@@ -93,27 +53,10 @@ const PurchasePage = ({ location }) => {
       />
       <Container text>
         <Title style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-          <Link
-            to={internalPath(intro.slug, { intro: introData.id })}
-          >
-            <Icon name="arrow left" size="small" />
-          </Link>
-          Purchase:
-          {' '}
-          {intro.title}
-          {' '}
-          Intro
+          Purchase Details:
         </Title>
         <Paragraph style={{ textAlign: 'center' }}>
-          Please check the intro information before submitting the payment.
-          <br />
-          <Link
-            to={internalPath(intro.slug, { intro: introData.id })}
-          >
-            Go back
-          </Link>
-          {' '}
-          and edit your intro if you need to adjust anything.
+          Thanks for supporting us! We&apos;ll be back when your video is finished.
         </Paragraph>
         <Form
           onSubmit={(event) => {
@@ -198,12 +141,27 @@ const PurchasePage = ({ location }) => {
               Estimated Delivery:
               {' '}
               {intro.deliveryTime}
+              {' '}
+              (starting from
+              {' '}
+              {new Date(introData.created_at).toLocaleDateString()}
+              )
             </small>
           </Paragraph>
-          <PaymentForm
-            iframeRef={iframeRef}
-            params={paymentParams}
-          />
+          <Paragraph>
+            Your video will be delivered through email.
+          </Paragraph>
+          <Title>Questions?</Title>
+          <Paragraph>
+            Check out the FAQ, we might already have an answer for you:
+            {' '}
+            <a href={externalPath('faq')}>{externalPath('faq')}</a>
+          </Paragraph>
+          <Paragraph>
+            Feel free to contact us via the email:
+            {' '}
+            <a href="mailto:contact@kassellabs.io">contact@kassellabs.io</a>
+          </Paragraph>
         </Form>
       </Container>
     </Layout>

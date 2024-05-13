@@ -9,6 +9,7 @@ const internalPaths = {
   about: '/about',
   contact: '/contact',
   purchase: '/purchase',
+  purchaseDetails: '/purchase-details',
 };
 
 OTHER_INTROS.forEach((intro) => {
