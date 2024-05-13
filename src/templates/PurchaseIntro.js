@@ -134,6 +134,9 @@ The estimated delivery time for it is **${intro.deliveryTime}**.
                 {' '}
                 Intro
               </Title>
+              <div className="preview-mobile">
+                <YouTubeEmbed code={intro.youtubePreviewCode} />
+              </div>
               <Title>
                 $
                 {' '}

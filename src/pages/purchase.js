@@ -8,12 +8,13 @@ import {
   FormField,
   Container,
 } from 'semantic-ui-react';
-import { Link } from 'gatsby';
+import { Link, navigate } from 'gatsby';
 
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import Title from '../components/Title';
 import Paragraph from '../components/Paragraph';
+import PaymentForm from '../components/PaymentForm';
 import kasselApi from '../kasselApi';
 import { OTHER_INTROS } from '../contants/intros';
 import { internalPath } from '../contants/paths';
@@ -28,7 +29,7 @@ const PurchasePage = ({ location }) => {
 
   useEffect(() => {
     if (!introId) {
-      console.log('TODO: REDIRECT TO HOME');
+      navigate('/');
       return;
     }
 
@@ -36,6 +37,11 @@ const PurchasePage = ({ location }) => {
       url: `/api/intro/${introId}`,
     }).then((response) => {
       setIntroData(response.data);
+    }).catch((error) => {
+      const is404 = error.response?.status === 404;
+      if (is404) {
+        navigate('/');
+      }
     });
   }, [introId]);
 
@@ -54,6 +60,14 @@ const PurchasePage = ({ location }) => {
       accumulated + current.price
     ), 0);
   }, [intro, introData, checkedOptionals]);
+
+  const paymentParams = useMemo(() => ({
+    embed: true,
+    app: 'custom-video',
+    code: introData?.id,
+    amount: Math.round(price * 100),
+    fixedAmount: 'true',
+  }), [introData, price]);
 
   if (!introData) {
     return null;
@@ -177,16 +191,9 @@ const PurchasePage = ({ location }) => {
               {intro.deliveryTime}
             </small>
           </Paragraph>
-          <iframe
-            ref={iframeRef}
-            className="payment-iframe"
-            title="Payment Form"
-            src={`${process.env.GATSBY_PAYMENT_PAGE_URL}?embed=true&app=custom-video&code=${introData.id}&amount=${Math.round(price * 100)}&fixedAmount=true`}
-            style={{
-              border: 'none',
-              width: '100%',
-              height: '520px',
-            }}
+          <PaymentForm
+            iframeRef={iframeRef}
+            params={paymentParams}
           />
         </Form>
       </Container>

@@ -4,10 +4,28 @@
 
   > .forms {
     width: 40%;
+
+    .preview-mobile {
+      display: none;
+    }
   }
 
   > .preview {
     flex-grow: 1;
+  }
+
+  @media (max-width: 1024px) {
+    > .forms {
+      width: 100%;
+
+      .preview-mobile {
+        display: flex;
+      }
+    }
+
+    > .preview {
+      display: none;
+    }
   }
 }
 
