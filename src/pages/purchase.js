@@ -35,12 +35,6 @@ const PurchasePage = ({ location }) => {
     },
   });
 
-  useEffect(() => {
-    if (!introId) {
-      navigate('/');
-    }
-  }, [introId]);
-
   const paymentParams = useMemo(() => ({
     embed: true,
     app: 'custom-video',

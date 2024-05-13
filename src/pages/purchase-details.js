@@ -1,5 +1,5 @@
 import React, {
-  useMemo, useEffect,
+  useMemo,
 } from 'react';
 import PropTypes from 'prop-types';
 import {
@@ -31,12 +31,6 @@ const PurchasePage = ({ location }) => {
       navigate('/');
     },
   });
-
-  useEffect(() => {
-    if (!introId) {
-      navigate('/');
-    }
-  }, [introId]);
 
   if (!introData) {
     return null;
