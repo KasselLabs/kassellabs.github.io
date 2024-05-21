@@ -1,13 +1,17 @@
 import React, {
   useMemo,
+  useState,
 } from 'react';
 import PropTypes from 'prop-types';
 import {
   Form,
   FormField,
   Container,
+  Button,
 } from 'semantic-ui-react';
 import { navigate } from 'gatsby';
+import FileSaver from 'file-saver';
+import axios from 'axios';
 
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
@@ -17,6 +21,7 @@ import useIntroData from '../hooks/useIntroData';
 import { externalPath } from '../contants/paths';
 
 const PurchasePage = ({ location }) => {
+  const [loading, setLoading] = useState(false);
   const introId = useMemo(() => {
     const params = new URLSearchParams(location.search);
     return params.get('intro');
@@ -126,25 +131,61 @@ const PurchasePage = ({ location }) => {
 
             return null;
           })}
-          <Paragraph>
-            Total Price: $
-            {' '}
-            {price.toFixed(2)}
-            <br />
-            <small>
-              Estimated Delivery:
-              {' '}
-              {intro.deliveryTime}
-              {' '}
-              (starting from
-              {' '}
-              {new Date(introData.created_at).toLocaleDateString()}
-              )
-            </small>
-          </Paragraph>
-          <Paragraph>
-            Your video will be delivered through email.
-          </Paragraph>
+          {!introData.video && (
+            <>
+              <Paragraph>
+                Total Price: $
+                {' '}
+                {price.toFixed(2)}
+                <br />
+                <small>
+                  Estimated Delivery:
+                  {' '}
+                  {intro.deliveryTime}
+                  {' '}
+                  (starting from
+                  {' '}
+                  {new Date(introData.created_at).toLocaleDateString()}
+                  )
+                </small>
+              </Paragraph>
+              <Paragraph>
+                Your video will be delivered through email.
+              </Paragraph>
+            </>
+          )}
+          {introData.video && (
+            <>
+              <Paragraph style={{ textAlign: 'center' }}>
+                Your video is Ready!
+              </Paragraph>
+              <div style={{ display: 'flex', justifyContent: 'center' }}>
+                <Button
+                  primary
+                  size="huge"
+                  loading={loading}
+                  onClick={async () => {
+                    setLoading(true);
+                    const filename = `${introData.id}.mp4`;
+                    try {
+                      // Try downloading without leaving the page
+                      const videoResponse = await axios.request({
+                        url: introData.video,
+                        responseType: 'blob',
+                      });
+                      FileSaver.saveAs(videoResponse.data, filename);
+                    } catch (error) {
+                      FileSaver.saveAs(introData.video, filename);
+                    } finally {
+                      setLoading(false);
+                    }
+                  }}
+                >
+                  Download
+                </Button>
+              </div>
+            </>
+          )}
           <Title>Questions?</Title>
           <Paragraph>
             Check out the FAQ, we might already have an answer for you:
