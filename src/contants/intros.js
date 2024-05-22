@@ -59,7 +59,7 @@ const OTHER_INTROS = [
         price: 6,
       },
       {
-        id: 'image-and-video-customization',
+        id: 'colors-customization',
         label: 'Change the colors of your text',
         description: '\n  - You can customize your text and intro to the color of your choice',
         price: 6,
