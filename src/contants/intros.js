@@ -145,6 +145,49 @@ const OTHER_INTROS = [
     ],
   },
   {
+    title: 'Marvel Studios Flipbook',
+    slug: 'marvel-studios-flipbook',
+    deliveryTime: '1-2 Days',
+    youtubePreviewCode: '1j-j8aEvb9E',
+    price: () => 20,
+    resolution: 'Full HD (1920x1080)',
+    optionals: [
+      {
+        id: '4k-resolution',
+        label: '4K Ultra HD Resolution',
+        description: '\n  - Your intro will come in Ultra HD resolution (3840x2160)',
+        price: 6,
+      },
+      {
+        id: 'image-and-video-customization',
+        label: 'Change Images and Videos within the intro',
+        description: `
+  - Change the text for a logo or another custom image
+  - Change up to 50 Images in 1920×1080 px for the flipbook effect
+`,
+        price: 20,
+      },
+    ],
+    fields: [
+      {
+        id: 'title',
+        type: 'text',
+        label: 'Title',
+        placeholder: 'Kassel Labs',
+        required: true,
+        maxLength: 10,
+      },
+      {
+        id: 'subtitle',
+        type: 'text',
+        label: 'Subtitle',
+        placeholder: 'Custom Intros',
+        required: true,
+        maxLength: 12,
+      },
+    ],
+  },
+  {
     title: 'Spider Man Far From Home',
     slug: 'spider-man-far-from-home',
     deliveryTime: '1-2 Days',
@@ -175,6 +218,74 @@ const OTHER_INTROS = [
         placeholder: 'Custom Intros',
         required: true,
         maxLength: 12,
+      },
+    ],
+  },
+  {
+    title: 'Guardians of the Galaxy Vol 2',
+    slug: 'guardians-of-the-galaxy-vol-2',
+    deliveryTime: '1-2 Days',
+    youtubePreviewCode: 'v3W-8CYhmcI',
+    price: () => 10,
+    resolution: 'Full HD (1920x1080)',
+    optionals: [
+      {
+        id: '4k-resolution',
+        label: '4K Ultra HD Resolution',
+        description: '\n  - Your intro will come in Ultra HD resolution (3840x2160)',
+        price: 5,
+      },
+    ],
+    fields: [
+      {
+        id: 'title',
+        type: 'text',
+        label: 'Title',
+        placeholder: 'Kassel',
+        required: true,
+        maxLength: 10,
+      },
+      {
+        id: 'subtitle',
+        type: 'text',
+        label: 'Subtitle',
+        placeholder: 'Labs',
+        required: true,
+        maxLength: 10,
+      },
+    ],
+  },
+  {
+    title: 'Disney',
+    slug: 'disney',
+    deliveryTime: '1-2 Days',
+    youtubePreviewCode: 'OmXJFnopDSE',
+    price: () => 14,
+    resolution: 'Full HD (1920x1080)',
+    optionals: [
+      {
+        id: '4k-resolution',
+        label: '4K Ultra HD Resolution',
+        description: '\n  - Your intro will come in Ultra HD resolution (3840x2160)',
+        price: 6,
+      },
+    ],
+    fields: [
+      {
+        id: 'title',
+        type: 'text',
+        label: 'Title',
+        placeholder: 'Kassel Labs',
+        required: true,
+        maxLength: 20,
+      },
+      {
+        id: 'subtitle',
+        type: 'text',
+        label: 'Subtitle',
+        placeholder: 'Videos',
+        required: true,
+        maxLength: 25,
       },
     ],
   },

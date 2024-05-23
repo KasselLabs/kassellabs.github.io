@@ -22,11 +22,14 @@ import ejectorGif from '../images/ejector.gif';
 import breakingBadGif from '../images/breaking-bad.gif';
 import theLastOfUsGif from '../images/the-last-of-us.gif';
 import marvelStudiosGif from '../images/marvel-studios.gif';
+import marvelStudiosFlipbookGif from '../images/marvel-studios-flipbook.gif';
 import harryPotterDeathlyHallowsGif from '../images/harry-potter-deathly-hallows.gif';
 import pixarGif from '../images/pixar.gif';
 import avengersInifityWarGif from '../images/avengers-infinity-war.gif';
 import spiderManFarFromHomeGif from '../images/spider-man-far-from-home.gif';
 import lokiGif from '../images/loki.gif';
+import disneyGif from '../images/disney.gif';
+import guardiansOfTheGalaxyVol2Gif from '../images/guardians-of-the-galaxy-vol-2.gif';
 
 import '../styles/index.styl';
 import { externalPath, internalPath } from '../contants/paths';
@@ -34,11 +37,14 @@ import { OTHER_INTROS } from '../contants/intros';
 
 const INTRO_IMAGE_MAP = {
   'marvel-studios': marvelStudiosGif,
+  'marvel-studios-flipbook': marvelStudiosFlipbookGif,
   'harry-potter': harryPotterDeathlyHallowsGif,
   pixar: pixarGif,
   'avengers-infinity-war': avengersInifityWarGif,
   'spider-man-far-from-home': spiderManFarFromHomeGif,
+  'guardians-of-the-galaxy-vol-2': guardiansOfTheGalaxyVol2Gif,
   loki: lokiGif,
+  disney: disneyGif,
 };
 
 export const query = graphql`
