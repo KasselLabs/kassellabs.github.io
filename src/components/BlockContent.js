@@ -1,11 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import BaseBlockContent from '@sanity/block-content-to-react';
+import imageUrlBuilder from '@sanity/image-url';
 import YouTube from 'react-youtube';
 import getYouTubeID from 'get-youtube-id';
 
 import CTA from './CTA';
 import './BlockContent.styl';
+
+const builder = imageUrlBuilder({
+  projectId: 'w8pgxsnb',
+  dataset: 'production',
+});
 
 const serializers = {
   types: {
@@ -51,6 +57,15 @@ const serializers = {
     cta({ node: { text, url } }) {
       return (
         <CTA text={text} url={url} />
+      );
+    },
+    image({ node: { asset } }) {
+      return (
+        <img
+          src={builder.image(asset).width(900)}
+          alt="Reference"
+          style={{ maxWidth: '100%' }}
+        />
       );
     },
   },
