@@ -253,6 +253,14 @@ const OTHER_INTROS = [
         required: true,
         maxLength: 10,
       },
+      {
+        id: 'stroke',
+        type: 'text',
+        label: 'Stroke',
+        placeholder: 'Videos',
+        required: true,
+        maxLength: 5,
+      },
     ],
   },
   {
