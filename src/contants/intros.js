@@ -226,7 +226,7 @@ const OTHER_INTROS = [
     slug: 'guardians-of-the-galaxy-vol-2',
     deliveryTime: '1-2 Days',
     youtubePreviewCode: 'v3W-8CYhmcI',
-    price: () => 10,
+    price: () => 25,
     resolution: 'Full HD (1920x1080)',
     optionals: [
       {
