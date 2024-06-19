@@ -159,7 +159,13 @@ const PurchasePage = ({ location }) => {
               <Paragraph style={{ textAlign: 'center' }}>
                 Your video is Ready!
               </Paragraph>
-              <div style={{ display: 'flex', justifyContent: 'center' }}>
+              <div style={{
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '1em',
+                alignItems: 'center',
+              }}
+              >
                 <Button
                   primary
                   size="huge"
@@ -183,6 +189,22 @@ const PurchasePage = ({ location }) => {
                 >
                   Download
                 </Button>
+                <div
+                  style={{
+                    maxWidth: '600px',
+                  }}
+                >
+                  {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
+                  <video
+                    controls
+                    type="video/mp4"
+                    src={introData.video}
+                    style={{
+                      width: '100%',
+                      borderRadius: '1em',
+                    }}
+                  />
+                </div>
               </div>
             </>
           )}
