@@ -1,4 +1,4 @@
-const { OTHER_INTROS } = require('./src/contants/intros');
+const OTHER_INTROS = require('./src/contants/intros.json');
 
 // eslint-disable-next-line import/prefer-default-export
 exports.createPages = async ({ actions, graphql }) => {

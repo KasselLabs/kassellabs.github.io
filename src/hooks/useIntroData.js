@@ -2,7 +2,7 @@ import {
   useMemo, useState, useEffect,
 } from 'react';
 import kasselApi from '../kasselApi';
-import { OTHER_INTROS } from '../contants/intros';
+import OTHER_INTROS from '../contants/intros.json';
 
 export default function useIntroData(introId, { onNotFound }) {
   const [introData, setIntroData] = useState(null);
@@ -17,7 +17,7 @@ export default function useIntroData(introId, { onNotFound }) {
   }, [intro, introData]);
 
   const price = useMemo(() => {
-    const basePrice = intro?.price(introData);
+    const basePrice = intro?.price;
     return basePrice + checkedOptionals?.reduce((accumulated, current) => (
       accumulated + current.price
     ), 0);

@@ -17,7 +17,7 @@ import SEO from '../components/SEO';
 import Title from '../components/Title';
 import kasselApi from '../kasselApi';
 import YouTubeEmbed from '../components/YouTubeEmbed';
-import { OTHER_INTROS } from '../contants/intros';
+import OTHER_INTROS from '../contants/intros.json';
 import { internalPath } from '../contants/paths';
 
 import './PurchaseIntro.styl';
@@ -65,7 +65,7 @@ const PurchaseIntro = ({ pathContext: { slug }, location }) => {
   }, [intro, formValues]);
 
   const price = useMemo(() => {
-    const basePrice = intro.price(formValues);
+    const basePrice = intro.price;
     return basePrice + checkedOptionals.reduce((accumulated, current) => (
       accumulated + current.price
     ), 0);

@@ -1,6 +1,6 @@
 import get from 'lodash/get';
 import queryString from 'query-string';
-import { OTHER_INTROS } from './intros';
+import OTHER_INTROS from './intros.json';
 
 const internalPaths = {
   home: '/',

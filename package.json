@@ -47,6 +47,7 @@
   ],
   "license": "MIT",
   "scripts": {
+    "update-intros": "node update-intros.js",
     "build": "gatsby build",
     "dev": "npm run develop",
     "develop": "node --no-experimental-fetch node_modules/.bin/gatsby develop -H 0.0.0.0",
@@ -54,7 +55,8 @@
     "serve": "gatsby serve",
     "eslint": "eslint src/",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
-    "update-notion-pages": "node update-notion-pages.js"
+    "update-notion-pages": "node update-notion-pages.js",
+    "postinstall": "npm run update-intros"
   },
   "repository": {
     "type": "git",
