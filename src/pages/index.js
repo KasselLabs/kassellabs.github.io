@@ -257,7 +257,7 @@ const IndexPage = ({ data }) => (
             header={intro.title}
             image={(
               <video
-                src={intro.quickPreview?.url}
+                src={intro.quickPreview}
                 alt={intro.title}
                 muted
                 autoPlay

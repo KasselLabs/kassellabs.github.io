@@ -22,16 +22,6 @@ import Paragraph from '../components/Paragraph';
 import useIntroData from '../hooks/useIntroData';
 import kasselApi from '../kasselApi';
 
-import marvelStudiosGif from '../images/marvel-studios.gif';
-import marvelStudiosFlipbookGif from '../images/marvel-studios-flipbook.gif';
-import harryPotterDeathlyHallowsGif from '../images/harry-potter-deathly-hallows.gif';
-import pixarGif from '../images/pixar.gif';
-import avengersInifityWarGif from '../images/avengers-infinity-war.gif';
-import spiderManFarFromHomeGif from '../images/spider-man-far-from-home.gif';
-import lokiGif from '../images/loki.gif';
-import disneyGif from '../images/disney.gif';
-import guardiansOfTheGalaxyVol2Gif from '../images/guardians-of-the-galaxy-vol-2.gif';
-
 const LOCAL_STORAGE_PASSWORD_KEY = 'uploadVideoPassword';
 
 const getSignedUploadURL = async (id, password) => {
@@ -63,18 +53,6 @@ const uploadFile = async (uploadURL, file) => {
       'X-AMZ-ACL': params.get('x-amz-acl'),
     },
   });
-};
-
-const INTRO_IMAGE_MAP = {
-  'marvel-studios': marvelStudiosGif,
-  'marvel-studios-flipbook': marvelStudiosFlipbookGif,
-  'harry-potter': harryPotterDeathlyHallowsGif,
-  pixar: pixarGif,
-  'avengers-infinity-war': avengersInifityWarGif,
-  'spider-man-far-from-home': spiderManFarFromHomeGif,
-  'guardians-of-the-galaxy-vol-2': guardiansOfTheGalaxyVol2Gif,
-  loki: lokiGif,
-  disney: disneyGif,
 };
 
 const PurchasePage = ({ location }) => {
@@ -132,10 +110,15 @@ const PurchasePage = ({ location }) => {
             justifyContent: 'center',
           }}
         >
-          <img
-            src={INTRO_IMAGE_MAP[intro.slug]}
+          <video
+            src={intro.quickPreview}
             alt={intro.title}
-            height="200px"
+            muted
+            autoPlay
+            loop
+            style={{
+              height: '200px',
+            }}
           />
         </div>
         <Form
