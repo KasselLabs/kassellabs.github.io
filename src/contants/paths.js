@@ -30,6 +30,7 @@ const externalPaths = {
   ejector: 'https://ejector.kassellabs.io',
   breakingBad: 'https://breakingbadintrocreator.kassellabs.io',
   theLastOfUs: 'https://thelastofusintrocreator.kassellabs.io',
+  houseOfTheDragon: 'https://houseofthedragonintrocreator.kassellabs.io',
   brunoLinkedin: 'https://www.linkedin.com/in/brorlandi/',
   niheyLinkedin: 'https://www.linkedin.com/in/nihey/',
 };
