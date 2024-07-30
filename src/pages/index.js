@@ -21,6 +21,7 @@ import goticGif from '../images/gotic.gif';
 import ejectorGif from '../images/ejector.gif';
 import breakingBadGif from '../images/breaking-bad.gif';
 import theLastOfUsGif from '../images/the-last-of-us.gif';
+import houseOfTheDragonGif from '../images/house-of-the-dragon.gif';
 
 import '../styles/index.styl';
 import { externalPath, internalPath } from '../contants/paths';
@@ -235,6 +236,12 @@ const IndexPage = ({ data }) => (
           header="The Last of Us Intro Creator"
           image={<img src={theLastOfUsGif} alt="The Last of Us Intro Creator" width="100%" />}
           onClick={() => ReactPixel.track('ViewContent', { content_ids: 'the-last-of-us' })}
+        />
+        <Card
+          href={externalPath('houseOfTheDragon')}
+          header="House of the Dragon Intro Creator"
+          image={<img src={houseOfTheDragonGif} alt="House of The Dragon Intro Creator" width="100%" />}
+          onClick={() => ReactPixel.track('ViewContent', { content_ids: 'house-of-the-dragon' })}
         />
       </Card.Group>
       <Container>
