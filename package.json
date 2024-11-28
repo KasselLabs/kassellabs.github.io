@@ -27,7 +27,7 @@
     "lodash": "^4.17.15",
     "moment": "^2.24.0",
     "notion-client": "^4.15.0",
-    "prismjs": "^1.26.0",
+    "prismjs": "^1.27.0",
     "prop-types": "^15.7.2",
     "query-string": "^6.8.3",
     "rc-dropdown": "^3.3.2",
