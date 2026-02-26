@@ -92,11 +92,13 @@ function VideoPlayer({ videoSrc }) {
         muted
         loop
         playsInline
+        onClick={showOverlay ? undefined : togglePlay}
         style={{
           width: '100%',
           height: '100%',
           objectFit: 'cover',
           display: 'block',
+          cursor: showOverlay ? 'default' : 'pointer',
         }}
       >
         <source src={videoSrc} type="video/mp4" />
