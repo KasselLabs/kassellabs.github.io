@@ -135,7 +135,7 @@ The estimated delivery time for it is **${intro.deliveryTime}**.
                 Intro
               </Title>
               <div className="preview-mobile">
-                <YouTubeEmbed code={intro.youtubePreviewCode} />
+                <YouTubeEmbed code={intro.youtubePreviewCode} videoSrc={`/videos/${slug}.mp4`} />
               </div>
               <Title>
                 $
@@ -208,7 +208,7 @@ The estimated delivery time for it is **${intro.deliveryTime}**.
             </Form>
           </div>
           <div className="preview">
-            <YouTubeEmbed code={intro.youtubePreviewCode} />
+            <YouTubeEmbed code={intro.youtubePreviewCode} videoSrc={`/videos/${slug}.mp4`} />
           </div>
         </div>
         <h2>

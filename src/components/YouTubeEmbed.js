@@ -1,7 +1,24 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export default function YouTubeEmbed({ code }) {
+export default function YouTubeEmbed({ code, videoSrc }) {
+  if (videoSrc) {
+    return (
+      <video
+        controls
+        preload="metadata"
+        style={{
+          width: '100%',
+          aspectRatio: '16 / 9',
+          borderRadius: '8px',
+          backgroundColor: '#000',
+        }}
+      >
+        <source src={videoSrc} type="video/mp4" />
+      </video>
+    );
+  }
+
   return (
     <iframe
       src={`https://www.youtube.com/embed/${code}`}
@@ -21,4 +38,5 @@ export default function YouTubeEmbed({ code }) {
 
 YouTubeEmbed.propTypes = {
   code: PropTypes.string,
+  videoSrc: PropTypes.string,
 };
