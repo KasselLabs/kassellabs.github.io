@@ -269,6 +269,8 @@ const IndexPage = ({ data }) => (
                 muted
                 autoPlay
                 loop
+                playsInline
+                preload="metadata"
                 style={{
                   width: '100%',
                 }}
