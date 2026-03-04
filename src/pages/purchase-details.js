@@ -197,6 +197,7 @@ const PurchasePage = ({ location }) => {
                   {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
                   <video
                     controls
+                    playsInline
                     type="video/mp4"
                     src={introData.video}
                     style={{

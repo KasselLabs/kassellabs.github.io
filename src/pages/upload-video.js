@@ -116,6 +116,7 @@ const PurchasePage = ({ location }) => {
             muted
             autoPlay
             loop
+            playsInline
             style={{
               height: '200px',
             }}
