@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Put Your House in the House of the Dragon Intro — Kassel Labs</title>
+  <meta name="description" content="Your house name traced in crimson through the channels of old Valyria." />
+  <link rel="canonical" href="https://kassellabs.io/blog/how-to-make-a-house-of-the-dragon-intro" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Put Your House in the House of the Dragon Intro" />
+  <meta property="og:description" content="Your house name traced in crimson through the channels of old Valyria." />
+  <meta property="og:url" content="https://kassellabs.io/blog/how-to-make-a-house-of-the-dragon-intro" />
+  <meta property="og:site_name" content="Kassel Labs" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300..800&family=Space+Grotesk:wght@400..700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --background: oklch(0.12 0.01 220); --foreground: oklch(0.98 0 0);
+      --card: oklch(0.15 0.015 220); --primary: oklch(0.75 0.15 180);
+      --primary-foreground: oklch(0.12 0.01 220); --secondary: oklch(0.2 0.015 220);
+      --muted-foreground: oklch(0.65 0 0); --border: oklch(0.28 0.02 220);
+      --font-sans: "Outfit", sans-serif; --font-display: "Space Grotesk", sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--background); color: var(--foreground);
+      font-family: var(--font-sans); font-size: 1.06rem; line-height: 1.75; -webkit-font-smoothing: antialiased; }
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; text-underline-offset: 3px; }
+    .wrap { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
+    .prose-wrap { max-width: 768px; margin: 0 auto; padding: 0 24px; }
+    header.site { position: sticky; top: 0; z-index: 50;
+      background: color-mix(in oklab, var(--background) 70%, transparent);
+      backdrop-filter: blur(24px); border-bottom: 1px solid rgba(255,255,255,0.06);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.05); }
+    header.site .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    .brand img { height: 24px; width: auto; display: block; }
+    header.site nav { display: flex; align-items: center; gap: 26px; }
+    header.site nav a { color: var(--muted-foreground); font-size: 0.92rem; font-weight: 500; transition: color 0.15s ease; }
+    header.site nav a:hover { color: var(--foreground); text-decoration: none; }
+    @media (max-width: 680px) { header.site nav { display: none; } }
+    .back { display: inline-flex; align-items: center; gap: 8px; color: var(--muted-foreground);
+      font-size: 0.92rem; font-weight: 500; margin: 40px 0 28px; }
+    .back:hover { color: var(--foreground); text-decoration: none; }
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+    .chip { display: inline-block; padding: 4px 14px; border-radius: 999px; font-size: 0.8rem; font-weight: 600;
+      background: color-mix(in oklab, var(--primary) 15%, transparent); color: var(--primary); }
+    .chip.outline { background: var(--secondary); color: var(--muted-foreground); font-weight: 500; }
+    h1.title { font-family: var(--font-display); font-size: clamp(2.1rem, 5.4vw, 3.1rem); font-weight: 700;
+      line-height: 1.1; letter-spacing: -0.02em; margin: 0 0 22px; text-wrap: balance; }
+    .byline { display: flex; align-items: center; gap: 12px; margin-bottom: 44px; }
+    .avatar { width: 36px; height: 36px; border-radius: 50%;
+      background: color-mix(in oklab, var(--primary) 20%, var(--card)); color: var(--primary);
+      font-weight: 700; font-size: 0.8rem; display: flex; align-items: center; justify-content: center; }
+    .byline .who { font-weight: 600; font-size: 0.95rem; }
+    .byline .date { color: var(--muted-foreground); font-size: 0.9rem; }
+    .byline .sep { color: var(--border); }
+    article p { margin: 0 0 1.35em; color: color-mix(in oklab, var(--foreground) 90%, transparent); }
+    article h2 { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; letter-spacing: -0.01em;
+      margin: 2em 0 0.6em; color: var(--foreground); }
+    article strong { color: var(--foreground); }
+    article ul, article ol { margin: 0 0 1.35em; padding-left: 1.3em; color: color-mix(in oklab, var(--foreground) 90%, transparent); }
+    article li { margin-bottom: 0.5em; }
+    article hr { border: 0; height: 1px; background: var(--border); margin: 2.6em 0; }
+    article em { color: var(--muted-foreground); }
+    .cta { background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+      padding: 30px 28px; margin: 3em 0 1em; }
+    .cta h3 { font-family: var(--font-display); margin: 0 0 8px; font-size: 1.35rem; font-weight: 700; }
+    .cta p { color: var(--muted-foreground); margin: 0 0 18px; }
+    .btn { display: inline-flex; align-items: center; gap: 8px; background: var(--primary);
+      color: var(--primary-foreground); font-weight: 600; font-size: 0.95rem; padding: 11px 22px;
+      border-radius: 6px; transition: opacity 0.15s ease; }
+    .btn:hover { opacity: 0.88; text-decoration: none; }
+    footer.site { border-top: 1px solid rgba(255,255,255,0.06); margin-top: 64px; padding: 40px 0 32px; background: var(--secondary); }
+    footer.site .wrap { display: flex; flex-wrap: wrap; gap: 18px; justify-content: space-between; align-items: center; }
+    footer.site p { margin: 0; color: var(--muted-foreground); font-size: 0.85rem; }
+    footer.site nav a { color: var(--muted-foreground); font-size: 0.88rem; margin-left: 18px; transition: color 0.15s ease; }
+    footer.site nav a:hover { color: var(--foreground); text-decoration: none; }</style>
+</head>
+<body>
+
+  <header class="site">
+    <div class="wrap">
+      <a class="brand" href="https://kassellabs.io?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=how-to-make-a-house-of-the-dragon-intro"><img src="https://kassellabs-static-assets.us-mia-1.linodeobjects.com/images/kassel-labs-logo.svg" alt="Kassel Labs" width="150" height="26" /></a>
+      <nav>
+        <a href="https://kassellabs.io?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=how-to-make-a-house-of-the-dragon-intro">Home</a>
+        <a href="https://kassellabs.io/projects?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=how-to-make-a-house-of-the-dragon-intro">Projects</a>
+        <a href="https://kassellabs.io/about?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=how-to-make-a-house-of-the-dragon-intro">About</a>
+        <a href="https://kassellabs.io/blog?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=how-to-make-a-house-of-the-dragon-intro">Blog</a>
+        <a href="https://kassellabs.io/contact?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=how-to-make-a-house-of-the-dragon-intro">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <article>
+    <div class="prose-wrap">
+      <a class="back" href="/">← Back to Blog</a>
+      <div class="chips">
+        <span class="chip">Tutorial</span>
+        <span class="chip outline">#Intro Creator</span>
+      </div>
+      <h1 class="title">Put Your House in the House of the Dragon Intro</h1>
+      <div class="byline">
+        <span class="avatar">KL</span>
+        <span class="who">Kassel Labs</span>
+        <span class="sep">·</span>
+        <span class="date">April 3, 2026</span>
+      </div>
+<p><em>Originally published on <a href="https://kassellabs.io/blog/how-to-make-a-house-of-the-dragon-intro">the Kassel Labs blog</a>.</em></p>
+<p>Blood flows through carved stone channels, tracing the Targaryen family tree
+in crimson. Where <em>Game of Thrones</em> opened with a clockwork map of a world,
+its prequel opens with a bloodline — same universe, same design studio
+(Elastic), completely different statement.</p>
+<p>With the
+<a href="https://houseofthedragonintrocreator.kassellabs.io?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=house-of-the-dragon-intro">House of the Dragon Intro Creator</a>
+you can put your own house name at the center of it.</p>
+<h2>The title sequence that rewrote the Targaryen dynasty</h2>
+<p>When the 2022 prequel arrived, it had an impossible act to follow — the
+original&#39;s Emmy-winning map sequence. Elastic&#39;s answer was to go intimate
+instead of epic: instead of geography, genealogy. Blood running through the
+model of old Valyria, linking generation to generation. It established the
+show as worthy of the legacy while being entirely its own thing.</p>
+<h2>How to make your own House of the Dragon intro</h2>
+<ol>
+<li><strong>Open the creator.</strong> Navigate to
+<a href="https://houseofthedragonintrocreator.kassellabs.io?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=house-of-the-dragon-intro">houseofthedragonintrocreator.kassellabs.io</a>.</li>
+<li><strong>Enter your custom title.</strong> A family name, team name, event, or project.</li>
+<li><strong>Preview your intro.</strong> The live preview shows the final result.</li>
+<li><strong>Render and download.</strong> MP4, fire and blood included.</li>
+</ol>
+<h2>Creative uses</h2>
+<ul>
+<li><strong>Family reunions</strong> — &quot;House [Your Surname]&quot; on the big screen</li>
+<li><strong>Sports teams</strong> — claim dominion over your league</li>
+<li><strong>Office presentations</strong> — departments as noble houses</li>
+<li><strong>Fan projects</strong> — tribute videos that look the part</li>
+</ul>
+<h2>Fire and blood, your name on it</h2>
+<p><strong><a href="https://houseofthedragonintrocreator.kassellabs.io?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=house-of-the-dragon-intro">Create your House of the Dragon intro →</a></strong></p>
+<p>Team clockwork-map instead? The
+<a href="https://gameofthronesintrocreator.kassellabs.io?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=house-of-the-dragon-intro">Game of Thrones creator</a>
+is right there — or <a href="https://kassellabs.io/projects?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=house-of-the-dragon-intro">explore all the creators</a>.</p>
+
+      <div class="cta">
+        <h3>Ready to create your own?</h3>
+        <p>Start making your own cinematic intros today. It only takes a few minutes!</p>
+        <a class="btn" href="https://kassellabs.io/projects?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=how-to-make-a-house-of-the-dragon-intro">Explore Our Creators →</a>
+      </div>
+    </div>
+  </article>
+
+  <footer class="site">
+    <div class="wrap">
+      <p>© 2026 Kassel Labs. All rights reserved.</p>
+      <nav>
+        <a href="https://kassellabs.io?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=how-to-make-a-house-of-the-dragon-intro">Home</a>
+        <a href="https://kassellabs.io/projects?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=how-to-make-a-house-of-the-dragon-intro">Intro Creators</a>
+        <a href="https://kassellabs.io/blog?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=how-to-make-a-house-of-the-dragon-intro">Blog</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

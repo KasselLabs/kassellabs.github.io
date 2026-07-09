@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Make a Harry Potter Title Card for Any Occasion — Kassel Labs</title>
+  <meta name="description" content="Generate a personalized wizarding-world title card in seconds." />
+  <link rel="canonical" href="https://kassellabs.io/blog/how-to-make-a-harry-potter-intro" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Make a Harry Potter Title Card for Any Occasion" />
+  <meta property="og:description" content="Generate a personalized wizarding-world title card in seconds." />
+  <meta property="og:url" content="https://kassellabs.io/blog/how-to-make-a-harry-potter-intro" />
+  <meta property="og:site_name" content="Kassel Labs" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300..800&family=Space+Grotesk:wght@400..700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --background: oklch(0.12 0.01 220); --foreground: oklch(0.98 0 0);
+      --card: oklch(0.15 0.015 220); --primary: oklch(0.75 0.15 180);
+      --primary-foreground: oklch(0.12 0.01 220); --secondary: oklch(0.2 0.015 220);
+      --muted-foreground: oklch(0.65 0 0); --border: oklch(0.28 0.02 220);
+      --font-sans: "Outfit", sans-serif; --font-display: "Space Grotesk", sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--background); color: var(--foreground);
+      font-family: var(--font-sans); font-size: 1.06rem; line-height: 1.75; -webkit-font-smoothing: antialiased; }
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; text-underline-offset: 3px; }
+    .wrap { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
+    .prose-wrap { max-width: 768px; margin: 0 auto; padding: 0 24px; }
+    header.site { position: sticky; top: 0; z-index: 50;
+      background: color-mix(in oklab, var(--background) 70%, transparent);
+      backdrop-filter: blur(24px); border-bottom: 1px solid rgba(255,255,255,0.06);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.05); }
+    header.site .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    .brand img { height: 24px; width: auto; display: block; }
+    header.site nav { display: flex; align-items: center; gap: 26px; }
+    header.site nav a { color: var(--muted-foreground); font-size: 0.92rem; font-weight: 500; transition: color 0.15s ease; }
+    header.site nav a:hover { color: var(--foreground); text-decoration: none; }
+    @media (max-width: 680px) { header.site nav { display: none; } }
+    .back { display: inline-flex; align-items: center; gap: 8px; color: var(--muted-foreground);
+      font-size: 0.92rem; font-weight: 500; margin: 40px 0 28px; }
+    .back:hover { color: var(--foreground); text-decoration: none; }
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+    .chip { display: inline-block; padding: 4px 14px; border-radius: 999px; font-size: 0.8rem; font-weight: 600;
+      background: color-mix(in oklab, var(--primary) 15%, transparent); color: var(--primary); }
+    .chip.outline { background: var(--secondary); color: var(--muted-foreground); font-weight: 500; }
+    h1.title { font-family: var(--font-display); font-size: clamp(2.1rem, 5.4vw, 3.1rem); font-weight: 700;
+      line-height: 1.1; letter-spacing: -0.02em; margin: 0 0 22px; text-wrap: balance; }
+    .byline { display: flex; align-items: center; gap: 12px; margin-bottom: 44px; }
+    .avatar { width: 36px; height: 36px; border-radius: 50%;
+      background: color-mix(in oklab, var(--primary) 20%, var(--card)); color: var(--primary);
+      font-weight: 700; font-size: 0.8rem; display: flex; align-items: center; justify-content: center; }
+    .byline .who { font-weight: 600; font-size: 0.95rem; }
+    .byline .date { color: var(--muted-foreground); font-size: 0.9rem; }
+    .byline .sep { color: var(--border); }
+    article p { margin: 0 0 1.35em; color: color-mix(in oklab, var(--foreground) 90%, transparent); }
+    article h2 { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; letter-spacing: -0.01em;
+      margin: 2em 0 0.6em; color: var(--foreground); }
+    article strong { color: var(--foreground); }
+    article ul, article ol { margin: 0 0 1.35em; padding-left: 1.3em; color: color-mix(in oklab, var(--foreground) 90%, transparent); }
+    article li { margin-bottom: 0.5em; }
+    article hr { border: 0; height: 1px; background: var(--border); margin: 2.6em 0; }
+    article em { color: var(--muted-foreground); }
+    .cta { background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+      padding: 30px 28px; margin: 3em 0 1em; }
+    .cta h3 { font-family: var(--font-display); margin: 0 0 8px; font-size: 1.35rem; font-weight: 700; }
+    .cta p { color: var(--muted-foreground); margin: 0 0 18px; }
+    .btn { display: inline-flex; align-items: center; gap: 8px; background: var(--primary);
+      color: var(--primary-foreground); font-weight: 600; font-size: 0.95rem; padding: 11px 22px;
+      border-radius: 6px; transition: opacity 0.15s ease; }
+    .btn:hover { opacity: 0.88; text-decoration: none; }
+    footer.site { border-top: 1px solid rgba(255,255,255,0.06); margin-top: 64px; padding: 40px 0 32px; background: var(--secondary); }
+    footer.site .wrap { display: flex; flex-wrap: wrap; gap: 18px; justify-content: space-between; align-items: center; }
+    footer.site p { margin: 0; color: var(--muted-foreground); font-size: 0.85rem; }
+    footer.site nav a { color: var(--muted-foreground); font-size: 0.88rem; margin-left: 18px; transition: color 0.15s ease; }
+    footer.site nav a:hover { color: var(--foreground); text-decoration: none; }</style>
+</head>
+<body>
+
+  <header class="site">
+    <div class="wrap">
+      <a class="brand" href="https://kassellabs.io?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=how-to-make-a-harry-potter-intro"><img src="https://kassellabs-static-assets.us-mia-1.linodeobjects.com/images/kassel-labs-logo.svg" alt="Kassel Labs" width="150" height="26" /></a>
+      <nav>
+        <a href="https://kassellabs.io?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=how-to-make-a-harry-potter-intro">Home</a>
+        <a href="https://kassellabs.io/projects?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=how-to-make-a-harry-potter-intro">Projects</a>
+        <a href="https://kassellabs.io/about?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=how-to-make-a-harry-potter-intro">About</a>
+        <a href="https://kassellabs.io/blog?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=how-to-make-a-harry-potter-intro">Blog</a>
+        <a href="https://kassellabs.io/contact?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=how-to-make-a-harry-potter-intro">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <article>
+    <div class="prose-wrap">
+      <a class="back" href="/">← Back to Blog</a>
+      <div class="chips">
+        <span class="chip">Tutorial</span>
+        <span class="chip outline">#Intro Creator</span>
+      </div>
+      <h1 class="title">Make a Harry Potter Title Card for Any Occasion</h1>
+      <div class="byline">
+        <span class="avatar">KL</span>
+        <span class="who">Kassel Labs</span>
+        <span class="sep">·</span>
+        <span class="date">March 6, 2026</span>
+      </div>
+<p><em>Originally published on <a href="https://kassellabs.io/blog/how-to-make-a-harry-potter-intro">the Kassel Labs blog</a>.</em></p>
+<p>Eight films, eight slightly different palettes — from the warm gold of the
+early years to the storm-grey finale — but the moment the title fades in over
+that music, it always reads the same way: magical, grand, cinematic.</p>
+<p>With the
+<a href="https://kassellabs.io/intro/harry-potter?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=harry-potter-intro">Harry Potter Intro Creator</a>
+you can generate a personalized wizarding-world title card in seconds.</p>
+<h2>The magic of the title sequence</h2>
+<p>The franchise&#39;s openings are a masterclass in consistency-with-evolution: the
+typography and tone stay recognizably itself while the color and weather turn
+darker film by film. That&#39;s what makes the style so reusable — it carries
+&quot;epic and magical&quot; into any context you drop it in.</p>
+<h2>How to make your own Harry Potter intro</h2>
+<ol>
+<li><strong>Open the creator.</strong> Visit
+<a href="https://kassellabs.io/intro/harry-potter?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=harry-potter-intro">kassellabs.io/intro/harry-potter</a>.</li>
+<li><strong>Enter your custom title.</strong> Any text becomes the title card.</li>
+<li><strong>Preview it.</strong> See the final video before committing.</li>
+<li><strong>Render and download.</strong> MP4 in hand, mischief managed.</li>
+</ol>
+<h2>Ideas for your Harry Potter intro</h2>
+<ul>
+<li>Birthday videos: <strong>&quot;[Name] and the [Age]th Birthday&quot;</strong> — this format never
+misses</li>
+<li>House sorting or team reveals</li>
+<li>Party invitations styled as acceptance letters</li>
+<li>A school presentation opener that earns instant attention</li>
+</ul>
+<h2>Open the doors to Hogwarts</h2>
+<p><strong><a href="https://kassellabs.io/intro/harry-potter?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=harry-potter-intro">Create your Harry Potter intro →</a></strong></p>
+<p>More worlds to open from: <a href="https://kassellabs.io/projects?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=harry-potter-intro">explore all the creators</a>.</p>
+
+      <div class="cta">
+        <h3>Ready to create your own?</h3>
+        <p>Start making your own cinematic intros today. It only takes a few minutes!</p>
+        <a class="btn" href="https://kassellabs.io/projects?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=how-to-make-a-harry-potter-intro">Explore Our Creators →</a>
+      </div>
+    </div>
+  </article>
+
+  <footer class="site">
+    <div class="wrap">
+      <p>© 2026 Kassel Labs. All rights reserved.</p>
+      <nav>
+        <a href="https://kassellabs.io?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=how-to-make-a-harry-potter-intro">Home</a>
+        <a href="https://kassellabs.io/projects?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=how-to-make-a-harry-potter-intro">Intro Creators</a>
+        <a href="https://kassellabs.io/blog?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=how-to-make-a-harry-potter-intro">Blog</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

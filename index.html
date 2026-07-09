@@ -3,135 +3,129 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Behind the Scenes — Kassel Labs</title>
-  <meta name="description" content="Behind the scenes at Kassel Labs — how we build and render movie and TV title sequences in code with Remotion, Blender, and a BullMQ pipeline." />
-  <link rel="canonical" href="https://kassellabs.github.io/" />
+  <title>Stories &amp; Inspiration — Kassel Labs</title>
+  <meta name="description" content="Discover how people around the world are using Kassel Labs to create unforgettable moments — tutorials, behind-the-scenes engineering, and more." />
+  <link rel="canonical" href="https://kassellabs.io/blog" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Behind the Scenes — Kassel Labs" />
-  <meta property="og:description" content="How we build and render movie and TV title sequences in code." />
+  <meta property="og:title" content="Stories &amp; Inspiration — Kassel Labs" />
+  <meta property="og:description" content="Tutorials and behind-the-scenes stories from Kassel Labs." />
   <meta property="og:url" content="https://kassellabs.github.io/" />
   <meta property="og:site_name" content="Kassel Labs" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300..800&family=Space+Grotesk:wght@400..700&display=swap" rel="stylesheet" />
   <style>
-    /* ===== Kassel Labs design tokens (from website/app/globals.css) ===== */
     :root {
-      --background: oklch(0.12 0.01 220);
-      --foreground: oklch(0.98 0 0);
-      --card: oklch(0.15 0.015 220);
-      --primary: oklch(0.75 0.15 180);
-      --primary-foreground: oklch(0.12 0.01 220);
-      --secondary: oklch(0.2 0.015 220);
-      --muted-foreground: oklch(0.65 0 0);
-      --border: oklch(0.28 0.02 220);
-      --radius: 0.5rem;
-      --font-sans: "Outfit", sans-serif;
-      --font-display: "Space Grotesk", sans-serif;
+      --background: oklch(0.12 0.01 220); --foreground: oklch(0.98 0 0);
+      --card: oklch(0.15 0.015 220); --primary: oklch(0.75 0.15 180);
+      --primary-foreground: oklch(0.12 0.01 220); --secondary: oklch(0.2 0.015 220);
+      --muted-foreground: oklch(0.65 0 0); --border: oklch(0.28 0.02 220);
+      --font-sans: "Outfit", sans-serif; --font-display: "Space Grotesk", sans-serif;
     }
     * { box-sizing: border-box; }
-    body {
-      margin: 0; background: var(--background); color: var(--foreground);
-      font-family: var(--font-sans); font-size: 1.02rem; line-height: 1.7;
-      -webkit-font-smoothing: antialiased;
-    }
+    body { margin: 0; background: var(--background); color: var(--foreground);
+      font-family: var(--font-sans); font-size: 1.06rem; line-height: 1.75; -webkit-font-smoothing: antialiased; }
     a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; text-underline-offset: 3px; }
     .wrap { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
-
-    header.site {
-      position: sticky; top: 0; z-index: 50;
+    .prose-wrap { max-width: 768px; margin: 0 auto; padding: 0 24px; }
+    header.site { position: sticky; top: 0; z-index: 50;
       background: color-mix(in oklab, var(--background) 70%, transparent);
-      backdrop-filter: blur(24px);
-      border-bottom: 1px solid rgba(255,255,255,0.06);
-      box-shadow: inset 0 1px 0 rgba(255,255,255,0.05);
-    }
+      backdrop-filter: blur(24px); border-bottom: 1px solid rgba(255,255,255,0.06);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.05); }
     header.site .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; }
     .brand img { height: 24px; width: auto; display: block; }
     header.site nav { display: flex; align-items: center; gap: 26px; }
     header.site nav a { color: var(--muted-foreground); font-size: 0.92rem; font-weight: 500; transition: color 0.15s ease; }
-    header.site nav a:hover { color: var(--foreground); }
+    header.site nav a:hover { color: var(--foreground); text-decoration: none; }
     @media (max-width: 680px) { header.site nav { display: none; } }
-
-    /* Hero — matches blog list hero */
-    .hero {
-      padding: 88px 0 64px; border-bottom: 1px solid var(--border);
-      background: radial-gradient(ellipse at top left, color-mix(in oklab, var(--primary) 10%, transparent), transparent 55%);
-    }
-    .hero h1 {
-      font-family: var(--font-display); font-weight: 700;
-      font-size: clamp(2.4rem, 6vw, 3.4rem); letter-spacing: -0.02em; margin: 0 0 16px;
-    }
+    .back { display: inline-flex; align-items: center; gap: 8px; color: var(--muted-foreground);
+      font-size: 0.92rem; font-weight: 500; margin: 40px 0 28px; }
+    .back:hover { color: var(--foreground); text-decoration: none; }
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+    .chip { display: inline-block; padding: 4px 14px; border-radius: 999px; font-size: 0.8rem; font-weight: 600;
+      background: color-mix(in oklab, var(--primary) 15%, transparent); color: var(--primary); }
+    .chip.outline { background: var(--secondary); color: var(--muted-foreground); font-weight: 500; }
+    h1.title { font-family: var(--font-display); font-size: clamp(2.1rem, 5.4vw, 3.1rem); font-weight: 700;
+      line-height: 1.1; letter-spacing: -0.02em; margin: 0 0 22px; text-wrap: balance; }
+    .byline { display: flex; align-items: center; gap: 12px; margin-bottom: 44px; }
+    .avatar { width: 36px; height: 36px; border-radius: 50%;
+      background: color-mix(in oklab, var(--primary) 20%, var(--card)); color: var(--primary);
+      font-weight: 700; font-size: 0.8rem; display: flex; align-items: center; justify-content: center; }
+    .byline .who { font-weight: 600; font-size: 0.95rem; }
+    .byline .date { color: var(--muted-foreground); font-size: 0.9rem; }
+    .byline .sep { color: var(--border); }
+    article p { margin: 0 0 1.35em; color: color-mix(in oklab, var(--foreground) 90%, transparent); }
+    article h2 { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; letter-spacing: -0.01em;
+      margin: 2em 0 0.6em; color: var(--foreground); }
+    article strong { color: var(--foreground); }
+    article ul, article ol { margin: 0 0 1.35em; padding-left: 1.3em; color: color-mix(in oklab, var(--foreground) 90%, transparent); }
+    article li { margin-bottom: 0.5em; }
+    article hr { border: 0; height: 1px; background: var(--border); margin: 2.6em 0; }
+    article em { color: var(--muted-foreground); }
+    .cta { background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+      padding: 30px 28px; margin: 3em 0 1em; }
+    .cta h3 { font-family: var(--font-display); margin: 0 0 8px; font-size: 1.35rem; font-weight: 700; }
+    .cta p { color: var(--muted-foreground); margin: 0 0 18px; }
+    .btn { display: inline-flex; align-items: center; gap: 8px; background: var(--primary);
+      color: var(--primary-foreground); font-weight: 600; font-size: 0.95rem; padding: 11px 22px;
+      border-radius: 6px; transition: opacity 0.15s ease; }
+    .btn:hover { opacity: 0.88; text-decoration: none; }
+    footer.site { border-top: 1px solid rgba(255,255,255,0.06); margin-top: 64px; padding: 40px 0 32px; background: var(--secondary); }
+    footer.site .wrap { display: flex; flex-wrap: wrap; gap: 18px; justify-content: space-between; align-items: center; }
+    footer.site p { margin: 0; color: var(--muted-foreground); font-size: 0.85rem; }
+    footer.site nav a { color: var(--muted-foreground); font-size: 0.88rem; margin-left: 18px; transition: color 0.15s ease; }
+    footer.site nav a:hover { color: var(--foreground); text-decoration: none; }
+    .hero { padding: 88px 0 64px; border-bottom: 1px solid var(--border);
+      background: radial-gradient(ellipse at top left, color-mix(in oklab, var(--primary) 10%, transparent), transparent 55%); }
+    .hero h1 { font-family: var(--font-display); font-weight: 700;
+      font-size: clamp(2.4rem, 6vw, 3.4rem); letter-spacing: -0.02em; margin: 0 0 16px; }
     .hero h1 .accent { color: var(--primary); }
     .hero p { color: var(--muted-foreground); font-size: 1.12rem; max-width: 640px; margin: 0; }
-
-    /* Post grid — matches blog cards */
     main { padding: 56px 0 72px; }
     .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
     @media (max-width: 960px) { .grid { grid-template-columns: repeat(2, 1fr); } }
     @media (max-width: 620px) { .grid { grid-template-columns: 1fr; } }
-    .post {
-      display: flex; flex-direction: column; min-height: 400px;
-      background: var(--card); border: 1px solid var(--border);
-      border-radius: 12px; overflow: hidden; color: inherit;
-      transition: border-color 0.18s ease;
-    }
-    .post:hover { border-color: color-mix(in oklab, var(--primary) 30%, transparent); }
-    .cover {
-      aspect-ratio: 16 / 9; display: flex; align-items: center; justify-content: center;
-      background: linear-gradient(135deg,
-        color-mix(in oklab, var(--primary) 10%, transparent),
-        color-mix(in oklab, var(--primary) 5%, transparent));
-    }
-    .cover .initial {
-      font-family: var(--font-display); font-weight: 700; font-size: 4.5rem;
-      color: color-mix(in oklab, var(--primary) 20%, transparent);
-    }
+    .post { display: flex; flex-direction: column; min-height: 400px; background: var(--card);
+      border: 1px solid var(--border); border-radius: 12px; overflow: hidden; color: inherit;
+      transition: border-color 0.18s ease; }
+    .post:hover { border-color: color-mix(in oklab, var(--primary) 30%, transparent); text-decoration: none; }
+    .cover { aspect-ratio: 16 / 9; display: flex; align-items: center; justify-content: center;
+      background: linear-gradient(135deg, color-mix(in oklab, var(--primary) 10%, transparent), color-mix(in oklab, var(--primary) 5%, transparent)); }
+    .cover .initial { font-family: var(--font-display); font-weight: 700; font-size: 4.5rem;
+      color: color-mix(in oklab, var(--primary) 20%, transparent); }
     .post .body { padding: 20px; display: flex; flex-direction: column; flex: 1; }
     .meta { display: flex; justify-content: space-between; font-size: 0.76rem; margin-bottom: 10px; }
     .meta .cat { color: var(--primary); font-weight: 500; }
     .meta .date { color: var(--muted-foreground); }
-    .post h2 {
-      font-family: var(--font-display); font-size: 1.15rem; font-weight: 600;
-      margin: 0 0 8px; line-height: 1.35; transition: color 0.15s ease;
-    }
+    .post h2 { font-family: var(--font-display); font-size: 1.12rem; font-weight: 600;
+      margin: 0 0 8px; line-height: 1.35; transition: color 0.15s ease; }
     .post:hover h2 { color: var(--primary); }
-    .post .excerpt {
-      color: var(--muted-foreground); font-size: 0.9rem; margin: 0 0 16px; flex: 1;
-      display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
-    }
+    .post .excerpt { color: var(--muted-foreground); font-size: 0.9rem; margin: 0 0 16px; flex: 1;
+      display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
     .post .more { color: var(--primary); font-size: 0.9rem; font-weight: 500; }
-    .post.soon { opacity: 0.55; pointer-events: none; }
-
-    footer.site {
-      border-top: 1px solid rgba(255,255,255,0.06); padding: 40px 0 32px; background: var(--secondary);
-    }
-    footer.site .wrap { display: flex; flex-wrap: wrap; gap: 18px; justify-content: space-between; align-items: center; }
-    footer.site p { margin: 0; color: var(--muted-foreground); font-size: 0.85rem; }
-    footer.site nav a { color: var(--muted-foreground); font-size: 0.88rem; margin-left: 18px; transition: color 0.15s ease; }
-    footer.site nav a:hover { color: var(--foreground); }
   </style>
 </head>
 <body>
+
   <header class="site">
     <div class="wrap">
-      <a class="brand" href="https://kassellabs.io?utm_source=github-pages&utm_medium=eng-blog&utm_campaign=home"><img src="https://kassellabs-static-assets.us-mia-1.linodeobjects.com/images/kassel-labs-logo.svg" alt="Kassel Labs" width="150" height="26" /></a>
+      <a class="brand" href="https://kassellabs.io?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=home"><img src="https://kassellabs-static-assets.us-mia-1.linodeobjects.com/images/kassel-labs-logo.svg" alt="Kassel Labs" width="150" height="26" /></a>
       <nav>
-        <a href="https://kassellabs.io?utm_source=github-pages&utm_medium=eng-blog&utm_campaign=home">Home</a>
-        <a href="https://kassellabs.io/projects?utm_source=github-pages&utm_medium=eng-blog&utm_campaign=home">Projects</a>
-        <a href="https://kassellabs.io/about?utm_source=github-pages&utm_medium=eng-blog&utm_campaign=home">About</a>
-        <a href="https://kassellabs.io/blog?utm_source=github-pages&utm_medium=eng-blog&utm_campaign=home">Blog</a>
-        <a href="https://kassellabs.io/contact?utm_source=github-pages&utm_medium=eng-blog&utm_campaign=home">Contact</a>
+        <a href="https://kassellabs.io?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=home">Home</a>
+        <a href="https://kassellabs.io/projects?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=home">Projects</a>
+        <a href="https://kassellabs.io/about?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=home">About</a>
+        <a href="https://kassellabs.io/blog?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=home">Blog</a>
+        <a href="https://kassellabs.io/contact?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=home">Contact</a>
       </nav>
     </div>
   </header>
-
   <section class="hero">
     <div class="wrap">
-      <h1>Behind the <span class="accent">Scenes</span></h1>
-      <p>How we build and render movie and TV title sequences in code — since 2015, over a million videos created with Kassel Labs.</p>
+      <h1>Stories &amp; <span class="accent">Inspiration</span></h1>
+      <p>Discover how people around the world are using Kassel Labs to create unforgettable moments — plus behind-the-scenes looks at how it all works. Mirrored from <a href="https://kassellabs.io/blog?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=home">the official blog</a>.</p>
     </div>
   </section>
-
   <main>
     <div class="wrap">
       <div class="grid">
@@ -144,22 +138,87 @@
             <span class="more">Read more →</span>
           </div>
         </a>
-        <div class="post soon">
-          <div class="cover"><span class="initial">P</span></div>
-          <div class="body">
-            <div class="meta"><span class="cat">Behind the Scenes</span><span class="date">Coming soon</span></div>
-            <h2>Porting an After Effects template to Remotion, letter by letter</h2>
-            <p class="excerpt">Field notes in progress.</p>
-          </div>
-        </div>
-        <div class="post soon">
+        <a class="post" href="/blog/how-to-make-a-westworld-intro/">
           <div class="cover"><span class="initial">W</span></div>
           <div class="body">
-            <div class="meta"><span class="cat">Behind the Scenes</span><span class="date">Coming soon</span></div>
-            <h2>Why our render worker runs at concurrency 1</h2>
-            <p class="excerpt">Field notes in progress.</p>
+            <div class="meta"><span class="cat">Tutorial</span><span class="date">Apr 10, 2026</span></div>
+            <h2>Make a Westworld Intro With Your Own Title</h2>
+            <p class="excerpt">Set your own title against the Emmy-winning android elegy.</p>
+            <span class="more">Read more →</span>
           </div>
-        </div>
+        </a>
+        <a class="post" href="/blog/how-to-make-a-house-of-the-dragon-intro/">
+          <div class="cover"><span class="initial">H</span></div>
+          <div class="body">
+            <div class="meta"><span class="cat">Tutorial</span><span class="date">Apr 3, 2026</span></div>
+            <h2>Put Your House in the House of the Dragon Intro</h2>
+            <p class="excerpt">Your house name traced in crimson through the channels of old Valyria.</p>
+            <span class="more">Read more →</span>
+          </div>
+        </a>
+        <a class="post" href="/blog/how-to-make-a-the-last-of-us-intro/">
+          <div class="cover"><span class="initial">T</span></div>
+          <div class="body">
+            <div class="meta"><span class="cat">Tutorial</span><span class="date">Mar 27, 2026</span></div>
+            <h2>Make a The Last of Us Title Sequence With Your Own Text</h2>
+            <p class="excerpt">The weathered, fungus-reclaimed HBO title treatment, personalized.</p>
+            <span class="more">Read more →</span>
+          </div>
+        </a>
+        <a class="post" href="/blog/how-to-make-a-breaking-bad-intro/">
+          <div class="cover"><span class="initial">B</span></div>
+          <div class="body">
+            <div class="meta"><span class="cat">Tutorial</span><span class="date">Mar 20, 2026</span></div>
+            <h2>Put Your Name on the Periodic Table — the Breaking Bad Way</h2>
+            <p class="excerpt">Your name, periodic-table'd — element symbols found and highlighted in green.</p>
+            <span class="more">Read more →</span>
+          </div>
+        </a>
+        <a class="post" href="/blog/how-to-make-a-harry-potter-intro/">
+          <div class="cover"><span class="initial">H</span></div>
+          <div class="body">
+            <div class="meta"><span class="cat">Tutorial</span><span class="date">Mar 6, 2026</span></div>
+            <h2>Make a Harry Potter Title Card for Any Occasion</h2>
+            <p class="excerpt">Generate a personalized wizarding-world title card in seconds.</p>
+            <span class="more">Read more →</span>
+          </div>
+        </a>
+        <a class="post" href="/blog/how-to-make-a-marvel-studios-intro/">
+          <div class="cover"><span class="initial">M</span></div>
+          <div class="body">
+            <div class="meta"><span class="cat">Tutorial</span><span class="date">Feb 6, 2026</span></div>
+            <h2>Open Like the MCU: Make Your Own Marvel Studios Intro</h2>
+            <p class="excerpt">The comic page-flips, the fanfare, your name in the wordmark.</p>
+            <span class="more">Read more →</span>
+          </div>
+        </a>
+        <a class="post" href="/blog/how-to-make-a-game-of-thrones-intro/">
+          <div class="cover"><span class="initial">G</span></div>
+          <div class="body">
+            <div class="meta"><span class="cat">Tutorial</span><span class="date">Jan 9, 2026</span></div>
+            <h2>Make a Game of Thrones Intro With Your Own Words</h2>
+            <p class="excerpt">Put your own words on the Emmy-winning clockwork map.</p>
+            <span class="more">Read more →</span>
+          </div>
+        </a>
+        <a class="post" href="/blog/how-to-make-a-stranger-things-intro/">
+          <div class="cover"><span class="initial">S</span></div>
+          <div class="body">
+            <div class="meta"><span class="cat">Tutorial</span><span class="date">Dec 5, 2025</span></div>
+            <h2>Turn Any Text Into a Stranger Things Title — Free</h2>
+            <p class="excerpt">Swap in any title — for free — and download the video in seconds.</p>
+            <span class="more">Read more →</span>
+          </div>
+        </a>
+        <a class="post" href="/blog/how-to-make-a-star-wars-intro/">
+          <div class="cover"><span class="initial">S</span></div>
+          <div class="body">
+            <div class="meta"><span class="cat">Tutorial</span><span class="date">Nov 14, 2025</span></div>
+            <h2>Make Your Own Star Wars Opening Crawl in Seconds</h2>
+            <p class="excerpt">Generate the iconic opening crawl in seconds — no video editing software required.</p>
+            <span class="more">Read more →</span>
+          </div>
+        </a>
       </div>
     </div>
   </main>
@@ -168,9 +227,9 @@
     <div class="wrap">
       <p>© 2026 Kassel Labs. All rights reserved.</p>
       <nav>
-        <a href="https://kassellabs.io?utm_source=github-pages&utm_medium=eng-blog&utm_campaign=home">Home</a>
-        <a href="https://kassellabs.io/projects?utm_source=github-pages&utm_medium=eng-blog&utm_campaign=home">Intro Creators</a>
-        <a href="https://kassellabs.io/blog?utm_source=github-pages&utm_medium=eng-blog&utm_campaign=home">Blog</a>
+        <a href="https://kassellabs.io?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=home">Home</a>
+        <a href="https://kassellabs.io/projects?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=home">Intro Creators</a>
+        <a href="https://kassellabs.io/blog?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=home">Blog</a>
       </nav>
     </div>
   </footer>

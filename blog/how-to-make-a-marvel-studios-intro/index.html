@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Open Like the MCU: Make Your Own Marvel Studios Intro — Kassel Labs</title>
+  <meta name="description" content="The comic page-flips, the fanfare, your name in the wordmark." />
+  <link rel="canonical" href="https://kassellabs.io/blog/how-to-make-a-marvel-studios-intro" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Open Like the MCU: Make Your Own Marvel Studios Intro" />
+  <meta property="og:description" content="The comic page-flips, the fanfare, your name in the wordmark." />
+  <meta property="og:url" content="https://kassellabs.io/blog/how-to-make-a-marvel-studios-intro" />
+  <meta property="og:site_name" content="Kassel Labs" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300..800&family=Space+Grotesk:wght@400..700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --background: oklch(0.12 0.01 220); --foreground: oklch(0.98 0 0);
+      --card: oklch(0.15 0.015 220); --primary: oklch(0.75 0.15 180);
+      --primary-foreground: oklch(0.12 0.01 220); --secondary: oklch(0.2 0.015 220);
+      --muted-foreground: oklch(0.65 0 0); --border: oklch(0.28 0.02 220);
+      --font-sans: "Outfit", sans-serif; --font-display: "Space Grotesk", sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--background); color: var(--foreground);
+      font-family: var(--font-sans); font-size: 1.06rem; line-height: 1.75; -webkit-font-smoothing: antialiased; }
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; text-underline-offset: 3px; }
+    .wrap { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
+    .prose-wrap { max-width: 768px; margin: 0 auto; padding: 0 24px; }
+    header.site { position: sticky; top: 0; z-index: 50;
+      background: color-mix(in oklab, var(--background) 70%, transparent);
+      backdrop-filter: blur(24px); border-bottom: 1px solid rgba(255,255,255,0.06);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.05); }
+    header.site .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    .brand img { height: 24px; width: auto; display: block; }
+    header.site nav { display: flex; align-items: center; gap: 26px; }
+    header.site nav a { color: var(--muted-foreground); font-size: 0.92rem; font-weight: 500; transition: color 0.15s ease; }
+    header.site nav a:hover { color: var(--foreground); text-decoration: none; }
+    @media (max-width: 680px) { header.site nav { display: none; } }
+    .back { display: inline-flex; align-items: center; gap: 8px; color: var(--muted-foreground);
+      font-size: 0.92rem; font-weight: 500; margin: 40px 0 28px; }
+    .back:hover { color: var(--foreground); text-decoration: none; }
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+    .chip { display: inline-block; padding: 4px 14px; border-radius: 999px; font-size: 0.8rem; font-weight: 600;
+      background: color-mix(in oklab, var(--primary) 15%, transparent); color: var(--primary); }
+    .chip.outline { background: var(--secondary); color: var(--muted-foreground); font-weight: 500; }
+    h1.title { font-family: var(--font-display); font-size: clamp(2.1rem, 5.4vw, 3.1rem); font-weight: 700;
+      line-height: 1.1; letter-spacing: -0.02em; margin: 0 0 22px; text-wrap: balance; }
+    .byline { display: flex; align-items: center; gap: 12px; margin-bottom: 44px; }
+    .avatar { width: 36px; height: 36px; border-radius: 50%;
+      background: color-mix(in oklab, var(--primary) 20%, var(--card)); color: var(--primary);
+      font-weight: 700; font-size: 0.8rem; display: flex; align-items: center; justify-content: center; }
+    .byline .who { font-weight: 600; font-size: 0.95rem; }
+    .byline .date { color: var(--muted-foreground); font-size: 0.9rem; }
+    .byline .sep { color: var(--border); }
+    article p { margin: 0 0 1.35em; color: color-mix(in oklab, var(--foreground) 90%, transparent); }
+    article h2 { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; letter-spacing: -0.01em;
+      margin: 2em 0 0.6em; color: var(--foreground); }
+    article strong { color: var(--foreground); }
+    article ul, article ol { margin: 0 0 1.35em; padding-left: 1.3em; color: color-mix(in oklab, var(--foreground) 90%, transparent); }
+    article li { margin-bottom: 0.5em; }
+    article hr { border: 0; height: 1px; background: var(--border); margin: 2.6em 0; }
+    article em { color: var(--muted-foreground); }
+    .cta { background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+      padding: 30px 28px; margin: 3em 0 1em; }
+    .cta h3 { font-family: var(--font-display); margin: 0 0 8px; font-size: 1.35rem; font-weight: 700; }
+    .cta p { color: var(--muted-foreground); margin: 0 0 18px; }
+    .btn { display: inline-flex; align-items: center; gap: 8px; background: var(--primary);
+      color: var(--primary-foreground); font-weight: 600; font-size: 0.95rem; padding: 11px 22px;
+      border-radius: 6px; transition: opacity 0.15s ease; }
+    .btn:hover { opacity: 0.88; text-decoration: none; }
+    footer.site { border-top: 1px solid rgba(255,255,255,0.06); margin-top: 64px; padding: 40px 0 32px; background: var(--secondary); }
+    footer.site .wrap { display: flex; flex-wrap: wrap; gap: 18px; justify-content: space-between; align-items: center; }
+    footer.site p { margin: 0; color: var(--muted-foreground); font-size: 0.85rem; }
+    footer.site nav a { color: var(--muted-foreground); font-size: 0.88rem; margin-left: 18px; transition: color 0.15s ease; }
+    footer.site nav a:hover { color: var(--foreground); text-decoration: none; }</style>
+</head>
+<body>
+
+  <header class="site">
+    <div class="wrap">
+      <a class="brand" href="https://kassellabs.io?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=how-to-make-a-marvel-studios-intro"><img src="https://kassellabs-static-assets.us-mia-1.linodeobjects.com/images/kassel-labs-logo.svg" alt="Kassel Labs" width="150" height="26" /></a>
+      <nav>
+        <a href="https://kassellabs.io?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=how-to-make-a-marvel-studios-intro">Home</a>
+        <a href="https://kassellabs.io/projects?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=how-to-make-a-marvel-studios-intro">Projects</a>
+        <a href="https://kassellabs.io/about?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=how-to-make-a-marvel-studios-intro">About</a>
+        <a href="https://kassellabs.io/blog?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=how-to-make-a-marvel-studios-intro">Blog</a>
+        <a href="https://kassellabs.io/contact?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=how-to-make-a-marvel-studios-intro">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <article>
+    <div class="prose-wrap">
+      <a class="back" href="/">← Back to Blog</a>
+      <div class="chips">
+        <span class="chip">Tutorial</span>
+        <span class="chip outline">#Intro Creator</span>
+      </div>
+      <h1 class="title">Open Like the MCU: Make Your Own Marvel Studios Intro</h1>
+      <div class="byline">
+        <span class="avatar">KL</span>
+        <span class="who">Kassel Labs</span>
+        <span class="sep">·</span>
+        <span class="date">February 6, 2026</span>
+      </div>
+<p><em>Originally published on <a href="https://kassellabs.io/blog/how-to-make-a-marvel-studios-intro">the Kassel Labs blog</a>.</em></p>
+<p>The comic pages flip past, the fanfare builds, and the red wordmark fills the
+screen. The Marvel Studios logo sequence is one of the most watched pieces of
+film in cinema history — the moment every MCU experience actually starts. Fans
+famously pause it frame by frame to spot their favorite characters in the
+flipping panels.</p>
+<p>With the
+<a href="https://kassellabs.io/intro/marvel-studios?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=marvel-studios-intro">Marvel Studios Intro Creator</a>
+that wordmark can say whatever you want.</p>
+<h2>The logo that opens every Marvel film</h2>
+<p>The sequence works double duty: it&#39;s studio branding, and it&#39;s an homage to the
+source material — decades of comic art compressed into a few seconds of
+page-flips before the title lands. That&#39;s why swapping in your own name feels
+so satisfying: the whole apparatus of the MCU appears to be introducing <em>you</em>.</p>
+<h2>How to make your own Marvel Studios intro</h2>
+<ol>
+<li><strong>Open the creator.</strong> Go to the
+<a href="https://kassellabs.io/intro/marvel-studios?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=marvel-studios-intro">Marvel Studios Intro Creator</a>.</li>
+<li><strong>Enter your text.</strong> Your name replaces the wordmark.</li>
+<li><strong>Preview in real time.</strong> See it exactly as it will render.</li>
+<li><strong>Render and download.</strong> Your MP4, ready for anything.</li>
+</ol>
+<h2>Ideas for your Marvel-style intro</h2>
+<ul>
+<li>A YouTube channel opener with real production value</li>
+<li>A podcast cold-open</li>
+<li>A birthday tribute for the household superhero</li>
+<li>Team or project presentations that start with a bang</li>
+</ul>
+<h2>Assemble your intro</h2>
+<p><strong><a href="https://kassellabs.io/intro/marvel-studios?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=marvel-studios-intro">Create your Marvel Studios intro →</a></strong></p>
+<p>Want a different universe? <a href="https://kassellabs.io/projects?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=marvel-studios-intro">Explore all the creators</a>.</p>
+
+      <div class="cta">
+        <h3>Ready to create your own?</h3>
+        <p>Start making your own cinematic intros today. It only takes a few minutes!</p>
+        <a class="btn" href="https://kassellabs.io/projects?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=how-to-make-a-marvel-studios-intro">Explore Our Creators →</a>
+      </div>
+    </div>
+  </article>
+
+  <footer class="site">
+    <div class="wrap">
+      <p>© 2026 Kassel Labs. All rights reserved.</p>
+      <nav>
+        <a href="https://kassellabs.io?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=how-to-make-a-marvel-studios-intro">Home</a>
+        <a href="https://kassellabs.io/projects?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=how-to-make-a-marvel-studios-intro">Intro Creators</a>
+        <a href="https://kassellabs.io/blog?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=how-to-make-a-marvel-studios-intro">Blog</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
