@@ -3,99 +3,175 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Kassel Labs Engineering — Field Notes</title>
-  <meta name="description" content="Engineering field notes from Kassel Labs — how we render movie and TV title sequences in code with Remotion, Blender, and a BullMQ pipeline." />
+  <title>Behind the Scenes — Kassel Labs</title>
+  <meta name="description" content="Behind the scenes at Kassel Labs — how we build and render movie and TV title sequences in code with Remotion, Blender, and a BullMQ pipeline." />
   <link rel="canonical" href="https://kassellabs.github.io/" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Kassel Labs Engineering — Field Notes" />
-  <meta property="og:description" content="How we render movie and TV title sequences in code." />
+  <meta property="og:title" content="Behind the Scenes — Kassel Labs" />
+  <meta property="og:description" content="How we build and render movie and TV title sequences in code." />
   <meta property="og:url" content="https://kassellabs.github.io/" />
+  <meta property="og:site_name" content="Kassel Labs" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..900;1,9..144,400..700&family=Newsreader:ital,opsz@0,6..72;1,6..72&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300..800&family=Space+Grotesk:wght@400..700&display=swap" rel="stylesheet" />
   <style>
+    /* ===== Kassel Labs design tokens (from website/app/globals.css) ===== */
     :root {
-      --ink: #0b0b0e; --ink-2: #141419; --line: #2a2a33;
-      --paper: #ece7dd; --paper-dim: #9a958c; --gold: #e8b04b; --gold-deep: #c8902f;
+      --background: oklch(0.12 0.01 220);
+      --foreground: oklch(0.98 0 0);
+      --card: oklch(0.15 0.015 220);
+      --primary: oklch(0.75 0.15 180);
+      --primary-foreground: oklch(0.12 0.01 220);
+      --secondary: oklch(0.2 0.015 220);
+      --muted-foreground: oklch(0.65 0 0);
+      --border: oklch(0.28 0.02 220);
+      --radius: 0.5rem;
+      --font-sans: "Outfit", sans-serif;
+      --font-display: "Space Grotesk", sans-serif;
     }
     * { box-sizing: border-box; }
     body {
-      margin: 0; background: var(--ink); color: var(--paper);
-      font-family: "Newsreader", Georgia, serif; font-size: 1.15rem; line-height: 1.7;
+      margin: 0; background: var(--background); color: var(--foreground);
+      font-family: var(--font-sans); font-size: 1.02rem; line-height: 1.7;
       -webkit-font-smoothing: antialiased;
     }
-    body::before {
-      content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 9;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.4'/%3E%3C/svg%3E");
-      opacity: 0.05; mix-blend-mode: overlay;
+    a { color: var(--primary); text-decoration: none; }
+    .wrap { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
+
+    header.site {
+      position: sticky; top: 0; z-index: 50;
+      background: color-mix(in oklab, var(--background) 70%, transparent);
+      backdrop-filter: blur(24px);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.05);
     }
-    a { color: var(--gold); text-decoration: none; }
-    a:hover { text-decoration: underline; text-underline-offset: 3px; }
-    .wrap { max-width: 720px; margin: 0 auto; padding: 0 26px; }
-    header { padding: 90px 0 30px; text-align: center; }
-    .kicker {
-      font-family: "JetBrains Mono", monospace; font-size: 0.72rem;
-      letter-spacing: 0.24em; text-transform: uppercase; color: var(--gold); margin-bottom: 20px;
+    header.site .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    .brand img { height: 24px; width: auto; display: block; }
+    header.site nav { display: flex; align-items: center; gap: 26px; }
+    header.site nav a { color: var(--muted-foreground); font-size: 0.92rem; font-weight: 500; transition: color 0.15s ease; }
+    header.site nav a:hover { color: var(--foreground); }
+    @media (max-width: 680px) { header.site nav { display: none; } }
+
+    /* Hero — matches blog list hero */
+    .hero {
+      padding: 88px 0 64px; border-bottom: 1px solid var(--border);
+      background: radial-gradient(ellipse at top left, color-mix(in oklab, var(--primary) 10%, transparent), transparent 55%);
     }
-    h1 {
-      font-family: "Fraunces", Georgia, serif; font-weight: 600;
-      font-size: clamp(2.2rem, 6vw, 3.4rem); line-height: 1.05; letter-spacing: -0.02em; margin: 0 0 18px;
+    .hero h1 {
+      font-family: var(--font-display); font-weight: 700;
+      font-size: clamp(2.4rem, 6vw, 3.4rem); letter-spacing: -0.02em; margin: 0 0 16px;
     }
-    .dek { color: var(--paper-dim); font-style: italic; max-width: 520px; margin: 0 auto; }
-    main { padding: 40px 0 80px; }
-    .article {
-      display: block; border: 1px solid var(--line); border-radius: 12px;
-      padding: 26px 28px; margin-bottom: 16px;
-      background: linear-gradient(180deg, var(--ink-2), var(--ink));
-      transition: border-color 0.18s ease, transform 0.18s ease;
+    .hero h1 .accent { color: var(--primary); }
+    .hero p { color: var(--muted-foreground); font-size: 1.12rem; max-width: 640px; margin: 0; }
+
+    /* Post grid — matches blog cards */
+    main { padding: 56px 0 72px; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    @media (max-width: 960px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 620px) { .grid { grid-template-columns: 1fr; } }
+    .post {
+      display: flex; flex-direction: column; min-height: 400px;
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 12px; overflow: hidden; color: inherit;
+      transition: border-color 0.18s ease;
     }
-    .article:hover { border-color: var(--gold-deep); transform: translateY(-2px); text-decoration: none; }
-    .article .tag {
-      font-family: "JetBrains Mono", monospace; font-size: 0.66rem;
-      letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold);
+    .post:hover { border-color: color-mix(in oklab, var(--primary) 30%, transparent); }
+    .cover {
+      aspect-ratio: 16 / 9; display: flex; align-items: center; justify-content: center;
+      background: linear-gradient(135deg,
+        color-mix(in oklab, var(--primary) 10%, transparent),
+        color-mix(in oklab, var(--primary) 5%, transparent));
     }
-    .article h2 {
-      font-family: "Fraunces", Georgia, serif; font-weight: 600;
-      font-size: 1.5rem; margin: 10px 0 8px; color: var(--paper);
+    .cover .initial {
+      font-family: var(--font-display); font-weight: 700; font-size: 4.5rem;
+      color: color-mix(in oklab, var(--primary) 20%, transparent);
     }
-    .article p { margin: 0; font-size: 1rem; color: var(--paper-dim); line-height: 1.6; }
-    .soon { opacity: 0.55; }
-    .soon:hover { border-color: var(--line); transform: none; }
-    footer { border-top: 1px solid var(--line); padding: 34px 0; text-align: center; }
-    footer p { font-family: "JetBrains Mono", monospace; font-size: 0.7rem; color: var(--paper-dim); letter-spacing: 0.08em; }
-    footer a { margin: 0 10px; }
+    .post .body { padding: 20px; display: flex; flex-direction: column; flex: 1; }
+    .meta { display: flex; justify-content: space-between; font-size: 0.76rem; margin-bottom: 10px; }
+    .meta .cat { color: var(--primary); font-weight: 500; }
+    .meta .date { color: var(--muted-foreground); }
+    .post h2 {
+      font-family: var(--font-display); font-size: 1.15rem; font-weight: 600;
+      margin: 0 0 8px; line-height: 1.35; transition: color 0.15s ease;
+    }
+    .post:hover h2 { color: var(--primary); }
+    .post .excerpt {
+      color: var(--muted-foreground); font-size: 0.9rem; margin: 0 0 16px; flex: 1;
+      display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
+    }
+    .post .more { color: var(--primary); font-size: 0.9rem; font-weight: 500; }
+    .post.soon { opacity: 0.55; pointer-events: none; }
+
+    footer.site {
+      border-top: 1px solid rgba(255,255,255,0.06); padding: 40px 0 32px; background: var(--secondary);
+    }
+    footer.site .wrap { display: flex; flex-wrap: wrap; gap: 18px; justify-content: space-between; align-items: center; }
+    footer.site p { margin: 0; color: var(--muted-foreground); font-size: 0.85rem; }
+    footer.site nav a { color: var(--muted-foreground); font-size: 0.88rem; margin-left: 18px; transition: color 0.15s ease; }
+    footer.site nav a:hover { color: var(--foreground); }
   </style>
 </head>
 <body>
-  <header>
+  <header class="site">
     <div class="wrap">
-      <div class="kicker">Kassel Labs · Engineering</div>
-      <h1>Field Notes</h1>
-      <p class="dek">How we render movie and TV title sequences in code — since 2015, over a million videos.</p>
+      <a class="brand" href="https://kassellabs.io?utm_source=github-pages&utm_medium=eng-blog&utm_campaign=home"><img src="https://kassellabs-static-assets.us-mia-1.linodeobjects.com/images/kassel-labs-logo.svg" alt="Kassel Labs" width="150" height="26" /></a>
+      <nav>
+        <a href="https://kassellabs.io?utm_source=github-pages&utm_medium=eng-blog&utm_campaign=home">Home</a>
+        <a href="https://kassellabs.io/projects?utm_source=github-pages&utm_medium=eng-blog&utm_campaign=home">Projects</a>
+        <a href="https://kassellabs.io/about?utm_source=github-pages&utm_medium=eng-blog&utm_campaign=home">About</a>
+        <a href="https://kassellabs.io/blog?utm_source=github-pages&utm_medium=eng-blog&utm_campaign=home">Blog</a>
+        <a href="https://kassellabs.io/contact?utm_source=github-pages&utm_medium=eng-blog&utm_campaign=home">Contact</a>
+      </nav>
     </div>
   </header>
+
+  <section class="hero">
+    <div class="wrap">
+      <h1>Behind the <span class="accent">Scenes</span></h1>
+      <p>How we build and render movie and TV title sequences in code — since 2015, over a million videos created with Kassel Labs.</p>
+    </div>
+  </section>
+
   <main>
     <div class="wrap">
-      <a class="article" href="/rendering-hollywood-title-sequences-in-react/">
-        <span class="tag">Remotion · Blender · BullMQ</span>
-        <h2>Rendering Hollywood Title Sequences in React</h2>
-        <p>Pure code for Loki, a 3D engine for Disney, the 4K frame-scaling trick, and the queue that ships a finished intro to your inbox in minutes.</p>
-      </a>
-      <div class="article soon">
-        <span class="tag">Coming soon</span>
-        <h2>Porting an After Effects template to Remotion, letter by letter</h2>
-        <p>Field notes in progress.</p>
+      <div class="grid">
+        <a class="post" href="/rendering-hollywood-title-sequences-in-react/">
+          <div class="cover"><span class="initial">R</span></div>
+          <div class="body">
+            <div class="meta"><span class="cat">Behind the Scenes</span><span class="date">Jul 9, 2026</span></div>
+            <h2>Rendering Hollywood Title Sequences in React</h2>
+            <p class="excerpt">Pure code for Loki, a 3D engine for Disney, the 4K frame-scaling trick, and the queue that ships a finished intro to your inbox in minutes.</p>
+            <span class="more">Read more →</span>
+          </div>
+        </a>
+        <div class="post soon">
+          <div class="cover"><span class="initial">P</span></div>
+          <div class="body">
+            <div class="meta"><span class="cat">Behind the Scenes</span><span class="date">Coming soon</span></div>
+            <h2>Porting an After Effects template to Remotion, letter by letter</h2>
+            <p class="excerpt">Field notes in progress.</p>
+          </div>
+        </div>
+        <div class="post soon">
+          <div class="cover"><span class="initial">W</span></div>
+          <div class="body">
+            <div class="meta"><span class="cat">Behind the Scenes</span><span class="date">Coming soon</span></div>
+            <h2>Why our render worker runs at concurrency 1</h2>
+            <p class="excerpt">Field notes in progress.</p>
+          </div>
+        </div>
       </div>
     </div>
   </main>
-  <footer>
+
+  <footer class="site">
     <div class="wrap">
-      <p>
-        © Kassel Labs ·
-        <a href="https://kassellabs.io?utm_source=github-pages&utm_medium=eng-blog&utm_campaign=home">kassellabs.io</a>
+      <p>© 2026 Kassel Labs. All rights reserved.</p>
+      <nav>
+        <a href="https://kassellabs.io?utm_source=github-pages&utm_medium=eng-blog&utm_campaign=home">Home</a>
         <a href="https://kassellabs.io/projects?utm_source=github-pages&utm_medium=eng-blog&utm_campaign=home">Intro Creators</a>
         <a href="https://kassellabs.io/blog?utm_source=github-pages&utm_medium=eng-blog&utm_campaign=home">Blog</a>
-      </p>
+      </nav>
     </div>
   </footer>
 </body>
