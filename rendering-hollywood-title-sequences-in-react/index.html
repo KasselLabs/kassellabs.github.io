@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rendering Hollywood Title Sequences in React — Kassel Labs Engineering</title>
+  <meta name="description" content="How Kassel Labs recreates iconic film title sequences in code: pure-Remotion letter morphing for Loki, a Blender-plus-Remotion 3D composite for Disney, and a BullMQ pipeline that ships a finished 4K intro to your inbox in minutes." />
+  <link rel="canonical" href="https://kassellabs.github.io/rendering-hollywood-title-sequences-in-react/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Rendering Hollywood Title Sequences in React" />
+  <meta property="og:description" content="Pure code for Loki, a 3D engine for Disney, and a queue that delivers a 4K intro in minutes. A look inside the Kassel Labs render pipeline." />
+  <meta property="og:url" content="https://kassellabs.github.io/rendering-hollywood-title-sequences-in-react/" />
+  <meta property="og:site_name" content="Kassel Labs Engineering" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- JSON-LD: TechArticle -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Rendering Hollywood Title Sequences in React",
+    "description": "How Kassel Labs recreates iconic film title sequences in code with Remotion and Blender, orchestrated by a BullMQ render worker.",
+    "author": { "@type": "Person", "name": "Nihey Takizawa", "jobTitle": "CTO & Co-founder" },
+    "publisher": { "@type": "Organization", "name": "Kassel Labs", "url": "https://kassellabs.io" },
+    "mainEntityOfPage": "https://kassellabs.github.io/rendering-hollywood-title-sequences-in-react/",
+    "about": ["Remotion", "Blender", "React", "Video rendering", "BullMQ"]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..900;1,9..144,400..700&family=Newsreader:ital,opsz@0,6..72;1,6..72&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --ink:        #0b0b0e;
+      --ink-2:      #141419;
+      --panel:      #17171d;
+      --line:       #2a2a33;
+      --paper:      #ece7dd;
+      --paper-dim:  #9a958c;
+      --gold:       #e8b04b;
+      --gold-deep:  #c8902f;
+      --loki:       #6fd4c7;   /* Loki glow */
+      --blood:      #b23a2e;
+      --font-display: "Fraunces", Georgia, serif;
+      --font-body:    "Newsreader", Georgia, serif;
+      --font-mono:    "JetBrains Mono", ui-monospace, monospace;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--ink);
+      color: var(--paper);
+      font-family: var(--font-body);
+      font-size: 1.18rem;
+      line-height: 1.72;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    /* Film grain + vignette overlay */
+    body::before {
+      content: "";
+      position: fixed; inset: 0;
+      pointer-events: none; z-index: 9;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.4'/%3E%3C/svg%3E");
+      opacity: 0.05; mix-blend-mode: overlay;
+    }
+    body::after {
+      content: "";
+      position: fixed; inset: 0;
+      pointer-events: none; z-index: 8;
+      background: radial-gradient(120% 80% at 50% 0%, transparent 55%, rgba(0,0,0,0.55) 100%);
+    }
+
+    a { color: var(--gold); text-decoration: none; }
+    a:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+    .wrap { max-width: 760px; margin: 0 auto; padding: 0 26px; }
+
+    .mono {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    /* ---------- Masthead ---------- */
+    header.site {
+      border-bottom: 1px solid var(--line);
+      background: linear-gradient(180deg, var(--ink-2), var(--ink));
+      position: sticky; top: 0; z-index: 10;
+      backdrop-filter: blur(6px);
+    }
+    header.site .wrap {
+      display: flex; align-items: center; justify-content: space-between;
+      height: 58px;
+    }
+    header.site .brand {
+      font-family: var(--font-mono); font-size: 0.78rem;
+      letter-spacing: 0.28em; text-transform: uppercase; color: var(--paper);
+    }
+    header.site .brand b { color: var(--gold); font-weight: 700; }
+    header.site nav a {
+      font-family: var(--font-mono); font-size: 0.7rem;
+      letter-spacing: 0.18em; text-transform: uppercase; color: var(--paper-dim);
+      margin-left: 22px;
+    }
+    header.site nav a:hover { color: var(--gold); text-decoration: none; }
+    @media (max-width: 620px) { header.site nav { display: none; } }
+
+    /* ---------- Hero ---------- */
+    .hero { position: relative; padding: 92px 0 54px; text-align: center; overflow: hidden; }
+    .hero .starfield {
+      position: absolute; inset: 0; z-index: 0; opacity: 0.5;
+      background:
+        radial-gradient(1.5px 1.5px at 20% 30%, #fff6 40%, transparent),
+        radial-gradient(1.5px 1.5px at 70% 20%, #fff4 40%, transparent),
+        radial-gradient(1px 1px at 40% 70%, #fff5 40%, transparent),
+        radial-gradient(1px 1px at 85% 60%, #fff3 40%, transparent),
+        radial-gradient(1.5px 1.5px at 55% 45%, #fff4 40%, transparent),
+        radial-gradient(1px 1px at 12% 80%, #fff4 40%, transparent);
+    }
+    .hero .wrap { position: relative; z-index: 1; }
+    .hero .kicker { margin-bottom: 26px; animation: rise 0.8s both; }
+    .hero h1 {
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: clamp(2.6rem, 7vw, 4.5rem);
+      line-height: 1.02;
+      letter-spacing: -0.02em;
+      margin: 0 0 24px;
+      color: var(--paper);
+      animation: rise 0.9s 0.08s both;
+    }
+    .hero h1 .grad {
+      background: linear-gradient(100deg, var(--gold), #f4d58d 40%, var(--gold-deep));
+      -webkit-background-clip: text; background-clip: text; color: transparent;
+      font-style: italic;
+    }
+    .hero .dek {
+      font-size: 1.32rem; color: var(--paper-dim); font-style: italic;
+      max-width: 560px; margin: 0 auto 34px; line-height: 1.55;
+      animation: rise 1s 0.16s both;
+    }
+    .byline {
+      display: inline-flex; align-items: center; gap: 14px;
+      font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.1em;
+      color: var(--paper-dim); text-transform: uppercase;
+      animation: rise 1.1s 0.24s both;
+    }
+    .byline .dot { width: 4px; height: 4px; border-radius: 50%; background: var(--gold); }
+
+    @keyframes rise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
+
+    /* ---------- Article ---------- */
+    article { padding: 20px 0 40px; }
+    article p { margin: 0 0 1.4em; }
+    .lead::first-letter {
+      font-family: var(--font-display); font-weight: 600;
+      float: left; font-size: 4.4rem; line-height: 0.78;
+      padding: 8px 12px 0 0; color: var(--gold);
+    }
+
+    h2.section {
+      font-family: var(--font-display);
+      font-weight: 600; font-size: clamp(1.8rem, 4vw, 2.5rem);
+      letter-spacing: -0.015em; line-height: 1.1;
+      margin: 2.6em 0 0.2em;
+      scroll-margin-top: 80px;
+    }
+    h2.section .num {
+      display: block; font-family: var(--font-mono); font-size: 0.72rem;
+      letter-spacing: 0.24em; color: var(--gold); margin-bottom: 12px;
+    }
+    h3.sub {
+      font-family: var(--font-display); font-weight: 600; font-size: 1.4rem;
+      margin: 1.8em 0 0.3em; color: var(--paper);
+    }
+    hr.rule {
+      border: 0; height: 1px; margin: 3.4em 0;
+      background: linear-gradient(90deg, transparent, var(--line) 20%, var(--line) 80%, transparent);
+    }
+
+    /* Two-philosophy cards */
+    .philos { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin: 2em 0; }
+    @media (max-width: 620px) { .philos { grid-template-columns: 1fr; } }
+    .philo {
+      border: 1px solid var(--line); border-radius: 10px; padding: 22px 22px 24px;
+      background: linear-gradient(180deg, var(--panel), var(--ink-2));
+      position: relative; overflow: hidden;
+    }
+    .philo::before {
+      content: ""; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+    }
+    .philo.loki::before { background: linear-gradient(90deg, var(--loki), transparent); }
+    .philo.disney::before { background: linear-gradient(90deg, var(--gold), transparent); }
+    .philo .tag { font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.16em; text-transform: uppercase; }
+    .philo.loki .tag { color: var(--loki); }
+    .philo.disney .tag { color: var(--gold); }
+    .philo h4 { font-family: var(--font-display); font-size: 1.35rem; font-weight: 600; margin: 10px 0 8px; color: var(--paper); }
+    .philo p { font-size: 1rem; color: var(--paper-dim); margin: 0; line-height: 1.6; }
+
+    /* Code / terminal block */
+    figure.code { margin: 1.8em 0; }
+    pre {
+      background: #0f0f14; border: 1px solid var(--line); border-radius: 10px;
+      padding: 20px 22px; overflow-x: auto;
+      font-family: var(--font-mono); font-size: 0.82rem; line-height: 1.7;
+      color: #cfd4dc;
+    }
+    pre .c { color: #6b7280; }        /* comment */
+    pre .k { color: var(--loki); }    /* keyword */
+    pre .s { color: var(--gold); }    /* string */
+    figcaption { font-family: var(--font-mono); font-size: 0.68rem; color: var(--paper-dim); letter-spacing: 0.08em; margin-top: 8px; text-align: center; }
+
+    /* Pull quote */
+    blockquote.pull {
+      margin: 2.2em 0; padding: 6px 0 6px 28px;
+      border-left: 3px solid var(--gold);
+      font-family: var(--font-display); font-style: italic;
+      font-size: 1.55rem; line-height: 1.35; color: var(--paper);
+    }
+
+    /* Pipeline diagram */
+    .pipeline {
+      display: flex; flex-wrap: wrap; align-items: stretch; gap: 8px;
+      margin: 2em 0; justify-content: center;
+    }
+    .pipeline .step {
+      flex: 1 1 120px; min-width: 110px;
+      border: 1px solid var(--line); border-radius: 8px; padding: 14px 12px;
+      background: var(--panel); text-align: center;
+    }
+    .pipeline .step .n { font-family: var(--font-mono); font-size: 0.62rem; color: var(--gold); letter-spacing: 0.14em; }
+    .pipeline .step .l { font-size: 0.92rem; color: var(--paper); margin-top: 6px; line-height: 1.3; }
+    .pipeline .arrow { align-self: center; color: var(--paper-dim); font-family: var(--font-mono); }
+    @media (max-width: 620px) { .pipeline .arrow { display: none; } }
+
+    .spec {
+      display: grid; grid-template-columns: auto 1fr; gap: 8px 20px;
+      font-family: var(--font-mono); font-size: 0.8rem; color: var(--paper-dim);
+      border: 1px solid var(--line); border-radius: 10px; padding: 18px 22px; margin: 1.8em 0;
+      background: var(--ink-2);
+    }
+    .spec dt { color: var(--gold); }
+    .spec dd { margin: 0; color: var(--paper); }
+
+    /* CTA */
+    .cta {
+      margin: 3em 0 1em; padding: 34px 30px; text-align: center;
+      border: 1px solid var(--line); border-radius: 14px;
+      background:
+        radial-gradient(90% 120% at 50% 0%, rgba(232,176,75,0.10), transparent 60%),
+        var(--ink-2);
+    }
+    .cta h3 { font-family: var(--font-display); font-size: 1.7rem; font-weight: 600; margin: 0 0 10px; color: var(--paper); }
+    .cta p { color: var(--paper-dim); font-size: 1.05rem; margin: 0 auto 22px; max-width: 460px; }
+    .chips { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+    .chip {
+      font-family: var(--font-mono); font-size: 0.76rem; letter-spacing: 0.04em;
+      padding: 9px 16px; border-radius: 999px;
+      border: 1px solid var(--gold-deep); color: var(--gold);
+      transition: all 0.18s ease;
+    }
+    .chip:hover { background: var(--gold); color: var(--ink); text-decoration: none; transform: translateY(-2px); }
+
+    /* Footer */
+    footer.site {
+      border-top: 1px solid var(--line); margin-top: 40px;
+      padding: 40px 0; background: var(--ink-2);
+    }
+    footer.site .wrap { display: flex; flex-wrap: wrap; gap: 20px; justify-content: space-between; align-items: center; }
+    footer.site p { margin: 0; font-family: var(--font-mono); font-size: 0.72rem; color: var(--paper-dim); letter-spacing: 0.06em; }
+    footer.site nav a { font-family: var(--font-mono); font-size: 0.72rem; color: var(--paper-dim); margin-left: 18px; letter-spacing: 0.08em; }
+    footer.site nav a:hover { color: var(--gold); text-decoration: none; }
+
+    /* More-articles teaser */
+    .more { margin: 3.4em 0 0; }
+    .more h2 { font-family: var(--font-mono); font-size: 0.74rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); margin-bottom: 18px; }
+    .more .item { border-top: 1px solid var(--line); padding: 18px 0; display: flex; justify-content: space-between; gap: 16px; align-items: baseline; }
+    .more .item .t { font-family: var(--font-display); font-size: 1.2rem; color: var(--paper); }
+    .more .item .m { font-family: var(--font-mono); font-size: 0.64rem; letter-spacing: 0.14em; color: var(--paper-dim); text-transform: uppercase; white-space: nowrap; }
+  </style>
+</head>
+<body>
+  <header class="site">
+    <div class="wrap">
+      <span class="brand">KASSEL&nbsp;<b>LABS</b>&nbsp;/ ENGINEERING</span>
+      <nav>
+        <a href="#loki">Loki</a>
+        <a href="#disney">Disney</a>
+        <a href="#pipeline">Pipeline</a>
+        <a href="https://kassellabs.io?utm_source=github-pages&utm_medium=eng-blog&utm_campaign=render-writeup">kassellabs.io</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="starfield" aria-hidden="true"></div>
+    <div class="wrap">
+      <div class="kicker mono">Kassel Labs Engineering · Field Notes</div>
+      <h1>Rendering Hollywood<br />Title Sequences in <span class="grad">React</span></h1>
+      <p class="dek">One React app recreates the most recognizable openings in film — some in pure code, some by driving a 3D engine — then ships a finished 4K video to your inbox in minutes.</p>
+      <div class="byline">
+        <span>Nihey Takizawa</span><span class="dot"></span><span>CTO, Kassel Labs</span><span class="dot"></span><span>9 min read</span>
+      </div>
+    </div>
+  </section>
+
+  <article>
+    <div class="wrap">
+      <p class="lead">Since 2015 we've let people drop their own name into the opening of <em>Star Wars</em>, <em>Stranger Things</em>, <em>Loki</em> and dozens more — over a million videos and counting. The magic trick our users see is simple: type some text, get back a broadcast-quality title sequence. The engineering underneath is anything but. This is a look at how those intros are actually rendered — and why we ended up with two completely different pipelines living in the same codebase.</p>
+
+      <p>Every intro we build has to satisfy three constraints at once. It has to be <strong>pixel-faithful</strong> to a sequence people have seen a hundred times (the uncanny valley is brutal here). It has to be <strong>fully parameterized</strong> — arbitrary user text, arbitrary length, sometimes swapped images and colors. And it has to render <strong>unattended</strong>, at 4K, fast enough that nobody's waiting around. Those constraints pushed us toward <a href="https://www.remotion.dev/" rel="noopener">Remotion</a> — React that renders to video, frame by frame — as the backbone. But not every title sequence wants to be pure code.</p>
+
+      <div class="philos">
+        <div class="philo loki">
+          <span class="tag">Approach A · Pure code</span>
+          <h4>Loki</h4>
+          <p>Everything — typography, grain, glow, timing — computed inside Remotion. No external tools. React all the way down.</p>
+        </div>
+        <div class="philo disney">
+          <span class="tag">Approach B · Hybrid 3D</span>
+          <h4>Disney</h4>
+          <p>Blender renders the chrome title in 3D to a transparent PNG; Remotion composites it over the castle. Two engines, one frame.</p>
+        </div>
+      </div>
+
+      <hr class="rule" />
+
+      <h2 class="section" id="loki"><span class="num">01 — Pure Remotion</span>The Loki title: fourteen fonts per letter</h2>
+      <p>The <em>Loki</em> main title has a signature move: each letter flickers through a stack of mismatched typefaces before settling — a nod to the show's identity-in-flux theme. Recreating that in After Effects is a keyframing nightmare. In code, it's a loop.</p>
+
+      <p>Every character cycles through <strong>14 eclectic typefaces</strong> sitting on a procedurally-grained, glowing plate. Rather than render live text (slow, and font metrics drift), each glyph is <strong>baked per-character into sprites</strong> ahead of time. The morph then just cross-dissolves between sprites on a schedule driven by <code>useCurrentFrame()</code>.</p>
+
+      <figure class="code">
+<pre><span class="c">// the morph is a function of frame, not a timeline of keyframes</span>
+<span class="k">const</span> frame = useCurrentFrame();
+<span class="k">const</span> fontIndex = morphIndexAt(frame, letter.seed);   <span class="c">// 0..13</span>
+<span class="k">const</span> sprite = sprites[letter.char]?.[fontIndex];
+
+<span class="c">// AltaCalifornia has no glyph for Ž / Ł / Þ — its sprite is blank,</span>
+<span class="c">// so the morph simply skips that font for those characters.</span>
+<span class="k">if</span> (isBlankSprite(sprite)) <span class="k">return</span> previousVisibleSprite;</pre>
+        <figcaption>shows/loki — per-letter font morph, blank-glyph fallback</figcaption>
+      </figure>
+
+      <p>That blank-sprite detail is the kind of thing you only hit at scale: some of the fonts genuinely don't contain certain accented or exotic glyphs, so naively morphing would flash an empty box mid-animation. Detecting and skipping missing glyphs keeps the effect clean for a user whose name happens to be <em>Þór</em>. The theme audio is muxed in from a separate track, and — crucially — there's <strong>no pre-render step</strong>. Loki is Remotion start to finish.</p>
+
+      <hr class="rule" />
+
+      <h2 class="section" id="disney"><span class="num">02 — Blender + Remotion</span>The Disney castle: when code isn't enough</h2>
+      <p>The <em>Disney</em> intro is a different beast. That title isn't flat — it's polished 3D chrome lettering with real bevels and reflections, sitting in front of the castle. You can fake a lot in CSS and SVG, but you can't fake that. So we don't.</p>
+
+      <p>Instead, <a href="https://www.blender.org/" rel="noopener">Blender 2.79b</a> renders <em>only</em> the title and subtitle — as 3D text — out to a <strong>transparent PNG</strong>. Then Remotion takes over: it reads that PNG, measures where the ink actually is, and composites it over a pre-baked castle background video.</p>
+
+      <div class="pipeline">
+        <div class="step"><div class="n">01</div><div class="l">User text → Blender <code>.blend</code> + <code>.py</code></div></div>
+        <div class="arrow">→</div>
+        <div class="step"><div class="n">02</div><div class="l">3D chrome text → transparent PNG</div></div>
+        <div class="arrow">→</div>
+        <div class="step"><div class="n">03</div><div class="l">Alpha-bbox → layout math</div></div>
+        <div class="arrow">→</div>
+        <div class="step"><div class="n">04</div><div class="l">Remotion composites over castle</div></div>
+      </div>
+
+      <p>The interesting step is #3. Because the user's text can be any length, we don't know in advance how big the rendered title will be. So we scan the PNG's <strong>alpha channel to find its bounding box</strong>, and from that compute the composite layout — position, scale, and fade timing — so the title always sits correctly against the castle regardless of whether it says "Jo" or "Alexandria-Katherine". Pure math, no manual tweaking per order.</p>
+
+      <blockquote class="pull">The user types the text. Blender sculpts the letters. Remotion measures the ink and places it. Nobody touches a keyframe.</blockquote>
+
+      <p>Timing is locked to the original: <strong>742 frames at 24000/1001 fps</strong> — the same ~30.95 seconds as the reference render, down to the frame. Getting this exact matters more than it sounds; even a few frames of drift makes a familiar sequence feel subtly <em>wrong</em>.</p>
+
+      <dl class="spec">
+        <dt>Composition</dt><dd>DisneyIntro · 1920×1080 · 742 frames</dd>
+        <dt>Frame rate</dt><dd>24000 / 1001 fps (≈ 23.976)</dd>
+        <dt>Text layer</dt><dd>Blender 2.79b → transparent PNG</dd>
+        <dt>Background</dt><dd>baked castle video, composited in Remotion</dd>
+      </dl>
+      <p style="font-size:0.95rem;color:var(--paper-dim);">Why 2.79b specifically? Later Blender releases changed the Python API, and our render script targets the 2.79 bindings. Pinning the engine version is part of the contract.</p>
+
+      <hr class="rule" />
+
+      <h2 class="section"><span class="num">03 — The 4K trick</span>Scale the frame, not the canvas</h2>
+      <p>Here's a subtlety that took a beat to get right. Both shows lay their text out in <strong>fixed 1080p pixel coordinates</strong> — a title's vertical center, sprite sizes, everything is authored against a 1920×1080 grid. So how do you render 4K without re-authoring every layout?</p>
+
+      <p>The naive move is to enlarge the canvas to 3840×2160. But then all those fixed pixel positions are suddenly in the top-left quadrant, and the layout falls apart. The fix is to keep the native canvas and <strong>scale the whole frame up</strong> instead:</p>
+
+      <figure class="code">
+<pre><span class="c">// 4K = render the native 1920×1080 layout, then scale the frame ×2</span>
+<span class="k">const</span> plan = {
+  canvas: { width: <span class="s">1920</span>, height: <span class="s">1080</span> },  <span class="c">// layout stays valid</span>
+  scale: <span class="s">2</span>,                                <span class="c">// Remotion supersamples → 3840×2160</span>
+};
+<span class="c">// Disney also bumps Blender resolution_percentage to 200 so the</span>
+<span class="c">// chrome text is genuinely 4K-sharp, not an upscaled 1080p PNG.</span></pre>
+        <figcaption>src/renderPlan.ts — target dims → render canvas + scale</figcaption>
+      </figure>
+
+      <p>Because we scale the frame rather than the canvas, every fixed-pixel layout stays centered and correct — it's just rendered at twice the density. Disney goes one further and tells Blender to render its text at <code>resolution_percentage: 200</code>, so the 3D chrome is natively 4K rather than an upscaled 1080p asset. (Below-native targets take the opposite path: supersample at native, then a Lanczos downscale in ffmpeg.)</p>
+
+      <hr class="rule" />
+
+      <h2 class="section" id="pipeline"><span class="num">04 — Orchestration</span>From "Pay" to inbox, on one worker</h2>
+      <p>None of this runs on request-response. Rendering a 30-second 4K intro — especially the Blender leg — is far too heavy to block an HTTP handler. So delivery is a queue.</p>
+
+      <p>A long-lived <a href="https://docs.bullmq.io/" rel="noopener">BullMQ</a> worker drains a single <code>render-remotion</code> queue at <strong>concurrency 1</strong> (rendering is CPU/GPU-bound; parallelism here just thrashes). When a customer pays, the admin enqueues a job for any intro type flagged <code>auto_render</code>. The worker then walks a fixed four-step delivery contract:</p>
+
+      <div class="pipeline">
+        <div class="step"><div class="n">MARK</div><div class="l">status → <code>rendering</code></div></div>
+        <div class="arrow">→</div>
+        <div class="step"><div class="n">RENDER</div><div class="l">Remotion (+ Blender for Disney)</div></div>
+        <div class="arrow">→</div>
+        <div class="step"><div class="n">UPLOAD</div><div class="l">signed S3 PUT</div></div>
+        <div class="arrow">→</div>
+        <div class="step"><div class="n">NOTIFY</div><div class="l">status → <code>finished</code>, email</div></div>
+      </div>
+
+      <p>Marking <code>rendering</code> first isn't cosmetic — it lets a reaper process recover jobs that die mid-render instead of leaving a paying customer stuck. And the S3 upload carries an <code>x-amz-acl: public-read</code> header that is emphatically <em>not</em> optional: forget it, and the object uploads privately, so the customer's finished video greets them with a 403. (Ask me how I know.) The whole thing is Dockerized with Blender and a headless Chrome baked into the image, so a deploy is a single container.</p>
+
+      <hr class="rule" />
+
+      <h2 class="section"><span class="num">05 — Try the engine yourself</span>The same compositions, live in your browser</h2>
+      <p>Here's the part that ties it together: those Remotion compositions aren't locked away on the render farm. The <strong>same code</strong> that renders our server-side title cards also runs client-side via <code>@remotion/player</code>, which is exactly what powers our free font generators. Type into one and you're driving the identical composition — it just exports a PNG in-browser instead of an MP4 on the queue.</p>
+
+      <div class="cta">
+        <h3>Put your own text through it</h3>
+        <p>Free, instant, no signup — these run the browser side of the same render engine described above.</p>
+        <div class="chips">
+          <a class="chip" href="https://kassellabs.io/font/star-wars?utm_source=github-pages&utm_medium=eng-blog&utm_campaign=render-writeup">Star Wars title →</a>
+          <a class="chip" href="https://kassellabs.io/font/breaking-bad?utm_source=github-pages&utm_medium=eng-blog&utm_campaign=render-writeup">Breaking Bad element →</a>
+          <a class="chip" href="https://kassellabs.io/font/stranger-things?utm_source=github-pages&utm_medium=eng-blog&utm_campaign=render-writeup">Stranger Things glow →</a>
+          <a class="chip" href="https://kassellabs.io/font/the-last-of-us?utm_source=github-pages&utm_medium=eng-blog&utm_campaign=render-writeup">The Last of Us →</a>
+          <a class="chip" href="https://kassellabs.io/font/invincible?utm_source=github-pages&utm_medium=eng-blog&utm_campaign=render-writeup">Invincible →</a>
+        </div>
+      </div>
+
+      <p>And if you want the full animated version — the crawl that scrolls, the letters that morph, the castle that lights up — that's what the <a href="https://kassellabs.io/projects?utm_source=github-pages&utm_medium=eng-blog&utm_campaign=render-writeup">intro creators</a> deliver, straight through the pipeline above.</p>
+
+      <section class="more">
+        <h2>More field notes</h2>
+        <div class="item"><span class="t">Porting an After Effects template to Remotion, letter by letter</span><span class="m">Draft</span></div>
+        <div class="item"><span class="t">Alpha-bbox layout math: placing arbitrary-length titles</span><span class="m">Draft</span></div>
+        <div class="item"><span class="t">Why our render worker runs at concurrency 1</span><span class="m">Draft</span></div>
+      </section>
+    </div>
+  </article>
+
+  <footer class="site">
+    <div class="wrap">
+      <p>© Kassel Labs — building intro makers since 2015</p>
+      <nav>
+        <a href="https://kassellabs.io?utm_source=github-pages&utm_medium=eng-blog&utm_campaign=render-writeup">Home</a>
+        <a href="https://kassellabs.io/projects?utm_source=github-pages&utm_medium=eng-blog&utm_campaign=render-writeup">Creators</a>
+        <a href="https://kassellabs.io/blog?utm_source=github-pages&utm_medium=eng-blog&utm_campaign=render-writeup">Blog</a>
+        <a href="https://kassellabs.io/about?utm_source=github-pages&utm_medium=eng-blog&utm_campaign=render-writeup">About</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
