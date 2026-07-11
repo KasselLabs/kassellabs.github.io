@@ -39,8 +39,16 @@
     header.site nav a { color: var(--muted-foreground); font-size: 0.92rem; font-weight: 500; transition: color 0.15s ease; }
     header.site nav a:hover { color: var(--foreground); text-decoration: none; }
     @media (max-width: 680px) { header.site nav { display: none; } }
+    .cover-media { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
+    .post-hero { position: relative; width: 100%; max-height: 400px; aspect-ratio: 16 / 9; overflow: hidden; background: var(--secondary); }
+    .post-hero { height: clamp(220px, 42vw, 400px); }
+    .post-hero-fade { position: absolute; inset: 0; background: linear-gradient(to top,
+      var(--background) 4%, color-mix(in oklab, var(--background) 45%, transparent) 45%, transparent 100%); }
+    article.has-hero .prose-wrap { position: relative; margin-top: -90px; }
     .back { display: inline-flex; align-items: center; gap: 8px; color: var(--muted-foreground);
       font-size: 0.92rem; font-weight: 500; margin: 40px 0 28px; }
+    article.has-hero .back { position: relative; background: color-mix(in oklab, var(--background) 80%, transparent);
+      backdrop-filter: blur(4px); padding: 6px 12px; border-radius: 6px; margin: 0 0 24px; }
     .back:hover { color: var(--foreground); text-decoration: none; }
     .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
     .chip { display: inline-block; padding: 4px 14px; border-radius: 999px; font-size: 0.8rem; font-weight: 600;
@@ -91,7 +99,7 @@
       transition: border-color 0.18s ease; }
     .post:hover { border-color: color-mix(in oklab, var(--primary) 30%, transparent); text-decoration: none; }
     .cover { aspect-ratio: 16 / 9; display: flex; align-items: center; justify-content: center;
-      background: linear-gradient(135deg, color-mix(in oklab, var(--primary) 10%, transparent), color-mix(in oklab, var(--primary) 5%, transparent)); }
+      overflow: hidden; background: linear-gradient(135deg, color-mix(in oklab, var(--primary) 10%, transparent), color-mix(in oklab, var(--primary) 5%, transparent)); }
     .cover .initial { font-family: var(--font-display); font-weight: 700; font-size: 4.5rem;
       color: color-mix(in oklab, var(--primary) 20%, transparent); }
     .post .body { padding: 20px; display: flex; flex-direction: column; flex: 1; }
@@ -139,7 +147,9 @@
           </div>
         </a>
         <a class="post" href="/blog/how-to-make-a-westworld-intro/">
-          <div class="cover"><span class="initial">W</span></div>
+          <div class="cover"><video class="cover-media" autoplay muted loop playsinline preload="metadata" poster="">
+        <source src="https://kassel-admin.us-mia-1.linodeobjects.com/westworld_9fa0d88298.mp4" type="video/mp4" />
+      </video></div>
           <div class="body">
             <div class="meta"><span class="cat">Tutorial</span><span class="date">Apr 10, 2026</span></div>
             <h2>Make a Westworld Intro With Your Own Title</h2>
@@ -148,7 +158,9 @@
           </div>
         </a>
         <a class="post" href="/blog/how-to-make-a-house-of-the-dragon-intro/">
-          <div class="cover"><span class="initial">H</span></div>
+          <div class="cover"><video class="cover-media" autoplay muted loop playsinline preload="metadata" poster="">
+        <source src="https://kassel-admin.us-mia-1.linodeobjects.com/house_of_the_dragon_666cf2a6a8.mp4" type="video/mp4" />
+      </video></div>
           <div class="body">
             <div class="meta"><span class="cat">Tutorial</span><span class="date">Apr 3, 2026</span></div>
             <h2>Put Your House in the House of the Dragon Intro</h2>
@@ -157,7 +169,9 @@
           </div>
         </a>
         <a class="post" href="/blog/how-to-make-a-the-last-of-us-intro/">
-          <div class="cover"><span class="initial">T</span></div>
+          <div class="cover"><video class="cover-media" autoplay muted loop playsinline preload="metadata" poster="">
+        <source src="https://kassel-admin.us-mia-1.linodeobjects.com/the_last_of_us_ed37c148b5.mp4" type="video/mp4" />
+      </video></div>
           <div class="body">
             <div class="meta"><span class="cat">Tutorial</span><span class="date">Mar 27, 2026</span></div>
             <h2>Make a The Last of Us Title Sequence With Your Own Text</h2>
@@ -166,7 +180,9 @@
           </div>
         </a>
         <a class="post" href="/blog/how-to-make-a-breaking-bad-intro/">
-          <div class="cover"><span class="initial">B</span></div>
+          <div class="cover"><video class="cover-media" autoplay muted loop playsinline preload="metadata" poster="">
+        <source src="https://kassel-admin.us-mia-1.linodeobjects.com/breaking_bad_899f157a97.mp4" type="video/mp4" />
+      </video></div>
           <div class="body">
             <div class="meta"><span class="cat">Tutorial</span><span class="date">Mar 20, 2026</span></div>
             <h2>Put Your Name on the Periodic Table — the Breaking Bad Way</h2>
@@ -175,7 +191,9 @@
           </div>
         </a>
         <a class="post" href="/blog/how-to-make-a-harry-potter-intro/">
-          <div class="cover"><span class="initial">H</span></div>
+          <div class="cover"><video class="cover-media" autoplay muted loop playsinline preload="metadata" poster="">
+        <source src="https://kassel-admin.us-mia-1.linodeobjects.com/harry_potter_ea44efabe5.mp4" type="video/mp4" />
+      </video></div>
           <div class="body">
             <div class="meta"><span class="cat">Tutorial</span><span class="date">Mar 6, 2026</span></div>
             <h2>Make a Harry Potter Title Card for Any Occasion</h2>
@@ -184,7 +202,9 @@
           </div>
         </a>
         <a class="post" href="/blog/how-to-make-a-marvel-studios-intro/">
-          <div class="cover"><span class="initial">M</span></div>
+          <div class="cover"><video class="cover-media" autoplay muted loop playsinline preload="metadata" poster="">
+        <source src="https://kassel-admin.us-mia-1.linodeobjects.com/marvel_studios_32a6086ba8.mp4" type="video/mp4" />
+      </video></div>
           <div class="body">
             <div class="meta"><span class="cat">Tutorial</span><span class="date">Feb 6, 2026</span></div>
             <h2>Open Like the MCU: Make Your Own Marvel Studios Intro</h2>
@@ -193,7 +213,9 @@
           </div>
         </a>
         <a class="post" href="/blog/how-to-make-a-game-of-thrones-intro/">
-          <div class="cover"><span class="initial">G</span></div>
+          <div class="cover"><video class="cover-media" autoplay muted loop playsinline preload="metadata" poster="">
+        <source src="https://kassel-admin.us-mia-1.linodeobjects.com/game_of_thrones_ad7de6ef20.mp4" type="video/mp4" />
+      </video></div>
           <div class="body">
             <div class="meta"><span class="cat">Tutorial</span><span class="date">Jan 9, 2026</span></div>
             <h2>Make a Game of Thrones Intro With Your Own Words</h2>
@@ -202,7 +224,9 @@
           </div>
         </a>
         <a class="post" href="/blog/how-to-make-a-stranger-things-intro/">
-          <div class="cover"><span class="initial">S</span></div>
+          <div class="cover"><video class="cover-media" autoplay muted loop playsinline preload="metadata" poster="">
+        <source src="https://kassel-admin.us-mia-1.linodeobjects.com/stranger_things_866a5ac1ce.mp4" type="video/mp4" />
+      </video></div>
           <div class="body">
             <div class="meta"><span class="cat">Tutorial</span><span class="date">Dec 5, 2025</span></div>
             <h2>Turn Any Text Into a Stranger Things Title — Free</h2>
@@ -211,7 +235,9 @@
           </div>
         </a>
         <a class="post" href="/blog/how-to-make-a-star-wars-intro/">
-          <div class="cover"><span class="initial">S</span></div>
+          <div class="cover"><video class="cover-media" autoplay muted loop playsinline preload="metadata" poster="">
+        <source src="https://kassel-admin.us-mia-1.linodeobjects.com/star_wars_a532133043.mp4" type="video/mp4" />
+      </video></div>
           <div class="body">
             <div class="meta"><span class="cat">Tutorial</span><span class="date">Nov 14, 2025</span></div>
             <h2>Make Your Own Star Wars Opening Crawl in Seconds</h2>
