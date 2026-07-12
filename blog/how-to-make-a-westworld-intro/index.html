@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Make a Westworld Intro With Your Own Title — Kassel Labs</title>
-  <meta name="description" content="Set your own title against the Emmy-winning android elegy." />
+  <title>How to Make a Westworld Intro — Kassel Labs</title>
+  <meta name="description" content="Want to create your own Westworld intro with a custom name or text? The Kassel Labs Westworld Intro Creator lets you generate a personalized version of HBO's…" />
   <link rel="canonical" href="https://kassellabs.io/blog/how-to-make-a-westworld-intro" />
   <meta property="og:type" content="article" />
-  <meta property="og:title" content="Make a Westworld Intro With Your Own Title" />
-  <meta property="og:description" content="Set your own title against the Emmy-winning android elegy." />
+  <meta property="og:title" content="How to Make a Westworld Intro" />
+  <meta property="og:description" content="Want to create your own Westworld intro with a custom name or text? The Kassel Labs Westworld Intro Creator lets you generate a personalized version of HBO's…" />
   <meta property="og:url" content="https://kassellabs.io/blog/how-to-make-a-westworld-intro" />
   <meta property="og:site_name" content="Kassel Labs" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -40,8 +40,7 @@
     header.site nav a:hover { color: var(--foreground); text-decoration: none; }
     @media (max-width: 680px) { header.site nav { display: none; } }
     .cover-media { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
-    .post-hero { position: relative; width: 100%; max-height: 400px; aspect-ratio: 16 / 9; overflow: hidden; background: var(--secondary); }
-    .post-hero { height: clamp(220px, 42vw, 400px); }
+    .post-hero { position: relative; width: 100%; height: clamp(220px, 42vw, 400px); overflow: hidden; background: var(--secondary); }
     .post-hero-fade { position: absolute; inset: 0; background: linear-gradient(to top,
       var(--background) 4%, color-mix(in oklab, var(--background) 45%, transparent) 45%, transparent 100%); }
     article.has-hero .prose-wrap { position: relative; margin-top: -90px; }
@@ -63,16 +62,19 @@
     .byline .who { font-weight: 600; font-size: 0.95rem; }
     .byline .date { color: var(--muted-foreground); font-size: 0.9rem; }
     .byline .sep { color: var(--border); }
-    article p { margin: 0 0 1.35em; color: color-mix(in oklab, var(--foreground) 90%, transparent); }
-    article h2 { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; letter-spacing: -0.01em;
+    article .content p { margin: 0 0 1.35em; color: color-mix(in oklab, var(--foreground) 90%, transparent); }
+    article .content h2 { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; letter-spacing: -0.01em;
       margin: 2em 0 0.6em; color: var(--foreground); }
-    article strong { color: var(--foreground); }
-    article ul, article ol { margin: 0 0 1.35em; padding-left: 1.3em; color: color-mix(in oklab, var(--foreground) 90%, transparent); }
-    article li { margin-bottom: 0.5em; }
-    article hr { border: 0; height: 1px; background: var(--border); margin: 2.6em 0; }
-    article em { color: var(--muted-foreground); }
-    .cta { background: var(--card); border: 1px solid var(--border); border-radius: 12px;
-      padding: 30px 28px; margin: 3em 0 1em; }
+    article .content h3 { font-family: var(--font-display); font-size: 1.2rem; font-weight: 600; margin: 1.6em 0 0.4em; }
+    article .content strong { color: var(--foreground); }
+    article .content ul, article .content ol { margin: 0 0 1.35em; padding-left: 1.3em; color: color-mix(in oklab, var(--foreground) 90%, transparent); }
+    article .content li { margin-bottom: 0.5em; }
+    article .content img { max-width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--border); margin: 1.5em 0; }
+    article .content hr { border: 0; height: 1px; background: var(--border); margin: 2.6em 0; }
+    article .content blockquote { border-left: 3px solid color-mix(in oklab, var(--primary) 50%, transparent);
+      padding-left: 16px; margin: 1.5em 0; font-style: italic; color: color-mix(in oklab, var(--foreground) 80%, transparent); }
+    article .content code { font-family: ui-monospace, monospace; background: var(--secondary); padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+    .cta { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 30px 28px; margin: 3em 0 1em; }
     .cta h3 { font-family: var(--font-display); margin: 0 0 8px; font-size: 1.35rem; font-weight: 700; }
     .cta p { color: var(--muted-foreground); margin: 0 0 18px; }
     .btn { display: inline-flex; align-items: center; gap: 8px; background: var(--primary);
@@ -99,12 +101,7 @@
       </nav>
     </div>
   </header>
-  <div class="post-hero">
-    <video class="cover-media" autoplay muted loop playsinline preload="metadata">
-      <source src="https://kassel-admin.us-mia-1.linodeobjects.com/westworld_9fa0d88298.mp4" type="video/mp4" />
-    </video>
-    <div class="post-hero-fade"></div>
-  </div>
+  <div class="post-hero"><video class="cover-media" autoplay muted loop playsinline preload="metadata"><source src="https://kassel-admin.us-mia-1.linodeobjects.com/westworld_9fa0d88298.mp4" type="video/mp4" /></video><div class="post-hero-fade"></div></div>
   <article class="has-hero">
     <div class="prose-wrap">
       <a class="back" href="/">← Back to Blog</a>
@@ -112,48 +109,40 @@
         <span class="chip">Tutorial</span>
         <span class="chip outline">#Intro Creator</span>
       </div>
-      <h1 class="title">Make a Westworld Intro With Your Own Title</h1>
+      <h1 class="title">How to Make a Westworld Intro</h1>
       <div class="byline">
         <span class="avatar">KL</span>
         <span class="who">Kassel Labs</span>
         <span class="sep">·</span>
         <span class="date">April 10, 2026</span>
       </div>
-<p><em>Originally published on <a href="https://kassellabs.io/blog/how-to-make-a-westworld-intro">the Kassel Labs blog</a>.</em></p>
-<p>A skeletal android is strung onto a milling machine. Tendons are printed,
-a horse assembles itself mid-gallop, and two artificial hands play a real
-piano. Westworld&#39;s opening — directed by Patrick Clair, the mind behind the
-<em>True Detective</em> and <em>Daredevil</em> titles — is one of the most philosophically
-rich sequences in television, and it won the Emmy for Outstanding Main Title
-Design in 2017.</p>
-<p>With the
-<a href="https://westworldintrocreator.kassellabs.io?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=westworld-intro">Westworld Intro Creator</a>
-you can set your own title against it.</p>
+      <div class="content">
+<p>Want to create your own Westworld intro with a custom name or text? The Kassel Labs Westworld Intro Creator lets you generate a personalized version of HBO&#39;s hauntingly beautiful title sequence.</p>
 <h2>The title sequence that asked deep questions</h2>
-<p>Set to Ramin Djawadi&#39;s piano arrangement, the sequence is a meditation on
-creation, consciousness, and the thin line between humanity and artificiality —
-hosts being assembled and sculpted, creation watching itself being created.
-It promises a show about makers and the things they make. Which, if you&#39;re
-putting your own name into it, is pleasingly recursive.</p>
+<p>Westworld&#39;s title sequence is one of the most philosophically rich in television. Directed by Patrick Clair — the Australian director who also created the sequences for True Detective and Daredevil — it shows android hosts being assembled, printed, and sculpted from nothing, set to Ramin Djawadi&#39;s mechanical piano arrangement of &quot;Paint It Black.&quot; Nude figures emerge from milky fluid; a robot hand plays the piano; a human form is constructed layer by layer.</p>
+<p>The sequence is a meditation on creation, consciousness, and the thin line between humanity and artificiality. It won the Emmy for Outstanding Main Title Design in 2017, and for good reason: it encapsulates the show&#39;s entire philosophical project in under two minutes.</p>
 <h2>How to make your own Westworld intro</h2>
-<ol>
-<li><strong>Open the creator.</strong> Access
-<a href="https://westworldintrocreator.kassellabs.io?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=westworld-intro">westworldintrocreator.kassellabs.io</a>.</li>
-<li><strong>Enter your custom title.</strong> Replace the default text with your own.</li>
-<li><strong>Preview your intro.</strong> The live preview shows your title in place.</li>
-<li><strong>Render and download.</strong> MP4, ready for use.</li>
-</ol>
+<p>The <a href="https://westworldintrocreator.kassellabs.io">Kassel Labs Westworld Intro Creator</a> lets you personalize the title card from the series:</p>
+<p><strong>Step 1 — Open the creator</strong></p>
+<p>Head to <a href="https://westworldintrocreator.kassellabs.io">westworldintrocreator.kassellabs.io</a> to open the creator.</p>
+<p><strong>Step 2 — Enter your custom title</strong></p>
+<p>Replace &quot;Westworld&quot; with your own text — a name, a project title, a team name, or anything that fits the show&#39;s cerebral, cinematic aesthetic.</p>
+<p><strong>Step 3 — Preview your intro</strong></p>
+<p>The live preview shows you exactly what your customized title will look like in the finished video.</p>
+<p><strong>Step 4 — Render and download</strong></p>
+<p>Click <strong>Render</strong> to generate your video. Download the MP4 and use it however you like — YouTube, social media, presentations, or personal projects.</p>
 <h2>Ideas for your Westworld intro</h2>
 <ul>
-<li>Tech projects and product demos (the aesthetic <em>is</em> &quot;we build things&quot;)</li>
-<li>Podcast openers with gravitas</li>
-<li>Creative portfolios</li>
-<li>Personal projects that deserve a cinematic front door</li>
+<li><strong>Tech and startup projects</strong> — something being built from scratch, rendered in HBO&#39;s most philosophical aesthetic.</li>
+<li><strong>Podcast openers</strong> — give your show the cinematic weight it deserves.</li>
+<li><strong>Creative portfolios</strong> — open a showreel or portfolio video with something that asks a question.</li>
+<li><strong>Personal projects</strong> — name a passion project after yourself. &quot;[Your Name]world&quot; hits differently with this intro.</li>
 </ul>
-<h2>These violent delights</h2>
-<p><strong><a href="https://westworldintrocreator.kassellabs.io?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=westworld-intro">Create your Westworld intro →</a></strong></p>
-<p>More worlds: <a href="https://kassellabs.io/projects?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=westworld-intro">explore all the creators</a>.</p>
+<h2>Welcome to the park</h2>
+<p><a href="https://westworldintrocreator.kassellabs.io">Create your Westworld intro →</a></p>
+<p>These violent delights have violent ends — but your intro doesn&#39;t have to.</p>
 
+      </div>
       <div class="cta">
         <h3>Ready to create your own?</h3>
         <p>Start making your own cinematic intros today. It only takes a few minutes!</p>

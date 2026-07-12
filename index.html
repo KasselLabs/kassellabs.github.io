@@ -4,11 +4,11 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Stories &amp; Inspiration — Kassel Labs</title>
-  <meta name="description" content="Discover how people around the world are using Kassel Labs to create unforgettable moments — tutorials, behind-the-scenes engineering, and more." />
+  <meta name="description" content="Discover how people around the world are using Kassel Labs to create unforgettable moments — tutorials, guides, and stories." />
   <link rel="canonical" href="https://kassellabs.io/blog" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Stories &amp; Inspiration — Kassel Labs" />
-  <meta property="og:description" content="Tutorials and behind-the-scenes stories from Kassel Labs." />
+  <meta property="og:description" content="Tutorials and stories from Kassel Labs." />
   <meta property="og:url" content="https://kassellabs.github.io/" />
   <meta property="og:site_name" content="Kassel Labs" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -40,8 +40,7 @@
     header.site nav a:hover { color: var(--foreground); text-decoration: none; }
     @media (max-width: 680px) { header.site nav { display: none; } }
     .cover-media { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
-    .post-hero { position: relative; width: 100%; max-height: 400px; aspect-ratio: 16 / 9; overflow: hidden; background: var(--secondary); }
-    .post-hero { height: clamp(220px, 42vw, 400px); }
+    .post-hero { position: relative; width: 100%; height: clamp(220px, 42vw, 400px); overflow: hidden; background: var(--secondary); }
     .post-hero-fade { position: absolute; inset: 0; background: linear-gradient(to top,
       var(--background) 4%, color-mix(in oklab, var(--background) 45%, transparent) 45%, transparent 100%); }
     article.has-hero .prose-wrap { position: relative; margin-top: -90px; }
@@ -63,16 +62,19 @@
     .byline .who { font-weight: 600; font-size: 0.95rem; }
     .byline .date { color: var(--muted-foreground); font-size: 0.9rem; }
     .byline .sep { color: var(--border); }
-    article p { margin: 0 0 1.35em; color: color-mix(in oklab, var(--foreground) 90%, transparent); }
-    article h2 { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; letter-spacing: -0.01em;
+    article .content p { margin: 0 0 1.35em; color: color-mix(in oklab, var(--foreground) 90%, transparent); }
+    article .content h2 { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; letter-spacing: -0.01em;
       margin: 2em 0 0.6em; color: var(--foreground); }
-    article strong { color: var(--foreground); }
-    article ul, article ol { margin: 0 0 1.35em; padding-left: 1.3em; color: color-mix(in oklab, var(--foreground) 90%, transparent); }
-    article li { margin-bottom: 0.5em; }
-    article hr { border: 0; height: 1px; background: var(--border); margin: 2.6em 0; }
-    article em { color: var(--muted-foreground); }
-    .cta { background: var(--card); border: 1px solid var(--border); border-radius: 12px;
-      padding: 30px 28px; margin: 3em 0 1em; }
+    article .content h3 { font-family: var(--font-display); font-size: 1.2rem; font-weight: 600; margin: 1.6em 0 0.4em; }
+    article .content strong { color: var(--foreground); }
+    article .content ul, article .content ol { margin: 0 0 1.35em; padding-left: 1.3em; color: color-mix(in oklab, var(--foreground) 90%, transparent); }
+    article .content li { margin-bottom: 0.5em; }
+    article .content img { max-width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--border); margin: 1.5em 0; }
+    article .content hr { border: 0; height: 1px; background: var(--border); margin: 2.6em 0; }
+    article .content blockquote { border-left: 3px solid color-mix(in oklab, var(--primary) 50%, transparent);
+      padding-left: 16px; margin: 1.5em 0; font-style: italic; color: color-mix(in oklab, var(--foreground) 80%, transparent); }
+    article .content code { font-family: ui-monospace, monospace; background: var(--secondary); padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+    .cta { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 30px 28px; margin: 3em 0 1em; }
     .cta h3 { font-family: var(--font-display); margin: 0 0 8px; font-size: 1.35rem; font-weight: 700; }
     .cta p { color: var(--muted-foreground); margin: 0 0 18px; }
     .btn { display: inline-flex; align-items: center; gap: 8px; background: var(--primary);
@@ -131,108 +133,162 @@
   <section class="hero">
     <div class="wrap">
       <h1>Stories &amp; <span class="accent">Inspiration</span></h1>
-      <p>Discover how people around the world are using Kassel Labs to create unforgettable moments — plus behind-the-scenes looks at how it all works. Mirrored from <a href="https://kassellabs.io/blog?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=home">the official blog</a>.</p>
+      <p>Discover how people around the world are using Kassel Labs to create unforgettable moments. Mirrored from <a href="https://kassellabs.io/blog?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=home">the official blog</a>.</p>
     </div>
   </section>
   <main>
     <div class="wrap">
       <div class="grid">
         <a class="post" href="/blog/how-to-make-a-westworld-intro/">
-          <div class="cover"><video class="cover-media" autoplay muted loop playsinline preload="metadata" poster="">
-        <source src="https://kassel-admin.us-mia-1.linodeobjects.com/westworld_9fa0d88298.mp4" type="video/mp4" />
-      </video></div>
+          <div class="cover"><video class="cover-media" autoplay muted loop playsinline preload="metadata"><source src="https://kassel-admin.us-mia-1.linodeobjects.com/westworld_9fa0d88298.mp4" type="video/mp4" /></video></div>
           <div class="body">
             <div class="meta"><span class="cat">Tutorial</span><span class="date">Apr 10, 2026</span></div>
-            <h2>Make a Westworld Intro With Your Own Title</h2>
-            <p class="excerpt">Set your own title against the Emmy-winning android elegy.</p>
+            <h2>How to Make a Westworld Intro</h2>
+            <p class="excerpt">Want to create your own Westworld intro with a custom name or text? The Kassel Labs Westworld Intro Creator lets you generate a…</p>
             <span class="more">Read more →</span>
           </div>
         </a>
         <a class="post" href="/blog/how-to-make-a-house-of-the-dragon-intro/">
-          <div class="cover"><video class="cover-media" autoplay muted loop playsinline preload="metadata" poster="">
-        <source src="https://kassel-admin.us-mia-1.linodeobjects.com/house_of_the_dragon_666cf2a6a8.mp4" type="video/mp4" />
-      </video></div>
+          <div class="cover"><video class="cover-media" autoplay muted loop playsinline preload="metadata"><source src="https://kassel-admin.us-mia-1.linodeobjects.com/house_of_the_dragon_666cf2a6a8.mp4" type="video/mp4" /></video></div>
           <div class="body">
             <div class="meta"><span class="cat">Tutorial</span><span class="date">Apr 3, 2026</span></div>
-            <h2>Put Your House in the House of the Dragon Intro</h2>
-            <p class="excerpt">Your house name traced in crimson through the channels of old Valyria.</p>
+            <h2>How to Make a House of the Dragon Intro</h2>
+            <p class="excerpt">Want to create your own House of the Dragon intro with a custom house name or title? The Kassel Labs House of the Dragon Intro Creator lets…</p>
             <span class="more">Read more →</span>
           </div>
         </a>
         <a class="post" href="/blog/how-to-make-a-the-last-of-us-intro/">
-          <div class="cover"><video class="cover-media" autoplay muted loop playsinline preload="metadata" poster="">
-        <source src="https://kassel-admin.us-mia-1.linodeobjects.com/the_last_of_us_ed37c148b5.mp4" type="video/mp4" />
-      </video></div>
+          <div class="cover"><video class="cover-media" autoplay muted loop playsinline preload="metadata"><source src="https://kassel-admin.us-mia-1.linodeobjects.com/the_last_of_us_ed37c148b5.mp4" type="video/mp4" /></video></div>
           <div class="body">
             <div class="meta"><span class="cat">Tutorial</span><span class="date">Mar 27, 2026</span></div>
-            <h2>Make a The Last of Us Title Sequence With Your Own Text</h2>
-            <p class="excerpt">The weathered, fungus-reclaimed HBO title treatment, personalized.</p>
+            <h2>How to Make a The Last of Us Intro</h2>
+            <p class="excerpt">Want to create your own The Last of Us intro with a custom title? The Kassel Labs Last of Us Intro Creator lets you generate a personalized…</p>
             <span class="more">Read more →</span>
           </div>
         </a>
         <a class="post" href="/blog/how-to-make-a-breaking-bad-intro/">
-          <div class="cover"><video class="cover-media" autoplay muted loop playsinline preload="metadata" poster="">
-        <source src="https://kassel-admin.us-mia-1.linodeobjects.com/breaking_bad_899f157a97.mp4" type="video/mp4" />
-      </video></div>
+          <div class="cover"><video class="cover-media" autoplay muted loop playsinline preload="metadata"><source src="https://kassel-admin.us-mia-1.linodeobjects.com/breaking_bad_899f157a97.mp4" type="video/mp4" /></video></div>
           <div class="body">
             <div class="meta"><span class="cat">Tutorial</span><span class="date">Mar 20, 2026</span></div>
-            <h2>Put Your Name on the Periodic Table — the Breaking Bad Way</h2>
-            <p class="excerpt">Your name, periodic-table'd — element symbols found and highlighted in green.</p>
+            <h2>How to Make a Breaking Bad Intro</h2>
+            <p class="excerpt">Want to create your own Breaking Bad intro with a custom name? The Kassel Labs Breaking Bad Intro Creator lets you generate the iconic…</p>
             <span class="more">Read more →</span>
           </div>
         </a>
         <a class="post" href="/blog/how-to-make-a-harry-potter-intro/">
-          <div class="cover"><video class="cover-media" autoplay muted loop playsinline preload="metadata" poster="">
-        <source src="https://kassel-admin.us-mia-1.linodeobjects.com/harry_potter_ea44efabe5.mp4" type="video/mp4" />
-      </video></div>
+          <div class="cover"><video class="cover-media" autoplay muted loop playsinline preload="metadata"><source src="https://kassel-admin.us-mia-1.linodeobjects.com/harry_potter_ea44efabe5.mp4" type="video/mp4" /></video></div>
           <div class="body">
             <div class="meta"><span class="cat">Tutorial</span><span class="date">Mar 6, 2026</span></div>
-            <h2>Make a Harry Potter Title Card for Any Occasion</h2>
-            <p class="excerpt">Generate a personalized wizarding-world title card in seconds.</p>
+            <h2>How to Make a Harry Potter Intro</h2>
+            <p class="excerpt">Want to create a Harry Potter intro with your own text? The Kassel Labs Harry Potter Intro Creator lets you generate a personalized…</p>
             <span class="more">Read more →</span>
           </div>
         </a>
         <a class="post" href="/blog/how-to-make-a-marvel-studios-intro/">
-          <div class="cover"><video class="cover-media" autoplay muted loop playsinline preload="metadata" poster="">
-        <source src="https://kassel-admin.us-mia-1.linodeobjects.com/marvel_studios_32a6086ba8.mp4" type="video/mp4" />
-      </video></div>
+          <div class="cover"><video class="cover-media" autoplay muted loop playsinline preload="metadata"><source src="https://kassel-admin.us-mia-1.linodeobjects.com/marvel_studios_32a6086ba8.mp4" type="video/mp4" /></video></div>
           <div class="body">
-            <div class="meta"><span class="cat">Tutorial</span><span class="date">Feb 6, 2026</span></div>
-            <h2>Open Like the MCU: Make Your Own Marvel Studios Intro</h2>
-            <p class="excerpt">The comic page-flips, the fanfare, your name in the wordmark.</p>
+            <div class="meta"><span class="cat">Marvel</span><span class="date">Feb 6, 2026</span></div>
+            <h2>How to Make a Marvel Studios Intro</h2>
+            <p class="excerpt">Want to create a Marvel Studios intro with your own name or logo? The Kassel Labs Marvel Studios Intro Creator lets you generate the iconic…</p>
             <span class="more">Read more →</span>
           </div>
         </a>
         <a class="post" href="/blog/how-to-make-a-game-of-thrones-intro/">
-          <div class="cover"><video class="cover-media" autoplay muted loop playsinline preload="metadata" poster="">
-        <source src="https://kassel-admin.us-mia-1.linodeobjects.com/game_of_thrones_ad7de6ef20.mp4" type="video/mp4" />
-      </video></div>
+          <div class="cover"><video class="cover-media" autoplay muted loop playsinline preload="metadata"><source src="https://kassel-admin.us-mia-1.linodeobjects.com/game_of_thrones_ad7de6ef20.mp4" type="video/mp4" /></video></div>
           <div class="body">
-            <div class="meta"><span class="cat">Tutorial</span><span class="date">Jan 9, 2026</span></div>
-            <h2>Make a Game of Thrones Intro With Your Own Words</h2>
-            <p class="excerpt">Put your own words on the Emmy-winning clockwork map.</p>
+            <div class="meta"><span class="cat">Game of Thrones</span><span class="date">Jan 9, 2026</span></div>
+            <h2>How to Make a Game of Thrones Intro</h2>
+            <p class="excerpt">Want to create a Game of Thrones intro with your own locations and names? The Kassel Labs Game of Thrones Intro Creator lets you build the…</p>
             <span class="more">Read more →</span>
           </div>
         </a>
         <a class="post" href="/blog/how-to-make-a-stranger-things-intro/">
-          <div class="cover"><video class="cover-media" autoplay muted loop playsinline preload="metadata" poster="">
-        <source src="https://kassel-admin.us-mia-1.linodeobjects.com/stranger_things_866a5ac1ce.mp4" type="video/mp4" />
-      </video></div>
+          <div class="cover"><video class="cover-media" autoplay muted loop playsinline preload="metadata"><source src="https://kassel-admin.us-mia-1.linodeobjects.com/stranger_things_866a5ac1ce.mp4" type="video/mp4" /></video></div>
           <div class="body">
-            <div class="meta"><span class="cat">Tutorial</span><span class="date">Dec 5, 2025</span></div>
-            <h2>Turn Any Text Into a Stranger Things Title — Free</h2>
-            <p class="excerpt">Swap in any title — for free — and download the video in seconds.</p>
+            <div class="meta"><span class="cat">Stranger Things</span><span class="date">Dec 5, 2025</span></div>
+            <h2>How to Make a Stranger Things Intro</h2>
+            <p class="excerpt">Want to make a Stranger Things intro with your own text? The Kassel Labs Stranger Things Intro Creator lets you swap in any title — for…</p>
             <span class="more">Read more →</span>
           </div>
         </a>
         <a class="post" href="/blog/how-to-make-a-star-wars-intro/">
-          <div class="cover"><video class="cover-media" autoplay muted loop playsinline preload="metadata" poster="">
-        <source src="https://kassel-admin.us-mia-1.linodeobjects.com/star_wars_a532133043.mp4" type="video/mp4" />
-      </video></div>
+          <div class="cover"><video class="cover-media" autoplay muted loop playsinline preload="metadata"><source src="https://kassel-admin.us-mia-1.linodeobjects.com/star_wars_a532133043.mp4" type="video/mp4" /></video></div>
           <div class="body">
-            <div class="meta"><span class="cat">Tutorial</span><span class="date">Nov 14, 2025</span></div>
-            <h2>Make Your Own Star Wars Opening Crawl in Seconds</h2>
-            <p class="excerpt">Generate the iconic opening crawl in seconds — no video editing software required.</p>
+            <div class="meta"><span class="cat">Star Wars</span><span class="date">Nov 14, 2025</span></div>
+            <h2>How to Make a Star Wars Intro</h2>
+            <p class="excerpt">Want to create your own Star Wars intro? With the Kassel Labs Star Wars Intro Creator you can generate the iconic opening crawl in seconds…</p>
+            <span class="more">Read more →</span>
+          </div>
+        </a>
+        <a class="post" href="/blog/gender-reveal-party-with-star-wars/">
+          <div class="cover"><img class="cover-media" src="https://kassel-admin.us-mia-1.linodeobjects.com/gender_reveal_party_with_star_wars_8a2a8b644d.jpg" alt="Gender Reveal Party with Star Wars" loading="lazy" /></div>
+          <div class="body">
+            <div class="meta"><span class="cat">Star Wars</span><span class="date">Jun 12, 2024</span></div>
+            <h2>Gender Reveal Party with Star Wars</h2>
+            <p class="excerpt">Gender Reveal Party with Star Wars Make your gender reveal party epic with a custom Star Wars intro! Create a dramatic opening crawl that…</p>
+            <span class="more">Read more →</span>
+          </div>
+        </a>
+        <a class="post" href="/blog/superhero-themed-kids-party/">
+          <div class="cover"><img class="cover-media" src="https://kassel-admin.us-mia-1.linodeobjects.com/superhero_themed_kids_party_084ccfe91a.png" alt="Superhero-Themed Kids' Party" loading="lazy" /></div>
+          <div class="body">
+            <div class="meta"><span class="cat">Marvel</span><span class="date">Jun 6, 2024</span></div>
+            <h2>Superhero-Themed Kids' Party</h2>
+            <p class="excerpt">SuperheroThemed Kids' Party Planning a superherothemed birthday party for your little one? Make it extra special with custom intro videos!…</p>
+            <span class="more">Read more →</span>
+          </div>
+        </a>
+        <a class="post" href="/blog/marvel-disney-and-other-intro-creators/">
+          <div class="cover"><img class="cover-media" src="https://kassel-admin.us-mia-1.linodeobjects.com/marvel_disney_and_other_intro_creators_5322186941.png" alt="Marvel, Disney and Other Intro Creators" loading="lazy" /></div>
+          <div class="body">
+            <div class="meta"><span class="cat">Marvel</span><span class="date">May 17, 2024</span></div>
+            <h2>Marvel, Disney and Other Intro Creators</h2>
+            <p class="excerpt">Marvel, Disney and Other Intro Creators Beyond our main intro creators, we also offer custom work for other beloved franchises! We can…</p>
+            <span class="more">Read more →</span>
+          </div>
+        </a>
+        <a class="post" href="/blog/wedding-with-star-wars/">
+          <div class="cover"><img class="cover-media" src="https://kassel-admin.us-mia-1.linodeobjects.com/wedding_with_star_wars_a72341661d.jpg" alt="Wedding with Star Wars" loading="lazy" /></div>
+          <div class="body">
+            <div class="meta"><span class="cat">Star Wars</span><span class="date">Dec 16, 2019</span></div>
+            <h2>Wedding with Star Wars</h2>
+            <p class="excerpt">Wedding with Star Wars Planning a wedding and want to add a unique, geeky touch? The Star Wars Intro Creator is the perfect way to surprise…</p>
+            <span class="more">Read more →</span>
+          </div>
+        </a>
+        <a class="post" href="/blog/star-wars-on-christmas/">
+          <div class="cover"><img class="cover-media" src="https://kassel-admin.us-mia-1.linodeobjects.com/star_wars_on_christmas_3c666d9f0b.jpg" alt="Star Wars on Christmas" loading="lazy" /></div>
+          <div class="body">
+            <div class="meta"><span class="cat">Star Wars</span><span class="date">Dec 13, 2019</span></div>
+            <h2>Star Wars on Christmas</h2>
+            <p class="excerpt">Star Wars on Christmas The holidays are a perfect time to gather with family and friends. Why not kick off your Christmas celebration with…</p>
+            <span class="more">Read more →</span>
+          </div>
+        </a>
+        <a class="post" href="/blog/website-visual-update/">
+          <div class="cover"><img class="cover-media" src="https://kassel-admin.us-mia-1.linodeobjects.com/website_visual_update_a39d11ec5f.jpg" alt="Visual update in the website" loading="lazy" /></div>
+          <div class="body">
+            <div class="meta"><span class="cat">News</span><span class="date">Oct 10, 2019</span></div>
+            <h2>Visual update in the website</h2>
+            <p class="excerpt">Visual update in the website We're excited to announce a fresh new look for the Kassel Labs website! Our mission remains the same: helping…</p>
+            <span class="more">Read more →</span>
+          </div>
+        </a>
+        <a class="post" href="/blog/new-release-game-of-thrones-intro-creator/">
+          <div class="cover"><img class="cover-media" src="https://kassel-admin.us-mia-1.linodeobjects.com/new_release_game_of_thrones_intro_creator_cfb49a6e48.png" alt="New release: Game of Thrones Intro Creator" loading="lazy" /></div>
+          <div class="body">
+            <div class="meta"><span class="cat">Game of Thrones</span><span class="date">Sep 24, 2019</span></div>
+            <h2>New release: Game of Thrones Intro Creator</h2>
+            <p class="excerpt">New release: Game of Thrones Intro Creator We're thrilled to announce the launch of our Game of Thrones Intro Creator! Now you can create…</p>
+            <span class="more">Read more →</span>
+          </div>
+        </a>
+        <a class="post" href="/blog/engaging-students-with-star-wars/">
+          <div class="cover"><img class="cover-media" src="https://kassel-admin.us-mia-1.linodeobjects.com/engaging_students_with_star_wars_11a2f4ad04.jpg" alt="Engaging students with Star Wars" loading="lazy" /></div>
+          <div class="body">
+            <div class="meta"><span class="cat">Star Wars</span><span class="date">Jun 20, 2019</span></div>
+            <h2>Engaging students with Star Wars</h2>
+            <p class="excerpt">Engaging students with Star Wars Teachers are always looking for creative ways to engage students. The Star Wars Intro Creator is a…</p>
             <span class="more">Read more →</span>
           </div>
         </a>

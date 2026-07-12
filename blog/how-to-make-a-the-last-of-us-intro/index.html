@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Make a The Last of Us Title Sequence With Your Own Text — Kassel Labs</title>
-  <meta name="description" content="The weathered, fungus-reclaimed HBO title treatment, personalized." />
+  <title>How to Make a The Last of Us Intro — Kassel Labs</title>
+  <meta name="description" content="Want to create your own The Last of Us intro with a custom title? The Kassel Labs Last of Us Intro Creator lets you generate a personalized version of the…" />
   <link rel="canonical" href="https://kassellabs.io/blog/how-to-make-a-the-last-of-us-intro" />
   <meta property="og:type" content="article" />
-  <meta property="og:title" content="Make a The Last of Us Title Sequence With Your Own Text" />
-  <meta property="og:description" content="The weathered, fungus-reclaimed HBO title treatment, personalized." />
+  <meta property="og:title" content="How to Make a The Last of Us Intro" />
+  <meta property="og:description" content="Want to create your own The Last of Us intro with a custom title? The Kassel Labs Last of Us Intro Creator lets you generate a personalized version of the…" />
   <meta property="og:url" content="https://kassellabs.io/blog/how-to-make-a-the-last-of-us-intro" />
   <meta property="og:site_name" content="Kassel Labs" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -40,8 +40,7 @@
     header.site nav a:hover { color: var(--foreground); text-decoration: none; }
     @media (max-width: 680px) { header.site nav { display: none; } }
     .cover-media { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
-    .post-hero { position: relative; width: 100%; max-height: 400px; aspect-ratio: 16 / 9; overflow: hidden; background: var(--secondary); }
-    .post-hero { height: clamp(220px, 42vw, 400px); }
+    .post-hero { position: relative; width: 100%; height: clamp(220px, 42vw, 400px); overflow: hidden; background: var(--secondary); }
     .post-hero-fade { position: absolute; inset: 0; background: linear-gradient(to top,
       var(--background) 4%, color-mix(in oklab, var(--background) 45%, transparent) 45%, transparent 100%); }
     article.has-hero .prose-wrap { position: relative; margin-top: -90px; }
@@ -63,16 +62,19 @@
     .byline .who { font-weight: 600; font-size: 0.95rem; }
     .byline .date { color: var(--muted-foreground); font-size: 0.9rem; }
     .byline .sep { color: var(--border); }
-    article p { margin: 0 0 1.35em; color: color-mix(in oklab, var(--foreground) 90%, transparent); }
-    article h2 { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; letter-spacing: -0.01em;
+    article .content p { margin: 0 0 1.35em; color: color-mix(in oklab, var(--foreground) 90%, transparent); }
+    article .content h2 { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; letter-spacing: -0.01em;
       margin: 2em 0 0.6em; color: var(--foreground); }
-    article strong { color: var(--foreground); }
-    article ul, article ol { margin: 0 0 1.35em; padding-left: 1.3em; color: color-mix(in oklab, var(--foreground) 90%, transparent); }
-    article li { margin-bottom: 0.5em; }
-    article hr { border: 0; height: 1px; background: var(--border); margin: 2.6em 0; }
-    article em { color: var(--muted-foreground); }
-    .cta { background: var(--card); border: 1px solid var(--border); border-radius: 12px;
-      padding: 30px 28px; margin: 3em 0 1em; }
+    article .content h3 { font-family: var(--font-display); font-size: 1.2rem; font-weight: 600; margin: 1.6em 0 0.4em; }
+    article .content strong { color: var(--foreground); }
+    article .content ul, article .content ol { margin: 0 0 1.35em; padding-left: 1.3em; color: color-mix(in oklab, var(--foreground) 90%, transparent); }
+    article .content li { margin-bottom: 0.5em; }
+    article .content img { max-width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--border); margin: 1.5em 0; }
+    article .content hr { border: 0; height: 1px; background: var(--border); margin: 2.6em 0; }
+    article .content blockquote { border-left: 3px solid color-mix(in oklab, var(--primary) 50%, transparent);
+      padding-left: 16px; margin: 1.5em 0; font-style: italic; color: color-mix(in oklab, var(--foreground) 80%, transparent); }
+    article .content code { font-family: ui-monospace, monospace; background: var(--secondary); padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+    .cta { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 30px 28px; margin: 3em 0 1em; }
     .cta h3 { font-family: var(--font-display); margin: 0 0 8px; font-size: 1.35rem; font-weight: 700; }
     .cta p { color: var(--muted-foreground); margin: 0 0 18px; }
     .btn { display: inline-flex; align-items: center; gap: 8px; background: var(--primary);
@@ -99,12 +101,7 @@
       </nav>
     </div>
   </header>
-  <div class="post-hero">
-    <video class="cover-media" autoplay muted loop playsinline preload="metadata">
-      <source src="https://kassel-admin.us-mia-1.linodeobjects.com/the_last_of_us_ed37c148b5.mp4" type="video/mp4" />
-    </video>
-    <div class="post-hero-fade"></div>
-  </div>
+  <div class="post-hero"><video class="cover-media" autoplay muted loop playsinline preload="metadata"><source src="https://kassel-admin.us-mia-1.linodeobjects.com/the_last_of_us_ed37c148b5.mp4" type="video/mp4" /></video><div class="post-hero-fade"></div></div>
   <article class="has-hero">
     <div class="prose-wrap">
       <a class="back" href="/">← Back to Blog</a>
@@ -112,49 +109,40 @@
         <span class="chip">Tutorial</span>
         <span class="chip outline">#Intro Creator</span>
       </div>
-      <h1 class="title">Make a The Last of Us Title Sequence With Your Own Text</h1>
+      <h1 class="title">How to Make a The Last of Us Intro</h1>
       <div class="byline">
         <span class="avatar">KL</span>
         <span class="who">Kassel Labs</span>
         <span class="sep">·</span>
         <span class="date">March 27, 2026</span>
       </div>
-<p><em>Originally published on <a href="https://kassellabs.io/blog/how-to-make-a-the-last-of-us-intro">the Kassel Labs blog</a>.</em></p>
-<p>Fungal tendrils creep across the frame, slowly consuming and reshaping
-everything they touch, until the weathered title emerges from the growth.
-HBO&#39;s <em>The Last of Us</em> opening — created by New York design studio Perception —
-is both beautiful and unsettling, and was widely praised as one of the best TV
-title sequences in recent memory.</p>
-<p>The
-<a href="https://thelastofusintrocreator.kassellabs.io?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=the-last-of-us-intro">Last of Us Intro Creator</a>
-lets you generate a personalized version of it in seconds.</p>
+      <div class="content">
+<p>Want to create your own The Last of Us intro with a custom title? The Kassel Labs Last of Us Intro Creator lets you generate a personalized version of the iconic HBO title sequence in seconds.</p>
 <h2>The title sequence that captured the end of the world</h2>
-<p>What makes the sequence work is restraint: no characters, no action — just
-cordyceps growth rendered as something almost botanical-documentary, set
-against that aching guitar theme. The eroded, weathered typography does the
-rest. It&#39;s dread as design.</p>
+<p>The Last of Us title sequence — from HBO&#39;s 2023 adaptation of the beloved video game — is both beautiful and unsettling. Fungal growth slowly consumes and reshapes everyday imagery: leaves, flowers, and organic textures overtaken by spores and mycelium, all underscored by Gustavo Santaolalla&#39;s haunting, sparse guitar score. The sequence communicates the show&#39;s central horror — nature reclaiming civilization — before a single scene plays.</p>
+<p>Created by Perception, the New York-based design studio behind many of Marvel&#39;s title sequences, the Last of Us intro was widely praised as one of the best in recent TV history. It sets an emotional tone that the show spends the rest of its running time earning.</p>
 <h2>How to make your own Last of Us intro</h2>
-<ol>
-<li><strong>Open the creator.</strong> Visit
-<a href="https://thelastofusintrocreator.kassellabs.io?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=the-last-of-us-intro">thelastofusintrocreator.kassellabs.io</a>.</li>
-<li><strong>Enter your text.</strong> Your title gets the weathered treatment.</li>
-<li><strong>Preview it live.</strong> See the render before committing.</li>
-<li><strong>Download the MP4.</strong> Ready to share.</li>
-</ol>
-<p>Prefer a still image? The free
-<a href="https://kassellabs.io/font/the-last-of-us?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=the-last-of-us-intro">The Last of Us font generator</a>
-renders your text in the eroded serif style and exports a PNG — no signup.</p>
-<h2>Ideas for your intro</h2>
+<p>The <a href="https://thelastofusintrocreator.kassellabs.io">Kassel Labs Last of Us Intro Creator</a> lets you create a personalized title card in the style of the HBO sequence:</p>
+<p><strong>Step 1 — Open the creator</strong></p>
+<p>Head to <a href="https://thelastofusintrocreator.kassellabs.io">thelastofusintrocreator.kassellabs.io</a> to open the creator.</p>
+<p><strong>Step 2 — Enter your custom title</strong></p>
+<p>Type the title you want displayed. You can use a name, a phrase, a project title, or any text that fits the show&#39;s haunting aesthetic.</p>
+<p><strong>Step 3 — Preview your intro</strong></p>
+<p>Watch the live preview to see exactly how your title will look in the finished video.</p>
+<p><strong>Step 4 — Render and download</strong></p>
+<p>Click <strong>Render</strong> to generate the video file. Download the MP4 and use it in any project — YouTube videos, presentations, birthday surprises, or social media.</p>
+<h2>Ideas for your Last of Us intro</h2>
 <ul>
-<li>Survival-challenge videos (gaming or otherwise)</li>
-<li>A podcast or YouTube cold-open with real atmosphere</li>
-<li>Fan projects and tributes</li>
-<li>Birthday videos for the post-apocalypse enthusiast in your life</li>
+<li><strong>Survival stories</strong> — &quot;Day [Number] of [Challenge]&quot; for fitness goals, travel adventures, or personal milestones.</li>
+<li><strong>Podcast and YouTube intros</strong> — open every episode with something atmospheric and memorable.</li>
+<li><strong>Fan projects</strong> — fanfic titles, original stories set in the Last of Us world, or tribute videos.</li>
+<li><strong>Birthday videos</strong> — make someone&#39;s name look like they&#39;re the protagonist of the apocalypse.</li>
 </ul>
 <h2>Survive and thrive</h2>
-<p><strong><a href="https://thelastofusintrocreator.kassellabs.io?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=the-last-of-us-intro">Create your Last of Us intro →</a></strong></p>
-<p>More worlds to open from: <a href="https://kassellabs.io/projects?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=the-last-of-us-intro">explore all the creators</a>.</p>
+<p><a href="https://thelastofusintrocreator.kassellabs.io">Create your Last of Us intro →</a></p>
+<p>No infection required. Just type your title, render, and download.</p>
 
+      </div>
       <div class="cta">
         <h3>Ready to create your own?</h3>
         <p>Start making your own cinematic intros today. It only takes a few minutes!</p>

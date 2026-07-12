@@ -1,0 +1,54 @@
+# Deployed copy lives at .github/workflows/sync-blog-mirror.yml on the
+# `engineering-pages` branch of KasselLabs/kassellabs.github.io.
+# Kept here in the monorepo for version tracking.
+name: Sync blog mirror
+
+on:
+  schedule:
+    - cron: "0 6 * * *" # daily at 06:00 UTC
+  workflow_dispatch: {} # manual "Run workflow" button
+  repository_dispatch:
+    types: [blog-updated] # optional: fire from the CMS on publish
+
+concurrency:
+  group: sync-blog-mirror
+  cancel-in-progress: true
+
+permissions:
+  contents: write # push regenerated pages back to this branch
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the mirror branch
+        uses: actions/checkout@v4
+        with:
+          ref: engineering-pages
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install deps
+        run: npm ci || npm i marked@12
+
+      - name: Regenerate mirror from the live blog API
+        run: node sync.mjs .
+        env:
+          API_URL: https://admin.kassellabs.io/graphql
+          SITE_URL: https://kassellabs.io
+
+      - name: Commit & push if anything changed
+        run: |
+          git config user.name "kassel-labs-bot"
+          git config user.email "actions@users.noreply.github.com"
+          if [ -n "$(git status --porcelain)" ]; then
+            git add -A
+            git commit -m "chore: sync blog mirror ($(date -u +%Y-%m-%dT%H:%MZ))"
+            git push
+            echo "Mirror updated."
+          else
+            echo "No changes — mirror already up to date."
+          fi

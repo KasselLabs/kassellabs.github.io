@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Turn Any Text Into a Stranger Things Title — Free — Kassel Labs</title>
-  <meta name="description" content="Swap in any title — for free — and download the video in seconds." />
+  <title>How to Make a Stranger Things Intro — Kassel Labs</title>
+  <meta name="description" content="Want to make a Stranger Things intro with your own text? The Kassel Labs Stranger Things Intro Creator lets you swap in any title — for free — and download the…" />
   <link rel="canonical" href="https://kassellabs.io/blog/how-to-make-a-stranger-things-intro" />
   <meta property="og:type" content="article" />
-  <meta property="og:title" content="Turn Any Text Into a Stranger Things Title — Free" />
-  <meta property="og:description" content="Swap in any title — for free — and download the video in seconds." />
+  <meta property="og:title" content="How to Make a Stranger Things Intro" />
+  <meta property="og:description" content="Want to make a Stranger Things intro with your own text? The Kassel Labs Stranger Things Intro Creator lets you swap in any title — for free — and download the…" />
   <meta property="og:url" content="https://kassellabs.io/blog/how-to-make-a-stranger-things-intro" />
   <meta property="og:site_name" content="Kassel Labs" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -40,8 +40,7 @@
     header.site nav a:hover { color: var(--foreground); text-decoration: none; }
     @media (max-width: 680px) { header.site nav { display: none; } }
     .cover-media { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
-    .post-hero { position: relative; width: 100%; max-height: 400px; aspect-ratio: 16 / 9; overflow: hidden; background: var(--secondary); }
-    .post-hero { height: clamp(220px, 42vw, 400px); }
+    .post-hero { position: relative; width: 100%; height: clamp(220px, 42vw, 400px); overflow: hidden; background: var(--secondary); }
     .post-hero-fade { position: absolute; inset: 0; background: linear-gradient(to top,
       var(--background) 4%, color-mix(in oklab, var(--background) 45%, transparent) 45%, transparent 100%); }
     article.has-hero .prose-wrap { position: relative; margin-top: -90px; }
@@ -63,16 +62,19 @@
     .byline .who { font-weight: 600; font-size: 0.95rem; }
     .byline .date { color: var(--muted-foreground); font-size: 0.9rem; }
     .byline .sep { color: var(--border); }
-    article p { margin: 0 0 1.35em; color: color-mix(in oklab, var(--foreground) 90%, transparent); }
-    article h2 { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; letter-spacing: -0.01em;
+    article .content p { margin: 0 0 1.35em; color: color-mix(in oklab, var(--foreground) 90%, transparent); }
+    article .content h2 { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; letter-spacing: -0.01em;
       margin: 2em 0 0.6em; color: var(--foreground); }
-    article strong { color: var(--foreground); }
-    article ul, article ol { margin: 0 0 1.35em; padding-left: 1.3em; color: color-mix(in oklab, var(--foreground) 90%, transparent); }
-    article li { margin-bottom: 0.5em; }
-    article hr { border: 0; height: 1px; background: var(--border); margin: 2.6em 0; }
-    article em { color: var(--muted-foreground); }
-    .cta { background: var(--card); border: 1px solid var(--border); border-radius: 12px;
-      padding: 30px 28px; margin: 3em 0 1em; }
+    article .content h3 { font-family: var(--font-display); font-size: 1.2rem; font-weight: 600; margin: 1.6em 0 0.4em; }
+    article .content strong { color: var(--foreground); }
+    article .content ul, article .content ol { margin: 0 0 1.35em; padding-left: 1.3em; color: color-mix(in oklab, var(--foreground) 90%, transparent); }
+    article .content li { margin-bottom: 0.5em; }
+    article .content img { max-width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--border); margin: 1.5em 0; }
+    article .content hr { border: 0; height: 1px; background: var(--border); margin: 2.6em 0; }
+    article .content blockquote { border-left: 3px solid color-mix(in oklab, var(--primary) 50%, transparent);
+      padding-left: 16px; margin: 1.5em 0; font-style: italic; color: color-mix(in oklab, var(--foreground) 80%, transparent); }
+    article .content code { font-family: ui-monospace, monospace; background: var(--secondary); padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+    .cta { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 30px 28px; margin: 3em 0 1em; }
     .cta h3 { font-family: var(--font-display); margin: 0 0 8px; font-size: 1.35rem; font-weight: 700; }
     .cta p { color: var(--muted-foreground); margin: 0 0 18px; }
     .btn { display: inline-flex; align-items: center; gap: 8px; background: var(--primary);
@@ -99,66 +101,49 @@
       </nav>
     </div>
   </header>
-  <div class="post-hero">
-    <video class="cover-media" autoplay muted loop playsinline preload="metadata">
-      <source src="https://kassel-admin.us-mia-1.linodeobjects.com/stranger_things_866a5ac1ce.mp4" type="video/mp4" />
-    </video>
-    <div class="post-hero-fade"></div>
-  </div>
+  <div class="post-hero"><video class="cover-media" autoplay muted loop playsinline preload="metadata"><source src="https://kassel-admin.us-mia-1.linodeobjects.com/stranger_things_866a5ac1ce.mp4" type="video/mp4" /></video><div class="post-hero-fade"></div></div>
   <article class="has-hero">
     <div class="prose-wrap">
       <a class="back" href="/">← Back to Blog</a>
       <div class="chips">
-        <span class="chip">Tutorial</span>
+        <span class="chip">Stranger Things</span>
+        <span class="chip outline">#Tutorial</span>
         <span class="chip outline">#Intro Creator</span>
       </div>
-      <h1 class="title">Turn Any Text Into a Stranger Things Title — Free</h1>
+      <h1 class="title">How to Make a Stranger Things Intro</h1>
       <div class="byline">
         <span class="avatar">KL</span>
         <span class="who">Kassel Labs</span>
         <span class="sep">·</span>
         <span class="date">December 5, 2025</span>
       </div>
-<p><em>Originally published on <a href="https://kassellabs.io/blog/how-to-make-a-stranger-things-intro">the Kassel Labs blog</a>.</em></p>
-<p>Chunky red letters fading in against pure black, a low synth swell underneath —
-the <em>Stranger Things</em> opening did more with less than almost any title sequence
-of the last decade. And you can put your own words in it.</p>
-<p>With the
-<a href="https://kassellabs.io/intro/stranger-things?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=stranger-things-intro">Stranger Things Intro Creator</a>
-you swap in any title — for free — and download the video in seconds.</p>
+      <div class="content">
+<p>Want to make a Stranger Things intro with your own text? The Kassel Labs Stranger Things Intro Creator lets you swap in any title — for free — and download the video in seconds.</p>
 <h2>The title sequence that defined a decade</h2>
-<p>The Duffer Brothers wanted the show to <em>feel</em> like the 1980s, not just be set in
-them. So the title leans on the visual language of the era: chunky red
-letterforms glowing against black, styled after Stephen King paperback covers
-and vintage horror-film posters. The typeface is a close cousin of ITC Benguiat.
-Pair it with a pulsing synth score and you get something that reads as &quot;1983&quot;
-before a single scene plays.</p>
+<p>The Stranger Things title sequence is deceptively simple: chunky red letterforms fade in against a black background, accompanied by Kyle Dixon and Michael Stein&#39;s droning, synth-heavy score. It&#39;s a deliberate pastiche of Stephen King paperback covers and 1980s horror-film fonts — and it became instantly iconic the moment the show debuted on Netflix in 2016.</p>
+<p>Creators the Duffer Brothers worked with designer Matt Duffer to nail the retro aesthetic. The font is a close match to ITC Benguiat, a slab-serif typeface that was everywhere on 1970s and 1980s genre paperbacks.</p>
 <h2>How to make your own Stranger Things intro</h2>
-<ol>
-<li><strong>Open the creator.</strong> Go to the
-<a href="https://kassellabs.io/intro/stranger-things?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=stranger-things-intro">Stranger Things Intro Creator</a>.</li>
-<li><strong>Type your text.</strong> A name, a title, an inside joke — whatever you want in
-Hawkins red.</li>
-<li><strong>Preview it.</strong> Watch the letters fade in with the glow.</li>
-<li><strong>Download the MP4.</strong> Yours to share anywhere.</li>
-</ol>
-<p>Just need a still image? The free
-<a href="https://kassellabs.io/font/stranger-things?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=stranger-things-intro">Stranger Things font generator</a>
-renders your text as the bold red serif with the eerie Hawkins glow and exports
-a PNG — no signup.</p>
-<h2>Ideas for your intro</h2>
+<p>Head to the <a href="https://kassellabs.io/intro/stranger-things">Kassel Labs Stranger Things Intro Creator</a> and follow these steps:</p>
+<p><strong>Step 1 — Open the creator</strong></p>
+<p>Go to <a href="https://kassellabs.io/intro/stranger-things">kassellabs.io/intro/stranger-things</a>. You&#39;ll see the classic red text preview update in real time.</p>
+<p><strong>Step 2 — Enter your title</strong></p>
+<p>Type your custom title into the text field. This replaces &quot;Stranger Things&quot; in the sequence. You can use a name, a project title, a team name — anything you like.</p>
+<p><strong>Step 3 — Preview the result</strong></p>
+<p>The live preview lets you see exactly how the finished video will look before you render it.</p>
+<p><strong>Step 4 — Render and download</strong></p>
+<p>Hit <strong>Render</strong> to generate the video. Download the MP4 file and use it anywhere — YouTube, Instagram Reels, TikTok, or as a local file for presentations.</p>
+<h2>Ideas for your Stranger Things intro</h2>
 <ul>
-<li>A birthday video that opens like a Netflix premiere</li>
-<li>A podcast or YouTube channel intro</li>
-<li>A dramatic work announcement (retirements and farewells go <em>hard</em> in Hawkins red)</li>
-<li>A running gag for your friend group&#39;s chat</li>
+<li><strong>Birthday videos</strong> — &quot;Happy Birthday [Name]&quot; in the Stranger Things font is always a hit.</li>
+<li><strong>Podcast intros</strong> — give your show a moody, atmospheric cold open.</li>
+<li><strong>Work announcements</strong> — make the new product launch feel like an event.</li>
+<li><strong>Friend group gags</strong> — &quot;The Upside Down [Your Town Name]&quot; never gets old.</li>
 </ul>
 <h2>Make it now</h2>
-<p>No design skills, no software, no subscription.</p>
-<p><strong><a href="https://kassellabs.io/intro/stranger-things?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=stranger-things-intro">Create your Stranger Things intro →</a></strong></p>
-<p>Want a different franchise? We&#39;ve got dozens —
-<a href="https://kassellabs.io/projects?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=stranger-things-intro">explore all the creators</a>.</p>
+<p><a href="https://kassellabs.io/intro/stranger-things">Create your Stranger Things intro →</a></p>
+<p>No design skills, no video editing software, no subscription. Just type, render, download.</p>
 
+      </div>
       <div class="cta">
         <h3>Ready to create your own?</h3>
         <p>Start making your own cinematic intros today. It only takes a few minutes!</p>

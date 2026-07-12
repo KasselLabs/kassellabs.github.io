@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Marvel, Disney and Other Intro Creators — Kassel Labs</title>
+  <meta name="description" content="Marvel, Disney and Other Intro Creators Beyond our main intro creators, we also offer custom work for other beloved franchises! We can create intros inspired…" />
+  <link rel="canonical" href="https://kassellabs.io/blog/marvel-disney-and-other-intro-creators" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Marvel, Disney and Other Intro Creators" />
+  <meta property="og:description" content="Marvel, Disney and Other Intro Creators Beyond our main intro creators, we also offer custom work for other beloved franchises! We can create intros inspired…" />
+  <meta property="og:url" content="https://kassellabs.io/blog/marvel-disney-and-other-intro-creators" />
+  <meta property="og:site_name" content="Kassel Labs" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300..800&family=Space+Grotesk:wght@400..700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --background: oklch(0.12 0.01 220); --foreground: oklch(0.98 0 0);
+      --card: oklch(0.15 0.015 220); --primary: oklch(0.75 0.15 180);
+      --primary-foreground: oklch(0.12 0.01 220); --secondary: oklch(0.2 0.015 220);
+      --muted-foreground: oklch(0.65 0 0); --border: oklch(0.28 0.02 220);
+      --font-sans: "Outfit", sans-serif; --font-display: "Space Grotesk", sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--background); color: var(--foreground);
+      font-family: var(--font-sans); font-size: 1.06rem; line-height: 1.75; -webkit-font-smoothing: antialiased; }
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; text-underline-offset: 3px; }
+    .wrap { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
+    .prose-wrap { max-width: 768px; margin: 0 auto; padding: 0 24px; }
+    header.site { position: sticky; top: 0; z-index: 50;
+      background: color-mix(in oklab, var(--background) 70%, transparent);
+      backdrop-filter: blur(24px); border-bottom: 1px solid rgba(255,255,255,0.06);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.05); }
+    header.site .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    .brand img { height: 24px; width: auto; display: block; }
+    header.site nav { display: flex; align-items: center; gap: 26px; }
+    header.site nav a { color: var(--muted-foreground); font-size: 0.92rem; font-weight: 500; transition: color 0.15s ease; }
+    header.site nav a:hover { color: var(--foreground); text-decoration: none; }
+    @media (max-width: 680px) { header.site nav { display: none; } }
+    .cover-media { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
+    .post-hero { position: relative; width: 100%; height: clamp(220px, 42vw, 400px); overflow: hidden; background: var(--secondary); }
+    .post-hero-fade { position: absolute; inset: 0; background: linear-gradient(to top,
+      var(--background) 4%, color-mix(in oklab, var(--background) 45%, transparent) 45%, transparent 100%); }
+    article.has-hero .prose-wrap { position: relative; margin-top: -90px; }
+    .back { display: inline-flex; align-items: center; gap: 8px; color: var(--muted-foreground);
+      font-size: 0.92rem; font-weight: 500; margin: 40px 0 28px; }
+    article.has-hero .back { position: relative; background: color-mix(in oklab, var(--background) 80%, transparent);
+      backdrop-filter: blur(4px); padding: 6px 12px; border-radius: 6px; margin: 0 0 24px; }
+    .back:hover { color: var(--foreground); text-decoration: none; }
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+    .chip { display: inline-block; padding: 4px 14px; border-radius: 999px; font-size: 0.8rem; font-weight: 600;
+      background: color-mix(in oklab, var(--primary) 15%, transparent); color: var(--primary); }
+    .chip.outline { background: var(--secondary); color: var(--muted-foreground); font-weight: 500; }
+    h1.title { font-family: var(--font-display); font-size: clamp(2.1rem, 5.4vw, 3.1rem); font-weight: 700;
+      line-height: 1.1; letter-spacing: -0.02em; margin: 0 0 22px; text-wrap: balance; }
+    .byline { display: flex; align-items: center; gap: 12px; margin-bottom: 44px; }
+    .avatar { width: 36px; height: 36px; border-radius: 50%;
+      background: color-mix(in oklab, var(--primary) 20%, var(--card)); color: var(--primary);
+      font-weight: 700; font-size: 0.8rem; display: flex; align-items: center; justify-content: center; }
+    .byline .who { font-weight: 600; font-size: 0.95rem; }
+    .byline .date { color: var(--muted-foreground); font-size: 0.9rem; }
+    .byline .sep { color: var(--border); }
+    article .content p { margin: 0 0 1.35em; color: color-mix(in oklab, var(--foreground) 90%, transparent); }
+    article .content h2 { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; letter-spacing: -0.01em;
+      margin: 2em 0 0.6em; color: var(--foreground); }
+    article .content h3 { font-family: var(--font-display); font-size: 1.2rem; font-weight: 600; margin: 1.6em 0 0.4em; }
+    article .content strong { color: var(--foreground); }
+    article .content ul, article .content ol { margin: 0 0 1.35em; padding-left: 1.3em; color: color-mix(in oklab, var(--foreground) 90%, transparent); }
+    article .content li { margin-bottom: 0.5em; }
+    article .content img { max-width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--border); margin: 1.5em 0; }
+    article .content hr { border: 0; height: 1px; background: var(--border); margin: 2.6em 0; }
+    article .content blockquote { border-left: 3px solid color-mix(in oklab, var(--primary) 50%, transparent);
+      padding-left: 16px; margin: 1.5em 0; font-style: italic; color: color-mix(in oklab, var(--foreground) 80%, transparent); }
+    article .content code { font-family: ui-monospace, monospace; background: var(--secondary); padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+    .cta { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 30px 28px; margin: 3em 0 1em; }
+    .cta h3 { font-family: var(--font-display); margin: 0 0 8px; font-size: 1.35rem; font-weight: 700; }
+    .cta p { color: var(--muted-foreground); margin: 0 0 18px; }
+    .btn { display: inline-flex; align-items: center; gap: 8px; background: var(--primary);
+      color: var(--primary-foreground); font-weight: 600; font-size: 0.95rem; padding: 11px 22px;
+      border-radius: 6px; transition: opacity 0.15s ease; }
+    .btn:hover { opacity: 0.88; text-decoration: none; }
+    footer.site { border-top: 1px solid rgba(255,255,255,0.06); margin-top: 64px; padding: 40px 0 32px; background: var(--secondary); }
+    footer.site .wrap { display: flex; flex-wrap: wrap; gap: 18px; justify-content: space-between; align-items: center; }
+    footer.site p { margin: 0; color: var(--muted-foreground); font-size: 0.85rem; }
+    footer.site nav a { color: var(--muted-foreground); font-size: 0.88rem; margin-left: 18px; transition: color 0.15s ease; }
+    footer.site nav a:hover { color: var(--foreground); text-decoration: none; }</style>
+</head>
+<body>
+
+  <header class="site">
+    <div class="wrap">
+      <a class="brand" href="https://kassellabs.io?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=marvel-disney-and-other-intro-creators"><img src="https://kassellabs-static-assets.us-mia-1.linodeobjects.com/images/kassel-labs-logo.svg" alt="Kassel Labs" width="150" height="26" /></a>
+      <nav>
+        <a href="https://kassellabs.io?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=marvel-disney-and-other-intro-creators">Home</a>
+        <a href="https://kassellabs.io/projects?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=marvel-disney-and-other-intro-creators">Projects</a>
+        <a href="https://kassellabs.io/about?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=marvel-disney-and-other-intro-creators">About</a>
+        <a href="https://kassellabs.io/blog?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=marvel-disney-and-other-intro-creators">Blog</a>
+        <a href="https://kassellabs.io/contact?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=marvel-disney-and-other-intro-creators">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <div class="post-hero"><img class="cover-media" src="https://kassel-admin.us-mia-1.linodeobjects.com/marvel_disney_and_other_intro_creators_5322186941.png" alt="Marvel, Disney and Other Intro Creators" loading="lazy" /><div class="post-hero-fade"></div></div>
+  <article class="has-hero">
+    <div class="prose-wrap">
+      <a class="back" href="/">← Back to Blog</a>
+      <div class="chips">
+        <span class="chip">Marvel</span>
+        <span class="chip outline">#Disney</span>
+        <span class="chip outline">#Intro Creator</span>
+        <span class="chip outline">#News</span>
+      </div>
+      <h1 class="title">Marvel, Disney and Other Intro Creators</h1>
+      <div class="byline">
+        <span class="avatar">KL</span>
+        <span class="who">Kassel Labs</span>
+        <span class="sep">·</span>
+        <span class="date">May 17, 2024</span>
+      </div>
+      <div class="content">
+<h1>Marvel, Disney and Other Intro Creators</h1>
+<p>Beyond our main intro creators, we also offer custom work for other beloved franchises!</p>
+<p>We can create intros inspired by Marvel Studios, Disney, Universal, Netflix, MGM, Lucasfilm, Paramount, Pixar, 20th Century Fox, Disney Plus, HBO, Warner Bros, Harry Potter, and more.</p>
+<p>Would you like to have any other openings? You can contact us for a quote and we&#39;ll work on it for you!</p>
+<p>Whether it&#39;s for a corporate event, wedding, birthday party, or any special occasion, we can help bring your vision to life.</p>
+
+      </div>
+      <div class="cta">
+        <h3>Ready to create your own?</h3>
+        <p>Start making your own cinematic intros today. It only takes a few minutes!</p>
+        <a class="btn" href="https://kassellabs.io/projects?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=marvel-disney-and-other-intro-creators">Explore Our Creators →</a>
+      </div>
+    </div>
+  </article>
+
+  <footer class="site">
+    <div class="wrap">
+      <p>© 2026 Kassel Labs. All rights reserved.</p>
+      <nav>
+        <a href="https://kassellabs.io?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=marvel-disney-and-other-intro-creators">Home</a>
+        <a href="https://kassellabs.io/projects?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=marvel-disney-and-other-intro-creators">Intro Creators</a>
+        <a href="https://kassellabs.io/blog?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=marvel-disney-and-other-intro-creators">Blog</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

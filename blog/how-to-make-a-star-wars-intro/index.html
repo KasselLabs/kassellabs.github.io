@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Make Your Own Star Wars Opening Crawl in Seconds — Kassel Labs</title>
-  <meta name="description" content="Generate the iconic opening crawl in seconds — no video editing software required." />
+  <title>How to Make a Star Wars Intro — Kassel Labs</title>
+  <meta name="description" content="Want to create your own Star Wars intro? With the Kassel Labs Star Wars Intro Creator you can generate the iconic opening crawl in seconds — no video editing…" />
   <link rel="canonical" href="https://kassellabs.io/blog/how-to-make-a-star-wars-intro" />
   <meta property="og:type" content="article" />
-  <meta property="og:title" content="Make Your Own Star Wars Opening Crawl in Seconds" />
-  <meta property="og:description" content="Generate the iconic opening crawl in seconds — no video editing software required." />
+  <meta property="og:title" content="How to Make a Star Wars Intro" />
+  <meta property="og:description" content="Want to create your own Star Wars intro? With the Kassel Labs Star Wars Intro Creator you can generate the iconic opening crawl in seconds — no video editing…" />
   <meta property="og:url" content="https://kassellabs.io/blog/how-to-make-a-star-wars-intro" />
   <meta property="og:site_name" content="Kassel Labs" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -40,8 +40,7 @@
     header.site nav a:hover { color: var(--foreground); text-decoration: none; }
     @media (max-width: 680px) { header.site nav { display: none; } }
     .cover-media { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
-    .post-hero { position: relative; width: 100%; max-height: 400px; aspect-ratio: 16 / 9; overflow: hidden; background: var(--secondary); }
-    .post-hero { height: clamp(220px, 42vw, 400px); }
+    .post-hero { position: relative; width: 100%; height: clamp(220px, 42vw, 400px); overflow: hidden; background: var(--secondary); }
     .post-hero-fade { position: absolute; inset: 0; background: linear-gradient(to top,
       var(--background) 4%, color-mix(in oklab, var(--background) 45%, transparent) 45%, transparent 100%); }
     article.has-hero .prose-wrap { position: relative; margin-top: -90px; }
@@ -63,16 +62,19 @@
     .byline .who { font-weight: 600; font-size: 0.95rem; }
     .byline .date { color: var(--muted-foreground); font-size: 0.9rem; }
     .byline .sep { color: var(--border); }
-    article p { margin: 0 0 1.35em; color: color-mix(in oklab, var(--foreground) 90%, transparent); }
-    article h2 { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; letter-spacing: -0.01em;
+    article .content p { margin: 0 0 1.35em; color: color-mix(in oklab, var(--foreground) 90%, transparent); }
+    article .content h2 { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; letter-spacing: -0.01em;
       margin: 2em 0 0.6em; color: var(--foreground); }
-    article strong { color: var(--foreground); }
-    article ul, article ol { margin: 0 0 1.35em; padding-left: 1.3em; color: color-mix(in oklab, var(--foreground) 90%, transparent); }
-    article li { margin-bottom: 0.5em; }
-    article hr { border: 0; height: 1px; background: var(--border); margin: 2.6em 0; }
-    article em { color: var(--muted-foreground); }
-    .cta { background: var(--card); border: 1px solid var(--border); border-radius: 12px;
-      padding: 30px 28px; margin: 3em 0 1em; }
+    article .content h3 { font-family: var(--font-display); font-size: 1.2rem; font-weight: 600; margin: 1.6em 0 0.4em; }
+    article .content strong { color: var(--foreground); }
+    article .content ul, article .content ol { margin: 0 0 1.35em; padding-left: 1.3em; color: color-mix(in oklab, var(--foreground) 90%, transparent); }
+    article .content li { margin-bottom: 0.5em; }
+    article .content img { max-width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--border); margin: 1.5em 0; }
+    article .content hr { border: 0; height: 1px; background: var(--border); margin: 2.6em 0; }
+    article .content blockquote { border-left: 3px solid color-mix(in oklab, var(--primary) 50%, transparent);
+      padding-left: 16px; margin: 1.5em 0; font-style: italic; color: color-mix(in oklab, var(--foreground) 80%, transparent); }
+    article .content code { font-family: ui-monospace, monospace; background: var(--secondary); padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+    .cta { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 30px 28px; margin: 3em 0 1em; }
     .cta h3 { font-family: var(--font-display); margin: 0 0 8px; font-size: 1.35rem; font-weight: 700; }
     .cta p { color: var(--muted-foreground); margin: 0 0 18px; }
     .btn { display: inline-flex; align-items: center; gap: 8px; background: var(--primary);
@@ -99,70 +101,49 @@
       </nav>
     </div>
   </header>
-  <div class="post-hero">
-    <video class="cover-media" autoplay muted loop playsinline preload="metadata">
-      <source src="https://kassel-admin.us-mia-1.linodeobjects.com/star_wars_a532133043.mp4" type="video/mp4" />
-    </video>
-    <div class="post-hero-fade"></div>
-  </div>
+  <div class="post-hero"><video class="cover-media" autoplay muted loop playsinline preload="metadata"><source src="https://kassel-admin.us-mia-1.linodeobjects.com/star_wars_a532133043.mp4" type="video/mp4" /></video><div class="post-hero-fade"></div></div>
   <article class="has-hero">
     <div class="prose-wrap">
       <a class="back" href="/">← Back to Blog</a>
       <div class="chips">
-        <span class="chip">Tutorial</span>
+        <span class="chip">Star Wars</span>
+        <span class="chip outline">#Tutorial</span>
         <span class="chip outline">#Intro Creator</span>
       </div>
-      <h1 class="title">Make Your Own Star Wars Opening Crawl in Seconds</h1>
+      <h1 class="title">How to Make a Star Wars Intro</h1>
       <div class="byline">
         <span class="avatar">KL</span>
         <span class="who">Kassel Labs</span>
         <span class="sep">·</span>
         <span class="date">November 14, 2025</span>
       </div>
-<p><em>Originally published on <a href="https://kassellabs.io/blog/how-to-make-a-star-wars-intro">the Kassel Labs blog</a>.</em></p>
-<p>Few things in cinema are as instantly recognizable as that yellow text
-receding into a field of stars. You hear the fanfare, you read <em>&quot;A long time
-ago in a galaxy far, far away….&quot;</em>, and you know exactly what you&#39;re in for.</p>
-<p>The good news: you can make your own. With the
-<a href="https://kassellabs.io/intro/star-wars?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=star-wars-intro">Star Wars Intro Creator</a>
-you generate the iconic opening crawl in seconds — no video editing software,
-no account, no design skills required.</p>
+      <div class="content">
+<p>Want to create your own Star Wars intro? With the Kassel Labs Star Wars Intro Creator you can generate the iconic opening crawl in seconds — no video editing software required.</p>
 <h2>The legendary opening crawl</h2>
-<p>The crawl debuted in 1977 and has opened nearly every Star Wars film since.
-George Lucas borrowed the idea from the <em>Flash Gordon</em> serials and <em>Buck Rogers</em>
-comics he grew up on — a way to hand the audience a chunk of backstory without
-grinding the movie to a halt. Three or four short paragraphs, tilted into
-infinity, scored by that unmistakable brass. Simple, and unforgettable.</p>
+<p>Since 1977, every Star Wars film has opened the same way: a brief title card reading &quot;A long time ago in a galaxy far, far away….&quot; followed by the yellow text scrolling into a star-filled sky. It&#39;s one of the most recognizable sequences in cinema history, and it still gives fans chills four decades later.</p>
+<p>The crawl was inspired by old Flash Gordon serials and Buck Rogers comics. George Lucas used it to dump necessary backstory on the audience without boring them to tears — and it worked so well that every film in the Saga kept the tradition alive.</p>
 <h2>How to make your own Star Wars intro</h2>
-<ol>
-<li><strong>Open the creator.</strong> Head to the
-<a href="https://kassellabs.io/intro/star-wars?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=star-wars-intro">Star Wars Intro Creator</a>.</li>
-<li><strong>Set your title and subtitle.</strong> The episode line at the top, the subtitle
-below it — all caps, as tradition demands.</li>
-<li><strong>Write your crawl.</strong> Three to four short paragraphs. This is where the fun is.</li>
-<li><strong>Preview and download.</strong> Watch it back, then render the video to download or
-share.</li>
-</ol>
-<p>Want just the <em>title card</em> rather than the full animated crawl? The free
-<a href="https://kassellabs.io/font/star-wars?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=star-wars-intro">Star Wars font generator</a>
-turns any text into that perspective-tilted yellow title and exports a PNG,
-instantly.</p>
-<h2>Tips for a great crawl</h2>
+<p>The <a href="https://kassellabs.io/intro/star-wars">Kassel Labs Star Wars Intro Creator</a> makes the whole process point-and-click:</p>
+<p><strong>Step 1 — Open the creator</strong></p>
+<p>Head to <a href="https://kassellabs.io/intro/star-wars">kassellabs.io/intro/star-wars</a>. You&#39;ll see a live preview of the crawl updating as you type.</p>
+<p><strong>Step 2 — Write your episode title and subtitle</strong></p>
+<p>The classic format is &quot;Episode IV — A NEW HOPE&quot;. Replace those with whatever fits your story. Birthdays, gender reveals, office announcements — they all work.</p>
+<p><strong>Step 3 — Write your crawl text</strong></p>
+<p>This is the scrolling paragraph(s) below the episode title. Keep it to 3–4 short paragraphs for best readability. The tool gives you a live preview so you can see exactly how it will look on screen.</p>
+<p><strong>Step 4 — Preview and render</strong></p>
+<p>Once you&#39;re happy with the text, hit <strong>Render</strong> and the creator will generate your video. Download it or share the link directly.</p>
+<h2>Tips for a great Star Wars crawl</h2>
 <ul>
-<li><strong>Keep lines short.</strong> Long lines get clipped on smaller screens — aim for
-40–50 characters per line.</li>
-<li><strong>ALL CAPS for the episode title.</strong> It&#39;s part of the look.</li>
-<li><strong>Go big.</strong> Over-the-top, operatic language is the whole point. Nobody ever
-wrote a Star Wars crawl that was too dramatic.</li>
-<li><strong>End on a cliffhanger.</strong> Leave them wanting the next episode.</li>
+<li><strong>Keep lines short</strong> — long lines get cut off on smaller screens. Aim for 40–50 characters per line.</li>
+<li><strong>All caps for the episode title</strong> — that&#39;s how Lucas did it, and it looks better.</li>
+<li><strong>Use dramatic language</strong> — the original crawls are gloriously over-the-top. Lean into it.</li>
+<li><strong>End with a cliffhanger</strong> — the last line of a crawl should make the viewer want to watch what comes next.</li>
 </ul>
 <h2>Ready to roll?</h2>
-<p>A Star Wars crawl is guaranteed to get a reaction — whether you&#39;re opening a
-birthday video, a wedding surprise, a school project, or a YouTube episode.</p>
-<p><strong><a href="https://kassellabs.io/intro/star-wars?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=star-wars-intro">Create your Star Wars intro now →</a></strong></p>
-<p>Curious what else you can make? We build intros for dozens of movies and shows —
-<a href="https://kassellabs.io/projects?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=star-wars-intro">explore all the creators</a>.</p>
+<p><a href="https://kassellabs.io/intro/star-wars">Create your Star Wars intro now →</a></p>
+<p>Whether you&#39;re opening a birthday video, a wedding surprise, a school project, or a YouTube episode, a Star Wars crawl is guaranteed to get a reaction.</p>
 
+      </div>
       <div class="cta">
         <h3>Ready to create your own?</h3>
         <p>Start making your own cinematic intros today. It only takes a few minutes!</p>

@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Put Your Name on the Periodic Table — the Breaking Bad Way — Kassel Labs</title>
-  <meta name="description" content="Your name, periodic-table'd — element symbols found and highlighted in green." />
+  <title>How to Make a Breaking Bad Intro — Kassel Labs</title>
+  <meta name="description" content="Want to create your own Breaking Bad intro with a custom name? The Kassel Labs Breaking Bad Intro Creator lets you generate the iconic periodictable title card…" />
   <link rel="canonical" href="https://kassellabs.io/blog/how-to-make-a-breaking-bad-intro" />
   <meta property="og:type" content="article" />
-  <meta property="og:title" content="Put Your Name on the Periodic Table — the Breaking Bad Way" />
-  <meta property="og:description" content="Your name, periodic-table'd — element symbols found and highlighted in green." />
+  <meta property="og:title" content="How to Make a Breaking Bad Intro" />
+  <meta property="og:description" content="Want to create your own Breaking Bad intro with a custom name? The Kassel Labs Breaking Bad Intro Creator lets you generate the iconic periodictable title card…" />
   <meta property="og:url" content="https://kassellabs.io/blog/how-to-make-a-breaking-bad-intro" />
   <meta property="og:site_name" content="Kassel Labs" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -40,8 +40,7 @@
     header.site nav a:hover { color: var(--foreground); text-decoration: none; }
     @media (max-width: 680px) { header.site nav { display: none; } }
     .cover-media { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
-    .post-hero { position: relative; width: 100%; max-height: 400px; aspect-ratio: 16 / 9; overflow: hidden; background: var(--secondary); }
-    .post-hero { height: clamp(220px, 42vw, 400px); }
+    .post-hero { position: relative; width: 100%; height: clamp(220px, 42vw, 400px); overflow: hidden; background: var(--secondary); }
     .post-hero-fade { position: absolute; inset: 0; background: linear-gradient(to top,
       var(--background) 4%, color-mix(in oklab, var(--background) 45%, transparent) 45%, transparent 100%); }
     article.has-hero .prose-wrap { position: relative; margin-top: -90px; }
@@ -63,16 +62,19 @@
     .byline .who { font-weight: 600; font-size: 0.95rem; }
     .byline .date { color: var(--muted-foreground); font-size: 0.9rem; }
     .byline .sep { color: var(--border); }
-    article p { margin: 0 0 1.35em; color: color-mix(in oklab, var(--foreground) 90%, transparent); }
-    article h2 { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; letter-spacing: -0.01em;
+    article .content p { margin: 0 0 1.35em; color: color-mix(in oklab, var(--foreground) 90%, transparent); }
+    article .content h2 { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; letter-spacing: -0.01em;
       margin: 2em 0 0.6em; color: var(--foreground); }
-    article strong { color: var(--foreground); }
-    article ul, article ol { margin: 0 0 1.35em; padding-left: 1.3em; color: color-mix(in oklab, var(--foreground) 90%, transparent); }
-    article li { margin-bottom: 0.5em; }
-    article hr { border: 0; height: 1px; background: var(--border); margin: 2.6em 0; }
-    article em { color: var(--muted-foreground); }
-    .cta { background: var(--card); border: 1px solid var(--border); border-radius: 12px;
-      padding: 30px 28px; margin: 3em 0 1em; }
+    article .content h3 { font-family: var(--font-display); font-size: 1.2rem; font-weight: 600; margin: 1.6em 0 0.4em; }
+    article .content strong { color: var(--foreground); }
+    article .content ul, article .content ol { margin: 0 0 1.35em; padding-left: 1.3em; color: color-mix(in oklab, var(--foreground) 90%, transparent); }
+    article .content li { margin-bottom: 0.5em; }
+    article .content img { max-width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--border); margin: 1.5em 0; }
+    article .content hr { border: 0; height: 1px; background: var(--border); margin: 2.6em 0; }
+    article .content blockquote { border-left: 3px solid color-mix(in oklab, var(--primary) 50%, transparent);
+      padding-left: 16px; margin: 1.5em 0; font-style: italic; color: color-mix(in oklab, var(--foreground) 80%, transparent); }
+    article .content code { font-family: ui-monospace, monospace; background: var(--secondary); padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+    .cta { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 30px 28px; margin: 3em 0 1em; }
     .cta h3 { font-family: var(--font-display); margin: 0 0 8px; font-size: 1.35rem; font-weight: 700; }
     .cta p { color: var(--muted-foreground); margin: 0 0 18px; }
     .btn { display: inline-flex; align-items: center; gap: 8px; background: var(--primary);
@@ -99,12 +101,7 @@
       </nav>
     </div>
   </header>
-  <div class="post-hero">
-    <video class="cover-media" autoplay muted loop playsinline preload="metadata">
-      <source src="https://kassel-admin.us-mia-1.linodeobjects.com/breaking_bad_899f157a97.mp4" type="video/mp4" />
-    </video>
-    <div class="post-hero-fade"></div>
-  </div>
+  <div class="post-hero"><video class="cover-media" autoplay muted loop playsinline preload="metadata"><source src="https://kassel-admin.us-mia-1.linodeobjects.com/breaking_bad_899f157a97.mp4" type="video/mp4" /></video><div class="post-hero-fade"></div></div>
   <article class="has-hero">
     <div class="prose-wrap">
       <a class="back" href="/">← Back to Blog</a>
@@ -112,58 +109,46 @@
         <span class="chip">Tutorial</span>
         <span class="chip outline">#Intro Creator</span>
       </div>
-      <h1 class="title">Put Your Name on the Periodic Table — the Breaking Bad Way</h1>
+      <h1 class="title">How to Make a Breaking Bad Intro</h1>
       <div class="byline">
         <span class="avatar">KL</span>
         <span class="who">Kassel Labs</span>
         <span class="sep">·</span>
         <span class="date">March 20, 2026</span>
       </div>
-<p><em>Originally published on <a href="https://kassellabs.io/blog/how-to-make-a-breaking-bad-intro">the Kassel Labs blog</a>.</em></p>
-<p>Two element boxes glowing green — <strong>Br</strong>omine and <strong>Ba</strong>rium — smoke drifting
-across a New Mexico time-lapse. Since 2008, that title card has been one of
-TV&#39;s most distinctive visual identities.</p>
-<p>With the
-<a href="https://breakingbadintrocreator.kassellabs.io?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=breaking-bad-intro">Breaking Bad Intro Creator</a>
-you can generate the iconic periodic-table title card in seconds — no design or
-video editing skills required.</p>
+      <div class="content">
+<p>Want to create your own Breaking Bad intro with a custom name? The Kassel Labs Breaking Bad Intro Creator lets you generate the iconic periodic-table title card in seconds — no design or video editing skills required.</p>
 <h2>The title sequence that made chemistry cool</h2>
-<p>The opening was created by Mindy Sellar and the team at Electric Sandbox:
-element symbols lifted straight from the periodic table, highlighted in that
-unmistakable green, floating over desert time-lapse footage. It told you
-everything about the show in five seconds — science, menace, and a name that
-was also a formula.</p>
+<p>Breaking Bad&#39;s title sequence is a masterclass in economy. Each episode opens with the show&#39;s name built from real periodic-table element symbols — Br (Bromine) and Ba (Barium), highlighted in green — set against a time-lapse of New Mexico sky. Simple, clever, and instantly recognizable.</p>
+<p>The sequence was created by Mindy Sellar and the team at Electric Sandbox. It took a dry scientific concept (element symbols) and made it feel edgy and dangerous — perfectly capturing the show&#39;s theme of a chemistry teacher turned drug manufacturer. When Breaking Bad debuted on AMC in 2008, that title card became one of TV&#39;s most distinctive visual identities.</p>
 <h2>How to make your own Breaking Bad intro</h2>
-<ol>
-<li><strong>Open the creator.</strong> Go to
-<a href="https://breakingbadintrocreator.kassellabs.io?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=breaking-bad-intro">breakingbadintrocreator.kassellabs.io</a>
-— the preview updates live as you type.</li>
-<li><strong>Type your text.</strong> The tool automatically finds real element symbols in
-your words and highlights them green, exactly like the original.</li>
-<li><strong>Preview it.</strong> Check which elements it picked.</li>
-<li><strong>Render and download.</strong> One click, and the MP4 is yours.</li>
-</ol>
-<p>Just want the still title card? The free
-<a href="https://kassellabs.io/font/breaking-bad?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=breaking-bad-intro">Breaking Bad font generator</a>
-renders your text with the element-box treatment and exports a PNG instantly.</p>
+<p>Head to the <a href="https://breakingbadintrocreator.kassellabs.io">Kassel Labs Breaking Bad Intro Creator</a> and follow these steps:</p>
+<p><strong>Step 1 — Open the creator</strong></p>
+<p>Go to <a href="https://breakingbadintrocreator.kassellabs.io">breakingbadintrocreator.kassellabs.io</a>. You&#39;ll see the periodic-table-style preview update in real time as you type.</p>
+<p><strong>Step 2 — Enter your custom name</strong></p>
+<p>Type any name or word you want displayed in the Breaking Bad style. The creator automatically finds element symbols within your text and highlights them green, just like the original title card.</p>
+<p><strong>Step 3 — Preview the result</strong></p>
+<p>The live preview shows you exactly how the finished video will look before you render it.</p>
+<p><strong>Step 4 — Render and download</strong></p>
+<p>Click <strong>Render</strong> to generate the video. Download the MP4 file and use it anywhere — YouTube intros, presentation openers, birthday videos, or social media.</p>
 <h2>Tips for a great Breaking Bad-style title</h2>
 <ul>
-<li><strong>Element-rich names hit harder.</strong> Names containing He, Na, Ca, Fe, or Au
-light up beautifully.</li>
-<li><strong>Keep it short.</strong> The original is two words. Two words is the sweet spot.</li>
-<li><strong>Let it breathe.</strong> The drama is in the timing — don&#39;t rush the reveal.</li>
+<li><strong>Pick names with good element symbols</strong> — names containing &quot;He&quot; (Helium), &quot;Na&quot; (Sodium), &quot;Ca&quot; (Calcium), &quot;Fe&quot; (Iron), or &quot;Au&quot; (Gold) create striking combinations.</li>
+<li><strong>Keep it short</strong> — the original title is only two words. Shorter names look cleaner and more authentic.</li>
+<li><strong>Use a dramatic reveal</strong> — set your video to play after a long pause or at the end of another clip for maximum impact.</li>
 </ul>
-<h2>Creative uses</h2>
+<h2>Creative uses for a custom Breaking Bad intro</h2>
 <ul>
-<li>A nickname or alias card for your channel</li>
-<li>A company or product launch teaser</li>
-<li>Birthday videos (&quot;<strong>He</strong>n<strong>Ry</strong> — 40&quot;)</li>
-<li>Social posts that stop the scroll</li>
+<li><strong>Nicknames and aliases</strong> — make someone&#39;s nickname look like a dangerous chemical compound.</li>
+<li><strong>Company or product names</strong> — launch something with the gravitas of a Vince Gilligan production.</li>
+<li><strong>Birthday videos</strong> — &quot;[Name]: The [Age]th Element&quot; never gets old.</li>
+<li><strong>Social media content</strong> — Breaking Bad fans love spotting the element symbols. It always gets engagement.</li>
 </ul>
 <h2>Start cooking</h2>
-<p><strong><a href="https://breakingbadintrocreator.kassellabs.io?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=breaking-bad-intro">Create your Breaking Bad intro →</a></strong></p>
-<p>Different show, same idea? <a href="https://kassellabs.io/projects?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=breaking-bad-intro">Explore all the creators</a>.</p>
+<p><a href="https://breakingbadintrocreator.kassellabs.io">Create your Breaking Bad intro →</a></p>
+<p>No lab required. Just type your name, render, and download. Science, Mr. White.</p>
 
+      </div>
       <div class="cta">
         <h3>Ready to create your own?</h3>
         <p>Start making your own cinematic intros today. It only takes a few minutes!</p>

@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Make a Game of Thrones Intro With Your Own Words — Kassel Labs</title>
-  <meta name="description" content="Put your own words on the Emmy-winning clockwork map." />
+  <title>How to Make a Game of Thrones Intro — Kassel Labs</title>
+  <meta name="description" content="Want to create a Game of Thrones intro with your own locations and names? The Kassel Labs Game of Thrones Intro Creator lets you build the iconic map sequence…" />
   <link rel="canonical" href="https://kassellabs.io/blog/how-to-make-a-game-of-thrones-intro" />
   <meta property="og:type" content="article" />
-  <meta property="og:title" content="Make a Game of Thrones Intro With Your Own Words" />
-  <meta property="og:description" content="Put your own words on the Emmy-winning clockwork map." />
+  <meta property="og:title" content="How to Make a Game of Thrones Intro" />
+  <meta property="og:description" content="Want to create a Game of Thrones intro with your own locations and names? The Kassel Labs Game of Thrones Intro Creator lets you build the iconic map sequence…" />
   <meta property="og:url" content="https://kassellabs.io/blog/how-to-make-a-game-of-thrones-intro" />
   <meta property="og:site_name" content="Kassel Labs" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -40,8 +40,7 @@
     header.site nav a:hover { color: var(--foreground); text-decoration: none; }
     @media (max-width: 680px) { header.site nav { display: none; } }
     .cover-media { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
-    .post-hero { position: relative; width: 100%; max-height: 400px; aspect-ratio: 16 / 9; overflow: hidden; background: var(--secondary); }
-    .post-hero { height: clamp(220px, 42vw, 400px); }
+    .post-hero { position: relative; width: 100%; height: clamp(220px, 42vw, 400px); overflow: hidden; background: var(--secondary); }
     .post-hero-fade { position: absolute; inset: 0; background: linear-gradient(to top,
       var(--background) 4%, color-mix(in oklab, var(--background) 45%, transparent) 45%, transparent 100%); }
     article.has-hero .prose-wrap { position: relative; margin-top: -90px; }
@@ -63,16 +62,19 @@
     .byline .who { font-weight: 600; font-size: 0.95rem; }
     .byline .date { color: var(--muted-foreground); font-size: 0.9rem; }
     .byline .sep { color: var(--border); }
-    article p { margin: 0 0 1.35em; color: color-mix(in oklab, var(--foreground) 90%, transparent); }
-    article h2 { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; letter-spacing: -0.01em;
+    article .content p { margin: 0 0 1.35em; color: color-mix(in oklab, var(--foreground) 90%, transparent); }
+    article .content h2 { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; letter-spacing: -0.01em;
       margin: 2em 0 0.6em; color: var(--foreground); }
-    article strong { color: var(--foreground); }
-    article ul, article ol { margin: 0 0 1.35em; padding-left: 1.3em; color: color-mix(in oklab, var(--foreground) 90%, transparent); }
-    article li { margin-bottom: 0.5em; }
-    article hr { border: 0; height: 1px; background: var(--border); margin: 2.6em 0; }
-    article em { color: var(--muted-foreground); }
-    .cta { background: var(--card); border: 1px solid var(--border); border-radius: 12px;
-      padding: 30px 28px; margin: 3em 0 1em; }
+    article .content h3 { font-family: var(--font-display); font-size: 1.2rem; font-weight: 600; margin: 1.6em 0 0.4em; }
+    article .content strong { color: var(--foreground); }
+    article .content ul, article .content ol { margin: 0 0 1.35em; padding-left: 1.3em; color: color-mix(in oklab, var(--foreground) 90%, transparent); }
+    article .content li { margin-bottom: 0.5em; }
+    article .content img { max-width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--border); margin: 1.5em 0; }
+    article .content hr { border: 0; height: 1px; background: var(--border); margin: 2.6em 0; }
+    article .content blockquote { border-left: 3px solid color-mix(in oklab, var(--primary) 50%, transparent);
+      padding-left: 16px; margin: 1.5em 0; font-style: italic; color: color-mix(in oklab, var(--foreground) 80%, transparent); }
+    article .content code { font-family: ui-monospace, monospace; background: var(--secondary); padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+    .cta { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 30px 28px; margin: 3em 0 1em; }
     .cta h3 { font-family: var(--font-display); margin: 0 0 8px; font-size: 1.35rem; font-weight: 700; }
     .cta p { color: var(--muted-foreground); margin: 0 0 18px; }
     .btn { display: inline-flex; align-items: center; gap: 8px; background: var(--primary);
@@ -99,61 +101,49 @@
       </nav>
     </div>
   </header>
-  <div class="post-hero">
-    <video class="cover-media" autoplay muted loop playsinline preload="metadata">
-      <source src="https://kassel-admin.us-mia-1.linodeobjects.com/game_of_thrones_ad7de6ef20.mp4" type="video/mp4" />
-    </video>
-    <div class="post-hero-fade"></div>
-  </div>
+  <div class="post-hero"><video class="cover-media" autoplay muted loop playsinline preload="metadata"><source src="https://kassel-admin.us-mia-1.linodeobjects.com/game_of_thrones_ad7de6ef20.mp4" type="video/mp4" /></video><div class="post-hero-fade"></div></div>
   <article class="has-hero">
     <div class="prose-wrap">
       <a class="back" href="/">← Back to Blog</a>
       <div class="chips">
-        <span class="chip">Tutorial</span>
+        <span class="chip">Game of Thrones</span>
+        <span class="chip outline">#Tutorial</span>
         <span class="chip outline">#Intro Creator</span>
       </div>
-      <h1 class="title">Make a Game of Thrones Intro With Your Own Words</h1>
+      <h1 class="title">How to Make a Game of Thrones Intro</h1>
       <div class="byline">
         <span class="avatar">KL</span>
         <span class="who">Kassel Labs</span>
         <span class="sep">·</span>
         <span class="date">January 9, 2026</span>
       </div>
-<p><em>Originally published on <a href="https://kassellabs.io/blog/how-to-make-a-game-of-thrones-intro">the Kassel Labs blog</a>.</em></p>
-<p>A clockwork map unfolds. Towers crank themselves out of the ground, gears turn
-under kingdoms, and a cello line tells you something enormous is about to
-happen. The <em>Game of Thrones</em> opening didn&#39;t just introduce a show — it changed
-what TV title sequences were allowed to be.</p>
-<p>With the
-<a href="https://gameofthronesintrocreator.kassellabs.io?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=game-of-thrones-intro">Game of Thrones Intro Creator</a>
-you can put your own words into that world in seconds.</p>
+      <div class="content">
+<p>Want to create a Game of Thrones intro with your own locations and names? The Kassel Labs Game of Thrones Intro Creator lets you build the iconic map sequence with custom text in minutes.</p>
 <h2>The intro that changed TV title sequences</h2>
-<p>Designed by Angus Wall&#39;s team at Elastic, the sequence won an Emmy in 2011 —
-and for good reason. Instead of credits over b-roll, it built a <strong>mechanical,
-animated map</strong> of an entire fictional world, one that changed episode to
-episode depending on where the story went. It made the title sequence part of
-the storytelling.</p>
+<p>The Game of Thrones opening title sequence — crafted by Angus Wall and his team at Elastic — won the Emmy for Outstanding Main Title Design in 2011 and effectively redefined what a TV intro could be. Instead of a static credits roll, it showed a living, mechanical map of Westeros and Essos, with cities unfolding like clockwork as the camera soared over them.</p>
+<p>Every episode, the map showed only the locations that appeared in that episode&#39;s story — making the intro itself a subtle narrative device. Fans dissected it obsessively before each new season to figure out which locations (and therefore which storylines) were coming.</p>
 <h2>How to make your own Game of Thrones intro</h2>
-<ol>
-<li><strong>Open the creator.</strong> Head to the
-<a href="https://gameofthronesintrocreator.kassellabs.io?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=game-of-thrones-intro">Game of Thrones Intro Creator</a>.</li>
-<li><strong>Enter your text.</strong> Your name, your family, your kingdom.</li>
-<li><strong>Preview it.</strong> Watch the map machinery do its thing.</li>
-<li><strong>Render and download.</strong> MP4, ready to share.</li>
-</ol>
-<h2>Creative uses</h2>
+<p>The <a href="https://kassellabs.io/intro/game-of-thrones">Kassel Labs Game of Thrones Intro Creator</a> lets you customize the title card that closes the sequence:</p>
+<p><strong>Step 1 — Open the creator</strong></p>
+<p>Navigate to <a href="https://kassellabs.io/intro/game-of-thrones">kassellabs.io/intro/game-of-thrones</a> to open the creator.</p>
+<p><strong>Step 2 — Enter your custom title</strong></p>
+<p>Replace &quot;Game of Thrones&quot; with your own text. This could be a house name, a family name, an event title, a project name, or anything else that fits the epic register of the show.</p>
+<p><strong>Step 3 — Preview your intro</strong></p>
+<p>The live preview shows you exactly what the finished video will look like before you render it.</p>
+<p><strong>Step 4 — Render and download</strong></p>
+<p>Click <strong>Render</strong> to generate the video, then download the MP4 file. Use it as an opener for presentations, YouTube videos, celebration videos, or anything else you have in mind.</p>
+<h2>Creative uses for a custom Game of Thrones intro</h2>
 <ul>
-<li><strong>Family reunions</strong> — every house gets a sigil moment</li>
-<li><strong>Corporate team intros</strong> — departments as kingdoms works disturbingly well</li>
-<li><strong>Wedding videos</strong> — two houses, joined</li>
-<li><strong>Birthdays</strong> — epic style for any age</li>
+<li><strong>Family reunions</strong> — &quot;House [Your Surname]&quot; with dramatic orchestral underscore.</li>
+<li><strong>Office team intros</strong> — &quot;House [Department Name]&quot; for an all-hands meeting opener.</li>
+<li><strong>Wedding videos</strong> — the betrothal of two houses, rendered in bronze and clockwork.</li>
+<li><strong>Birthday surprises</strong> — &quot;[Name]&#39;s [Age]th Name Day&quot; in the style of the seven kingdoms.</li>
 </ul>
 <h2>Claim your throne</h2>
-<p><strong><a href="https://gameofthronesintrocreator.kassellabs.io?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=game-of-thrones-intro">Create your Game of Thrones intro →</a></strong></p>
-<p>Prefer dragons of a younger vintage? There&#39;s a
-<a href="https://houseofthedragonintrocreator.kassellabs.io?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=game-of-thrones-intro">House of the Dragon creator</a>
-too — or <a href="https://kassellabs.io/projects?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=game-of-thrones-intro">explore all the creators</a>.</p>
+<p><a href="https://kassellabs.io/intro/game-of-thrones">Create your Game of Thrones intro →</a></p>
+<p>No video editing experience needed. Just open the creator, type your title, and render.</p>
 
+      </div>
       <div class="cta">
         <h3>Ready to create your own?</h3>
         <p>Start making your own cinematic intros today. It only takes a few minutes!</p>

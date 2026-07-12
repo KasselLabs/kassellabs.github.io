@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Open Like the MCU: Make Your Own Marvel Studios Intro — Kassel Labs</title>
-  <meta name="description" content="The comic page-flips, the fanfare, your name in the wordmark." />
+  <title>How to Make a Marvel Studios Intro — Kassel Labs</title>
+  <meta name="description" content="Want to create a Marvel Studios intro with your own name or logo? The Kassel Labs Marvel Studios Intro Creator lets you generate the iconic comicbookflip…" />
   <link rel="canonical" href="https://kassellabs.io/blog/how-to-make-a-marvel-studios-intro" />
   <meta property="og:type" content="article" />
-  <meta property="og:title" content="Open Like the MCU: Make Your Own Marvel Studios Intro" />
-  <meta property="og:description" content="The comic page-flips, the fanfare, your name in the wordmark." />
+  <meta property="og:title" content="How to Make a Marvel Studios Intro" />
+  <meta property="og:description" content="Want to create a Marvel Studios intro with your own name or logo? The Kassel Labs Marvel Studios Intro Creator lets you generate the iconic comicbookflip…" />
   <meta property="og:url" content="https://kassellabs.io/blog/how-to-make-a-marvel-studios-intro" />
   <meta property="og:site_name" content="Kassel Labs" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -40,8 +40,7 @@
     header.site nav a:hover { color: var(--foreground); text-decoration: none; }
     @media (max-width: 680px) { header.site nav { display: none; } }
     .cover-media { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
-    .post-hero { position: relative; width: 100%; max-height: 400px; aspect-ratio: 16 / 9; overflow: hidden; background: var(--secondary); }
-    .post-hero { height: clamp(220px, 42vw, 400px); }
+    .post-hero { position: relative; width: 100%; height: clamp(220px, 42vw, 400px); overflow: hidden; background: var(--secondary); }
     .post-hero-fade { position: absolute; inset: 0; background: linear-gradient(to top,
       var(--background) 4%, color-mix(in oklab, var(--background) 45%, transparent) 45%, transparent 100%); }
     article.has-hero .prose-wrap { position: relative; margin-top: -90px; }
@@ -63,16 +62,19 @@
     .byline .who { font-weight: 600; font-size: 0.95rem; }
     .byline .date { color: var(--muted-foreground); font-size: 0.9rem; }
     .byline .sep { color: var(--border); }
-    article p { margin: 0 0 1.35em; color: color-mix(in oklab, var(--foreground) 90%, transparent); }
-    article h2 { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; letter-spacing: -0.01em;
+    article .content p { margin: 0 0 1.35em; color: color-mix(in oklab, var(--foreground) 90%, transparent); }
+    article .content h2 { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; letter-spacing: -0.01em;
       margin: 2em 0 0.6em; color: var(--foreground); }
-    article strong { color: var(--foreground); }
-    article ul, article ol { margin: 0 0 1.35em; padding-left: 1.3em; color: color-mix(in oklab, var(--foreground) 90%, transparent); }
-    article li { margin-bottom: 0.5em; }
-    article hr { border: 0; height: 1px; background: var(--border); margin: 2.6em 0; }
-    article em { color: var(--muted-foreground); }
-    .cta { background: var(--card); border: 1px solid var(--border); border-radius: 12px;
-      padding: 30px 28px; margin: 3em 0 1em; }
+    article .content h3 { font-family: var(--font-display); font-size: 1.2rem; font-weight: 600; margin: 1.6em 0 0.4em; }
+    article .content strong { color: var(--foreground); }
+    article .content ul, article .content ol { margin: 0 0 1.35em; padding-left: 1.3em; color: color-mix(in oklab, var(--foreground) 90%, transparent); }
+    article .content li { margin-bottom: 0.5em; }
+    article .content img { max-width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--border); margin: 1.5em 0; }
+    article .content hr { border: 0; height: 1px; background: var(--border); margin: 2.6em 0; }
+    article .content blockquote { border-left: 3px solid color-mix(in oklab, var(--primary) 50%, transparent);
+      padding-left: 16px; margin: 1.5em 0; font-style: italic; color: color-mix(in oklab, var(--foreground) 80%, transparent); }
+    article .content code { font-family: ui-monospace, monospace; background: var(--secondary); padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+    .cta { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 30px 28px; margin: 3em 0 1em; }
     .cta h3 { font-family: var(--font-display); margin: 0 0 8px; font-size: 1.35rem; font-weight: 700; }
     .cta p { color: var(--muted-foreground); margin: 0 0 18px; }
     .btn { display: inline-flex; align-items: center; gap: 8px; background: var(--primary);
@@ -99,59 +101,49 @@
       </nav>
     </div>
   </header>
-  <div class="post-hero">
-    <video class="cover-media" autoplay muted loop playsinline preload="metadata">
-      <source src="https://kassel-admin.us-mia-1.linodeobjects.com/marvel_studios_32a6086ba8.mp4" type="video/mp4" />
-    </video>
-    <div class="post-hero-fade"></div>
-  </div>
+  <div class="post-hero"><video class="cover-media" autoplay muted loop playsinline preload="metadata"><source src="https://kassel-admin.us-mia-1.linodeobjects.com/marvel_studios_32a6086ba8.mp4" type="video/mp4" /></video><div class="post-hero-fade"></div></div>
   <article class="has-hero">
     <div class="prose-wrap">
       <a class="back" href="/">← Back to Blog</a>
       <div class="chips">
-        <span class="chip">Tutorial</span>
+        <span class="chip">Marvel</span>
+        <span class="chip outline">#Tutorial</span>
         <span class="chip outline">#Intro Creator</span>
       </div>
-      <h1 class="title">Open Like the MCU: Make Your Own Marvel Studios Intro</h1>
+      <h1 class="title">How to Make a Marvel Studios Intro</h1>
       <div class="byline">
         <span class="avatar">KL</span>
         <span class="who">Kassel Labs</span>
         <span class="sep">·</span>
         <span class="date">February 6, 2026</span>
       </div>
-<p><em>Originally published on <a href="https://kassellabs.io/blog/how-to-make-a-marvel-studios-intro">the Kassel Labs blog</a>.</em></p>
-<p>The comic pages flip past, the fanfare builds, and the red wordmark fills the
-screen. The Marvel Studios logo sequence is one of the most watched pieces of
-film in cinema history — the moment every MCU experience actually starts. Fans
-famously pause it frame by frame to spot their favorite characters in the
-flipping panels.</p>
-<p>With the
-<a href="https://kassellabs.io/intro/marvel-studios?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=marvel-studios-intro">Marvel Studios Intro Creator</a>
-that wordmark can say whatever you want.</p>
+      <div class="content">
+<p>Want to create a Marvel Studios intro with your own name or logo? The Kassel Labs Marvel Studios Intro Creator lets you generate the iconic comic-book-flip sequence in seconds.</p>
 <h2>The logo that opens every Marvel film</h2>
-<p>The sequence works double duty: it&#39;s studio branding, and it&#39;s an homage to the
-source material — decades of comic art compressed into a few seconds of
-page-flips before the title lands. That&#39;s why swapping in your own name feels
-so satisfying: the whole apparatus of the MCU appears to be introducing <em>you</em>.</p>
+<p>The Marvel Studios logo sequence is one of the most watched in cinema history. It opens every film in the Marvel Cinematic Universe — a rapid-fire flip through decades of comic book panels that coalesces into the red &quot;Marvel Studios&quot; wordmark. Since its introduction and subsequent redesigns, it&#39;s been refined into a polished, crowd-pleasing machine that signals to audiences worldwide: the show is about to begin.</p>
+<p>The sequence works because it&#39;s not just branding — it&#39;s a love letter to the source material. Diehard fans freeze-frame it to spot their favorite characters; casual viewers get the sense of a vast, interconnected world before a single line of dialogue is spoken.</p>
 <h2>How to make your own Marvel Studios intro</h2>
-<ol>
-<li><strong>Open the creator.</strong> Go to the
-<a href="https://kassellabs.io/intro/marvel-studios?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=marvel-studios-intro">Marvel Studios Intro Creator</a>.</li>
-<li><strong>Enter your text.</strong> Your name replaces the wordmark.</li>
-<li><strong>Preview in real time.</strong> See it exactly as it will render.</li>
-<li><strong>Render and download.</strong> Your MP4, ready for anything.</li>
-</ol>
+<p>The <a href="https://kassellabs.io/intro/marvel-studios">Kassel Labs Marvel Studios Intro Creator</a> lets you customize the wordmark that appears at the climax of the sequence:</p>
+<p><strong>Step 1 — Open the creator</strong></p>
+<p>Go to <a href="https://kassellabs.io/intro/marvel-studios">kassellabs.io/intro/marvel-studios</a>. You&#39;ll see the creator interface with a live preview.</p>
+<p><strong>Step 2 — Enter your custom name</strong></p>
+<p>Type in the name you want to appear where &quot;Marvel Studios&quot; normally sits. This could be your own name, a team name, a company name, or a project title.</p>
+<p><strong>Step 3 — Preview the sequence</strong></p>
+<p>Watch the live preview to see your name slot into the full comic-panel-flip sequence.</p>
+<p><strong>Step 4 — Render and save</strong></p>
+<p>Hit <strong>Render</strong> to generate the video file. Download the MP4 and drop it into any video project, presentation, or social media post.</p>
 <h2>Ideas for your Marvel-style intro</h2>
 <ul>
-<li>A YouTube channel opener with real production value</li>
-<li>A podcast cold-open</li>
-<li>A birthday tribute for the household superhero</li>
-<li>Team or project presentations that start with a bang</li>
+<li><strong>YouTube channel openers</strong> — start every video feeling like a blockbuster.</li>
+<li><strong>Podcast cold opens</strong> — &quot;A [Your Name] Production&quot; hits differently after the comic flip.</li>
+<li><strong>Birthday tributes</strong> — make someone feel like a superhero on their big day.</li>
+<li><strong>Team introductions</strong> — &quot;[Department Name]&quot; for a team meeting that nobody will sleep through.</li>
 </ul>
 <h2>Assemble your intro</h2>
-<p><strong><a href="https://kassellabs.io/intro/marvel-studios?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=marvel-studios-intro">Create your Marvel Studios intro →</a></strong></p>
-<p>Want a different universe? <a href="https://kassellabs.io/projects?utm_source=github-pages&utm_medium=blog-mirror&utm_campaign=marvel-studios-intro">Explore all the creators</a>.</p>
+<p><a href="https://kassellabs.io/intro/marvel-studios">Create your Marvel Studios intro →</a></p>
+<p>No design experience needed. Type, preview, render, download. Your MCU moment awaits.</p>
 
+      </div>
       <div class="cta">
         <h3>Ready to create your own?</h3>
         <p>Start making your own cinematic intros today. It only takes a few minutes!</p>
