@@ -48,15 +48,17 @@
   "license": "MIT",
   "scripts": {
     "update-intros": "node update-intros.js",
-    "build": "gatsby build",
+    "build": "node assert-node-runtime.cjs && node --openssl-legacy-provider node_modules/.bin/gatsby build",
     "dev": "npm run develop",
-    "develop": "node --no-experimental-fetch node_modules/.bin/gatsby develop -H 0.0.0.0",
+    "develop": "node assert-node-runtime.cjs && node --openssl-legacy-provider node_modules/.bin/gatsby develop -H 0.0.0.0",
     "start": "npm run develop",
-    "serve": "gatsby serve",
+    "serve": "node assert-node-runtime.cjs && gatsby serve",
     "eslint": "eslint src/",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
     "update-notion-pages": "node update-notion-pages.js",
-    "postinstall": "npm run update-intros"
+    "postinstall": "npm run update-intros",
+    "preinstall": "node assert-node-runtime.cjs",
+    "test:runtime": "node --test test-node-runtime.cjs"
   },
   "repository": {
     "type": "git",
@@ -66,7 +68,7 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "engines": {
-    "node": "24.x"
+    "node": ">=24.22.1 <25"
   },
   "devDependencies": {
     "eslint": "^6.4.0",
