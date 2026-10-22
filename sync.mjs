@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import './assert-node-runtime.cjs';
 /**
  * Auto-syncing blog mirror for kassellabs.github.io.
  *

@@ -3,9 +3,14 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "sync": "node sync.mjs ."
+    "sync": "node sync.mjs .",
+    "preinstall": "node assert-node-runtime.cjs",
+    "test:runtime": "node --test test-node-runtime.cjs"
   },
   "dependencies": {
     "marked": "^12.0.2"
+  },
+  "engines": {
+    "node": ">=22.23.4 <23"
   }
 }
