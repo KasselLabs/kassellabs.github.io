@@ -2,7 +2,9 @@
 
 [http://kassellabs.io](http://kassellabs.io)
 
-Node.js v14
+Use Node.js 24.22.1 or a newer patch within major 24 (`nvm use`).
+The blog-mirror workflow builds `engineering-pages` with patched Node 22.
+Rebuild artifacts after runtime updates; this is the predecessor website.
 
 ## Deploy Steps
 
