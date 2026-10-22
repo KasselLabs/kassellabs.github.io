@@ -2,7 +2,9 @@
 
 [http://kassellabs.io](http://kassellabs.io)
 
-Node.js v14
+Use Node.js 22.23.4 or a newer patch within major 22 (`nvm use`).
+The strict npm engine floor rejects older build runtimes. Rebuild artifacts
+after runtime updates. This is the predecessor Gatsby website.
 
 ## Deploy Steps
 
